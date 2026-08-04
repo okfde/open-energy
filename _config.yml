@@ -4,8 +4,8 @@ description: >-
   Anleitungen, Termine und Hintergrundwissen zum Selbermachen.
 lang: de
 
-url: ""
-baseurl: ""
+url: "https://okfde.github.io"
+baseurl: "/open-energy"
 
 markdown: kramdown
 future: true
