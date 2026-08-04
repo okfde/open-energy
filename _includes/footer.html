@@ -1,0 +1,46 @@
+<footer class="site-footer">
+  <div class="site-footer__row">
+    <nav class="site-footer__nav" aria-label="Fußzeilennavigation">
+      {% for item in site.nav_items %}
+        <a href="{{ item.url | relative_url }}" class="site-footer__nav-link">{{ item.title }}</a>
+        {% unless forloop.last %}
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="{{ '/assets/images/icons/divider.svg' | relative_url }}" alt="">
+          </span>
+        {% endunless %}
+      {% endfor %}
+    </nav>
+    <div class="site-footer__legal">
+      {% for item in site.footer_legal %}
+        <a href="{{ item.url | relative_url }}" class="site-footer__nav-link">{{ item.title }}</a>
+        {% unless forloop.last %}
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="{{ '/assets/images/icons/divider.svg' | relative_url }}" alt="">
+          </span>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="site-footer__social">
+    <div class="site-footer__social-links">
+      {% for social in site.social_links %}
+        <a href="{{ social.url }}" class="site-footer__social-link">
+          <img src="{{ '/assets/images/icons/social-' | append: social.type | append: '.svg' | relative_url }}" alt="">
+          {{ social.title }}
+        </a>
+      {% endfor %}
+    </div>
+    <div class="site-footer__partners">
+      <img src="{{ '/assets/images/logos/okf-logo.svg' | relative_url }}" alt="Open Knowledge Foundation Deutschland">
+      <img src="{{ '/assets/images/logos/prototypefund-logo.svg' | relative_url }}" alt="Prototype Fund Hardware">
+    </div>
+  </div>
+
+  <div class="site-footer__wordmark" aria-hidden="true">
+
+        <img class="svg-cutout pattern-main" src="{{ '/assets/images/logos/oe-wordmark-cutout.svg' | relative_url }}" alt="">
+
+
+  </div>
+</footer>

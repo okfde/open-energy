@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="article">
+  <header class="article-header">
+    <div class="article-header__meta">
+      {% include label.html text=page.category color="sunshine" %}
+      <span class="ui-upper-small">{{ page.date | date: "%d / %B / %Y" }}</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.excerpt %}<p class="intro-text article-header__excerpt">{{ page.excerpt }}</p>{% endif %}
+  </header>
+
+  <div class="article-image" aria-hidden="true"></div>
+
+  <div class="article-body body-text">
+    {{ content }}
+  </div>
+</article>
+
+{% assign related = site.blog | where_exp: "post", "post.url != page.url" | sort: "date" | reverse | limit: 2 %}
+{% if related.size > 0 %}
+  <section class="section section--dark related-posts">
+    <h2>Weitere Beiträge</h2>
+    <div class="related-posts__list">
+      {% for post in related %}
+        <a href="{{ post.url | relative_url }}" class="related-post">
+          <div class="related-post__image" aria-hidden="true"></div>
+          <div class="related-post__body">
+            <div class="related-post__meta">
+              {% include label.html text=post.category color="sunshine" %}
+              <span class="ui-upper-small">{{ post.date | date: "%d / %B / %Y" }}</span>
+            </div>
+            <h3>{{ post.title }}</h3>
+            <p class="body-text--small">{{ post.excerpt }}</p>
+            <span class="cta-textlink cta-textlink--invert">Beitrag lesen →</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

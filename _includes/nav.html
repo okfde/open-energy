@@ -1,0 +1,37 @@
+<header class="site-header">
+  <div class="nav-bar">
+    <a href="{{ '/' | relative_url }}" class="nav-bar__logo" aria-label="{{ site.title }} — Startseite">
+      <img src="{{ '/assets/images/logos/oe-logo-dark.svg' | relative_url }}" alt="{{ site.title }}">
+    </a>
+
+    <button type="button" class="nav-bar__toggle" data-nav-toggle aria-controls="mobile-nav" aria-expanded="false">
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Menü öffnen</span>
+    </button>
+
+    <nav class="nav-list" aria-label="Hauptnavigation">
+      {% for item in site.nav_items %}
+        <div class="nav-list__item">
+          <a href="{{ item.url | relative_url }}" class="nav-list__link{% if page.url == item.url %} is-current{% endif %}">{{ item.title }}</a>
+        </div>
+        {% unless forloop.last %}
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="{{ '/assets/images/icons/divider.svg' | relative_url }}" alt="">
+          </span>
+        {% endunless %}
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav__inner">
+    <nav class="mobile-nav__list" aria-label="Mobile Hauptnavigation">
+      {% for item in site.nav_items %}
+        <a href="{{ item.url | relative_url }}" class="mobile-nav__link{% if page.url == item.url %} is-current{% endif %}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</div>

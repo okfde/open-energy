@@ -1,0 +1,20 @@
+- source: open-hardware-forum.de
+  url: "#"
+  title: "Das ist der Titel für die erste Anleitung"
+  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+- source: solar-blog.de
+  url: "#"
+  title: "Das ist der Titel für die zweite Anleitung"
+  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+- source: solar-blog.de
+  url: "#"
+  title: "Das ist der Titel für die dritte Anleitung, geht über mehrere Zeilen"
+  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+- source: open-hardware-forum.de
+  url: "#"
+  title: "Das ist der Titel für die vierte Anleitung, geht über mehrere Zeilen"
+  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+- source: energy-hackers.org
+  url: "#"
+  title: "Das ist der Titel für die fünfte Anleitung, geht über mehrere Zeilen"
+  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."

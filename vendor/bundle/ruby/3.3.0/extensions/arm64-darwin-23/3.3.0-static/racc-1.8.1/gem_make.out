@@ -1,0 +1,18 @@
+current directory: /Users/mavo/Documents/repos/OpenEnergy/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/mavo/.rubies/ruby-3.3.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/mavo/Documents/repos/OpenEnergy/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make -j9 DESTDIR\= sitearchdir\=./.gem.20260804-2461-d6jvbl sitelibdir\=./.gem.20260804-2461-d6jvbl clean
+
+current directory: /Users/mavo/Documents/repos/OpenEnergy/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make -j9 DESTDIR\= sitearchdir\=./.gem.20260804-2461-d6jvbl sitelibdir\=./.gem.20260804-2461-d6jvbl
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/mavo/Documents/repos/OpenEnergy/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make -j9 DESTDIR\= sitearchdir\=./.gem.20260804-2461-d6jvbl sitelibdir\=./.gem.20260804-2461-d6jvbl install
+/opt/homebrew/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20260804-2461-d6jvbl/racc
+
+current directory: /Users/mavo/Documents/repos/OpenEnergy/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260804-2461-d6jvbl sitelibdir\=./.gem.20260804-2461-d6jvbl clean

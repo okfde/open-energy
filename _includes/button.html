@@ -1,0 +1,20 @@
+{% comment %}
+  Renders a button/link styled per the Figma "Button" component.
+  Params: text, url, style (primary|secondary), invert (bool), disabled (bool), tag (a|button)
+{% endcomment %}
+{% assign btn_style = include.style | default: "primary" %}
+{% assign btn_tag = include.tag | default: "a" %}
+{% assign classes = "btn btn--" | append: btn_style %}
+{% if include.invert %}{% assign classes = classes | append: " btn--invert" %}{% endif %}
+{% if include.disabled %}{% assign classes = classes | append: " is-disabled" %}{% endif %}
+{% if btn_tag == "button" %}
+<button type="{{ include.type | default: 'button' }}" class="{{ classes }}"{% if include.disabled %} disabled{% endif %}>
+  <span>{{ include.text }}</span>
+  <img class="icon-arrow" src="{{ '/assets/images/icons/icon-arrow.svg' | relative_url }}" alt="">
+</button>
+{% else %}
+<a href="{{ include.url }}" class="{{ classes }}">
+  <span>{{ include.text }}</span>
+  <img class="icon-arrow" src="{{ '/assets/images/icons/icon-arrow.svg' | relative_url }}" alt="">
+</a>
+{% endif %}

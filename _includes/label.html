@@ -1,0 +1,6 @@
+{% comment %}
+  Renders a category Label per the Figma "Label" component.
+  Params: text, color (sand|midnight|sunshine)
+{% endcomment %}
+{% assign label_color = include.color | default: "sand" %}
+<span class="label{% unless label_color == 'sand' %} label--{{ label_color }}{% endunless %}">{{ include.text }}</span>
