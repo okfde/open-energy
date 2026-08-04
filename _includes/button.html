@@ -10,11 +10,11 @@
 {% if btn_tag == "button" %}
 <button type="{{ include.type | default: 'button' }}" class="{{ classes }}"{% if include.disabled %} disabled{% endif %}>
   <span>{{ include.text }}</span>
-  <img class="icon-arrow" src="{{ '/assets/images/icons/icon-arrow.svg' | relative_url }}" alt="">
+
 </button>
 {% else %}
 <a href="{{ include.url }}" class="{{ classes }}">
   <span>{{ include.text }}</span>
-  <img class="icon-arrow" src="{{ '/assets/images/icons/icon-arrow.svg' | relative_url }}" alt="">
+
 </a>
 {% endif %}

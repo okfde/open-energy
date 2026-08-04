@@ -8,6 +8,7 @@ body {
 h1, h2, h3, h4 {
   font-family: $font-heading;
   font-weight: 700;
+  padding-bottom: 1rem;
   color: $color-text;
 }
 
@@ -15,31 +16,31 @@ h1, h2, h3, h4 {
 h1, .h1 {
   font-size: clamp(2.75rem, #{"2rem + 3.5vw"}, #{$size-h1});
   line-height: 1;
-  letter-spacing: -0.09em;
+  letter-spacing: -0.05em;
 }
 
 h1.h1-huge, .h1-huge {
   font-size: clamp(3.25rem, #{"2.25rem + 4.8vw"}, #{$size-h1-huge});
   line-height: 1;
-  letter-spacing: -0.09em;
+  letter-spacing: -0.05em;
 }
 
 h2, .h2 {
   font-size: clamp(2.25rem, #{"1.75rem + 2.3vw"}, #{$size-h2});
   line-height: 1.3;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.04em;
 }
 
 h3, .h3 {
   font-size: clamp(1.5rem, #{"1.25rem + 1.1vw"}, #{$size-h3});
   line-height: 1.3;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.01em;
 }
 
 h4, .h4 {
   font-size: clamp(1.25rem, #{"1.1rem + 0.6vw"}, #{$size-h4});
   line-height: 1.3;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
 }
 
 .intro-text {
