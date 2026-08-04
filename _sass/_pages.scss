@@ -242,9 +242,29 @@
 }
 
 .event-teaser__meta {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.event-teaser__meta::before {
+  content: "";
+  position: absolute;
+  top: -0.6875rem;
+  left: -0.625rem;
+  bottom: -0.8125rem;
+  width: 12rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 193.593 74.1013' fill='none'%3E%3Cpath d='M49.326 4.74485C88.2771 -1.74335 112.835 1.50349 138.696 4.74759C164.557 7.99169 216 27.4999 180.5 53.9999C145.297 80.2781 75.6649 72.4657 45.3341 70.4382C15.0032 68.4106 -10.8578 60.3004 6.70216 32.7255C24.2621 5.15068 83.7499 10.2878 108.244 12.7624' stroke='%23FAE62A' stroke-width='2'/%3E%3C/svg%3E") no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.event-teaser:hover .event-teaser__meta::before,
+.event-teaser:focus-visible .event-teaser__meta::before {
+  opacity: 1;
 }
 
 .event-teaser__meta-row {
@@ -259,7 +279,7 @@
     padding: 0.25rem;
     background: $color-text-secondary;
     border-radius: 0.125rem;
-    filter: brightness(0) invert(1);
+    //filter: brightness(0.5) invert(1);
   }
 }
 
@@ -268,10 +288,21 @@
   align-items: center;
   gap: 0.625rem;
   padding: 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.event-teaser:hover .event-teaser__cta,
+.event-teaser:focus-visible .event-teaser__cta {
+  background: $color-sunshine;
 }
 
 .event-teaser__badge {
   margin-right: 0.5rem;
+}
+
+.event-teaser:hover .event-teaser__badge .label,
+.event-teaser:focus-visible .event-teaser__badge .label {
+  background: $color-bg-level-1;
 }
 
 // Subpage header (Blog / DIY / Termine / About)
