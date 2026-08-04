@@ -1,0 +1,19 @@
+{% comment %}
+  Renders a "Teaser / DIY Teaser" card. Params: item (from _data/diy_items.yml)
+{% endcomment %}
+{% assign item = include.item %}
+<div class="diy-teaser">
+  <div class="diy-teaser__image" aria-hidden="true">
+    <span class="label diy-teaser__source">{{ item.source }} ↗︎</span>
+  </div>
+  <div class="diy-teaser__body">
+    <div class="diy-teaser__heading">
+      <h3>{{ item.title }}</h3>
+      <p class="body-text">{{ item.excerpt }}</p>
+    </div>
+    <a href="{{ item.url }}" class="btn btn--secondary" target="_blank" rel="noopener">
+      <span>Zur Anleitung</span>
+      <span aria-hidden="true">↗︎</span>
+    </a>
+  </div>
+</div>

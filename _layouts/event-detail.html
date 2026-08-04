@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<article class="event-article">
+  <header class="event-article__header">
+    <a href="{{ '/termine/' | relative_url }}" class="cta-textlink event-article__back">← Alle Veranstaltungen</a>
+    <h1>{{ page.title }}</h1>
+    <div class="event-teaser__meta">
+      <p class="event-teaser__meta-row">
+        <img src="{{ '/assets/images/icons/icon-clock.svg' | relative_url }}" alt="">
+        <span class="ui-upper-small">{{ page.date | date: "%d/%m/%Y" }}, {{ page.time }}</span>
+      </p>
+      <p class="event-teaser__meta-row">
+        <img src="{{ '/assets/images/icons/icon-location.svg' | relative_url }}" alt="">
+        <span class="ui-large">{{ page.location }}</span>
+      </p>
+    </div>
+  </header>
+
+  <div class="event-article__body body-text">
+    {{ content }}
+  </div>
+</article>
+
+{% assign upcoming = site.events | where_exp: "event", "event.url != page.url" | sort: "date" | limit: 3 %}
+{% if upcoming.size > 0 %}
+  <section class="section section--sand events-section">
+    <h2>Weitere Veranstaltungen</h2>
+    <div class="events-grid">
+      {% for event in upcoming %}
+        <a href="{{ event.url | relative_url }}" class="event-teaser">
+          <div class="event-teaser__body">
+            <div class="event-teaser__heading">
+              <h3>{{ event.title }}</h3>
+              <p class="body-text--small">{{ event.excerpt }}</p>
+            </div>
+            <div class="event-teaser__meta">
+              <p class="event-teaser__meta-row">
+                <img src="{{ '/assets/images/icons/icon-clock.svg' | relative_url }}" alt="">
+                <span class="ui-upper-small">{{ event.date | date: "%d/%m/%Y" }}, {{ event.time }}</span>
+              </p>
+              <p class="event-teaser__meta-row">
+                <img src="{{ '/assets/images/icons/icon-location.svg' | relative_url }}" alt="">
+                <span class="ui-small">{{ event.location }}</span>
+              </p>
+            </div>
+          </div>
+          <div class="event-teaser__cta">
+            <span class="ui-large">Event-Details →</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
