@@ -3,7 +3,7 @@
   Params: post
 {% endcomment %}
 {% assign post = include.post %}
-<a href="{{ post.url | relative_url }}" class="blog-row">
+<a href="{{ post.url | relative_url }}" class="blog-row" data-category-item="{{ post.category }}">
   <div class="blog-row__body">
     <div class="blog-row__meta">
       {% include label.html text=post.category color="sunshine" %}

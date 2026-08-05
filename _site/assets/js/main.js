@@ -78,3 +78,33 @@
     setInterval(next, intervalMs);
   }
 })();
+
+(function () {
+  var filterBar = document.querySelector('[data-category-filter]');
+  if (!filterBar) return;
+
+  var buttons = Array.prototype.slice.call(filterBar.querySelectorAll('[data-category]'));
+  var items = Array.prototype.slice.call(document.querySelectorAll('[data-category-item]'));
+  if (!buttons.length || !items.length) return;
+
+  var activeCategory = null;
+
+  function applyFilter() {
+    items.forEach(function (item) {
+      var matches = !activeCategory || item.getAttribute('data-category-item') === activeCategory;
+      item.classList.toggle('is-category-hidden', !matches);
+    });
+    buttons.forEach(function (button) {
+      var isActive = button.getAttribute('data-category') === activeCategory;
+      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var category = button.getAttribute('data-category');
+      activeCategory = activeCategory === category ? null : category;
+      applyFilter();
+    });
+  });
+})();

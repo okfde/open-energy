@@ -14,11 +14,11 @@
           <span class="ui-upper-small">RSS-Feed</span>
         </a>
       {% endif %}
-      {% if include.categories %}
-        <div class="subpage-header__categories">
-          {% assign category_list = include.categories | split: "," %}
+      {% assign category_list = include.categories | split: "," %}
+      {% if category_list.size > 0 %}
+        <div class="subpage-header__categories" data-category-filter>
           {% for category in category_list %}
-            {% include label.html text=category color="midnight" %}
+            <button type="button" class="label label--midnight category-filter__item" data-category="{{ category }}" aria-pressed="false">{{ category }}</button>
           {% endfor %}
         </div>
       {% endif %}

@@ -33,7 +33,9 @@ title: Start
   <div class="blog-grid">
     {% if featured_post %}
       <a href="{{ featured_post.url | relative_url }}" class="blog-teaser blog-teaser--featured">
-        <div class="blog-teaser__image" aria-hidden="true"></div>
+        <div class="blog-teaser__image" aria-hidden="true">
+          {% if featured_post.image %}<img src="{{ featured_post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        </div>
         <div class="blog-teaser__body">
           <div class="blog-teaser__heading">
             {% include label.html text=featured_post.category color="sunshine" %}
@@ -54,7 +56,9 @@ title: Start
             </div>
             <p class="ui-upper-small blog-teaser__date">{{ post.date | date: "%d / %B / %Y" }}</p>
           </div>
-          <div class="blog-teaser__image blog-teaser__image--small" aria-hidden="true"></div>
+          <div class="blog-teaser__image blog-teaser__image--small" aria-hidden="true">
+            {% if post.image %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+          </div>
         </a>
       {% endfor %}
     </div>
