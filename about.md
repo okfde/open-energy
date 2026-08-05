@@ -23,39 +23,45 @@ permalink: /about/
     <p class="body-text about-hero__hosted-by">Open Energy ist ein Projekt des <a href="#" class="link-underline">Prototype Fund Hardware</a> und wird von der <a href="#" class="link-underline">Open Knowledge Foundation Deutschland</a> gehostet.</p>
   </div>
   <div class="about-hero__media" aria-hidden="true">
-    <div class="about-hero__photo about-hero__photo--1"></div>
-    <div class="about-hero__photo about-hero__photo--2"></div>
-    <div class="about-hero__photo about-hero__photo--3"></div>
+    <img class="about-hero__photo about-hero__photo--1" src="{{ '/assets/images/photos/about/hero-1.jpg' | relative_url }}" alt="" loading="lazy">
+    <img class="about-hero__photo about-hero__photo--2" src="{{ '/assets/images/photos/about/hero-2.jpg' | relative_url }}" alt="" loading="lazy">
+    <img class="about-hero__photo about-hero__photo--3" src="{{ '/assets/images/photos/about/hero-3.png' | relative_url }}" alt="" loading="lazy">
   </div>
 </section>
 
-<section class="section section--sand team-section">
-  <h2>Das Team</h2>
-  <div class="team-list">
-    <article class="person-card">
-      <div class="person-card__photo" aria-hidden="true"></div>
-      <div class="person-card__text">
-        <div class="person-card__heading">
-          <h3>Maximilian Voigt</h3>
-          <p class="ui-upper-small person-card__role">Projektleiter Open Energy</p>
+<section class="pattern-midnight team-wrap">
+  <div class="section section--sand team-section">
+    <h2>Das Team</h2>
+    <div class="team-list">
+      <article class="person-card">
+        <div class="person-card__photo">
+          <img src="{{ '/assets/images/photos/team/maximilian.png' | relative_url }}" alt="Portrait von Maximilian Voigt" loading="lazy">
         </div>
-        <p class="body-text">Maximilian Voigt leitet für die Open Knowledge Foundation Deutschland das Projekt Open Energy und den Prototype Fund Hardware. Er arbeitet daran, die technische Produkttransparenz für die Zivilgesellschaft zu verbessern, um mehr Beteiligungsmöglichkeiten zu schaffen. Eine konkrete Kampagne ist das Recht auf Reparatur. Maximilian hat Ingenieurwesen, Journalismus und Technikphilosophie studiert.</p>
-        <a href="mailto:maximilian.voigt@okfn.de" class="icon-link">
-          <img src="{{ '/assets/images/icons/icon-mail.svg' | relative_url }}" alt="">
-          maximilian.voigt@okfn.de
-        </a>
-      </div>
-    </article>
-    <article class="person-card">
-      <div class="person-card__photo" aria-hidden="true"></div>
-      <div class="person-card__text">
-        <div class="person-card__heading">
-          <h3>Stephanie Bergwinkl</h3>
-          <p class="ui-upper-small person-card__role">Kommunikationsmanagerin Open Energy</p>
+        <div class="person-card__text">
+          <div class="person-card__heading">
+            <h3>Maximilian Voigt</h3>
+            <p class="ui-upper-small person-card__role">Projektleiter Open Energy</p>
+          </div>
+          <p class="body-text">Maximilian Voigt leitet für die Open Knowledge Foundation Deutschland das Projekt Open Energy und den Prototype Fund Hardware. Er arbeitet daran, die technische Produkttransparenz für die Zivilgesellschaft zu verbessern, um mehr Beteiligungsmöglichkeiten zu schaffen. Eine konkrete Kampagne ist das Recht auf Reparatur. Maximilian hat Ingenieurwesen, Journalismus und Technikphilosophie studiert.</p>
+          <a href="mailto:maximilian.voigt@okfn.de" class="icon-link">
+            <img src="{{ '/assets/images/icons/icon-mail.svg' | relative_url }}" alt="">
+            maximilian.voigt@okfn.de
+          </a>
         </div>
-        <p class="body-text">Stephanie Bergwinkl ist verantwortlich für die Kommunikation des Projekts Open Energy. Sie setzt sich mit verschiedenen Medien strategisch sowie künstlerisch für das Klima sowie für Self-Empowerment ein. Stephanie studierte Zeitbasierte Medien sowie Kommunikations- und Wirtschaftswissenschaften.</p>
-      </div>
-    </article>
+      </article>
+      <article class="person-card">
+        <div class="person-card__photo">
+          <img src="{{ '/assets/images/photos/team/stephanie.png' | relative_url }}" alt="Portrait von Stephanie Bergwinkl" loading="lazy">
+        </div>
+        <div class="person-card__text">
+          <div class="person-card__heading">
+            <h3>Stephanie Bergwinkl</h3>
+            <p class="ui-upper-small person-card__role">Kommunikationsmanagerin Open Energy</p>
+          </div>
+          <p class="body-text">Stephanie Bergwinkl ist verantwortlich für die Kommunikation des Projekts Open Energy. Sie setzt sich mit verschiedenen Medien strategisch sowie künstlerisch für das Klima sowie für Self-Empowerment ein. Stephanie studierte Zeitbasierte Medien sowie Kommunikations- und Wirtschaftswissenschaften.</p>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -70,7 +76,7 @@ permalink: /about/
 <section class="section funders-section">
   <h2>Förderer</h2>
   <div class="funders-logos">
-    <div class="funders-logos__placeholder">Postcode Lotterie</div>
-    <div class="funders-logos__placeholder">Deutsche Stiftung für Engagement und Ehrenamt</div>
+    <img class="funders-logos__logo funders-logos__logo--pcl" src="{{ '/assets/images/logos/postcode-lotterie-logo.svg' | relative_url }}" alt="Deutsche Postcode Lotterie">
+    <img class="funders-logos__logo" src="{{ '/assets/images/logos/stiftung-engagement-logo.svg' | relative_url }}" alt="Deutsche Stiftung für Engagement und Ehrenamt">
   </div>
 </section>

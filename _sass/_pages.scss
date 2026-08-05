@@ -381,6 +381,7 @@
 
 // About page
 .about-hero {
+  background: $color-bg-level-1;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -444,14 +445,42 @@
 }
 
 .about-hero__photo {
+  width: 100%;
   aspect-ratio: 2 / 3;
   border-radius: 2px;
-  background: linear-gradient(135deg, $color-midnight 0%, $color-text-secondary 100%);
+  object-fit: cover;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+  animation: about-hero-photo-in 0.6s ease-out both;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
-.about-hero__photo--1 { transform: rotate(3deg); }
-.about-hero__photo--2 { transform: rotate(-2deg); grid-column: 2; margin-top: 2rem; }
-.about-hero__photo--3 { transform: rotate(2deg); grid-column: 1 / span 2; width: 50%; margin-inline: auto; margin-top: -2rem; }
+@keyframes about-hero-photo-in {
+  from { opacity: 0; translate: 0 4rem; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+.about-hero__photo--1 { transform: rotate(3deg); animation-delay: 0s; }
+.about-hero__photo--2 { transform: rotate(-2deg); grid-column: 2; margin-top: 2rem; animation-delay: 0.15s; }
+.about-hero__photo--3 { transform: rotate(2deg); grid-column: 1 / span 2; width: 50%; margin-inline: auto; margin-top: -2rem; animation-delay: 0.26s; }
+
+// Dark frame around the "Das Team" card, revealing pattern-midnight at the
+// left and bottom — matches the Figma inset-card treatment.
+.team-wrap {
+  padding-bottom: $section-pad-tb-mobile;
+
+  @include tablet-up {
+    padding-bottom: $section-pad-tb-tablet;
+    padding-left: 3rem;
+  }
+
+  @include desktop-up {
+    padding-bottom: $section-pad-tb-desktop;
+    padding-left: 10rem;
+  }
+}
 
 .team-section h2 { margin-bottom: 0; }
 
@@ -478,8 +507,17 @@
   max-width: 16.25rem;
   aspect-ratio: 1;
   border-radius: 2px;
-  background: linear-gradient(135deg, $color-midnight 0%, $color-text-secondary 100%);
+  background: $color-midnight;
   flex-shrink: 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    mix-blend-mode: screen;
+  }
 }
 
 .person-card__text {
@@ -511,10 +549,20 @@
   max-width: 46rem;
 }
 
+.funders-section {
+  border-top: 1px solid $color-stroke-dimmed;
+}
+
 .funders-logos {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 2.5rem;
+}
+
+.funders-logos__logo {
+  height: 5.5rem;
+  width: auto;
 }
 
 // Blog list (Blog page)
@@ -804,16 +852,6 @@
   }
 }
 
-.funders-logos__placeholder {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  border: 1px solid $color-steel;
-  color: $color-text-secondary;
-  font-size: $size-ui-small;
-  max-width: 16rem;
-}
-
 // Do it yourself
 .diy-grid {
   display: grid;
@@ -883,6 +921,13 @@
 
 .pattern-main {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cline x1='55' y1='10' x2='60' y2='10' stroke='%23c9c5bd' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+.pattern-midnight {
+  background-color: $color-midnight;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cline x1='55' y1='10' x2='60' y2='10' stroke='%23fae62a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-repeat: repeat;
 }
