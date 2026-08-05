@@ -537,6 +537,11 @@
   color: $color-text-secondary;
 }
 
+.partners-section,
+.funders-section {
+  background: $color-bg-level-1;
+}
+
 .partners-section h2,
 .funders-section h2 {
   margin-bottom: 3.5rem;
