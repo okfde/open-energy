@@ -1,26 +1,36 @@
 ---
 layout: default
 ---
-<article class="event-article">
-  <header class="event-article__header">
-    <a href="{{ '/termine/' | relative_url }}" class="cta-textlink event-article__back">← Alle Veranstaltungen</a>
+<section class="section section--sand event-article">
+  <div class="event-article__card">
+    {% assign now_ts = site.time | date: "%s" %}
+    {% assign event_ts = page.date | date: "%s" %}
+    {% assign diff_days = event_ts | minus: now_ts | divided_by: 86400 %}
+    {% if diff_days >= 0 %}
+      {% capture badge_text %}{% if diff_days == 0 %}Heute{% elsif diff_days == 1 %}Morgen{% else %}In {{ diff_days }} Tagen{% endif %}{% endcapture %}
+      {% include label.html text=badge_text color="sunshine" %}
+    {% endif %}
     <h1>{{ page.title }}</h1>
-    <div class="event-teaser__meta">
-      <p class="event-teaser__meta-row">
-        <img src="{{ '/assets/images/icons/icon-clock.svg' | relative_url }}" alt="">
-        <span class="ui-upper-small">{{ page.date | date: "%d/%m/%Y" }}, {{ page.time }}</span>
-      </p>
-      <p class="event-teaser__meta-row">
-        <img src="{{ '/assets/images/icons/icon-location.svg' | relative_url }}" alt="">
-        <span class="ui-large">{{ page.location }}</span>
-      </p>
+    <div class="event-article__intro-row">
+      {% if page.excerpt %}<p class="body-text event-article__intro">{{ page.excerpt }}</p>{% endif %}
+      <div class="event-article__meta">
+        <p class="event-teaser__meta-row">
+          <img src="{{ '/assets/images/icons/icon-clock.svg' | relative_url }}" alt="">
+          <span class="ui-upper-small">{{ page.date | date: "%d/%m/%Y" }}, {{ page.time }}</span>
+        </p>
+        <p class="event-teaser__meta-row">
+          <img src="{{ '/assets/images/icons/icon-location.svg' | relative_url }}" alt="">
+          <span class="ui-large">{{ page.location }}</span>
+        </p>
+      </div>
     </div>
-  </header>
+  </div>
 
   <div class="event-article__body body-text">
+    <a href="{{ '/termine/' | relative_url }}" class="cta-textlink event-article__back">← Alle Veranstaltungen</a>
     {{ content }}
   </div>
-</article>
+</section>
 
 {% assign upcoming = site.events | where_exp: "event", "event.url != page.url" | sort: "date" | limit: 3 %}
 {% if upcoming.size > 0 %}
@@ -28,27 +38,7 @@ layout: default
     <h2>Weitere Veranstaltungen</h2>
     <div class="events-grid">
       {% for event in upcoming %}
-        <a href="{{ event.url | relative_url }}" class="event-teaser">
-          <div class="event-teaser__body">
-            <div class="event-teaser__heading">
-              <h3>{{ event.title }}</h3>
-              <p class="body-text--small">{{ event.excerpt }}</p>
-            </div>
-            <div class="event-teaser__meta">
-              <p class="event-teaser__meta-row">
-                <img src="{{ '/assets/images/icons/icon-clock.svg' | relative_url }}" alt="">
-                <span class="ui-upper-small">{{ event.date | date: "%d/%m/%Y" }}, {{ event.time }}</span>
-              </p>
-              <p class="event-teaser__meta-row">
-                <img src="{{ '/assets/images/icons/icon-location.svg' | relative_url }}" alt="">
-                <span class="ui-small">{{ event.location }}</span>
-              </p>
-            </div>
-          </div>
-          <div class="event-teaser__cta">
-            <span class="ui-large">Event-Details →</span>
-          </div>
-        </a>
+        {% include event-teaser.html event=event first=forloop.first %}
       {% endfor %}
     </div>
   </section>

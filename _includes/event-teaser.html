@@ -1,0 +1,36 @@
+{% comment %}
+  Renders a single "Teaser / Event Teaser" card per the Figma component.
+  Params: event, first (bool) — shows a relative "In X Tagen" badge on the
+  soonest event of the current list.
+{% endcomment %}
+{% assign event = include.event %}
+<a href="{{ event.url | relative_url }}" class="event-teaser">
+  <div class="event-teaser__body">
+    <div class="event-teaser__heading">
+      <h3>{{ event.title }}</h3>
+      <p class="body-text--small">{{ event.excerpt }}</p>
+    </div>
+    <div class="event-teaser__meta">
+      <p class="event-teaser__meta-row">
+        <img src="{{ '/assets/images/icons/icon-clock.svg' | relative_url }}" alt="">
+        <span class="ui-upper-small">{{ event.date | date: "%d/%m/%Y" }}, {{ event.time }}</span>
+      </p>
+      <p class="event-teaser__meta-row">
+        <img src="{{ '/assets/images/icons/icon-location.svg' | relative_url }}" alt="">
+        <span class="ui-small">{{ event.location }}</span>
+      </p>
+    </div>
+  </div>
+  <div class="event-teaser__cta">
+    {% if include.first %}
+      {% assign now_ts = site.time | date: "%s" %}
+      {% assign event_ts = event.date | date: "%s" %}
+      {% assign diff_days = event_ts | minus: now_ts | divided_by: 86400 %}
+      {% if diff_days >= 0 %}
+        {% capture badge_text %}{% if diff_days == 0 %}Heute{% elsif diff_days == 1 %}Morgen{% else %}In {{ diff_days }} Tagen{% endif %}{% endcapture %}
+        <div class="event-teaser__badge">{% include label.html text=badge_text color="sunshine" %}</div>
+      {% endif %}
+    {% endif %}
+    <span class="ui-large">Event-Details →</span>
+  </div>
+</a>

@@ -62,33 +62,4 @@ title: Start
   {% include button.html text="Alle Blogposts" url="/open-energy/blog/" style="secondary" invert=true %}
 </section>
 
-<section class="section section--sand events-section">
-  {% assign upcoming_events = site.events | sort: "date" | limit: 3 %}
-  <h2>Veranstaltungen</h2>
-  <div class="events-grid">
-    {% for event in upcoming_events %}
-      <a href="{{ event.url | relative_url }}" class="event-teaser">
-        <div class="event-teaser__body">
-          <div class="event-teaser__heading">
-            <h3>{{ event.title }}</h3>
-            <p class="body-text--small">{{ event.excerpt }}</p>
-          </div>
-          <div class="event-teaser__meta">
-            <p class="event-teaser__meta-row">
-              <img src="{{ '/assets/images/icons/icon-clock.svg' | relative_url }}" alt="">
-              <span class="ui-upper-small">{{ event.date | date: "%d/%m/%Y" }}, {{ event.time }}</span>
-            </p>
-            <p class="event-teaser__meta-row">
-              <img src="{{ '/assets/images/icons/icon-location.svg' | relative_url }}" alt="">
-              <span class="ui-small">{{ event.location }}</span>
-            </p>
-          </div>
-        </div>
-        <div class="event-teaser__cta">
-          <span class="ui-large">Event-Details →</span>
-        </div>
-      </a>
-    {% endfor %}
-  </div>
-  {% include button.html text="Alle Veranstaltungen →" url="/open-energy/termine/" style="secondary" %}
-</section>
+{% include events-section.html %}

@@ -1,6 +1,7 @@
 {% comment %}
   Renders the "Subpage Header" component: title + intro text, optional category
-  label list and RSS link. Params: title, intro, categories (array), rss (bool)
+  label list, RSS link and decorative illustration.
+  Params: title, intro, categories (array), rss (bool), media (image path)
 {% endcomment %}
 <header class="subpage-header">
   <div class="subpage-header__intro">
@@ -23,4 +24,9 @@
       {% endif %}
     </div>
   </div>
+  {% if include.media %}
+    <div class="subpage-header__media" aria-hidden="true">
+      <img src="{{ include.media | relative_url }}" alt="">
+    </div>
+  {% endif %}
 </header>

@@ -1,0 +1,15 @@
+{% comment %}
+  Renders the "Veranstaltungen" events teaser section per the Figma "Events" component.
+  Params: limit (number, default 3)
+{% endcomment %}
+{% assign events_limit = include.limit | default: 3 %}
+<section class="section section--sand events-section">
+  {% assign upcoming_events = site.events | sort: "date" | limit: events_limit %}
+  <h2>Veranstaltungen</h2>
+  <div class="events-grid">
+    {% for event in upcoming_events %}
+      {% include event-teaser.html event=event first=forloop.first %}
+    {% endfor %}
+  </div>
+  {% include button.html text="Alle Veranstaltungen →" url="/open-energy/termine/" style="secondary" %}
+</section>
