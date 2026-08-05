@@ -2,19 +2,24 @@
   url: "#"
   title: "Das ist der Titel für die erste Anleitung"
   excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  image: "/assets/images/photos/diy/photo-1.jpg"
 - source: solar-blog.de
   url: "#"
   title: "Das ist der Titel für die zweite Anleitung"
   excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  image: "/assets/images/photos/diy/photo-2.jpg"
 - source: solar-blog.de
   url: "#"
   title: "Das ist der Titel für die dritte Anleitung, geht über mehrere Zeilen"
   excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  image: "/assets/images/photos/diy/photo-3.jpg"
 - source: open-hardware-forum.de
   url: "#"
   title: "Das ist der Titel für die vierte Anleitung, geht über mehrere Zeilen"
   excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  image: "/assets/images/photos/diy/photo-4.jpg"
 - source: energy-hackers.org
   url: "#"
   title: "Das ist der Titel für die fünfte Anleitung, geht über mehrere Zeilen"
   excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  image: "/assets/images/photos/diy/photo-2.jpg"

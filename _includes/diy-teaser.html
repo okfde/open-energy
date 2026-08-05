@@ -3,8 +3,9 @@
 {% endcomment %}
 {% assign item = include.item %}
 <div class="diy-teaser">
-  <div class="diy-teaser__image" aria-hidden="true">
-    <span class="label diy-teaser__source">{{ item.source }} ↗︎</span>
+  <div class="diy-teaser__image">
+    {% if item.image %}<img src="{{ item.image | relative_url }}" alt="" loading="lazy">{% endif %}
+    <span class="label label--sunshine diy-teaser__source">{{ item.source }} ↗︎</span>
   </div>
   <div class="diy-teaser__body">
     <div class="diy-teaser__heading">
