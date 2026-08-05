@@ -23,9 +23,10 @@
   </div>
   <div class="event-teaser__cta">
     {% if include.first %}
-      {% assign now_ts = site.time | date: "%s" %}
+      {% assign today_str = site.time | date: "%Y-%m-%d" %}
+      {% assign today_ts = today_str | date: "%s" %}
       {% assign event_ts = event.date | date: "%s" %}
-      {% assign diff_days = event_ts | minus: now_ts | divided_by: 86400 %}
+      {% assign diff_days = event_ts | minus: today_ts | divided_by: 86400 %}
       {% if diff_days >= 0 %}
         {% capture badge_text %}{% if diff_days == 0 %}Heute{% elsif diff_days == 1 %}Morgen{% else %}In {{ diff_days }} Tagen{% endif %}{% endcapture %}
         <div class="event-teaser__badge">{% include label.html text=badge_text color="sunshine" %}</div>

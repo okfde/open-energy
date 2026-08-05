@@ -289,7 +289,8 @@
   display: flex;
   align-items: center;
   gap: 0.625rem;
-  padding: 2rem;
+  height: 5.375rem;
+  padding-inline: 2rem;
   transition: background-color 0.2s ease;
 }
 
@@ -420,6 +421,7 @@
 
 .about-hero__email {
   color: $color-text-secondary;
+  margin-top: 1rem;
 }
 
 .about-hero__partners {
@@ -429,7 +431,7 @@
   padding-top: 2.5rem;
   border-top: 1px dashed $color-stroke-dimmed;
 
-  img { height: 3.5rem; width: auto; }
+  img { height: 4.5rem; width: auto; }
 }
 
 .about-hero__hosted-by {

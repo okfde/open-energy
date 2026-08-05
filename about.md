@@ -17,8 +17,8 @@ permalink: /about/
       <span class="body-text--small about-hero__email">kontakt@openenergy.de</span>
     </div>
     <div class="about-hero__partners">
-      <img src="{{ '/assets/images/logos/prototypefund-logo.svg' | relative_url }}" alt="Prototype Fund Hardware">
-      <img src="{{ '/assets/images/logos/okf-logo.svg' | relative_url }}" alt="Open Knowledge Foundation Deutschland">
+      <img src="{{ '/assets/images/logos/pfh_black.svg' | relative_url }}" alt="Prototype Fund Hardware">
+      <img src="{{ '/assets/images/logos/okf_black.svg' | relative_url }}" alt="Open Knowledge Foundation Deutschland">
     </div>
     <p class="body-text about-hero__hosted-by">Open Energy ist ein Projekt des <a href="#" class="link-underline">Prototype Fund Hardware</a> und wird von der <a href="#" class="link-underline">Open Knowledge Foundation Deutschland</a> gehostet.</p>
   </div>
