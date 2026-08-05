@@ -1,0 +1,20 @@
+{
+  "name": "Open Energy",
+  "short_name": "Open Energy",
+  "icons": [
+    {
+      "src": "/open-energy/assets/images/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/open-energy/assets/images/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#fae62a",
+  "background_color": "#f7f4ed",
+  "display": "standalone"
+}
+
