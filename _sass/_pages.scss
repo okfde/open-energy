@@ -877,22 +877,29 @@
 }
 
 .diy-teaser {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.diy-grid .diy-teaser {
+// Divider between columns, centered in the grid gap via an absolutely
+// positioned pseudo-element so it doesn't eat into the column's own width
+// (which would otherwise make the left column narrower than the right).
+.diy-grid .diy-teaser::after {
   @include tablet-up {
-    padding-right: 3rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1.5rem;
     border-right: 1px dashed $color-stroke-dimmed;
   }
 }
 
-.diy-grid .diy-teaser:nth-child(2n) {
+.diy-grid .diy-teaser:nth-child(2n)::after {
   @include tablet-up {
-    padding-right: 0;
-    border-right: none;
+    display: none;
   }
 }
 
@@ -923,12 +930,14 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  flex: 1;
 }
 
 .diy-teaser__heading {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  flex: 1;
 }
 
 // Legal pages

@@ -5,11 +5,13 @@
 </head>
 <body class="pattern-main">
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
-  {% include nav.html %}
-  <main id="main">
-    {{ content }}
-  </main>
-  {% include footer.html %}
+  <div class="container">
+    {% include nav.html %}
+    <main id="main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
   <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </body>
 </html>
