@@ -10,12 +10,14 @@ permalink: /blog/
 {% endunless %}
 {% assign list_posts = site.blog | where_exp: "post", "post.url != featured_post.url" | sort: "date" | reverse %}
 
-{% include subpage-header.html title="Blog" intro="Was können wir von Menschen lernen, die bereits ihre eigene Solar- oder Windstromanlage aufgebaut haben? Hier findet ihr Antworten und Neuigkeiten zu unseren Veranstaltungen." categories="Solarenergie,Wasserkraft,Windenergie,Bioenergie,Geothermie,Photovoltaik" rss=true media="/assets/images/illustrations/illu-blog-header.png" %}
+{% include subpage-header.html title="Blog" intro="Was können wir von Menschen lernen, die bereits ihre eigene Solar- oder Windstromanlage aufgebaut haben? Hier findet ihr Antworten und Neuigkeiten zu unseren Veranstaltungen." categories="Solarenergie,Wasserkraft,Windenergie,Bioenergie,Geothermie,Photovoltaik" rss=true media="/assets/images/illustrations/illu-balkonkraftwerk.png" %}
 
 {% if featured_post %}
 <section class="section section--sand">
   <a href="{{ featured_post.url | relative_url }}" class="blog-featured">
-    <div class="blog-featured__image" aria-hidden="true"></div>
+    <div class="blog-featured__image" aria-hidden="true">
+      {% if featured_post.image %}<img src="{{ featured_post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+    </div>
     <div class="blog-featured__body">
       <div class="blog-featured__meta">
         {% include label.html text=featured_post.category color="sunshine" %}

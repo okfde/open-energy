@@ -12,5 +12,7 @@
     <h4>{{ post.title }}</h4>
     <p class="body-text--small">{{ post.excerpt }}</p>
   </div>
-  <div class="blog-row__image" aria-hidden="true"></div>
+  <div class="blog-row__image" aria-hidden="true">
+    {% if post.image %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+  </div>
 </a>

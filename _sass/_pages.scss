@@ -596,10 +596,17 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   background: linear-gradient(135deg, $color-midnight 0%, $color-text-secondary 100%);
+  overflow: hidden;
 
   @include tablet-up {
     flex: 1;
     width: auto;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -678,6 +685,13 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   background: linear-gradient(135deg, $color-midnight 0%, $color-text-secondary 100%);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   @include tablet-up {
     width: 15rem;
@@ -692,8 +706,11 @@
 }
 
 // Blog article
+// Article container is wider than its text measure so figures can run
+// full-bleed within it; text elements (and the pull-quote) are individually
+// capped back down to a comfortable reading width and centered.
 .article {
-  max-width: 50rem;
+  max-width: 62.5rem;
   margin-inline: auto;
   padding: $section-pad-tb-mobile $section-pad-lr-mobile;
   display: flex;
@@ -705,6 +722,9 @@
 }
 
 .article-header {
+  max-width: 45rem;
+  width: 100%;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -721,20 +741,113 @@
   color: $color-text-secondary;
 }
 
-.article-image {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  background: linear-gradient(135deg, $color-midnight 0%, $color-text-secondary 100%);
-  margin-top: -1rem;
-}
-
 .article-body {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 2rem;
 
-  h2 { margin-top: 1rem; }
+  > *:not(.article-figure) {
+    max-width: 45rem;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  h2, h3, h4 { margin-top: 1rem; }
   a { text-decoration: underline; }
+}
+
+// Figure (image + caption), wider than the text column
+.article-figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed $color-stroke-dimmed;
+
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  figcaption {
+    max-width: 45rem;
+    color: $color-text-secondary;
+    font-size: $size-body-small;
+    line-height: 1.5;
+  }
+}
+
+// Subheadline: a hand-drawn yellow scribble sits behind the heading text,
+// the same decorative mark used on the event-teaser hover state.
+.article-body h3 {
+  position: relative;
+  z-index: 0;
+  width: fit-content;
+  max-width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -0.3rem;
+    left: -1.25rem;
+    width: 9.3rem;
+    height: 3.3rem;
+    z-index: -1;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 149.67 53' fill='none'%3E%3Cpath d='M0.669529 20.6721C18.2635 4.81332 94.0528 -3.11605 118.865 3.14398C143.677 9.40401 165.782 25.2103 129.692 39.0346C71.9476 61.1534 29.9928 50.72 20.5191 39.0346C11.0455 27.3492 16.0079 20.2545 49.3913 13.1598' stroke='%23FAE62A' stroke-width='2'/%3E%3C/svg%3E") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.article-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+
+    &::before {
+      content: "→";
+      flex-shrink: 0;
+    }
+  }
+}
+
+.article-body blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-left: 4px solid $color-text;
+  padding-left: 1.5rem;
+}
+
+// Pull quote
+.pull-quote {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: $color-sunshine;
+  padding: 1.25rem 1.5rem 1.5rem;
+
+  img {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2.2rem;
+    margin-top: 0.2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: $color-bg-level-1;
+    text-underline-offset: 3px;
+  }
 }
 
 // Related posts (dark, blog article)
@@ -763,6 +876,13 @@
   aspect-ratio: 3 / 2;
   width: 100%;
   background: rgba($color-text-invert, 0.15);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .related-post__body {
@@ -786,11 +906,38 @@
 }
 
 // Event detail
+
+// Reveals a strip of the dark pattern-midnight background above the
+// article's sand section, matching the Figma "bg-contrast" element. The
+// sand section itself runs full-bleed (no inline padding) at desktop-up;
+// the card and body each carry their own left margin instead, with the
+// body indented further than the card — matching the Figma layout where
+// the card sits closer to the shared left edge and the body text is
+// offset an extra step inward. The card is pulled up into the dark strip
+// via a negative margin so it visually overlaps it.
+.event-article-wrap {
+  padding-top: 2.5rem;
+
+  @include tablet-up { padding-top: 6rem; }
+  @include desktop-up { padding-top: 18rem; }
+}
+
 .event-article {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0;
+  align-items: flex-start;
+  padding-inline: $section-pad-lr-mobile;
+  padding-bottom: 2.5rem;
+
+  @include tablet-up {
+    padding-inline: $section-pad-lr-tablet;
+    padding-bottom: 3rem;
+  }
+
+  @include desktop-up {
+    padding-inline: 0;
+    padding-bottom: 5rem;
+  }
 }
 
 .event-article__card {
@@ -800,8 +947,20 @@
   align-items: flex-start;
   gap: 1.5rem;
   padding: 2rem;
-  max-width: 50rem;
   width: 100%;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.12);
+
+  @include tablet-up {
+    padding: 3rem;
+    margin-top: -4rem;
+  }
+
+  @include desktop-up {
+    width: calc(100% - 10rem);
+    margin-top: -12rem;
+    margin-left: 10rem;
+    padding: 5rem;
+  }
 }
 
 .event-article__card h1,
@@ -850,7 +1009,11 @@
   gap: 1.25rem;
 
   @include tablet-up { padding: $section-pad-tb-tablet 0; }
-  @include desktop-up { padding: $section-pad-tb-desktop 0; }
+  @include desktop-up {
+    padding: $section-pad-tb-desktop 0;
+    width: calc(100% - 15rem);
+    margin-left: 15rem;
+  }
 
   h2 { margin-top: 1rem; }
 }

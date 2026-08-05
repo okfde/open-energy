@@ -1,22 +1,22 @@
 ---
 layout: default
 ---
-<article class="article">
-  <header class="article-header">
-    <div class="article-header__meta">
-      {% include label.html text=page.category color="sunshine" %}
-      <span class="ui-upper-small">{{ page.date | date: "%d / %B / %Y" }}</span>
+<section class="section--sand article-wrap">
+  <article class="article">
+    <header class="article-header">
+      <div class="article-header__meta">
+        {% include label.html text=page.category color="sunshine" %}
+        <span class="ui-upper-small">{{ page.date | date: "%d / %B / %Y" }}</span>
+      </div>
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}<p class="intro-text article-header__excerpt">{{ page.excerpt }}</p>{% endif %}
+    </header>
+
+    <div class="article-body body-text">
+      {{ content }}
     </div>
-    <h1>{{ page.title }}</h1>
-    {% if page.excerpt %}<p class="intro-text article-header__excerpt">{{ page.excerpt }}</p>{% endif %}
-  </header>
-
-  <div class="article-image" aria-hidden="true"></div>
-
-  <div class="article-body body-text">
-    {{ content }}
-  </div>
-</article>
+  </article>
+</section>
 
 {% assign related = site.blog | where_exp: "post", "post.url != page.url" | sort: "date" | reverse | limit: 2 %}
 {% if related.size > 0 %}
@@ -25,7 +25,9 @@ layout: default
     <div class="related-posts__list">
       {% for post in related %}
         <a href="{{ post.url | relative_url }}" class="related-post">
-          <div class="related-post__image" aria-hidden="true"></div>
+          <div class="related-post__image" aria-hidden="true">
+            {% if post.image %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+          </div>
           <div class="related-post__body">
             <div class="related-post__meta">
               {% include label.html text=post.category color="sunshine" %}

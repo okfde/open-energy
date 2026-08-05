@@ -3,7 +3,7 @@ title: "Offene FLOW-Zellen: wie Batterien reparierbar werden"
 date: 2026-07-12
 category: Solarenergie
 excerpt: "Mit dem Inkrafttreten der neuen EU-Ökodesignverordnung für Smartphones und Tablets am 20. Juli steigen die Anforderungen an unsere Alltagsgegenstände. Ihr Design soll langlebiger und reparierbarer gestaltet sowie leichter zu recyceln sein."
-featured: true
+featured: false
 ---
 
 Mit dem Inkrafttreten der neuen EU-Ökodesignverordnung für Smartphones und Tablets am 20. Juli steigen die Anforderungen an unsere Alltagsgegenstände. Ihr Design soll langlebiger und reparierbarer gestaltet sowie leichter zu recyceln sein.
