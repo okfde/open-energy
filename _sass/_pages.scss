@@ -1166,36 +1166,16 @@
   max-width: 50rem;
 }
 
-// background-attachment: fixed is unreliable on iOS Safari (and the WebKit
-// engine every iOS browser is forced to use) — it commonly fails to stay
-// fixed, or drops the image entirely. A `position: fixed` pseudo-element
-// clipped by the element's own `overflow: hidden` reproduces the same
-// "fixed to the viewport" look and works consistently on iOS.
-.pattern-main,
-.pattern-midnight {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background-size: 24px 24px;
-    background-repeat: repeat;
-    pointer-events: none;
-  }
-}
-
-.pattern-main::before {
+.pattern-main {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cline x1='19' y1='11' x2='24' y2='11' stroke='%23bcbcbc' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: 24px 24px;
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 .pattern-midnight {
   background-color: $color-midnight;
-
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cline x1='19' y1='11' x2='24' y2='11' stroke='%23fae62a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
-  }
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cline x1='19' y1='11' x2='24' y2='11' stroke='%23fae62a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
