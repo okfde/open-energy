@@ -34,6 +34,7 @@ defaults:
       path: ""
     values:
       layout: default
+      image: /assets/images/logos/opengraph-image-2.jpg
 
 nav_items:
   - title: Start
