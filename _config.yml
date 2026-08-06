@@ -4,8 +4,8 @@ description: >-
   Anleitungen, Events und Hintergrundwissen zum Selbermachen.
 lang: de
 
-url: "https://okfde.github.io"
-baseurl: "/open-energy"
+url: "https://energie-selbermachen.de"
+baseurl: ""
 
 markdown: kramdown
 future: true
