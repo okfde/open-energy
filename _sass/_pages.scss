@@ -277,6 +277,8 @@
 }
 
 .event-teaser__meta-row {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -288,7 +290,6 @@
     padding: 0.25rem;
     background: $color-text-secondary;
     border-radius: 0.125rem;
-    //filter: brightness(0.5) invert(1);
   }
 }
 
@@ -657,18 +658,41 @@
 }
 
 .blog-featured__link {
+  position: relative;
+  z-index: 0;
   display: inline-flex;
+  align-self: flex-start;
   align-items: center;
   gap: 0.25rem;
   font-size: $size-body-small;
   text-decoration: underline;
   text-decoration-color: $color-text-secondary;
   text-underline-offset: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -0.75rem;
+    left: -0.75rem;
+    width: calc(100% + 1.5rem);
+    height: calc(100% + 1.5rem);
+    z-index: -1;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 193.593 74.1013' fill='none'%3E%3Cpath d='M49.326 4.74485C88.2771 -1.74335 112.835 1.50349 138.696 4.74759C164.557 7.99169 216 27.4999 180.5 53.9999C145.297 80.2781 75.6649 72.4657 45.3341 70.4382C15.0032 68.4106 -10.8578 60.3004 6.70216 32.7255C24.2621 5.15068 83.7499 10.2878 108.244 12.7624' stroke='%23FAE62A' stroke-width='2'/%3E%3C/svg%3E") no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
 }
 
 .blog-featured:hover .blog-featured__link,
 .blog-featured:focus-visible .blog-featured__link {
   text-decoration-color: currentColor;
+}
+
+.blog-featured:hover .blog-featured__link::before,
+.blog-featured:focus-visible .blog-featured__link::before {
+  opacity: 1;
 }
 
 // Full post list (dark section, below the featured post)
@@ -679,6 +703,7 @@
   padding: 2rem 0;
   border-bottom: 1px dashed $color-stroke-dimmed-invert;
   color: inherit;
+  transition: background-color 0.2s ease;
 
   @include tablet-up {
     flex-direction: row;
@@ -686,6 +711,11 @@
     justify-content: space-between;
     gap: 2rem;
   }
+}
+
+.blog-row:hover,
+.blog-row:focus-visible {
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .blog-row__body {
