@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/open-energy/sitemap.xml
+Sitemap: https://okfde.github.io/open-energy/sitemap.xml

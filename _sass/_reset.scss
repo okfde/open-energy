@@ -18,8 +18,18 @@ body {
   background-color: $color-sunshine;
   // Pattern/pattern-yellow: 24x24 tile, single 1x7px black tick at (16,11), extracted from Figma source node 126:580
 
-  padding-top: $page-frame-padding;
-  padding-right: $page-frame-padding;
+  padding-top: $page-frame-padding-mobile;
+  padding-right: $page-frame-padding-mobile;
+
+  @include tablet-up {
+    padding-top: $page-frame-padding-tablet;
+    padding-right: $page-frame-padding-tablet;
+  }
+
+  @include desktop-up {
+    padding-top: $page-frame-padding-desktop;
+    padding-right: $page-frame-padding-desktop;
+  }
 }
 
 img, picture, svg {

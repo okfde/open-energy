@@ -1,11 +1,5 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="24" height="24" fill="#333333"/>
-<g id="Components">
-<rect width="7834" height="13964" transform="translate(-1499 -2900)" fill="#424242"/>
-<g id="Icon / icon-rss">
-<path id="Vector" d="M12 19C12 14.8 9.2 12 5 12" stroke="#1B2128" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M19 19C19 10.6 13.4 5 5 5" stroke="#1B2128" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_3" d="M5 19L6 18" stroke="#1B2128" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</g>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.00065 12.6667C8.00065 9.86667 6.13398 8 3.33398 8" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12.6673 12.6668C12.6673 7.06683 8.93398 3.3335 3.33398 3.3335" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3.33398 12.6667L4.00065 12" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

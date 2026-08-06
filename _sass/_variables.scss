@@ -46,7 +46,9 @@ $section-pad-lr-desktop: 5rem;    // 80px
 
 $radius-button: 0.375rem; // 6px
 
-$page-frame-padding: 2rem; // 32px — page-frame/page-padding
+$page-frame-padding-mobile: 0.5rem;  // 8px  — page-frame/page-padding (mobile)
+$page-frame-padding-tablet: 1rem;    // 16px — page-frame/page-padding (tablet)
+$page-frame-padding-desktop: 2rem;   // 32px — page-frame/page-padding (desktop)
 
 // Breakpoints
 $bp-tablet: 48em;   // 768px
