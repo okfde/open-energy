@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Start
+title: Wir machen unsere Energie selbst
 ---
 
 <section class="hero">
