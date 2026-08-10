@@ -9,7 +9,7 @@ image: "/assets/images/photos/blog/arduino-1.jpg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/arduino-1.jpg' | relative_url }}" alt="">
-  <figcaption>Bild 1: Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat.© 2026</figcaption>
+  <figcaption>Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat.© 2026</figcaption>
 </figure>
 
 ### Schritt 1: Erkenntnisse als Wissenschaftlerin
@@ -36,7 +36,7 @@ Dann habe ich Malte Zieher, den Vorstand vom Bündnis Bürgerenergie, zu einer I
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/blog_buergerenergie-1.jpg' | relative_url }}" alt="">
-  <figcaption>Bild 2: Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. © 2026</figcaption>
+  <figcaption>Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. © 2026</figcaption>
 </figure>
 
 ***Stephanie***: Und daraus entstand dann die Bürgerenergiegenossenschaft Oder Spree - was ist denn eine Bürgerenergiegenossenschaft überhaupt und wann funktioniert sie?*
