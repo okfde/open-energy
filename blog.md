@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-{% assign featured_post = site.blog | where: "featured", true | first %}
+{% assign featured_post = site.blog | where: "featured", true | sort: "date" | reverse | first %}
 {% unless featured_post %}
   {% assign featured_post = site.blog | sort: "date" | reverse | first %}
 {% endunless %}

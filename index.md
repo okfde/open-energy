@@ -27,8 +27,11 @@ title: Wir machen unsere Energie selbst
 </section>
 
 <section class="section section--dark blog-section">
-  {% assign featured_post = site.blog | where: "featured", true | first %}
-  {% assign list_posts = site.blog | where_exp: "post", "post.featured != true" | sort: "date" | reverse | limit: 3 %}
+  {% assign featured_post = site.blog | where: "featured", true | sort: "date" | reverse | first %}
+  {% unless featured_post %}
+    {% assign featured_post = site.blog | sort: "date" | reverse | first %}
+  {% endunless %}
+  {% assign list_posts = site.blog | where_exp: "post", "post.url != featured_post.url" | sort: "date" | reverse | slice: 0, 3 %}
   <h2>Neu im Blog</h2>
   <div class="blog-grid">
     {% if featured_post %}
