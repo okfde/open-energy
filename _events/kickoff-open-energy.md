@@ -1,5 +1,5 @@
 ---
-title: "Auftaktveranstlatung Open Energy"
+title: "Auftakt Open Energy"
 date: 2026-09-19
 time: "14:00"
 location: "Nano Science Center Potsdam"
