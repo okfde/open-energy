@@ -12,7 +12,7 @@ image: "/assets/images/photos/blog/arduino-1.jpg"
   <figcaption>Bild 1: Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat.© 2026</figcaption>
 </figure>
 
-### Schritt 1: Erkenntnisse als Wissenschaflterin
+### Schritt 1: Erkenntnisse als Wissenschaftlerin
 
 *Stephanie: Hallo Janina. Wir sitzen bei dir in Steinhöfel im Garten  - umgeben von einigen selbstgebauten Solaranlagen. Was hat dich motiviert dich für das Klima zu engagieren?*
 
