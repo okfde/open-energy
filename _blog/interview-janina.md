@@ -2,7 +2,7 @@
 title: "Energie selbst in die Hand nehmen"
 date: 2026-09-06
 category: Solarenergie
-excerpt: "Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum erneuerbare Energien. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Heute möchte sie zeigen, dass Menschen ihre Energieversorgung selbst in die Hand nehmen und gemeinsam Veränderung bewirken können."
+excerpt: "Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum erneuerbare Energien. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Was Bürgerenergie überhaupt bedeutet und wie man die eigene Energieversorgung selbst in die Hand nehmen kann, verrät Janina im Interview."
 featured: true
 image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
