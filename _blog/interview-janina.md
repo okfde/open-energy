@@ -48,11 +48,11 @@ Ab einer bestimmten Größenordnung – ich würde sagen zwischen zehn und zwanz
 
 ### Schritt 3: Eine Bewegung, bei der alle mitmachen können
 
-*Stephanie: Viele nehmen die Umstellung auf erneuerbare Energien als etwas von oben herab wahr. Du beschreibst gerade wie du im kleinen lokal aktiv geworden bist und das immer größere Kreise gezogen hat.*
+*Stephanie: Viele nehmen die Umstellung auf erneuerbare Energien als etwas von oben herab wahr. Du beschreibst gerade wie du lokal aktiv geworden bist und das immer größere Kreise gezogen hat.*
 
 Janina: Genau das ist unser Punkt. Wir möchten die Geschichte der Bürgerenergie neu schreiben, nämlich als Emanzipationsbewegung, also als eine krasse Erfolgsgeschichte: eine Geschichte davon, wie die Zivilgesellschaft aufgestanden ist, selber etwas gemacht und etwas verändert hat.
 
-*Stephanie: Wenn jetzt jemand denkt: "Ich weil Teil dieser Bewegung sein." Was kann diese Person als Erstes ganz konkret tun?*
+*Stephanie: Wenn jetzt jemand denkt: Ich weil Teil dieser Bewegung sein. Was kann diese Person als Erstes ganz konkret tun?*
 
 Janina: Ich würde mich immer vernetzen. Erst einmal schauen, wen es da gibt, und versuchen, zu Veranstaltungen wie dem Bürgerenergiekonvent zu gehen oder den Strom auf die Bürgerwerke umstellen.
 
