@@ -60,4 +60,7 @@ Man muss nicht technisch affin sein. Viele Bürgerenergiegenossenschaften sind z
 
 Du kannst auch einfach in den Baumarkt gehen, dir eine Balkonsolaranlage holen und dann machst du deine eigene Energie selbst.
 
-#### „Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an.“
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an."</p>
+</div>
