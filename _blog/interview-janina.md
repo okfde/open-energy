@@ -2,7 +2,7 @@
 title: "Energie selbst in die Hand nehmen"
 date: 2026-09-06
 category: Solarenergie
-excerpt: "Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum erneuerbare Energien. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Heute möchte sie zeigen, dass Menschen ihre Energieversorgung selbst in die Hand nehmen und gemeinsam Veränderung bewirken können."
+excerpt: "Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum erneuerbare Energien. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Was Bürgerenergie überhaupt bedeutet und wie man die eigene Energieversorgung selbst in die Hand nehmen kann, verrät Janina im Interview."
 featured: true
 image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
@@ -12,7 +12,7 @@ image: "/assets/images/photos/blog/arduino-1.jpg"
   <figcaption>Bild 1: Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat.© 2026</figcaption>
 </figure>
 
-### Schritt 1: Erkenntnisse als Wissenschaflterin
+### Schritt 1: Erkenntnisse als Wissenschaftlerin
 
 *Stephanie: Hallo Janina. Wir sitzen bei dir in Steinhöfel im Garten  - umgeben von einigen selbstgebauten Solaranlagen. Was hat dich motiviert dich für das Klima zu engagieren?*
 
@@ -48,11 +48,11 @@ Ab einer bestimmten Größenordnung – ich würde sagen zwischen zehn und zwanz
 
 ### Schritt 3: Eine Bewegung, bei der alle mitmachen können
 
-*Stephanie: Viele nehmen die Umstellung auf erneuerbare Energien als etwas von oben herab wahr. Du beschreibst gerade wie du im kleinen lokal aktiv geworden bist und das immer größere Kreise gezogen hat.*
+*Stephanie: Viele nehmen die Umstellung auf erneuerbare Energien als etwas von oben herab wahr. Du beschreibst gerade wie du lokal aktiv geworden bist und das immer größere Kreise gezogen hat.*
 
 Janina: Genau das ist unser Punkt. Wir möchten die Geschichte der Bürgerenergie neu schreiben, nämlich als Emanzipationsbewegung, also als eine krasse Erfolgsgeschichte: eine Geschichte davon, wie die Zivilgesellschaft aufgestanden ist, selber etwas gemacht und etwas verändert hat.
 
-*Stephanie: Wenn jetzt jemand denkt: "Ich weil Teil dieser Bewegung sein." Was kann diese Person als Erstes ganz konkret tun?*
+*Stephanie: Wenn jetzt jemand denkt: Ich weil Teil dieser Bewegung sein. Was kann diese Person als Erstes ganz konkret tun?*
 
 Janina: Ich würde mich immer vernetzen. Erst einmal schauen, wen es da gibt, und versuchen, zu Veranstaltungen wie dem Bürgerenergiekonvent zu gehen oder den Strom auf die Bürgerwerke umstellen.
 
@@ -62,5 +62,5 @@ Du kannst auch einfach in den Baumarkt gehen, dir eine Balkonsolaranlage holen u
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an."</p>
+  <p>**„Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an."**</p>
 </div>
