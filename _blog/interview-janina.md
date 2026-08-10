@@ -35,7 +35,7 @@ Dann habe ich Malte Zieher, den Vorstand vom Bündnis Bürgerenergie, zu einer I
 
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/blog-buergerenergie-1.jpg' | relative_url }}" alt="">
+  <img src="{{ '/assets/images/photos/blog/blog_buergerenergie-1.jpg' | relative_url }}" alt="">
   <figcaption>Bild 2: Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. © 2026</figcaption>
 </figure>
 
