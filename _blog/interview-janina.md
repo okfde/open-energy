@@ -1,77 +1,64 @@
 ---
-title: "Energie selbst in die Hand nehmen – wie Dr. Janina Messerschmidt in Steinhöfel die Umstellung auf erneuerbare Energien vor Ort gestaltet"
+title: "Energie mit einer Bürgerenergiegenossenschaft selbst in die Hand nehmen"
 date: 2026-09-06
 category: Solarenergie
-excerpt: "Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht nur weiter forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. Nach ihrem Umzug nach Brandenburg fiel ihr auf, dass es viele große Häuser, aber wenig erneuerbare Energien gibt. Daraus entstand die Bürgerenergiegenossenschaft Oder Spree. Sie möchte zeigen, dass Menschen selbst etwas verändern und ihre Energieversorgung eigenständig gestalten können."
+excerpt: "Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht weiter forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. Nach ihrem Umzug nach Brandenburg fiel ihr auf, dass es viele große Häuser, aber wenig erneuerbare Energien gibt. Daraus entstand die Bürgerenergiegenossenschaft Oder Spree. Sie möchte zeigen, dass Menschen selbst etwas verändern und ihre Energieversorgung selbst in die Hand nehmen können."
 featured: true
 image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/arduino-1.jpg' | relative_url }}" alt="">
-  <figcaption>Bild 1: Bildunterschrift lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo © 2026</figcaption>
+  <figcaption>Bild 1: Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat.© 2026</figcaption>
 </figure>
 
-Stephanie: Hallo Janina. Wir sitzen hier bei dir in Steinhöfel im Garten  - umgeben von einigen selbstgebauten Solaranlagen. Was hat dich denn ursprünglich dazu motiviert dich für das Klima zu engagieren?
+### Schritt 1: Vom Wissen zum Handeln
+
+*Stephanie: Hallo Janina. Wir sitzen hier bei dir in Steinhöfel im Garten  - umgeben von einigen selbstgebauten Solaranlagen. Was hat dich motiviert dich für das Klima zu engagieren?*
 
 Janina: Ich würde sagen, das fängt im Elternhaus an. Ich komme aus einer Familie, die immer sehr politisch aktiv war und die versucht hat, sich zu aktuellen Themen in der Gesellschaft zu engagieren. Dann habe ich Physik studiert, weil ich es spannend fand und so die Veränderung des Klimas wissenschaftlich erforschen konnte. 
 
-Max: Du warst dann in der Wissenschaft und hattest irgendwann einen Moment in dem du gesagt hast: Jetzt will ich eher etwas praktisch machen, eher lokal. 
+*Max: Du warst dann in der Wissenschaft und hattest irgendwann einen Moment in dem du gesagt hast: Jetzt will ich eher etwas praktisch machen, eher lokal.*
 
 Janina: Ich hatte das Gefühl: Ich kann weiter forschen, aber das ist nicht das, was gerade ansteht. Die eigentliche Herausforderung ist, wie wir mit dem Wissen umgehen, das wir längst haben. 
 
 
-### Eine wichtige Unterüberschrift
+### „Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.“
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.
+### Schritt 2: Energie selbst in die Hand nehmen
+
+*Stephanie: Als eine konkrete Möglichkeit, der Veränderung des Klimas entgegenzuwirken, hast du schließlich eine Bürgerenergiegenossenschaft gegründet. Wie kam es dazu?*
+
+Janina: Dieses Gefühl, dass erneuerbare Energien eine Lösung sind, hat mich auch begleitet, nachdem ich aus der Wissenschaft raus bin. Dann bin ich aufs Brandenburger Land gezogen und mir ist aufgefallen: Hier gibt es krass viele große Häuser und krass wenig Erneuerbare. Das war erst einmal eine Beobachtung.
+
+Dann habe ich Malte Zieher, den Vorstand vom Bündnis Bürgerenergie, zu einer Informationsveranstaltung eingeladen. Die erste Überraschung war dann, wie groß die Resonanz war. Beim ersten Treffen waren ungefähr 40 Leute da. Und gleich fünf Leute haben gesagt: Hey, wir haben Bock, da weiterzumachen.
+
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/arduino-2.jpg' | relative_url }}" alt="">
   <figcaption>Bild 2: Bildunterschrift lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo © 2026</figcaption>
 </figure>
 
-### Schritt 2: Weiter geht's
+*Stephanie: Und daraus entstand dann die Bürgerenergiegenossenschaft Oder Spree - was ist denn eine Bürgerenergiegenossenschaft überhaupt und wann funktioniert sie?*
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.
+Janina: Menschen legen Geld zusammen, um ihre eigene Energieversorgung nach ihren Vorstellungen aufzubauen.
+Diejenigen, die am Ende funktionieren haben meist von Beginn an ein ganz konkretes Projekt. Die haben gesagt: Hier bei uns gibt es eine Schule, die Bürgermeisterin findet das gut, und da wollen wir eine Solaranlage bauen. An dem konkreten Projekt lernst du einmal, wie es funktioniert. Daran lernst du auch, was dir wichtig ist und wo dein Fokus liegt.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Ab einer bestimmten Größenordnung – ich würde sagen zwischen zehn und zwanzig Projekten lässt sich das nicht mehr rein ehrenamtlich managen. Und dann stellt sich die Frage, wie man das macht. Baut man eine größere Anlage? Wie entwickelt man sich weiter und bleibt dabei trotzdem den eigenen Ideen treu?
 
-#### Unordered List:
 
-- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-- Aliquyam erat, sed diam voluptua. At vero eos et accusam
-- Et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+#### Schritt 3: Eine Bewegung, bei der alle mitmachen können
 
-#### Unterüberschrift und Blockquotes
+*Stephanie: Viele nehmen die Umstellung auf erneuerbare Energien als etwas von oben herab wahr. Du beschreibst gerade wie du im kleinen lokal aktiv geworden bist und das immer größere Kreise gezogen hat.*
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Janina: Genau das ist unser Punkt. Wir möchten die Geschichte der Bürgerenergie neu schreiben, nämlich als Emanzipationsbewegung, also als eine krasse Erfolgsgeschichte: eine Geschichte davon, wie die Zivilgesellschaft aufgestanden ist, selber etwas gemacht und etwas verändert hat.
 
-> Blockquote – Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.
->
-> Duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
->
-> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+*Stephanie: Wenn jetzt jemand denkt: "Ich weil Teil dieser Bewegung sein." Was kann diese Person als Erstes ganz konkret tun?*
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Janina: Ich würde mich immer vernetzen. Erst einmal schauen, wen es da gibt, und versuchen, zu Veranstaltungen wie dem Bürgerenergiekonvent zu gehen oder den Strom auf die Bürgerwerke umstellen.
 
-#### Pull Quote:
+Man muss nicht technisch affin sein. Viele Bürgerenergiegenossenschaften sind zwar voll mit Leuten, die erneuerbare Hintergründe haben, aber wir brauchen ganz viele andere Leute.
 
-<div class="pull-quote">
-  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-</div>
+Du kannst auch einfach in den Baumarkt gehen, dir eine Balkonsolaranlage holen und dann machst du deine eigene Energie selbst.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-<figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/arduino-3.jpg' | relative_url }}" alt="">
-  <figcaption>Bild 3: Bildunterschrift lorem ipsum dolor © 2026</figcaption>
-</figure>
-
-### Schritt 3: Abschluss
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+#### „Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an.“
