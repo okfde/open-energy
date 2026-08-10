@@ -62,5 +62,5 @@ Du kannst auch einfach in den Baumarkt gehen, dir eine Balkonsolaranlage holen u
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an."</p>
+  <p>**„Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an."**</p>
 </div>
