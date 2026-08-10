@@ -1,25 +1,15 @@
-- source: open-hardware-forum.de
-  url: "#"
-  title: "Das ist der Titel für die erste Anleitung"
-  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-  image: "/assets/images/photos/diy/photo-1.jpg"
-- source: solar-blog.de
-  url: "#"
-  title: "Das ist der Titel für die zweite Anleitung"
-  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+- source: libre.solar
+  url: "https://libre.solar/"
+  title: "Ein Laderegler für Balkonkraftwerke"
+  excerpt: "Dieser Laderegler eignet sich für verschiedene Batterien im 12V und 24V-Bereich. Mit seiner Maximum Power Point Tracking Funktion holt er alles aus euren Solarpanels raus."
+  image: "https://hardware.prototypefund.de/wp-content/uploads/2021/12/libresolar-1024x683.jpg"
+- source: git.erni-kollektiv.org
+  url: "https://git.erni-kollektiv.org/erni/windkit"
+  title: "Mit dem Windkit bekommt ihr eine leicht reparierbare Kleinwindanlage"
+  excerpt: "Das Windrad ich leicht nachbaubar und hat eine Leistung von ca. 400W."
   image: "/assets/images/photos/diy/photo-2.jpg"
-- source: solar-blog.de
-  url: "#"
-  title: "Das ist der Titel für die dritte Anleitung, geht über mehrere Zeilen"
-  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-  image: "/assets/images/photos/diy/photo-3.jpg"
-- source: open-hardware-forum.de
-  url: "#"
-  title: "Das ist der Titel für die vierte Anleitung, geht über mehrere Zeilen"
-  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-  image: "/assets/images/photos/diy/photo-4.jpg"
-- source: energy-hackers.org
-  url: "#"
-  title: "Das ist der Titel für die fünfte Anleitung, geht über mehrere Zeilen"
-  excerpt: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-  image: "/assets/images/photos/diy/photo-2.jpg"
+- source: owntech.org
+  url: "https://github.com/owntech-foundation/micro-inverter"
+  title: "Mit dem Micro Inverter Strom einspeisen"
+  excerpt: "Der Inverter orientiert sich am Arduino-Design und soll mittels Software sehr leicht anpassbar sein."
+  image: "https://github.com/owntech-foundation/micro-inverter/blob/main/KiCAD_Files/renderings/3D.png?raw=true"
