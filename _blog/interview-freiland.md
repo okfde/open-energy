@@ -1,8 +1,8 @@
 ---
-title: "Der Arduino unter den Wechselrichtern"
+title: "Mit Solarstrom tanzen"
 date: 2026-09-05
 category: Solarenergie
-excerpt: "Ein offener Wechselrichter, den du selbst zusammenbauen, verstehen und reparieren kannst – inspiriert vom Erfolg offener Mikrocontroller-Plattformen."
+excerpt: "Im freiLand Potsdam kommt der Strom vom Dach und aus der Solargiraffe – und manchmal gibt es dreimal mehr Solarstrom, als gerade gebraucht wird. Christoph erzählt, wie daraus eine kleine Energieinsel entstanden ist, warum Open Source dabei eine wichtige Rolle spielt und was andere Orte davon lernen können."
 featured: true
 image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
