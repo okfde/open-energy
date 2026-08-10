@@ -8,8 +8,8 @@ image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/arduino-1.jpg' | relative_url }}" alt="">
-  <figcaption>Bild 1: Bildunterschrift lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo © 2026</figcaption>
+  <img src="{{ '/assets/images/photos/blog/freiland-1.jpg' | relative_url }}" alt="">
+  <figcaption>Die Solargiraffe ist mehr als nur ein Hingucker >
 </figure>
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.
