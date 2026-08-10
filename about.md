@@ -59,6 +59,10 @@ permalink: /about/
             <p class="ui-upper-small person-card__role">Kommunikationsmanagerin Open Energy</p>
           </div>
           <p class="body-text">Stephanie Bergwinkl ist verantwortlich für die Kommunikation des Projekts Open Energy. Sie setzt sich mit verschiedenen Medien strategisch sowie künstlerisch für das Klima sowie für Self-Empowerment ein. Stephanie studierte Zeitbasierte Medien sowie Kommunikations- und Wirtschaftswissenschaften.</p>
+            <a href="mailto:stephanie.bergwinkl@okfn.de" class="icon-link">
+            <img src="{{ '/assets/images/icons/icon-mail.svg' | relative_url }}" alt="">
+            stephanie.bergwinkl@okfn.de
+          </a>
         </div>
       </article>
     </div>
