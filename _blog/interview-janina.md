@@ -35,8 +35,8 @@ Dann habe ich Malte Zieher, den Vorstand vom Bündnis Bürgerenergie, zu einer I
 
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/arduino-2.jpg' | relative_url }}" alt="">
-  <figcaption>Bild 2: Bildunterschrift lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo © 2026</figcaption>
+  <img src="{{ '/assets/images/photos/blog/blog-bürgerenergie-1.jpg' | relative_url }}" alt="">
+  <figcaption>Bild 2: Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. © 2026</figcaption>
 </figure>
 
 *Stephanie: Und daraus entstand dann die Bürgerenergiegenossenschaft Oder Spree - was ist denn eine Bürgerenergiegenossenschaft überhaupt und wann funktioniert sie?*
@@ -45,7 +45,6 @@ Janina: Genau. Menschen legen Geld zusammen, um ihre eigene Energieversorgung na
 Diejenigen, die am Ende funktionieren haben meist von Beginn an ein ganz konkretes Projekt. Die haben gesagt: Hier bei uns gibt es eine Schule, die Bürgermeisterin findet das gut, und da wollen wir eine Solaranlage bauen. An dem konkreten Projekt lernst du einmal, wie es funktioniert. Daran lernst du auch, was dir wichtig ist und wo dein Fokus liegt.
 
 Ab einer bestimmten Größenordnung – ich würde sagen zwischen zehn und zwanzig Projekten lässt sich das nicht mehr rein ehrenamtlich managen. Und dann stellt sich die Frage, wie man das macht. Baut man eine größere Anlage? Wie entwickelt man sich weiter und bleibt dabei trotzdem den eigenen Ideen treu?
-
 
 ### Schritt 3: Eine Bewegung, bei der alle mitmachen können
 
