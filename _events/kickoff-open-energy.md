@@ -3,8 +3,6 @@ title: "Auftakt Open Energy"
 date: 2026-09-19
 time: "14:00"
 location: "Nano Science Center Potsdam"
-excerpt: "Erneuerbare Energien sind dort entstanden, wo Menschen selbst losgelegt haben – als Pionier:innen mit eigenen Ideen. Doch heute scheint Energie oft weit weg vom eigenen Alltag. Warum ist das so? Und wie können wir wieder selbst aktiv werden?
-
-Anlässlich des Projektstarts von Open Energy diskutieren wir diese Fragen mit spannenden Referent:innen."
+excerpt: "Erneuerbare Energien sind dort entstanden, wo Menschen selbst losgelegt haben – als Pionier:innen mit eigenen Ideen. Doch heute scheint Energie oft weit weg vom eigenen Alltag. Warum ist das so? Und wie können wir wieder selbst aktiv werden? Anlässlich des Projektstarts von Open Energy diskutieren wir diese Fragen mit spannenden Referent:innen."
 ---
 
