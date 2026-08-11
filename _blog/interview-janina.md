@@ -2,25 +2,26 @@
 title: "Energie selbst in die Hand nehmen"
 date: 2026-09-06
 category: Solarenergie
-excerpt: "Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum erneuerbare Energien. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Was Bürgerenergie überhaupt bedeutet und wie man die eigene Energieversorgung selbst in die Hand nehmen kann, verrät Janina im Interview."
+excerpt: "Die Physikerin Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht mehr nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum Solaranlagen. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Heute möchte sie zeigen, dass Menschen ihre Energieversorgung selbst in die Hand nehmen und gemeinsam Veränderung bewirken können."
 featured: true
 image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/arduino-1.jpg' | relative_url }}" alt="">
-  <figcaption>Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat.© 2026</figcaption>
+  <figcaption>Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat. © 2026</figcaption>
 </figure>
 
-### Schritt 1: Erkenntnisse als Wissenschaftlerin
+### Schritt 1: Den Mut aufbringen, mit den eigenen Kompetenzen loszulegen und Lösungsideen in die Praxis bringen
 
-***Stephanie: Hallo Janina. Wir sitzen bei dir in Steinhöfel im Garten – umgeben von einigen selbstgebauten Solaranlagen. Was hat dich motiviert, dich für das Klima zu engagieren?***
+***Stephanie:  Hallo Janina. Wir sitzen hier bei dir in Steinhöfel im Garten, umgeben von selbstgebauten Solaranlagen. Was hat dich dazu motiviert?***
 
-**Janina**: Ich würde sagen, das fängt im Elternhaus an. Ich komme aus einer Familie, die immer sehr politisch aktiv war und die versucht hat, sich zu aktuellen Themen in der Gesellschaft zu engagieren. Dann habe ich Physik studiert, weil ich es spannend fand und so die Veränderung des Klimas wissenschaftlich erforschen konnte.
+**Janina**: Das fing im Elternhaus an. Ich komme aus einer Familie, die immer sehr politisch aktiv war und die versucht hat, sich zu aktuellen Themen in der Gesellschaft zu engagieren. Dann habe ich Physik studiert, weil ich damit das gesellschaftliche Engagement, aber auch das, was ich gerne mache oder wo ich gut drin bin, verbinden kann, wie die Veränderung des Klimas zu erforschen.
 
-***Max: Du warst dann in der Wissenschaft und hattest irgendwann einen Moment in dem du gesagt hast: Jetzt will ich eher etwas praktisch machen, eher lokal.***
+***Max: Du warst dann in der Wissenschaft und hattest irgendwann einen Moment, in dem du gesagt hast: Jetzt will ich etwas praktisch machen, mich lokal engagieren.***
 
-**Janina**: Ich hatte das Gefühl: Ich kann weiter forschen, aber das ist nicht das, was gerade ansteht. Die eigentliche Herausforderung ist, wie wir mit dem Wissen umgehen, das wir längst haben. 
+**Janina**: Ich hatte das Gefühl: Ich kann weiter forschen, aber das ist nicht das, was gerade gebraucht wird. Denn die Fakten sind klar, wir wissen, was zu tun ist. Die eigentliche Herausforderung ist, Lösungsideen in die Praxis zu bringen. Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.
+
 
 
 #### „Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.“
