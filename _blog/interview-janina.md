@@ -16,13 +16,13 @@ image: "/assets/images/photos/blog/arduino-1.jpg"
 
 ***Stephanie:  Hallo Janina. Wir sitzen hier bei dir in Steinhöfel im Garten, umgeben von selbstgebauten Solaranlagen. Was hat dich dazu motiviert?***
 
-**Janina**: Das fing im Elternhaus an. Ich komme aus einer Familie, die immer sehr politisch aktiv war und die versucht hat, sich zu aktuellen Themen in der Gesellschaft zu engagieren. Dann habe ich Physik studiert, weil ich damit das gesellschaftliche Engagement, aber auch das, was ich gerne mache oder wo ich gut drin bin, verbinden kann, wie die Veränderung des Klimas zu erforschen.
+**Janina**: Das fing im Elternhaus an. Ich komme aus einer Familie, die immer sehr politisch aktiv war und die versucht hat, sich zu aktuellen Themen in der Gesellschaft zu engagieren. Dann habe ich Physik studiert, weil ich damit mein gesellschaftliches Engagement mit dem verbinden kann, was ich gerne mache und gut kann – zum Beispiel die Erforschung des Klimas.
 
 ***Max: Du warst dann in der Wissenschaft und hattest irgendwann einen Moment, in dem du gesagt hast: Jetzt will ich etwas praktisch machen, mich lokal engagieren.***
 
 **Janina**: Ich hatte das Gefühl: Ich kann weiter forschen, aber das ist nicht das, was gerade gebraucht wird. Denn die Fakten sind klar, wir wissen, was zu tun ist. Die eigentliche Herausforderung ist, Lösungsideen in die Praxis zu bringen. Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.
 
-> „Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.“
+> **„Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.“**
 
 ### Schritt 2: Von Beginn an mit anderen zusammenarbeiten und sich vernetzen. Zusammen schaffen wir mehr. Wir haben alle Kompetenzen und müssen nicht alles können!
 
@@ -41,7 +41,7 @@ Dann habe ich Malte Zieher, den Vorstand vom bundesweiten Bündnis Bürgerenergi
 
 **Janina**: Menschen legen Geld zusammen, um ihre eigene Energieversorgung nach ihren Vorstellungen aufzubauen, das ist Bürgerenergie.
 
-Die Initiativen, die am Ende funktionieren, haben meist von Beginn an ein ganz konkretes Projekt und verlieren sich nicht in Technik verliebten Großprojekten. Sie fangen klein und konkret an. Sie haben zum Beispiel die Schule vor Augen, die Bürgermeisterin findet das gut, und so planen sie dann, auf dem Dach eine Solaranlage zu bauen. An dem konkreten Projekt lernen sie, wie es funktioniert und auch, was ihnen wichtig ist und wo der Fokus liegen sollte.
+Die Initiativen, die am Ende erfolgreich sind, starten meist mit einer kleinen konkreten Idee und verlieren sich nicht in zu viel Technik. Sie haben zum Beispiel die Schule vor Augen, die Bürgermeisterin findet das gut, und so planen sie dann, auf dem Dach eine Solaranlage zu bauen. An dem konkreten Projekt lernen sie, wie es funktioniert und auch, was ihnen wichtig ist und wo der Fokus liegen sollte.
 
 Ab einer bestimmten Größenordnung – ich würde sagen zwischen zehn und zwanzig Projekten – lässt sich das nicht mehr rein ehrenamtlich managen. Und dann stellt sich die Frage, wie man das macht. Baut man eine größere Anlage? Wie entwickelt man sich weiter und bleibt dabei trotzdem den eigenen Ideen treu?
 
@@ -56,10 +56,8 @@ Ab einer bestimmten Größenordnung – ich würde sagen zwischen zehn und zwanz
 **Janina**: Ich würde mich immer vernetzen. Ich würde schauen, wen es bereits gibt. Denn Bürgerenergieinitiativen leben davon, dass unterschiedliche Kompetenzen zusammenkommen und sich ergänzen. ich würde versuchen, zu Veranstaltungen zu gehen, wie dem Bürgerenergiekonvent. Am niederschwelligsten ist es natürlich, den eigenen Strom auf die Bürgerwerke umzustellen.
 
 Man muss nicht technisch affin sein. Viele Bürgerenergiegenossenschaften sind zwar voll mit Leuten, die erneuerbare Hintergründe haben, aber wir brauchen ganz viele andere Leute.
-Du kannst auch einfach in den Baumarkt gehen, dir eine Balkonsolaranlage holen und dann machst du deine eigene Energie selbst.
 
-Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an.
-
+Du kannst auch einfach in den Baumarkt gehen, dir eine Balkonsolaranlage holen und dann machst du deine eigene Energie selbst. Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an.
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
