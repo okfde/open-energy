@@ -2,7 +2,7 @@
 title: "„Wir tanzen mit Solarstrom“ – Wie das freiLand Potsdam seine Energieversorgung neu denkt"
 date: 2026-09-06
 category: Solarenergie Windenergie
-excerpt: "Die Physikerin Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht mehr nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum Solaranlagen. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Heute möchte sie zeigen, dass Menschen ihre Energieversorgung selbst in die Hand nehmen und gemeinsam Veränderung bewirken können."
+excerpt: "Im freiLand Potsdam kommt der Strom vom Dach und aus der Solargiraffe – und manchmal gibt es dreimal mehr Solarstrom, als gerade gebraucht wird. Christoph erzählt, wie daraus eine kleine Energieinsel entstanden ist, warum Open Source dabei eine wichtige Rolle spielt und was andere Orte davon lernen können."
 featured: true
 image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
@@ -12,54 +12,83 @@ image: "/assets/images/photos/blog/arduino-1.jpg"
   <figcaption>Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat. © 2026</figcaption>
 </figure>
 
-### Schritt 1: Den Mut aufbringen, mit den eigenen Kompetenzen loszulegen und Lösungsideen in die Praxis bringen
+### Schritt 1: Groß denken und möglichst viel für eine unabhängige Energieversorgung umsetzen.
 
-***Stephanie:  Hallo Janina. Wir sitzen hier bei dir in Steinhöfel im Garten, umgeben von selbstgebauten Solaranlagen. Was hat dich dazu motiviert?***
+***Stephanie: Hi Christoph. Wir sitzen gerade bei euch im freiLand Potsdam im Makerspace. Wenn du mir jetzt einen Kaffee machst, dann wäre das ein Solar-Kaffee?***
 
-**Janina**: Das fing im Elternhaus an. Ich komme aus einer Familie, die immer sehr politisch aktiv war und die versucht hat, sich zu aktuellen Themen in der Gesellschaft zu engagieren. Dann habe ich Physik studiert, weil ich damit mein gesellschaftliches Engagement mit dem verbinden kann, was ich gerne mache und gut kann – zum Beispiel die Erforschung des Klimas.
+**Christoph**: Genau, ja. Wenn ich jetzt einen Kaffee mache, dann ist der rein aus der Energie der Sonne gewonnen. Das ist eine super Situation, in der wir uns befinden. Effektiv steht der Stromzähler still.
 
-***Max: Du warst dann in der Wissenschaft und hattest irgendwann einen Moment, in dem du gesagt hast: Jetzt will ich etwas praktisch machen, mich lokal engagieren.***
+Wenn die Sonne scheint, haben wir dreimal so viel Strom, wie wir brauchen. Wir haben Veranstaltungen, wo wir große Schilder aufhängen und sagen: Das DJ-Set, die Pommes und die komplette Veranstaltung, das ist alles Solarenergie.
 
-**Janina**: Ich hatte das Gefühl: Ich kann weiter forschen, aber das ist nicht das, was gerade gebraucht wird. Denn die Fakten sind klar, wir wissen, was zu tun ist. Die eigentliche Herausforderung ist, Lösungsideen in die Praxis zu bringen. Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.
+***Stephanie: Wow - das ist toll, aber nochmal einen Schritt zurück: Wie kam es dazu, dass ihr energetisch autark geworden seid?***
 
-> **„Es ist doch irre: Wir können eine Herausforderung so genau vorhersagen – und machen trotzdem einfach weiter.“**
+**Christoph**: Es begann damit, dass das freiLand als Kulturzentrum eine halbe Million Euro bekommen hat, für die energetische Sanierung von Kulturorten. Wir haben gesagt: Wir gehen richtig rein und versuchen im Grunde alles umzusetzen, was zu einer modernen, unabhängigen Energieversorgung dazugehört.
 
-### Schritt 2: Von Beginn an mit anderen zusammenarbeiten und sich vernetzen. Zusammen schaffen wir mehr. Wir haben alle Kompetenzen und müssen nicht alles können!
+Dabei standen wir immer wieder vor vielen Herausforderungen. Ursprünglich wollten wir unseren überschüssigen Strom als zusätzliche Einnahmequelle an die Stadtwerke verkaufen, aber das ist wegen bürokratischen Hürden nicht möglich. 
 
-***Stephanie: Welche Lösungen hattest du vor Augen?***
+Wir verschenken aktuell unseren Reststrom an die Stadtwerke.
 
-**Janina**: Das Gefühl, dass erneuerbare Energien eine Lösung sind, hat mich auch begleitet, nachdem ich aus der Wissenschaft raus bin. Ich habe dann zunächst für das Unternehmen Mobisol gearbeitet, mit dem wir erneuerbare Energien auf den afrikanischen Kontinent verkauft haben. Dann bin ich aufs Brandenburger Land gezogen und mir ist aufgefallen: Hier gibt es krass viele große Häuser und krass wenig Solaranlagen. Das war erst einmal eine Beobachtung. Und dann habe ich das gemacht, was mich als Person ausmacht: der Wille, das zu ändern.
 
-Dann habe ich Malte Zieher, den Vorstand vom bundesweiten Bündnis Bürgerenergie, zu einer Informationsveranstaltung eingeladen. Die erste Überraschung war dann, wie groß die Resonanz war. Beim ersten Treffen waren ungefähr 40 Leute da. Und gleich fünf Leute haben gesagt: Hey, wir haben Bock, da weiterzumachen.
+### Schritt 2: Wenn etwas nicht funktioniert, trotzdem dranbleiben und gemeinsam nach neuen Lösungen suchen – um langfristig die Früchte zu ernten.
+
+***Stephanie: Im Rahmen dieser großen Förderung habt ihr auch die Solargiraffe gebaut?***
+
+**Christoph**: Die Giraffe war zuerst gar nicht geplant. Am Anfang war geplant, dass wir Solar auf die Dächer machen und Windwalzen mit obendrauf setzen. Aber die Firma, die die Windwalzen macht, ist leider pleitegegangen - eine der Herausforderungen, die uns begegnet ist.
+
+Wir wollten trotzdem das Zeichen setzen, dass Wind und Solar zusammengehören. Die Solargiraffe vereint beides: Solar auf dem Rücken und ein Windrad als Kopf. Die haben wir als Produkt bei der schwedischen Firma Innoventum gekauft und die wurde innerhalb eines Tages aufgebaut. 
+
+Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein. 
+
+Die Solargiraffe liefert nur ungefähr ein Drittel von dem Strom, den wir insgesamt erzeugen. Die deutlich größere Solaranlage befindet sich auf dem Dach. 
+
+> **„Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein.“**>
+
+***Stephanie: Und wie reagieren die Menschen hier auf die Solargiraffe?***
+
+**Christoph**: Eigentlich gab es nur positive Reaktionen. Andere Vereine nehmen die Solargiraffe wahr. Eine Fahrraddemo hatte hier ihr Ziel und die Organisatoren wollten etwas dazu hören. Die Leute verstehen sofort, worum es geht.
+
+***Stephanie: Und inwiefern spielt Open Source Energietechnik bei der Solargiraffe eine Rolle?***
+
+**Christoph**: Bei der Überwachung des Gesamtsystems haben wir als Chaos Computer Club und mit Leuten aus der Machbar, dem Makerspace auf dem Gelände, komplett Open Source verwendet, um die ganzen Daten zusammenzuführen und sichtbar zu machen. Online kann sich jede:r die aktuelle Energieerzeugung der Solargiraffe ansehen.
+
+Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir mussten sie andersrum polen, damit sie überhaupt funktioniert. Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.
+
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.“</p>
+</div>
+
+***Stephanie: Was findest du als Software-Ingenieur an Open Source spannend?***
+
+**Christoph**: Früher hat mich als Techniker interessiert, dass ich es bis zum Letzten verstehen kann. Ich finde es gut, dass ich nicht vor einer Wand stehe und jemand sagt: Hier ist ein Produkt, da kommst du nicht weiter, weil geheimes Wissen drin ist. Offene Schnittstellen schaffen einen Mehrwert für alle.
+
+***Stephanie: Muss man technisch versiert sein, um Zugang zu Open Source zu bekommen?***
+
+**Christoph**: Nein, Open Source muss nicht automatisch Open-Source-Code heißen. Es gibt zum Beispiel Open-Source-Tomaten. Das Saatgut und die Eigenschaften der Tomate gehören nicht einer Firma, sondern alle Leute können dieses Wissen und dieses Saatgut teilen. Es geht um offenes Wissen. Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.
+
+> **„Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.“**>
+
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/blog_buergerenergie-1.jpg' | relative_url }}" alt="">
   <figcaption>Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. © 2026</figcaption>
 </figure>
 
-***Stephanie: Und daraus entstand dann die Bürgerenergiegenossenschaft Oder Spree. Was ist denn eine Bürgerenergiegenossenschaft und wann funktioniert sie?***
+###Schritt 3: 
 
-**Janina**: Menschen legen Geld zusammen, um ihre eigene Energieversorgung nach ihren Vorstellungen aufzubauen, das ist Bürgerenergie.
+***Stephanie: Zurück zur Solargiraffe. Was würdest du anderen Orten oder Vereinen raten, die etwas Ähnliches machen wollen?***
 
-Die Initiativen, die am Ende erfolgreich sind, starten meist mit einer kleinen konkreten Idee und verlieren sich nicht in zu viel Technik. Sie haben zum Beispiel die Schule vor Augen, die Bürgermeisterin findet das gut, und so planen sie dann, auf dem Dach eine Solaranlage zu bauen. An dem konkreten Projekt lernen sie, wie es funktioniert und auch, was ihnen wichtig ist und wo der Fokus liegen sollte.
+**Christoph**: Schritt eins wäre: Geht zu anderen Leuten, die es schon gemacht haben. Wir vom freiLand bieten immer wieder Beratungen und Informationsveranstaltungen für Personen an, die ähnliche Projekte umsetzen wollen.
 
-Ab einer bestimmten Größenordnung – ich würde sagen zwischen zehn und zwanzig Projekten – lässt sich das nicht mehr rein ehrenamtlich managen. Und dann stellt sich die Frage, wie man das macht. Baut man eine größere Anlage? Wie entwickelt man sich weiter und bleibt dabei trotzdem den eigenen Ideen treu?
+Ein zweiter Punkt wäre: Man braucht nicht nur einen Energieberater, sondern jemanden, der alles zusammenhält und die verschiedenen Firmen und Arbeiten koordiniert.
 
-### Schritt 3: Lieber klein und konkret beginnen, mit einem Schuldach oder dem eigenen Balkonkraftwerk und dann mit den gesammelten Erfahrungen wachsen.
+Aber im Endeffekt sind wir jetzt in einer sehr privilegierten Situation und ernten die Früchte von dem, was wir erarbeitet haben.
 
-***Stephanie: Viele nehmen die Umstellung auf erneuerbare Energien als etwas von oben herab wahr. Du beschreibst gerade wie du im kleinen lokal aktiv geworden bist und das immer größere Kreise gezogen hat.***
+***Stephanie: Was ist deine Einschätzung. Welche Rolle können Projekte wie das im freiLand zukünftig für die dezentrale Energieversorgung spielen?***
 
-**Janina**: Genau das ist unser Punkt. Wir möchten die Geschichte der Bürgerenergie neu erzählen, nämlich als Emanzipationsbewegung, also als eine krasse Erfolgsgeschichte: eine Geschichte davon, wie die Zivilgesellschaft aufgestanden ist, selber etwas gemacht und etwas verändert hat.
-
-***Stephanie: Wenn jetzt jemand denkt: „Ich möchte Teil dieser Bewegung sein." Was kann diese Person tun?***
-
-**Janina**: Ich würde mich immer vernetzen. Ich würde schauen, wen es bereits gibt. Denn Bürgerenergieinitiativen leben davon, dass unterschiedliche Kompetenzen zusammenkommen und sich ergänzen. ich würde versuchen, zu Veranstaltungen zu gehen, wie dem Bürgerenergiekonvent. Am niederschwelligsten ist es natürlich, den eigenen Strom auf die Bürgerwerke umzustellen.
-
-Man muss nicht technisch affin sein. Viele Bürgerenergiegenossenschaften sind zwar voll mit Leuten, die erneuerbare Hintergründe haben, aber wir brauchen ganz viele andere Leute.
-
-Du kannst auch einfach in den Baumarkt gehen, dir eine Balkonsolaranlage holen und dann machst du deine eigene Energie selbst. Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an.
+**Christoph**: Wir können eine Vorreiterrolle sein. Wir können uns Sachen trauen, die andere sich nicht trauen. Durch diese kleine Technikinsel sind wir ein Anlaufpunkt für Menschen geworden, die sich mit solchen Themen beschäftigen. Und irgendwann sind wir vielleicht alle gleich cool wie das freiLand und haben alle eine coole Batterie im Netz, anstatt ganz viele Einzelkämpfer und Verbraucher zu sein.
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Zu sagen: Hey, wenn ihr nichts ändert, dann ändere ich es. Ich nehme jetzt die Sonne für meine Energie. Ich finde, genau da fängt es an.“</p>
+  <p>„Und irgendwann sind wir vielleicht alle gleich cool wie das freiLand und haben alle eine coole Batterie im Netz, anstatt ganz viele Einzelkämpfer und Verbraucher zu sein.“</p>
 </div>
