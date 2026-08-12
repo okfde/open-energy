@@ -1,22 +1,22 @@
 ---
 title: "Windrad: Selbst bauen und erproben"
-date: 2026-09-01
+date: 2026-08-18
 category: Windenergie
-excerpt: "Ein Windrad selbst bauen? Auf dem Walnusshof in Steinhöfel wird genau das ausprobiert. Doch hinter dem kleinen Windkit steckt viel mehr als ein Prototyp: Es geht um Open Source, Reparierbarkeit, gemeinsames Lernen und die Frage, wie viel Selbstwirksamkeit in Technik stecken kann. Und ja – ein bisschen wie ein Ikea-Regal ist es auch. Nur mit deutlich mehr Schrauben."
+excerpt: "Ein Windrad selbst bauen? Auf dem Walnusshof in Steinhöfel wurde genau das ausprobiert. Hinter dem kleinen Windkit steckt viel mehr als ein Prototyp: Es geht um Reparierbarkeit, gemeinsames Lernen und die Frage, wie viel Selbstwirksamkeit in Technik stecken kann. Und ja – ein bisschen wie ein Ikea-Regal ist es auch. Nur mit deutlich mehr Schrauben."
 featured: true
 image: "/assets/images/photos/blog/windkit-1.jpg"
 ---
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/windkit-1.jpg' | relative_url }}" alt="">
-  <figcaption> Das Windkit in Steinhöfel war ein echtes Gemeinschaftsprojekt – gemeinsam bauen, lernen und ausprobieren © 2026</figcaption>
+  <figcaption> Das Windkit in Steinhöfel ist ein echtes Gemeinschaftsprojekt – gemeinsam bauen, lernen und ausprobieren © 2026</figcaption>
 </figure>
 
 ### Schritt 1: Technik selbst erproben – und mit Hilfe von öffentlich geteiltem Wissen Mitbesitzer:in am fertigen Produkt werden
 
 ***Stephanie: Hallo Max. Wir stehen auf dem Walnusshof in Steinhöfel vor einem Windrad, das nicht einfach nur gekauft wurde, sondern hier selbst aufgebaut und erprobt wird. Viele Menschen kennen Windräder vor allem aus großen Windparks. Wie kam es dazu, dass hier ein eigenes Kleinwindrad steht?***
 
-**Max**: Ich hatten mit dem Prototype Fund Hardware eine Ausschreibung auf den Weg gebracht, die Produkte fördern sollte, die Menschen selbst in die Hand nehmen können. Sie sollten reparierbar und nachbaubar sein, um den aktuellen Anforderungen einer Kreislaufgesellschaft gerecht zu werden. Es ging also darum, nachbaubare Technik zu fördern, die einen infrastrukturellen Zweck erfüllt. Das Windkit, so heißt das Kleinwindrad, war eines der geförderten Projekte, das jetzt hier als Prototyp erprobt wird. 
+**Max**: Ich hatte mit dem Prototype Fund Hardware eine Ausschreibung auf den Weg gebracht, die Produkte fördern sollte, die Menschen selbst in die Hand nehmen können. Sie sollten reparierbar und nachbaubar sein, um den aktuellen Anforderungen einer Kreislaufgesellschaft gerecht zu werden. Es ging also darum, nachbaubare Technik zu fördern, die einen infrastrukturellen Zweck erfüllt. Das Windkit, so heißt das Kleinwindrad, war eines der geförderten Projekte, das jetzt hier als Prototyp erprobt wird. 
 
 ***Stephanie: Das Windkit ist auch ein Open-Source-Windrad. Viele Menschen kennen den Begriff vielleicht noch nicht. Was bedeutet Open Source überhaupt und was ist der Vorteil davon?***
 
@@ -24,7 +24,9 @@ image: "/assets/images/photos/blog/windkit-1.jpg"
 
 > **„Wer das Windrad kauft, kauft nicht nur einen Gegenstand, sondern auch sämtliche Informationen dazu, wie man ihn auseinandernehmen, reparieren und im Zweifel sogar ein zweites Mal bauen kann.“** 
 
-Open Source Hardware bedeutet, dass all diese Informationen bereitgestellt und so lizenziert werden, dass Menschen sie rechtlich nutzen, verändern und weiterentwickeln dürfen. Ganz praktisch bedeutet das, dass ich zu dem Windrad einen Bauplan bekomme, der ganz genau beschreibt, wie alles zusammengesetzt ist. Die Entwickler solcher Projekte laden andere Menschen ein, mitzugestalten und den Gegenstand auf allen Ebenen mitzubesitzen.
+Open Source Hardware bedeutet, dass all diese Informationen bereitgestellt und so lizenziert werden, dass Menschen sie rechtlich nutzen, verändern und weiterentwickeln dürfen. 
+
+Ganz praktisch bedeutet das, dass ich zu dem Windrad einen Bauplan bekomme, der ganz genau beschreibt, wie alles zusammengesetzt ist. Die Entwickler solcher Projekte laden andere Menschen ein, mitzugestalten und den Gegenstand auf allen Ebenen mitzubesitzen.
 
 ### Schritt 2: Hilfe holen, von anderen lernen und gemeinsam Strom erzeugen. Dadurch unabhängiger werden und Kosten sparen. 
 
