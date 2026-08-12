@@ -1,5 +1,5 @@
 ---
-title: "Solargiraffe: Besonders energieunabhängig"
+title: "Mit der Solargiraffe zur Energieunabhängigkeit"
 date: 2026-08-12
 category: 
 - Solarenergie
@@ -22,6 +22,11 @@ image: "/assets/images/photos/blog/freiland-4.jpeg"
 
 Wenn die Sonne scheint, haben wir dreimal so viel Strom, wie wir brauchen. Wir haben Veranstaltungen, wo wir große Schilder aufhängen und sagen: Das DJ-Set, die Pommes und die komplette Veranstaltung, das ist alles Solarenergie.
 
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein.“</p>
+</div>
+
 ***Stephanie: Wow - das ist toll, aber nochmal einen Schritt zurück: Wie kam es dazu, dass ihr energetisch autark geworden seid?***
 
 **Christoph**: Es begann damit, dass das freiLand als Kulturzentrum eine halbe Million Euro bekommen hat, für die energetische Sanierung von Kulturorten. Wir haben gesagt: Wir gehen richtig rein und versuchen im Grunde alles umzusetzen, was zu einer modernen, unabhängigen Energieversorgung dazugehört.
@@ -38,15 +43,16 @@ Wir verschenken aktuell unseren Reststrom an die Stadtwerke.
 
 Wir wollten trotzdem das Zeichen setzen, dass Wind und Solar zusammengehören. Die Solargiraffe vereint beides: Solar auf dem Rücken und ein Windrad als Kopf. Die haben wir als Produkt bei der schwedischen Firma Innoventum gekauft und die wurde innerhalb eines Tages aufgebaut. 
 
-Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein. 
-
-Die Solargiraffe liefert nur ungefähr ein Drittel von dem Strom, den wir insgesamt erzeugen. Die deutlich größere Solaranlage befindet sich auf dem Dach. 
-
-> **„Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein.“**
+Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein. Die Solargiraffe liefert nur ungefähr ein Drittel von dem Strom, den wir insgesamt erzeugen. Die deutlich größere Solaranlage befindet sich auf dem Dach. 
 
 ***Stephanie: Und wie reagieren die Menschen hier auf die Solargiraffe?***
 
 **Christoph**: Eigentlich gab es nur positive Reaktionen. Andere Vereine nehmen die Solargiraffe wahr. Eine Fahrraddemo hatte hier ihr Ziel und die Organisatoren wollten etwas dazu hören. Die Leute verstehen sofort, worum es geht.
+
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.“</p>
+</div>
 
 ***Stephanie: Und inwiefern spielt Open Source Energietechnik bei der Solargiraffe eine Rolle?***
 
@@ -54,15 +60,12 @@ Die Solargiraffe liefert nur ungefähr ein Drittel von dem Strom, den wir insges
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
-  <figcaption> [Auf dieser Seite ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich ](https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser)© 2026</figcaption>
+  <figcaption>
+    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich.
+  </figcaption>
 </figure>
 
 Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir mussten sie andersrum polen, damit sie überhaupt funktioniert. Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.
-
-<div class="pull-quote">
-  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.“</p>
-</div>
 
 ***Stephanie: Was findest du als Software-Ingenieur an Open Source spannend?***
 
@@ -72,15 +75,14 @@ Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir muss
 
 **Christoph**: Nein, Open Source muss nicht automatisch Open-Source-Code heißen. Es gibt zum Beispiel Open-Source-Tomaten. Das Saatgut und die Eigenschaften der Tomate gehören nicht einer Firma, sondern alle Leute können dieses Wissen und dieses Saatgut teilen. Es geht um offenes Wissen. Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.
 
-> **„Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.“**
-
-
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/blog_freiland-2.jpg' | relative_url }}" alt="">
   <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. © 2026</figcaption>
 </figure>
 
-### Schritt 3: Mutig vorangehen, Möglichkeiten schaffen Wissen zu teilen und dabei andere inspirieren
+> **„Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.“**
+
+### Schritt 3: Mutig vorangehen, Möglichkeiten schaffen erworbenes Wissen zu teilen und andere dabei inspirieren
 
 ***Stephanie: Zurück zur Solargiraffe. Was würdest du anderen Orten oder Vereinen raten, die etwas Ähnliches machen wollen?***
 
@@ -90,11 +92,13 @@ Ein zweiter Punkt wäre: Man braucht nicht nur einen Energieberater, sondern jem
 
 Aber im Endeffekt sind wir jetzt in einer sehr privilegierten Situation und ernten die Früchte von dem, was wir erarbeitet haben.
 
-***Stephanie: Was ist deine Einschätzung. Welche Rolle können Projekte wie das im freiLand zukünftig für die dezentrale Energieversorgung spielen?***
-
-**Christoph**: Wir können eine Vorreiterrolle sein. Wir können uns Sachen trauen, die andere sich nicht trauen. Durch diese kleine Technikinsel sind wir ein Anlaufpunkt für Menschen geworden, die sich mit solchen Themen beschäftigen. Und irgendwann sind wir vielleicht alle gleich cool wie das freiLand und haben alle eine coole Batterie im Netz, anstatt ganz viele Einzelkämpfer und Verbraucher zu sein.
-
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
   <p>„Und irgendwann sind wir vielleicht alle gleich cool wie das freiLand und haben alle eine coole Batterie im Netz, anstatt ganz viele Einzelkämpfer und Verbraucher zu sein.“</p>
 </div>
+
+***Stephanie: Was ist deine Einschätzung. Welche Rolle können Projekte wie das im freiLand zukünftig für die dezentrale Energieversorgung spielen?***
+
+**Christoph**: Wir können eine Vorreiterrolle sein. Wir können uns Sachen trauen, die andere sich nicht trauen. Durch diese kleine Technikinsel sind wir ein Anlaufpunkt für Menschen geworden, die sich mit solchen Themen beschäftigen. 
+
+Und irgendwann sind wir vielleicht alle gleich cool wie das freiLand und haben alle eine coole Batterie im Netz, anstatt ganz viele Einzelkämpfer und Verbraucher zu sein.
