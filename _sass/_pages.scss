@@ -451,13 +451,8 @@
 }
 
 .about-hero__partners {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
   padding-top: 2.5rem;
   border-top: 1px dashed $color-stroke-dimmed;
-
-  img { height: 4.5rem; width: auto; }
 }
 
 .about-hero__hosted-by {
@@ -584,6 +579,18 @@
   flex-direction: column;
   gap: 0.75rem;
   max-width: 46rem;
+}
+
+.partners-section__logos {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.partners-section__logos img {
+  height: 4rem;
+  width: auto;
 }
 
 .funders-section {
