@@ -46,6 +46,10 @@ layout: default
         </p>
       </div>
     </div>
+    {% if page.signup_url %}
+      {% assign signup_text = page.signup_text | default: "Jetzt anmelden" %}
+      {% include button.html text=signup_text url=page.signup_url style="primary" tag="a" %}
+    {% endif %}
   </div>
 
   <div class="event-article__body body-text">
