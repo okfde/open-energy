@@ -1,6 +1,6 @@
 ---
 title: "Bürgerenergie: Selbermachen, aber gemeinsam"
-date: 2026-09-06
+date: 2026-08-06
 category: Solarenergie
 excerpt: "Die Physikerin Dr. Janina Messerschmidt wollte nach ihrer Zeit in der Wissenschaft nicht mehr nur forschen, sondern mit dem vorhandenen Wissen praktisch etwas verändern. In Brandenburg fiel ihr auf: große Häuser, aber kaum Solaranlagen. Daraus entstand die Bürgerenergiegenossenschaft Oder-Spree. Heute möchte sie zeigen, dass Menschen ihre Energieversorgung selbst in die Hand nehmen und gemeinsam Veränderung bewirken können."
 featured: true
