@@ -4,11 +4,11 @@ date: 2026-08-18
 category: Windenergie
 excerpt: "Ein Windrad selbst bauen? Auf dem Walnusshof in Steinhöfel wurde genau das ausprobiert. Hinter dem kleinen Windkit steckt viel mehr als ein Prototyp: Es geht um Reparierbarkeit, gemeinsames Lernen und die Frage, wie viel Selbstwirksamkeit in Technik stecken kann. Und ja – ein bisschen wie ein Ikea-Regal ist es auch. Nur mit deutlich mehr Schrauben."
 featured: true
-image: "/assets/images/photos/blog/windkit-1.jpg"
+image: "/assets/images/photos/blog/windkit-5.jpg"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/windkit-1.jpg' | relative_url }}" alt="">
+  <img src="{{ '/assets/images/photos/blog/windkit-5.jpg' | relative_url }}" alt="">
   <figcaption> Das Windkit in Steinhöfel ist ein echtes Gemeinschaftsprojekt – gemeinsam bauen, lernen und ausprobieren © 2026</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ Open Source Hardware bedeutet, dass all diese Informationen bereitgestellt und s
 
 Ganz praktisch bedeutet das, dass ich zu dem Windrad einen Bauplan bekomme, der ganz genau beschreibt, wie alles zusammengesetzt ist. Die Entwickler solcher Projekte laden andere Menschen ein, mitzugestalten und den Gegenstand auf allen Ebenen mitzubesitzen.
 
-### Schritt 2: Hilfe holen, von anderen lernen und gemeinsam Strom erzeugen. Dadurch unabhängiger werden und Kosten sparen. 
+### Schritt 2: Hilfe holen, von anderen lernen und gemeinsam Strom erzeugen. Dadurch unabhängiger werden und Geld sparen. 
 
 ***Stephanie: Ein Windrad auf allen Ebenen mitzubesitzen, also auch das geistige Eigentum, das klingt gut. Wie viel handwerkliches oder technisches Wissen brauche ich denn, um mir selbst eins aufzubauen?***
 
@@ -41,7 +41,7 @@ Wir haben den Prototypen auf dem Walnusshof in ein paar Tagen aufgebaut. Wobei d
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/windkit-4.jpg' | relative_url }}" alt="">
-  <figcaption> Wind und Sonne machen den Walnusshof energetisch unabhängig. © 2026</figcaption>
+  <figcaption> Durch den Mix aus Wind und Sonnenenergie ist der Walnusshof in Steinhöfel energetisch unabhängig. © 2026</figcaption>
 </figure>
 
 ***Stephanie: Kann man den Aufbau mit einem Ikea-Regal vergleichen?***
@@ -52,21 +52,24 @@ Wir haben den Prototypen auf dem Walnusshof in ein paar Tagen aufgebaut. Wobei d
 
 **Max**: Das hängt sehr stark davon ab, wie viel Wind an dem Ort weht, an dem es steht. Unser Windkit in Brandenburg senkt aktuell unseren Stromverbrauch um rund 100 Watt – ungefähr so viel, wie ein Kühlschrank verbraucht.
 
+Es ist aber keine Anlage, mit der man sich komplett selbst versorgen kann. In Kombination mit einer Solaranlage ergänzt sich das sehr gut.
+
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
   <p>„Unser Windkit in Brandenburg senkt aktuell unseren Stromverbrauch um rund 100 Watt – ungefähr so viel, wie ein Kühlschrank verbraucht.“ </p>
 </div>
 
-Es ist aber keine Anlage, mit der man sich komplett selbst versorgen kann. In Kombination mit einer Solaranlage ergänzt sich das sehr gut.
-
-### Schritt 3: Selbstwirksamkeit erleben – und verstehen, wie unsere Energie entsteht und Technik funktioniert
+### Schritt 3: Selbstwirksamkeit erleben – und verstehen, wie Technik funktioniert und Energie entsteht
 
 ***Stephanie: Wenn man nicht nur auf die Kostenersparnis schaut, sondern auf die Erfahrung dahinter: Warum würdest du anderen Menschen empfehlen, sich mit so einem Projekt zu beschäftigen?***
 
 **Ma**: Es erfüllt mich mit Stolz, daran mitgewirkt zu haben. Ein Windrad ist ein Gegenstand, der immer da ist. Es hat etwas sehr organisches und gleichzeitig etwas verbindendes zur Energie des Windes und zu dem, was wir jeden Tag nutzen – nämlich Strom. Das verleiht einem Selbstwirksamkeit, weil man merkt, dass man Dinge gestalten kann.
 
-Man lernt ganz grundsätzlich, wie Strom erzeugt wird und was ein Generator ist. Das Windrad-Kollektiv hat das Windrad so entwickelt, dass diese Zusammenhänge sehr verständlich werden. Es eröffnet am Ende viele Möglichkeiten, unsere moderne Welt mitzugestalten. Technik bestimmt unser Leben auf ganz unterschiedlichen Ebenen. Wenn man sich damit ein bisschen auskennt, kann man sehr viel machen und ist nicht so abhängig. Warum sollten wir uns nur mit Wirtschaft auskennen oder Fußball? Warum nicht auch mit Technik?
+Man lernt ganz grundsätzlich, wie Strom erzeugt wird und was ein Generator ist. Das Windrad-Kollektiv hat das Windrad so entwickelt, dass diese Zusammenhänge sehr verständlich werden. Es eröffnet am Ende viele Möglichkeiten, unsere moderne Welt mitzugestalten. 
 
-> **„Warum sollten wir uns nur mit Wirtschaft auskennen oder Fußball? Warum nicht auch mit Technik?“** 
+Technik bestimmt unser Leben auf ganz unterschiedlichen Ebenen. Wenn man sich damit ein bisschen auskennt, kann man sehr viel machen und ist nicht so abhängig. Warum sollten wir uns nur mit Wirtschaft auskennen oder Fußball? Warum nicht auch mit Technik?
 
-
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Warum sollten wir uns nur mit Wirtschaft auskennen oder Fußball? Warum nicht auch mit Technik?“ </p>
+</div>
