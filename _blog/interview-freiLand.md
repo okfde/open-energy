@@ -1,6 +1,6 @@
 ---
 title: "Solargiraffe: Besonders energieunabhängig"
-date: 2026-09-06
+date: 2026-08-12
 category: 
 - Solarenergie
 - Windenergie
@@ -42,7 +42,7 @@ Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit 
 
 Die Solargiraffe liefert nur ungefähr ein Drittel von dem Strom, den wir insgesamt erzeugen. Die deutlich größere Solaranlage befindet sich auf dem Dach. 
 
-> **„Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein.“**>
+> **„Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein.“**
 
 ***Stephanie: Und wie reagieren die Menschen hier auf die Solargiraffe?***
 
@@ -54,7 +54,7 @@ Die Solargiraffe liefert nur ungefähr ein Drittel von dem Strom, den wir insges
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
-  <figcaption> Unter diesem Link ist die Energiegewinnung im freiLand offen zugänglich: https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser © 2026</figcaption>
+  <figcaption> [Auf dieser Seite ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich ](https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser)© 2026</figcaption>
 </figure>
 
 Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir mussten sie andersrum polen, damit sie überhaupt funktioniert. Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.
@@ -72,7 +72,7 @@ Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir muss
 
 **Christoph**: Nein, Open Source muss nicht automatisch Open-Source-Code heißen. Es gibt zum Beispiel Open-Source-Tomaten. Das Saatgut und die Eigenschaften der Tomate gehören nicht einer Firma, sondern alle Leute können dieses Wissen und dieses Saatgut teilen. Es geht um offenes Wissen. Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.
 
-> **„Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.“**>
+> **„Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.“**
 
 
 <figure class="article-figure">
@@ -80,7 +80,7 @@ Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir muss
   <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. © 2026</figcaption>
 </figure>
 
-###Schritt 3: Mutig vorangehen, Möglichkeiten schaffen Wissen zu teilen und andere inspirieren
+### Schritt 3: Mutig vorangehen, Möglichkeiten schaffen Wissen zu teilen und dabei andere inspirieren
 
 ***Stephanie: Zurück zur Solargiraffe. Was würdest du anderen Orten oder Vereinen raten, die etwas Ähnliches machen wollen?***
 
