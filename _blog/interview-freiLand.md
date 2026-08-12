@@ -1,5 +1,5 @@
 ---
-title: "Mit der Solargiraffe zur Energieunabhängigkeit"
+title: "Mit der Solargiraffe zur eigenen Energie"
 date: 2026-08-12
 category: 
 - Solarenergie
