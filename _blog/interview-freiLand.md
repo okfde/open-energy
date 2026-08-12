@@ -61,7 +61,7 @@ Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
   <figcaption>
-    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich.
+    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich. © 2026
   </figcaption>
 </figure>
 
