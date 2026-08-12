@@ -76,7 +76,7 @@ Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir muss
 **Christoph**: Nein, Open Source muss nicht automatisch Open-Source-Code heißen. Es gibt zum Beispiel Open-Source-Tomaten. Das Saatgut und die Eigenschaften der Tomate gehören nicht einer Firma, sondern alle Leute können dieses Wissen und dieses Saatgut teilen. Es geht um offenes Wissen. Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/blog_freiland-2.jpg' | relative_url }}" alt="">
+  <img src="{{ '/assets/images/photos/blog/blog_freiland-5.jpg' | relative_url }}" alt="">
   <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. © 2026</figcaption>
 </figure>
 
