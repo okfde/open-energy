@@ -1,6 +1,6 @@
 ---
 title: "Windrad: Selbst bauen und erproben"
-date: 2026-09-06
+date: 2026-09-01
 category: Windenergie
 excerpt: "Ein Windrad selbst bauen? Auf dem Walnusshof in Steinhöfel wird genau das ausprobiert. Doch hinter dem kleinen Windkit steckt viel mehr als ein Prototyp: Es geht um Open Source, Reparierbarkeit, gemeinsames Lernen und die Frage, wie viel Selbstwirksamkeit in Technik stecken kann. Und ja – ein bisschen wie ein Ikea-Regal ist es auch. Nur mit deutlich mehr Schrauben."
 featured: true
