@@ -1,5 +1,5 @@
 ---
-title: "„Wir tanzen mit Solarstrom“ – Wie das freiLand Potsdam seine Energieversorgung neu denkt"
+title: "Solargiraffe: Besonders energieunabhängig"
 date: 2026-09-06
 category: Solarenergie Windenergie
 excerpt: "Im freiLand Potsdam kommt der Strom vom Dach und aus der Solargiraffe – und manchmal gibt es dreimal mehr Solarstrom, als gerade gebraucht wird. Christoph erzählt, wie daraus eine kleine Energieinsel entstanden ist, warum Open Source dabei eine wichtige Rolle spielt und was andere Orte davon lernen können."
@@ -8,8 +8,8 @@ image: "/assets/images/photos/blog/arduino-1.jpg"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/arduino-1.jpg' | relative_url }}" alt="">
-  <figcaption>Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat. © 2026</figcaption>
+  <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
+  <figcaption> Ein Bauwerk, zwei Energiequellen: Die Giraffe vereint Sonne und Wind © 2026</figcaption>
 </figure>
 
 ### Schritt 1: Groß denken und möglichst viel für eine unabhängige Energieversorgung umsetzen.
@@ -27,7 +27,6 @@ Wenn die Sonne scheint, haben wir dreimal so viel Strom, wie wir brauchen. Wir h
 Dabei standen wir immer wieder vor vielen Herausforderungen. Ursprünglich wollten wir unseren überschüssigen Strom als zusätzliche Einnahmequelle an die Stadtwerke verkaufen, aber das ist wegen bürokratischen Hürden nicht möglich. 
 
 Wir verschenken aktuell unseren Reststrom an die Stadtwerke.
-
 
 ### Schritt 2: Wenn etwas nicht funktioniert, trotzdem dranbleiben und gemeinsam nach neuen Lösungen suchen – um langfristig die Früchte zu ernten.
 
@@ -51,6 +50,11 @@ Die Solargiraffe liefert nur ungefähr ein Drittel von dem Strom, den wir insges
 
 **Christoph**: Bei der Überwachung des Gesamtsystems haben wir als Chaos Computer Club und mit Leuten aus der Machbar, dem Makerspace auf dem Gelände, komplett Open Source verwendet, um die ganzen Daten zusammenzuführen und sichtbar zu machen. Online kann sich jede:r die aktuelle Energieerzeugung der Solargiraffe ansehen.
 
+<figure class="article-figure">
+  <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
+  <figcaption> Unter diesem Link ist die Energiegewinnung im freiLand offen zugänglich: https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser © 2026</figcaption>
+</figure>
+
 Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir mussten sie andersrum polen, damit sie überhaupt funktioniert. Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.
 
 <div class="pull-quote">
@@ -70,11 +74,11 @@ Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir muss
 
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/blog_buergerenergie-1.jpg' | relative_url }}" alt="">
-  <figcaption>Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. © 2026</figcaption>
+  <img src="{{ '/assets/images/photos/blog/blog_freiland-2.jpg' | relative_url }}" alt="">
+  <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. © 2026</figcaption>
 </figure>
 
-###Schritt 3: 
+###Schritt 3: Mutig vorangehen, Möglichkeiten schaffen Wissen zu teilen und andere inspirieren
 
 ***Stephanie: Zurück zur Solargiraffe. Was würdest du anderen Orten oder Vereinen raten, die etwas Ähnliches machen wollen?***
 
