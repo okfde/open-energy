@@ -11,7 +11,7 @@ description: "Solaranlage oder Windrad selbst bauen: Open Energy zeigt dir offen
       <p class="body-text">Gemeinsam bauen wir kleine Windräder und Solaranlagen für den Alltag – zugänglich, gemeinschaftlich und offen für alle. Dabei setzen wir auf Technik, die vollständig euch gehört. Auf dieser Seite findest du alle Informationen, mit denen du das selbst schaffst. Auf unseren Veranstaltungen helfen wir dir bei den ersten Schritten.</p>
       <p class="body-text">Folg uns auf <a href="#" class="link-underline">Instagram</a> und <a href="#" class="link-underline">Facebook</a>, um auf dem aktuellen Stand zu sein.</p>
     </div>
-    {% include button.html text="Mehr erfahren →" url="/open-energy/about/" style="primary" %}
+    {% include button.html text="Mehr erfahren →" url="/about/" style="primary" %}
   </div>
   <div class="hero__media pattern-main" aria-hidden="true">
     <div class="hero-slideshow" data-hero-slideshow>
@@ -67,7 +67,7 @@ description: "Solaranlage oder Windrad selbst bauen: Open Energy zeigt dir offen
       {% endfor %}
     </div>
   </div>
-  {% include button.html text="Alle Blogposts" url="/open-energy/blog/" style="secondary" invert=true %}
+  {% include button.html text="Alle Blogposts" url="/blog/" style="secondary" invert=true %}
 </section>
 
 {% include events-section.html %}
