@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+description: "Open Energy macht offene Bauanleitungen für Solar- und Windstromanlagen zugänglich. Ein Projekt der Open Knowledge Foundation Deutschland und des Prototype Fund Hardware."
 ---
 
 <section class="section about-hero">

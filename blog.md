@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog/
+description: "Erfahrungsberichte, Interviews und Anleitungen von Menschen, die ihre eigene Solar- oder Windstromanlage selbst gebaut haben."
 ---
 
 {% assign featured_post = site.blog | where: "featured", true | sort: "date" | reverse | first %}

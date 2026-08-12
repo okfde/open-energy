@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": {{ page.title | jsonify }},
+  "startDate": "{{ page.date | date: '%Y-%m-%d' }}T{{ page.time }}",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": {{ page.location | jsonify }}
+  },
+  "description": {{ page.excerpt | strip_html | jsonify }},
+  "organizer": {
+    "@type": "Organization",
+    "name": "Open Energy",
+    "url": "{{ site.url }}{{ site.baseurl }}/"
+  }
+}
+</script>
 <section class="pattern-midnight event-article-wrap">
 <section class="section--sand event-article">
   <div class="event-article__card">

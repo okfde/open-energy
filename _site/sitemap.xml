@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog/community-windraeder/</loc>
-<lastmod>2026-06-28T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/offene-flow-zellen/</loc>
-<lastmod>2026-07-12T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/teufel-entwickler-schaltplan/</loc>
-<lastmod>2026-07-12T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/arduino-wechselrichter/</loc>
-<lastmod>2026-09-05T00:00:00+02:00</lastmod>
+<loc>http://localhost:4000/blog/interview-freiLand/</loc>
+<lastmod>2026-09-06T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/interview-janina/</loc>
+<lastmod>2026-09-06T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/interview-max/</loc>
 <lastmod>2026-09-06T00:00:00+02:00</lastmod>
 </url>
 <url>
@@ -31,6 +23,10 @@
 <url>
 <loc>http://localhost:4000/termine/solar-workshop-2/</loc>
 <lastmod>2026-09-27T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/termine/wind-workshop-1/</loc>
+<lastmod>2026-11-01T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>

@@ -1,7 +1,9 @@
 ---
 title: "Solargiraffe: Besonders energieunabhängig"
 date: 2026-09-06
-category: Solarenergie Windenergie
+category: 
+- Solarenergie
+- Windenergie
 excerpt: "Im freiLand Potsdam kommt der Strom vom Dach und aus der Solargiraffe – und manchmal gibt es dreimal mehr Solarstrom, als gerade gebraucht wird. Christoph erzählt, wie daraus eine kleine Energieinsel entstanden ist, warum Open Source dabei eine wichtige Rolle spielt und was andere Orte davon lernen können."
 featured: true
 image: "/assets/images/photos/blog/freiland-4.jpeg"

@@ -16,3 +16,12 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 {% feed_meta %}
 {% seo %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Open Energy",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "logo": "{{ '/assets/images/logos/oe-logo-dark.svg' | absolute_url }}"
+}
+</script>

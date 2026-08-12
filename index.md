@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Wir machen unsere Energie selbst
+description: "Solaranlage oder Windrad selbst bauen: Open Energy zeigt dir offene Hardware und Anleitungen, mit denen du deine eigene Stromerzeugung aufbaust."
 ---
 
 <section class="hero">
