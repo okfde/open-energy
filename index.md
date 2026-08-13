@@ -44,7 +44,9 @@ description: "Solaranlage oder Windrad selbst bauen: Open Energy zeigt dir offen
         </div>
         <div class="blog-teaser__body">
           <div class="blog-teaser__heading">
-            {% include label.html text=featured_post.category color="sunshine" %}
+            <div class="blog-teaser__labels">
+              {% include category-labels.html categories=featured_post.category color="sunshine" %}
+            </div>
             <h3>{{ featured_post.title }}</h3>
           </div>
           <p class="body-text--small">{{ featured_post.excerpt }}</p>
@@ -57,7 +59,9 @@ description: "Solaranlage oder Windrad selbst bauen: Open Energy zeigt dir offen
         <a href="{{ post.url | relative_url }}" class="blog-teaser blog-teaser--list">
           <div class="blog-teaser__body">
             <div class="blog-teaser__heading">
-              {% include label.html text=post.category color="sunshine" %}
+              <div class="blog-teaser__labels">
+                {% include category-labels.html categories=post.category color="sunshine" %}
+              </div>
               <h4>{{ post.title }}</h4>
             </div>
             <p class="ui-upper-small blog-teaser__date">{{ post.date | date: "%d / %B / %Y" }}</p>

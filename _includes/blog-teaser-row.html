@@ -3,10 +3,11 @@
   Params: post
 {% endcomment %}
 {% assign post = include.post %}
-<a href="{{ post.url | relative_url }}" class="blog-row" data-category-item="{{ post.category }}">
+{% capture post_categories %}{% include category-list.html categories=post.category %}{% endcapture %}
+<a href="{{ post.url | relative_url }}" class="blog-row" data-category-item="{{ post_categories | strip }}">
   <div class="blog-row__body">
     <div class="blog-row__meta">
-      {% include label.html text=post.category color="sunshine" %}
+      {% include category-labels.html categories=post.category color="sunshine" %}
       <span class="ui-upper-small blog-row__date">{{ post.date | date: "%d / %B / %Y" }}</span>
     </div>
     <h4>{{ post.title }}</h4>

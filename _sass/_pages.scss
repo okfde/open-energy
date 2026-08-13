@@ -206,6 +206,13 @@
   align-items: flex-start;
 }
 
+.blog-teaser__labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .blog-teaser__date {
   color: $color-text-secondary-invert;
 }

@@ -1,0 +1,13 @@
+{% comment %}
+  Outputs a post's categories as a comma-separated string, normalizing
+  `category:` whether it's a single string or a YAML list. Used for the
+  data-category-item attribute consumed by the /blog category filter.
+  Params: categories
+{% endcomment %}
+{% assign cats_first = include.categories | first %}
+{% if cats_first %}
+  {% assign cats = include.categories %}
+{% else %}
+  {% assign cats = include.categories | split: "," %}
+{% endif %}
+{{ cats | join: "," }}

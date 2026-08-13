@@ -6,7 +6,7 @@ layout: default
   <article class="article">
     <header class="article-header">
       <div class="article-header__meta">
-        {% include label.html text=page.category color="sunshine" %}
+        {% include category-labels.html categories=page.category color="sunshine" %}
         <span class="ui-upper-small">{{ page.date | date: "%d / %B / %Y" }}</span>
       </div>
       <h1>{{ page.title }}</h1>
@@ -31,7 +31,7 @@ layout: default
           </div>
           <div class="related-post__body">
             <div class="related-post__meta">
-              {% include label.html text=post.category color="sunshine" %}
+              {% include category-labels.html categories=post.category color="sunshine" %}
               <span class="ui-upper-small">{{ post.date | date: "%d / %B / %Y" }}</span>
             </div>
             <h3>{{ post.title }}</h3>

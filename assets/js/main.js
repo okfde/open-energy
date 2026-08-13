@@ -87,15 +87,24 @@
   var items = Array.prototype.slice.call(document.querySelectorAll('[data-category-item]'));
   if (!buttons.length || !items.length) return;
 
-  var activeCategory = null;
+  var activeCategories = [];
+
+  function itemCategories(item) {
+    return item.getAttribute('data-category-item').split(',').map(function (c) {
+      return c.trim();
+    }).filter(Boolean);
+  }
 
   function applyFilter() {
     items.forEach(function (item) {
-      var matches = !activeCategory || item.getAttribute('data-category-item') === activeCategory;
+      var categories = itemCategories(item);
+      var matches = !activeCategories.length || categories.some(function (c) {
+        return activeCategories.indexOf(c) !== -1;
+      });
       item.classList.toggle('is-category-hidden', !matches);
     });
     buttons.forEach(function (button) {
-      var isActive = button.getAttribute('data-category') === activeCategory;
+      var isActive = activeCategories.indexOf(button.getAttribute('data-category')) !== -1;
       button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
   }
@@ -103,7 +112,12 @@
   buttons.forEach(function (button) {
     button.addEventListener('click', function () {
       var category = button.getAttribute('data-category');
-      activeCategory = activeCategory === category ? null : category;
+      var idx = activeCategories.indexOf(category);
+      if (idx === -1) {
+        activeCategories.push(category);
+      } else {
+        activeCategories.splice(idx, 1);
+      }
       applyFilter();
     });
   });
