@@ -9,7 +9,9 @@ description: "Solaranlage oder Windrad selbst bauen: Open Energy zeigt dir offen
     <h1>Wir machen unsere Energie selbst.</h1>
     <div class="hero__body">
       <p class="body-text">Gemeinsam bauen wir kleine Windräder und Solaranlagen für den Alltag – zugänglich, gemeinschaftlich und offen für alle. Dabei setzen wir auf Technik, die vollständig euch gehört. Auf dieser Seite findest du alle Informationen, mit denen du das selbst schaffst. Auf unseren Veranstaltungen helfen wir dir bei den ersten Schritten.</p>
-      <p class="body-text">Folg uns auf <a href="#" class="link-underline">Instagram</a> und <a href="#" class="link-underline">Facebook</a>, um auf dem aktuellen Stand zu sein.</p>
+      {% assign instagram_link = site.social_links | where: "type", "instagram" | first %}
+      {% assign facebook_link = site.social_links | where: "type", "facebook" | first %}
+      <p class="body-text">Folg uns auf <a href="{{ instagram_link.url }}" class="link-underline" target="_blank" rel="noopener">Instagram</a> und <a href="{{ facebook_link.url }}" class="link-underline" target="_blank" rel="noopener">Facebook</a>, um auf dem aktuellen Stand zu sein.</p>
     </div>
     {% include button.html text="Mehr erfahren →" url="/about/" style="primary" %}
   </div>
