@@ -57,10 +57,10 @@ footer_legal:
 social_links:
   - type: instagram
     title: Instagram
-    url: "#"
+    url: "https://www.instagram.com/energieselbermachen/"
   - type: facebook
     title: Facebook
-    url: "#"
+    url: "https://www.facebook.com/profile.php?id=61590392108832"
 
 plugins:
   - jekyll-feed
