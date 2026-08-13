@@ -14,7 +14,7 @@ image: "/assets/images/photos/blog/freiland-4.jpeg"
   <figcaption> Ein Bauwerk, zwei Energiequellen: Die Giraffe vereint Sonne und Wind © 2026</figcaption>
 </figure>
 
-### Schritt 1: Groß denken und möglichst viel für eine unabhängige Energieversorgung umsetzen.
+### Schritt 1: Prüfen, ob es lokale Förderungen gibt!
 
 ***Stephanie: Hi Christoph. Wir sitzen gerade bei euch im freiLand Potsdam im Makerspace. Wenn du mir jetzt einen Kaffee machst, dann wäre das ein Solar-Kaffee?***
 
@@ -35,7 +35,7 @@ Dabei standen wir immer wieder vor vielen Herausforderungen. Ursprünglich wollt
 
 Wir verschenken aktuell unseren Reststrom an die Stadtwerke.
 
-### Schritt 2: Wenn etwas nicht funktioniert, trotzdem dranbleiben und gemeinsam nach neuen Lösungen suchen – um langfristig die Früchte zu ernten.
+### Schritt 2: Menschen im Umfeld haben, die sich technisch auskennen. Selbst bei Kauflösungen hilft es sehr, selbst anpacken zu können. 
 
 ***Stephanie: Im Rahmen dieser großen Förderung habt ihr auch die Solargiraffe gebaut?***
 
@@ -65,7 +65,7 @@ Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit 
   </figcaption>
 </figure>
 
-Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir mussten sie andersrum polen, damit sie überhaupt funktioniert. Die Maker haben das Projekt von 90 auf 100 Prozent getragen. Ohne diese letzten zehn Prozent hätte es nie funktioniert.
+Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir mussten sie andersrum polen, damit sie überhaupt funktioniert. Die Maker haben das Projekt von 90 auf 100 Prozent gebracht. Ohne diese letzten zehn Prozent hätte es nie funktioniert.
 
 ***Stephanie: Was findest du als Software-Ingenieur an Open Source spannend?***
 
@@ -82,7 +82,7 @@ Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir muss
 
 > **„Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.“**
 
-### Schritt 3: Mutig vorangehen, Möglichkeiten schaffen erworbenes Wissen zu teilen und andere dabei inspirieren
+### Schritt 3: Bei größeren Anlagen hilft es, eine Person zu haben, die alles koordiniert. 
 
 ***Stephanie: Zurück zur Solargiraffe. Was würdest du anderen Orten oder Vereinen raten, die etwas Ähnliches machen wollen?***
 
