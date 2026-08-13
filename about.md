@@ -71,7 +71,7 @@ description: "Open Energy macht offene Bauanleitungen für Solar- und Windstroma
 </section>
 
 <section class="section partners-section">
-  <h2>Kooperationspartner</h2>
+  <h2>Kooperationen</h2>
   <div class="body-text">
     <p>Open Energy arbeitet eng mit dem Forschungsprojekt <a href="https://okfn.de/projekte/podest/" class="link-underline" target=_blank>PODEST</a> zusammen, das das Potenzial von Open Source Hardware für die dezentrale und bürgerschaftlich getriebene Stromerzeugung erforscht. PODEST ist ein Projekt der TU-Berlin, BTU Cottbus und OKF DE<br>
       <span class="partners-section__logos funders-logos">
