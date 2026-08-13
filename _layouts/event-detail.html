@@ -29,7 +29,16 @@ layout: default
     {% assign event_ts = page.date | date: "%s" %}
     {% assign diff_days = event_ts | minus: today_ts | divided_by: 86400 %}
     {% if diff_days >= 0 %}
-      {% capture badge_text %}{% if diff_days == 0 %}Heute{% elsif diff_days == 1 %}Morgen{% else %}In {{ diff_days }} Tagen{% endif %}{% endcapture %}
+      {% if diff_days == 0 %}
+        {% assign badge_text = "Heute" %}
+      {% elsif diff_days == 1 %}
+        {% assign badge_text = "Morgen" %}
+      {% elsif diff_days < 14 %}
+        {% assign badge_text = "In wenigen Tagen" %}
+      {% else %}
+        {% assign event_weeks = diff_days | divided_by: 7.0 | round %}
+        {% assign badge_text = "In ca. " | append: event_weeks | append: " Wochen" %}
+      {% endif %}
       {% include label.html text=badge_text color="sunshine" %}
     {% endif %}
     <h1>{{ page.title }}</h1>
