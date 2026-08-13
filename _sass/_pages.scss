@@ -464,6 +464,7 @@
 
 .about-hero__hosted-by {
   margin-top: -1.5rem;
+  margin-bottom: 5rem;
 }
 
 .about-hero__media {
@@ -475,6 +476,7 @@
     gap: 1rem;
     flex-shrink: 0;
     width: 24rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -503,7 +505,7 @@
 // Dark frame around the "Das Team" card, revealing pattern-midnight at the
 // left and bottom — matches the Figma inset-card treatment.
 .team-wrap {
-  padding-bottom: $section-pad-tb-mobile;
+  //padding-bottom: $section-pad-tb-mobile;
 
   @include tablet-up {
     padding-bottom: $section-pad-tb-tablet;
@@ -517,6 +519,10 @@
 }
 
 .team-section h2 { margin-bottom: 0; }
+.team-section {
+  position: relative; 
+  top: -5rem;
+}
 
 .team-list {
   display: flex;
@@ -1181,7 +1187,7 @@
 }
 
 .pattern-main {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cline x1='19' y1='11' x2='24' y2='11' stroke='%23bcbcbc' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cline x1='15' y1='11' x2='21' y2='11' stroke='%23bcbcbc' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
   background-size: 24px 24px;
   background-attachment: fixed;
   background-repeat: repeat;
@@ -1189,7 +1195,7 @@
 
 .pattern-midnight {
   background-color: $color-midnight;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cline x1='19' y1='11' x2='24' y2='11' stroke='%23fae62a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cline x1='15' y1='11' x2='21' y2='11' stroke='%23fae62a' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-repeat: repeat;
 }
