@@ -12,7 +12,7 @@ image: "/assets/images/photos/blog/windkit-5.jpg"
   <figcaption> Das Windkit in Steinhöfel ist ein echtes Gemeinschaftsprojekt – gemeinsam bauen, lernen und ausprobieren © 2026</figcaption>
 </figure>
 
-### Schritt 1: Technik selbst erproben – und mit Hilfe von öffentlich geteiltem Wissen Mitbesitzer:in am Produkt werden
+### Schritt 1: Es gibt viele Kleinwindräder. Langfristig die bessere Entscheidung ist es, ein Modell wie das Windkit einzusetzen. Denn damit erhält man alle Baupläne, um das Windrad langfristig zu reparieren. 
 
 ***Stephanie: Hallo Max. Wir stehen auf dem Walnusshof in Steinhöfel vor einem Windrad, das nicht einfach nur gekauft wurde, sondern hier selbst aufgebaut und erprobt wird. Viele Menschen kennen Windräder vor allem aus großen Windparks. Wie kam es dazu, dass hier ein eigenes Kleinwindrad steht?***
 
@@ -32,7 +32,7 @@ Open Source Hardware bedeutet, dass all diese Informationen bereitgestellt und s
 
 Ganz praktisch bedeutet das, dass ich zu dem Windrad einen Bauplan bekomme, der ganz genau beschreibt, wie alles zusammengesetzt ist. Die Entwickler solcher Projekte laden andere Menschen ein, mitzugestalten und den Gegenstand auf allen Ebenen mitzubesitzen.
 
-### Schritt 2: Hilfe holen, von anderen lernen und gemeinsam Strom erzeugen. Dadurch unabhängiger werden und Geld sparen. 
+### Schritt 2: Bevor ein Windrad aufgebaut wird: prüfen, ob es Windpotenzial gibt! Kleinwindräder haben weniger Leistung, als viele denken. Sie sind eine gute Ergänzung zu einer Solaranlage. 
 
 ***Stephanie: Ein Windrad auf allen Ebenen mitzubesitzen, also auch das geistige Eigentum, das klingt gut. Wie viel handwerkliches oder technisches Wissen brauche ich denn, um mir selbst eins aufzubauen?***
 
@@ -62,7 +62,7 @@ Wir haben den Prototypen auf dem Walnusshof in ein paar Tagen aufgebaut. Wobei d
 
 Es ist aber keine Anlage, mit der man sich komplett selbst versorgen kann. In Kombination mit einer Solaranlage ergänzt sich das sehr gut.
 
-### Schritt 3: Selbstwirksamkeit erleben – und verstehen, wie Technik funktioniert und Energie entsteht
+### Schritt 3: Mit dem Eigenbau selbstwirksam sein: Durch das Windkit nicht nur Strom sparen, sondern vor allem lernen, wie Windräder funktionieren
 
 ***Stephanie: Wenn man nicht nur auf die Kostenersparnis schaut, sondern auf die Erfahrung dahinter: Warum würdest du anderen Menschen empfehlen, sich mit so einem Projekt zu beschäftigen?***
 
