@@ -60,7 +60,7 @@ social_links:
     url: "https://www.instagram.com/energieselbermachen/"
   - type: facebook
     title: Facebook
-    url: "https://www.facebook.com/profile.php?id=61590392108832"
+    url: "https://www.facebook.com/people/Energie-ZumSelbermachen/61590392108832/"
 
 plugins:
   - jekyll-feed
