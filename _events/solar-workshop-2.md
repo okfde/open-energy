@@ -8,6 +8,7 @@ signup_url: "https://cloud.okfn.de/apps/forms/s/pnASW8QB9CMep65jMJf9YBqn"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/savethedate-2.jpg' | relative_url }}" alt="">
+  <img src="{{ '![](/assets/images/photos/blog/savethedate-2.jpg)' | relative_url }}" alt="">
   <figcaption> Das Save the Date zum Balkonsolarworkshop © 2026</figcaption>
 </figure>
+
