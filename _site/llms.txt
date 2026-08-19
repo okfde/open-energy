@@ -6,7 +6,7 @@ Open Energy ist ein Projekt der Open Knowledge Foundation Deutschland und des Pr
 
 ## Kernseiten
 
-- [Do it yourself](https://energie-selbermachen.de/do-it-yourself/): Übersicht offener Bauteile für Solar- und Windanlagen mit vollständigen Bauplänen zum Nachbauen und Reparieren
-- [Blog](https://energie-selbermachen.de/blog/): Anleitungen, Interviews und Hintergrundartikel rund um selbstgebaute Energietechnik
-- [Termine](https://energie-selbermachen.de/termine/): Workshops und Veranstaltungen zum Einstieg
-- [Über uns](https://energie-selbermachen.de/about/): Team, Partner und Förderer des Projekts
+- [Do it yourself](http://localhost:4000/do-it-yourself/): Übersicht offener Bauteile für Solar- und Windanlagen mit vollständigen Bauplänen zum Nachbauen und Reparieren
+- [Blog](http://localhost:4000/blog/): Anleitungen, Interviews und Hintergrundartikel rund um selbstgebaute Energietechnik
+- [Termine](http://localhost:4000/termine/): Workshops und Veranstaltungen zum Einstieg
+- [Über uns](http://localhost:4000/about/): Team, Partner und Förderer des Projekts

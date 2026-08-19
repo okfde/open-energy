@@ -7,9 +7,6 @@ excerpt: "Erneuerbare Energien sind dort entstanden, wo Menschen selbst losgeleg
 signup_url: "https://cloud.okfn.de/apps/forms/s/KPaRAPtetDmGWK4y2aaNDbR4"
 ---
 
-<figure class="article-figure">
-  <img src="{{ '![](/assets/images/photos/blog/savethedate-1.jpg)' | relative_url }}" alt="">
-  <figcaption> Das Save the Date zur Auftakt-Veranstaltung © 2026</figcaption>
-</figure>
+![](/assets/images/photos/blog/savethedate-1.jpg)
 
 
