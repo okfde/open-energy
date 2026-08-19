@@ -3,7 +3,7 @@ title: "Auftakt Open Energy"
 date: 2026-09-19
 time: "14:00"
 location: "Nano Science Center Potsdam"
-excerpt: "Erneuerbare Energien sind dort entstanden, wo Menschen selbst losgelegt haben – als Pionier:innen mit eigenen Ideen. Heute scheint Energie oft weit weg vom eigenen Alltag. Warum ist das so? Und wie können wir selbst aktiv werden? Anlässlich des Projektstarts von Open Energy diskutieren wir diese Fragen mit praxisnahen Referent:innen. Außerdem gibt es die Möglichkeit für eine BalkonSolarBeratung und es werden einige Ausstellungsstücke des [Prototype Fund Hardwares](https://hardware.prototypefund.de/) zu sehen sein."
+excerpt: "Erneuerbare Energien sind dort entstanden, wo Menschen selbst losgelegt haben – als Pionier:innen mit eigenen Ideen. Heute scheint Energie oft weit weg vom eigenen Alltag. Warum ist das so? Und wie können wir selbst aktiv werden? Anlässlich des Projektstarts von Open Energy diskutieren wir diese Fragen mit praxisnahen Referent:innen. Außerdem bieten wir kostenlos eine Balkonsolarberatung an."
 signup_url: "https://cloud.okfn.de/apps/forms/s/KPaRAPtetDmGWK4y2aaNDbR4"
 ---
 
