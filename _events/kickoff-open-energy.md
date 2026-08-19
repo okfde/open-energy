@@ -7,11 +7,11 @@ excerpt: "Erneuerbare Energien sind dort entstanden, wo Menschen selbst losgeleg
 signup_url: "https://cloud.okfn.de/apps/forms/s/KPaRAPtetDmGWK4y2aaNDbR4"
 ---
 
-Die Veranstaltung startet um 14 Uhr mit einem Impulsvortrag von [Re-power People](https://www.repower.now/), die verschiedene Projekte in Brandenburg, die sich mit erneuerbarer Energieversorgung beschäftigen, interviewt haben. Ihre Erkenntnisse wie Menschen ihre Energie selbst in die Hand nehmen teilen sie mit uns.
+Den Auftakt macht **[Re-power People](https://www.repower.now/)** mit Einblicken in verschiedene Brandenburger Projekte: Die Initiative hat Menschen interviewt, die ihre Energieversorgung selbst gestalten, und teilt ihre Erkenntnisse darüber, was dabei funktioniert, was antreibt und wo Herausforderungen liegen.
 
-Danach geht's weiter mit einem Podiumsgespräch. Eingeladen sind [Kerstin Lopau](https://www.klimafakten.de/akademie/netzwerktrainerinnen/kerstin-lopau) die das Kollektiv SoLocal Energy e.V. gegründet hat, sowie Dr. Georg Lösel vom [Solarverein Potsdam](https://solarverein-potsdam.de/) und Harald Uphoff vom [Bündnis Bürgerenergie](https://www.buendnis-buergerenergie.de/presse/vorstand-und-aufsichtsrat-neu-strukturiert-/). 
+Anschließend diskutieren **[Kerstin Lopau](https://www.klimafakten.de/akademie/netzwerktrainerinnen/kerstin-lopau)**, Gründerin von SoLocal Energy e. V., **Dr. Georg Lösel** vom [Solarverein Potsdam](https://solarverein-potsdam.de/) und **Harald Uphoff** vom [Bündnis Bürgerenergie](https://www.buendnis-buergerenergie.de/presse/vorstand-und-aufsichtsrat-neu-strukturiert-/) über die Chancen und Grenzen der Energiewende von unten: **Was kann ich selbst tun? Was brauche ich dafür? Und was bringt gemeinschaftliches Engagement für die Region Potsdam/Brandenburg?**
 
-Abschließend gibt es die Möglichkeit Fragen zu stellen, eine kostenlose Balkonsolarberatung in Anspruch zu nehmen und innovative Projekte aus dem Prototype Fund Hardware zu sehen, die sich mit nachbaubarer Technologie für die Stromerzeugung auseinandersetzen.
+Zum Abschluss wird es praktisch: Besucher:innen können Fragen stellen, eine **kostenlose Balkonsolarberatung** nutzen und innovative Projekte aus dem **Prototype Fund Hardware** kennenlernen, die sich mit nachbaubarer Technologie für die Stromerzeugung beschäftigen.
 
 ![](/assets/images/photos/blog/savethedate-1.jpg)
 
