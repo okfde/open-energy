@@ -18,9 +18,9 @@ Erneuerbare Energien sind heute in aller Munde. Dabei ist der Begriff aus physik
 
 Dass wir diese Kräfte nutzen, ist keineswegs neu. Schon vor Jahrtausenden segelten Menschen mit der Kraft des Windes über den Nil, pumpten Wasser mit Windmühlen und mahlten Getreide mit Wasserrädern. Auch die Sonne wurde gezielt genutzt, etwa um römische Bäder zu erwärmen. Mit der Industriellen Revolution änderte sich das grundlegend. Kohle und später Öl und Gas ermöglichten eine bis dahin ungeahnte wirtschaftliche Entwicklung. Gleichzeitig entstand eine starke Abhängigkeit von fossilen Rohstoffen. Spätestens die Ölkrise von 1973 machte deutlich, wie verletzlich diese Abhängigkeit ist und welche hohen Kosten daraus entstehen können. Hinzu kamen die Erkenntnis über die begrenzten Ressourcen unseres Planeten und das wachsende Bewusstsein für den menschengemachten Klimawandel.
 
-### Fakt ist: Menschen auf dem Land haben die ersten Windturbinen gebaut und Solarexperimente realisiert. Open Energy möchte diesen Geist feiern und zurück zur Energieversorgung von unten. 
+### Fakt ist: Menschen auf dem Land haben in Deutschland die ersten Windturbinen in die praktische Nutzung gebracht und Solarexperimente realisiert. Open Energy möchte diesen Geist feiern und zurück zur Energieversorgung von unten. 
 
-Dass Solar- und Windenergie in der zweiten Hälfte des vergangenen Jahrhunderts wieder stärker in den Fokus rückten, ist auch Menschen zu verdanken, die selbst aktiv wurden. Sie entwickelten eigene Anlagen, experimentierten mit neuer Technik und machten erneuerbare Energie zu etwas, das man nicht nur kaufen, sondern selbst bauen konnte.
+Dass Solar- und Windenergie in der zweiten Hälfte des vergangenen Jahrhunderts wieder stärker in den Fokus rückten, ist auch Menschen zu verdanken, die selbst aktiv wurden. Sie entwickelten eigene Anlagen und experimentierten mit neuer Technik.
 
 Beispiele dafür sind der Schotte [James Blyth, der 1887 als einer der Ersten sein Haus mit Windstrom versorgte](https://journals.sagepub.com/doi/10.1260/030952405774354921) oder der Däne Henrik Stiesdal. In den 1970er Jahren baute er auf dem Hof seiner Eltern eigene Windanlagen – zunächst mit einem ganz praktischen Ziel: Stromkosten zu sparen und unabhängiger zu werden. In Deutschland begannen vor allem in den 80er Jahren Bauern erste Anlagen zu errichten. 
 
@@ -48,7 +48,7 @@ Open Energy bringt bestehende offene Energietechnik, sogenannte Open Source Hard
 
 ### Wer steckt dahinter?
 
-Open Energy ist ein Projekt des Prototype Fund Hardware, gefördert durch die Deutsche Stiftung für Engagement und Ehrenamt sowie die Postcode Lotterie. In Kooperation mit dem PODEST-Projekt unterstützt es die Erforschung der Potenziale von Open Source Hardware für die Energiewende und arbeitet so eng mit der TU-Berlin oder der BTU Cottbus-Senftenberg zusammen.
+Open Energy ist ein Projekt des [Prototype Fund Hardware](https://hardware.prototypefund.de/), gefördert durch die Deutsche Stiftung für Engagement und Ehrenamt sowie die Postcode Lotterie. In Kooperation mit dem [PODEST-Projekt](https://okfn.de/projekte/podest/) unterstützt es die Erforschung der Potenziale von Open Source Hardware für die Energiewende und arbeitet so eng mit der TU-Berlin oder der BTU Cottbus-Senftenberg zusammen.
 
 ### Mach mit!
 
