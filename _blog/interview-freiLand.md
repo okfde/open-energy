@@ -11,7 +11,7 @@ image: "/assets/images/photos/blog/freiland-4.jpeg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
-  <figcaption> Ein Bauwerk, zwei Energiequellen: Die Giraffe vereint Sonne und Wind © 2026</figcaption>
+  <figcaption> Ein Bauwerk, zwei Energiequellen: Die Giraffe vereint Sonne und Wind. 6</figcaption>
 </figure>
 
 ### Schritt 1: Prüfen, ob es lokale Förderungen gibt!
@@ -61,7 +61,7 @@ Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
   <figcaption>
-    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich. © 2026
+    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich.
   </figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ Außerdem war die Solargiraffe von der Firma verpolt angeschlossen. Und wir muss
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-5.jpg' | relative_url }}" alt="">
-  <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. © 2026</figcaption>
+  <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. </figcaption>
 </figure>
 
 > **„Eine Anleitung, ein Video, wie jemand etwas baut – das ist auch eine Art Open Source.“**
