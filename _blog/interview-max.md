@@ -9,7 +9,7 @@ image: "/assets/images/photos/blog/windkit-5.jpg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/windkit-5.jpg' | relative_url }}" alt="">
-  <figcaption> Das Windkit in Steinhöfel ist ein echtes Gemeinschaftsprojekt – gemeinsam bauen, lernen und ausprobieren © 2026</figcaption>
+  <figcaption> Das Windkit in Steinhöfel ist ein echtes Gemeinschaftsprojekt – gemeinsam bauen, lernen und ausprobieren. </figcaption>
 </figure>
 
 ### Schritt 1: Es gibt viele Kleinwindräder. Langfristig die bessere Entscheidung ist es, ein Modell wie das Windkit einzusetzen. Denn damit erhält man alle Baupläne, um das Windrad langfristig zu reparieren. 
@@ -44,7 +44,7 @@ Wir haben den Prototypen auf dem Walnusshof in ein paar Tagen aufgebaut. Wobei d
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/windkit-4.jpg' | relative_url }}" alt="">
-  <figcaption> Durch den Mix aus Wind und Sonnenenergie ist der Walnusshof in Steinhöfel energetisch unabhängig. © 2026</figcaption>
+  <figcaption> Durch den Mix aus Wind und Sonnenenergie ist der Walnusshof in Steinhöfel energetisch unabhängig. </figcaption>
 </figure>
 
 <div class="pull-quote">
