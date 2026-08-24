@@ -10,7 +10,7 @@ author: "Stephanie Bergwinkl"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/arduino-1.jpg' | relative_url }}" alt="">
-  <figcaption>Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat. © 2026</figcaption>
+  <figcaption>Janina in ihrem Garten, in dem sie mehrere Solaranlagen selbst aufgebaut hat. </figcaption>
 </figure>
 
 ### Schritt 1: Den Mut aufbringen, mit den eigenen Kompetenzen loszulegen und Lösungsideen in die Praxis bringen
@@ -40,7 +40,7 @@ Und gleich fünf Leute haben gesagt: Hey, wir haben Bock, da weiterzumachen.
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/blog_buergerenergie-1.jpg' | relative_url }}" alt="">
-  <figcaption>Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. © 2026</figcaption>
+  <figcaption>Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. ©beos-energie.de </figcaption>
 </figure>
 
 ***Stephanie: Und daraus entstand die Bürgerenergiegenossenschaft Oder Spree. Was ist eine Bürgerenergiegenossenschaft und wann funktioniert sie?***
