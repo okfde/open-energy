@@ -40,7 +40,7 @@ Und gleich fünf Leute haben gesagt: Hey, wir haben Bock, da weiterzumachen.
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/blog_buergerenergie-1.jpg' | relative_url }}" alt="">
-  <figcaption>Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. ©beos-energie.de </figcaption>
+  <figcaption>Aus der Beobachtung wurde eine Idee – und daraus die Bürgerenergiegenossenschaft Oder-Spree. CC BY-NC 4.0" </figcaption>
 </figure>
 
 ***Stephanie: Und daraus entstand die Bürgerenergiegenossenschaft Oder Spree. Was ist eine Bürgerenergiegenossenschaft und wann funktioniert sie?***
