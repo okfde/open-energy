@@ -10,8 +10,8 @@ image: "/assets/images/photos/blog/solarpanel-tragen.jpg"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/windkit-5.jpg' | relative_url }}" alt="">
-  <figcaption> Das Windkit in Steinhöfel ist ein echtes Gemeinschaftsprojekt – gemeinsam bauen, lernen und ausprobieren, CC BY 4.0 Stephanie Bergwinkl</figcaption>
+  <img src="{{ '/assets/images/photos/blog/solarpanel-tragen.jpg' | relative_url }}" alt="">
+  <figcaption>Am FabLab Cottbus tragen Daniel und Max ein Solarpanel, CC BY 2.0 Gregor Fischer</figcaption>
 </figure>
 
 Erneuerbare Energien sind heute in aller Munde. Dabei ist der Begriff aus physikalischer Sicht eigentlich irreführend: Energie wird nicht erneuert, sondern aus natürlichen Ressourcen umgewandelt. Ein Windrad macht aus der Bewegung des Windes Strom, eine Solaranlage wandelt Sonnenlicht in elektrische Energie um.
@@ -27,8 +27,8 @@ Beispiele dafür sind der Schotte [James Blyth, der 1887 als einer der Ersten se
 Heute begegnen auf dem Land viele Menschen dem Umbau der Energieversorgung mit Skepsis. Große Windräder entstehen in der Nachbarschaft, ohne die Menschen in der Umgebung am Gewinn oder an Fragen der Gestaltung zu beteiligen. Gleichzeitig sind viele private Flächen noch ungenutzt, obwohl sich mit einer kleinen Solaranlage viel Geld sparen lässt.
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/solarpanel-tragen.jpg' | relative_url }}" alt="">
-  <figcaption>Am FabLab Cottbus tragen Daniel und Max ein Solarpanel, CC BY 2.0 Gregor Fischer</figcaption>
+  <img src="{{ '/assets/images/photos/blog/historische-windanlage.jpg' | relative_url }}" alt="">
+  <figcaption> Das Foto zeigt eine historische Winkraftanlage von James Blyth in den USA aus dem Jahr 1891, CC BY 2.0 </figcaption>
 </figure>
 
 Wer sich beteiligen und selbst eine Anlage aufbauen möchte, landet heute meist bei geschlossenen, industriell gefertigten Systemen, die sich kaum reparieren oder anpassen lassen. Auch wegen des Datenschutzes gibt es immer wieder Bedenken, sich ein Balkonkraftwerk zu installieren, das dann sensible Haushaltsdaten an fremde Server sendet. Von der Bastelkultur der Anfangstage und damit auch dem Gefühl, selbst Hand anlegen zu können, scheint wenig übrig geblieben. Die Energiewende wirkt auf manche als von außen aufgezwungen.
