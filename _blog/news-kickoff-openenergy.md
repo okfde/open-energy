@@ -11,7 +11,7 @@ image: "/assets/images/photos/blog/solarpanel-tragen.jpg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/solarpanel-tragen.jpg' | relative_url }}" alt="">
-  <figcaption> Die Sonnenenergie buchstäblich selbst in die Hand nehmen - Am FabLab Cottbus tragen Daniel und Max ein Solarpanel, CC BY 2.0 Gregor Fischer</figcaption>
+  <figcaption> Die eigene Energie buchstäblich selbst in die Hand nehmen - Am FabLab Cottbus tragen Daniel und Open Energy Projektleiter Max ein Solarpanel, CC BY 2.0 Gregor Fischer</figcaption>
 </figure>
 
 Erneuerbare Energien sind heute in aller Munde. Dabei ist der Begriff aus physikalischer Sicht eigentlich irreführend: Energie wird nicht erneuert, sondern aus natürlichen Ressourcen umgewandelt. Ein Windrad macht aus der Bewegung des Windes Strom, eine Solaranlage wandelt Sonnenlicht in elektrische Energie um.
@@ -28,7 +28,7 @@ Heute begegnen auf dem Land viele Menschen dem Umbau der Energieversorgung mit S
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/historische-windanlage.jpg' | relative_url }}" alt="">
-  <figcaption> Das Foto zeigt eine historische Winkraftanlage von James Blyth in den USA aus dem Jahr 1891, CC BY 2.0 </figcaption>
+  <figcaption> Das Foto zeigt eine historische Windkraftanlage des schottischen Ingenieurs James Blyth aus dem Jahr 1891 in Marykirk, Schottland. CC BY 2.0 </figcaption>
 </figure>
 
 Wer sich beteiligen und selbst eine Anlage aufbauen möchte, landet heute meist bei geschlossenen, industriell gefertigten Systemen, die sich kaum reparieren oder anpassen lassen. Auch wegen des Datenschutzes gibt es immer wieder Bedenken, sich ein Balkonkraftwerk zu installieren, das dann sensible Haushaltsdaten an fremde Server sendet. Von der Bastelkultur der Anfangstage und damit auch dem Gefühl, selbst Hand anlegen zu können, scheint wenig übrig geblieben. Die Energiewende wirkt auf manche als von außen aufgezwungen.
