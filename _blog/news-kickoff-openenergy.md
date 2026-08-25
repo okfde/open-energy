@@ -11,7 +11,7 @@ image: "/assets/images/photos/blog/solarpanel-tragen.jpg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/solarpanel-tragen.jpg' | relative_url }}" alt="">
-  <figcaption>Am FabLab Cottbus tragen Daniel und Max ein Solarpanel, CC BY 2.0 Gregor Fischer</figcaption>
+  <figcaption> Die Sonnenenergie buchstäblich selbst in die Hand nehmen - Am FabLab Cottbus tragen Daniel und Max ein Solarpanel, CC BY 2.0 Gregor Fischer</figcaption>
 </figure>
 
 Erneuerbare Energien sind heute in aller Munde. Dabei ist der Begriff aus physikalischer Sicht eigentlich irreführend: Energie wird nicht erneuert, sondern aus natürlichen Ressourcen umgewandelt. Ein Windrad macht aus der Bewegung des Windes Strom, eine Solaranlage wandelt Sonnenlicht in elektrische Energie um.
