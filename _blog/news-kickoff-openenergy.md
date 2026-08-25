@@ -43,7 +43,7 @@ Open Energy bringt bestehende offene Energietechnik, sogenannte Open Source Hard
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/hero/photo-3.jpg' | relative_url }}" alt="">
-  <figcaption> Das Windkit ist ein Kleinwindrad, das alle Baupläne zur Verfügung stellt, um es zu reparieren und nachzubauen, CC BY 4.0 ERNI e.V.</figcaption>
+  <figcaption> Ein aktuelles Beispiel für selbstgebaute Windenergie: Das Windkit ist ein Kleinwindrad, das alle Baupläne zur Verfügung stellt, um es zu reparieren und nachzubauen, CC BY 4.0 ERNI e.V.</figcaption>
 </figure>
 
 ### Wer steckt dahinter?
