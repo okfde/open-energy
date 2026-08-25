@@ -13,3 +13,8 @@
   title: "Mit dem Micro Inverter Strom einspeisen"
   excerpt: "Der Inverter orientiert sich am Arduino-Design und soll mittels Software sehr leicht anpassbar sein."
   image: "https://github.com/owntech-foundation/micro-inverter/blob/main/KiCAD_Files/renderings/3D.png?raw=true"
+- source: selbstbau.solar
+  url: "https://selbstbau.solar/handbuch/"
+  title: "Eine große PV-Anlage gemeinsam aufbauen"
+  excerpt: "Im Handbuch „Gemeinschaftlicher Solar-Selbstbau“ findet ihr zahlreiche Antworten und Tipps, wie ihr eine Selbstbau-Community aufbaut, Wissen zu rechtlichen, ökonomischen, unternehmerischen und technischen Aspekten sowie soziales Knowhow, wie eure Gruppe erfolgreich wird."
+  image: "/assets/images/photos/diy/pv-selbstbau-handbuch.png"
