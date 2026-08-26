@@ -194,6 +194,7 @@
 .blog-teaser:hover .blog-teaser__image img,
 .blog-teaser:focus-visible .blog-teaser__image img {
   --scale: 1.1;
+  filter: grayscale(0%) brightness(120%);
 }
 
 .blog-teaser__image--small {
