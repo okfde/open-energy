@@ -1,6 +1,6 @@
 {% comment %}
   Renders a button/link styled per the Figma "Button" component.
-  Params: text, url, style (primary|secondary), invert (bool), disabled (bool), tag (a|button)
+  Params: text, url, style (primary|secondary), invert (bool), disabled (bool), tag (a|button), blank (bool, adds target="_blank" for tag "a")
 {% endcomment %}
 {% assign btn_style = include.style | default: "primary" %}
 {% assign btn_tag = include.tag | default: "a" %}
@@ -13,7 +13,7 @@
 
 </button>
 {% else %}
-<a href="{{ include.url }}" class="{{ classes }}">
+<a href="{{ include.url }}" class="{{ classes }}"{% if include.blank %} target="_blank" rel="noopener"{% endif %}>
   <span>{{ include.text }}</span>
 
 </a>
