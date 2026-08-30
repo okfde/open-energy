@@ -59,6 +59,10 @@ layout: default
       {% assign signup_text = page.signup_text | default: "Jetzt anmelden" %}
       {% include button.html text=signup_text url=page.signup_url style="primary" tag="a" %}
     {% endif %}
+    {% if page.call_url %}
+      {% assign url_text = page.url_text | default: "Zum Onlinecall" %}
+      {% include button.html text=url_text url=page.call_url style="primary" tag="a" %}
+    {% endif %}
   </div>
 
   <div class="event-article__body body-text">
