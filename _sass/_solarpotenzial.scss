@@ -66,44 +66,17 @@
   margin-top: 3rem;
 }
 
+// Same pill-filter look as the /blog category filter (.label, .label--midnight,
+// .category-filter__item from _buttons.scss / _pages.scss) — buttons here use
+// those same classes so the two filter UIs share one visual language.
 .map-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.625rem;
-  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.75rem;
-}
 
-.map-controls .group {
-  display: inline-flex;
-  flex-wrap: wrap;
-  border: 1px solid $color-stroke-dimmed;
-  border-radius: $radius-button;
-  overflow: hidden;
-}
-
-.map-controls button {
-  font-family: $font-body;
-  font-size: $size-ui-small;
-  background: $color-bg-level-1;
-  color: $color-text-secondary;
-  padding: 0.5rem 0.75rem;
-  border-right: 1px solid $color-stroke-dimmed;
-  transition: background-color 0.15s ease, color 0.15s ease;
-
-  &:last-child { border-right: none; }
-
-  &:hover {
-    color: $color-text;
-    background: $color-bg-level-2;
-  }
-
-  &.is-active {
-    background: $color-bg-level-4;
-    color: $color-text-invert;
-    font-weight: 500;
-
-    &:hover { background: $color-bg-level-4; }
+  button {
+    cursor: pointer;
   }
 }
 

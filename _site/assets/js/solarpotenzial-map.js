@@ -290,8 +290,8 @@
     var buttons = document.querySelectorAll("[data-metric]");
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        buttons.forEach(function (b) { b.classList.remove("is-active"); });
-        btn.classList.add("is-active");
+        buttons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+        btn.setAttribute("aria-pressed", "true");
         state.metric = btn.getAttribute("data-metric");
         updateStyles();
       });
