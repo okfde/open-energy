@@ -1,15 +1,6 @@
 {
-  "panel": {
-    "breite_m": 1.993,
-    "hoehe_m": 1.134,
-    "wp": 500.0,
-    "flaeche_m2": 2.2601,
-    "dichte_kwp_pro_m2": 0.22123
-  },
   "anzahl_gemeinden": 413,
   "dach_flaeche_qm": 178730196,
-  "dach_leistung_eigen_kwp": 39540329.5,
-  "dach_menge_eigen_mwh": 30332603,
   "dach_leistung_amtlich_kwp": 35393389,
   "dach_menge_amtlich_mwh": 27155235,
   "frei_flaeche_qm": 18956484390.0,
@@ -20,5 +11,5 @@
   "bestand_balkon_kwp": 38822.3,
   "bestand_frei_anzahl": 1490,
   "bestand_frei_kwp": 6253901.0,
-  "ausschoepfung_dach_prozent": 6.42
+  "ausschoepfung_dach_prozent": 7.17
 }

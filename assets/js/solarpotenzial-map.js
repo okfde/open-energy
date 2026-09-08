@@ -168,7 +168,7 @@
 
   // Dach-Potenzial wird nur aus den Eignungsklassen "gut" und "mittel"
   // gebildet; "schlecht" wird hier separat ausgewiesen, aber bewusst nicht
-  // in die Summen (Fläche, eigene/amtliche Leistung, Ausschöpfung) eingerechnet.
+  // in die Summen (Fläche, amtliche Leistung, Ausschöpfung) eingerechnet.
   var EIGNUNGSKLASSEN = [
     { key: "gut", label: "Gut" },
     { key: "mittel", label: "Mittel" },
@@ -179,14 +179,12 @@
     var html = '<table class="popup-classes"><tr>' +
       "<td><strong>Eignung</strong></td>" +
       '<td class="num"><strong>Fläche</strong></td>' +
-      '<td class="num"><strong>eigene kWp</strong></td>' +
       '<td class="num"><strong>amtlich kWp</strong></td></tr>';
     EIGNUNGSKLASSEN.forEach(function (k) {
       var excluded = k.key === "schlecht";
       html += "<tr" + (excluded ? ' class="is-excluded"' : "") + ">" +
         "<td>" + k.label + (excluded ? " *" : "") + "</td>" +
         '<td class="num">' + fmtNum(props["dach_flaeche_" + k.key + "_qm"], 0) + " m²</td>" +
-        '<td class="num">' + fmtNum(props["dach_leistung_eigen_" + k.key + "_kwp"], 0) + "</td>" +
         '<td class="num">' + fmtNum(props["dach_leistung_amtlich_" + k.key + "_kwp"], 0) + "</td>" +
         "</tr>";
     });
@@ -199,9 +197,7 @@
     var typ = props.gemeinde_typ || "";
     var rows = [
       ["Dach-Potenzialfläche (gut + mittel)", fmtNum(props.dach_flaeche_qm, 0) + " m²"],
-      ["Potenzial (eigene Berechnung, 500-Wp-Panel)", fmtNum(props.dach_leistung_eigen_kwp, 0) + " kWp"],
-      ["Potenzieller Jahresertrag (eigene Berechnung)", fmtCompact(props.dach_menge_eigen_mwh * 1000) + " kWh/a"],
-      ["Amtliches Potenzial (Vergleich, gut + mittel)", fmtNum(props.dach_leistung_amtlich_kwp, 0) + " kWp / " + fmtCompact(props.dach_menge_amtlich_mwh * 1000) + " kWh/a"],
+      ["Amtliches Potenzial (gut + mittel)", fmtNum(props.dach_leistung_amtlich_kwp, 0) + " kWp / " + fmtCompact(props.dach_menge_amtlich_mwh * 1000) + " kWh/a"],
       ["Bestand Dachanlagen (MaStR)", fmtNum(props.bestand_csv_dach_anzahl, 0) + " Anlagen, " + fmtNum(props.bestand_dach_kwp_gesamt, 0) + " kWp"],
       ["Ausschöpfung Dachpotenzial", fmtNum(props.ausschoepfung_dach_prozent, 1) + " %"],
       ["Freiflächen-Potenzial (amtlich, EEG-Kulisse)", fmtNum(props.frei_flaeche_qm, 0) + " m²"],

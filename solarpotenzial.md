@@ -12,9 +12,8 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       Die Karte kombiniert die amtliche Potenzialanalyse für Dachflächen mit
       günstiger Sonnenausrichtung (Energieportal Brandenburg) mit allen im
       Marktstammdatenregister gemeldeten, bereits errichteten Solaranlagen –
-      je Gemeinde. Flächen werden zusätzlich in installierbare Leistung (kWp)
-      und potenziellen Jahresertrag (kWh) umgerechnet, auf Basis eines
-      aktuellen 500-Wp-Panels (1993 × 1134 × 30&nbsp;mm). Details siehe
+      je Gemeinde. Verglichen wird die bereits installierte Leistung (kWp)
+      mit dem amtlich modellierten Potenzial (kWp, kWh/a). Details siehe
       <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>.
     </p>
   </div>
@@ -32,11 +31,6 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       <div class="stat-tile__label">Dach-Potenzialfläche gesamt</div>
       <div class="stat-tile__value">{{ f.dach_flaeche_qm }} <small>m²</small></div>
       <div class="stat-tile__sub">Flächen mit guter und mittlerer Sonnenausrichtung – schlecht geeignete Flächen ausgenommen</div>
-    </div>
-    <div class="stat-tile">
-      <div class="stat-tile__label">Dachpotenzial, eigene Berechnung</div>
-      <div class="stat-tile__value">{{ f.dach_leistung_eigen_kwp }} <small>kWp</small></div>
-      <div class="stat-tile__sub">{{ f.dach_menge_eigen_kwh }} kWh potenzieller Jahresertrag</div>
     </div>
     <div class="stat-tile">
       <div class="stat-tile__label">Bestand Dachanlagen (MaStR)</div>
@@ -137,9 +131,8 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     Fläche und Potenzial umfassen nur Dachflächen der Eignungsklassen „gut“
     und „mittel“ – schlecht geeignete Flächen sind hier bewusst nicht
     eingerechnet (Aufschlüsselung je Gemeinde im Karten-Popup). „Ausschöpfung
-    Dach“ setzt den Bestand ins Verhältnis zum eigenen, panelbasierten
-    Dachpotenzial (Berechnungsweg siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>);
-    „amtlich“ ist die vom Land Brandenburg modellierte Vergleichsleistung.
+    Dach“ setzt den Bestand ins Verhältnis zum amtlichen Dachpotenzial
+    (Berechnungsweg siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>).
     Zahlen werden clientseitig formatiert und nach Spalte sortiert – ein
     Klick auf den Spaltenkopf kehrt die Reihenfolge um.
   </p>
@@ -191,62 +184,13 @@ deshalb für die Kartenverknüpfung verwendet.
 Die amtliche Statistik teilt jede Dachfläche in eine Eignungsklasse ein –
 **gut**, **mittel** oder **schlecht** – abhängig von Dachausrichtung,
 -neigung und Verschattung. Alle auf dieser Seite ausgewiesenen
-Dachpotenzial-Kennzahlen (Gesamtfläche, eigene Berechnung **und** amtlicher
-Vergleichswert) summieren bewusst nur die Klassen **gut** und **mittel**.
-Schlecht geeignete Flächen fließen **nicht** in diese Summen ein, da eine
-Belegung dort technisch zwar möglich, aber wirtschaftlich in der Regel nicht
-sinnvoll ist. Die Flächen-, Leistungs- und Ertragswerte je Eignungsklasse
-(einschließlich „schlecht“) stehen für jede Gemeinde vollständig im
-Karten-Popup („Detailwerte“, siehe [Karte je Gemeinde](#karte)).
-
-### Panel-Annahme
-
-Alle „eigene Berechnung“ genannten Kennzahlen basieren auf einem aktuellen
-500-Wp-Panel mit folgenden Maßen:
-
-| Größe | Wert |
-|---|---|
-| Breite × Höhe | 1.993 mm × 1.134 mm |
-| Modulfläche | 2,2601 m² |
-| Nennleistung | 500 Wp |
-| Leistungsdichte | **221,2 Wp/m²** (0,2212 kWp/m²) |
-
-Die amtliche Dach-Potenzialfläche der Klassen „gut“ und „mittel“ (in m²)
-wird mit dieser Dichte in eine installierbare Leistung (kWp) umgerechnet –
-**ohne** Abzug für Abstände, Verschattung durch Dachaufbauten oder Statik;
-es handelt sich also um ein technisches Maximum bei lückenloser Verlegung,
-nicht um eine realistische Ausbauprognose.
-
-### Von kWp zu kWh
-
-Watt-Peak beschreibt maximale Leistung einer Anlage. Um einen **potenziellen
-Jahresertrag in kWh** anzugeben, wird je Eignungsklasse ein spezifischer
-Ertrag (kWh pro kWp und Jahr) benötigt. Anstatt einen pauschalen Wert zu
-schätzen, wird er aus der amtlichen Statistik selbst abgeleitet:
-
-```
-spezifischer Ertrag (kWh/kWp/a) = amtliche Ertragsmenge (MWh/a) × 1000
-                                   ÷ amtliche Leistung (kWp)
-```
-
-je Eignungsklasse und Gemeinde. Das überträgt die vom Land bereits
-modellierte Sonneneinstrahlung, Verschattung und Ausrichtung auf die mit
-dem Panel berechnete eigene Leistung. Ist die amtliche Leistung einer
-Klasse in einer Gemeinde 0 kWp (keine Fläche dieser Klasse), wird
-ersatzweise ein konservativer Richtwert verwendet: **gut 950 / mittel 750 /
-schlecht 500 kWh/kWp/a**.
-
-```
-eigene kWp (Klasse)  = Fläche (m²) × 0,2212 kWp/m²
-eigene kWh/a (Klasse) = eigene kWp (Klasse) × spezifischer Ertrag (Klasse)
-```
-
-Diese Rechnung läuft weiterhin je Eignungsklasse einzeln, damit jede Klasse
-ihren eigenen spezifischen Ertrag erhält; in die ausgewiesenen Summen
-(Landeskennzahlen, Karten-Popup und die Ausschöpfungsgrad-Berechnung der
-Gemeindetabelle) gehen davon nur **gut** und **mittel** ein – der Wert für
-„schlecht“ wird je Gemeinde berechnet, aber nicht mitaddiert und nur im
-Karten-Popup gezeigt.
+Dachpotenzial-Kennzahlen (Gesamtfläche und amtliches Potenzial) summieren
+bewusst nur die Klassen **gut** und **mittel**. Schlecht geeignete Flächen
+fließen **nicht** in diese Summen ein, da eine Belegung dort technisch zwar
+möglich, aber wirtschaftlich in der Regel nicht sinnvoll ist. Die Flächen-
+und Leistungswerte je Eignungsklasse (einschließlich „schlecht“) stehen für
+jede Gemeinde vollständig im Karten-Popup („Detailwerte“, siehe
+[Karte je Gemeinde](#karte)).
 
 ### Freiflächen-Potenzial
 
@@ -290,7 +234,7 @@ s. o.):
 
 ```
 Ausschöpfung (%) = Bestand Gebäudesolaranlagen (kWp, MaStR)
-                    ÷ eigenes Dach-Potenzial (kWp, Panel-Berechnung)
+                    ÷ amtliches Dach-Potenzial (kWp, gut + mittel)
                     × 100
 ```
 
@@ -317,7 +261,7 @@ Diese Anlagen fehlen in der Gemeindekarte und in den Landessummen.
   Kartendarstellung geometrisch vereinfacht (Douglas-Peucker, Toleranz
   ≈ 0,0006°, das entspricht ca. 40–60 m) – für die Choroplethen-Darstellung
   ausreichend, nicht für exakte Grenzverläufe geeignet.
-- Die Farbskala der Karte ist eine sequenzielle Blau-Rampe; die obersten
+- Die Farbskala der Karte ist eine sequenzielle Gelb-Orange-Braun-Rampe; die obersten
   Ausreißer (95./98. Perzentil je Kennzahl) werden in der dunkelsten Stufe
   zusammengefasst, damit Unterschiede zwischen den übrigen Gemeinden
   sichtbar bleiben. Exakte Werte stehen immer im Popup bzw. in der
