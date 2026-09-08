@@ -13,6 +13,6 @@ Anschließend diskutieren **Dr. Georg Lösel** vom [Solarverein Potsdam](https:/
 
 Zum Abschluss wird es praktisch: Besucher:innen können Fragen stellen, eine **kostenlose Balkonsolarberatung** nutzen und innovative Projekte aus dem **Prototype Fund Hardware** kennenlernen, die sich mit nachbaubarer Technologie für die Stromerzeugung beschäftigen.
 
-![](/assets/images/photos/blog/savethedate-1.jpg)
+![](/assets/images/photos/blog/savethedate-01.jpg)
 
 
