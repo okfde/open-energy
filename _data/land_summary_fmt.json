@@ -1,0 +1,15 @@
+{
+  "dach_flaeche_qm": "222.763.914",
+  "dach_leistung_eigen_kwp": "49.282.687",
+  "dach_menge_eigen_kwh": "34.777.637.000",
+  "dach_leistung_amtlich_kwp": "44.085.592",
+  "dach_menge_amtlich_kwh": "31.120.909.000",
+  "frei_flaeche_qm": "18.956.484.390",
+  "bestand_dach_anzahl": "135.360",
+  "bestand_dach_kwp": "2.538.267",
+  "bestand_balkon_anzahl": "54.057",
+  "bestand_balkon_kwp": "38.822",
+  "bestand_frei_anzahl": "1.490",
+  "bestand_frei_kwp": "6.253.901",
+  "ausschoepfung_dach_prozent": "5,2"
+}

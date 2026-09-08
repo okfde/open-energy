@@ -55,6 +55,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/solarpotenzial/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/termine/</loc>
 </url>
 </urlset>

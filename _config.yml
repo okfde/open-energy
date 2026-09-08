@@ -76,3 +76,4 @@ exclude:
   - vendor
   - node_modules
   - README.md
+  - site_solapotenzial
