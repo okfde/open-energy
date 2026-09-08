@@ -9,7 +9,7 @@ signup_url: "https://cloud.okfn.de/apps/forms/s/KPaRAPtetDmGWK4y2aaNDbR4"
 
 Den Auftakt macht **[Re-power People](https://www.repower.now/)** mit Einblicken in verschiedene Brandenburger Projekte: Die Initiative hat Menschen interviewt, die ihre Energieversorgung selbst gestalten, und teilt ihre Erkenntnisse darüber, was dabei funktioniert, was antreibt und wo Herausforderungen liegen.
 
-Anschließend diskutieren **[Kerstin Lopau](https://www.klimafakten.de/akademie/netzwerktrainerinnen/kerstin-lopau)**, Gründerin von SoLocal Energy e. V., **Dr. Georg Lösel** vom [Solarverein Potsdam](https://solarverein-potsdam.de/) und **Harald Uphoff** vom [Bündnis Bürgerenergie](https://www.buendnis-buergerenergie.de/presse/vorstand-und-aufsichtsrat-neu-strukturiert-/) über die Chancen und Grenzen der Energiewende von unten: **Was kann ich selbst tun? Was brauche ich dafür? Und was bringt gemeinschaftliches Engagement für die Region Potsdam/Brandenburg?**
+Anschließend diskutieren **Dr. Georg Lösel** vom [Solarverein Potsdam](https://solarverein-potsdam.de/) und **Harald Uphoff** vom [Bündnis Bürgerenergie](https://www.buendnis-buergerenergie.de/presse/vorstand-und-aufsichtsrat-neu-strukturiert-/) über die Chancen und Grenzen der Energiewende von unten: **Was kann ich selbst tun? Was brauche ich dafür? Und was bringt gemeinschaftliches Engagement für die Region Potsdam/Brandenburg?**
 
 Zum Abschluss wird es praktisch: Besucher:innen können Fragen stellen, eine **kostenlose Balkonsolarberatung** nutzen und innovative Projekte aus dem **Prototype Fund Hardware** kennenlernen, die sich mit nachbaubarer Technologie für die Stromerzeugung beschäftigen.
 
