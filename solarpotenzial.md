@@ -102,17 +102,15 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
         <tr>
           <th data-type="text">Gemeinde</th>
           <th data-type="text">Typ</th>
-          <th data-type="num">Dach-Fläche (m²)</th>
-          <th data-type="num">Dach-Potenzial, eigene Berechnung (kWp)</th>
-          <th data-type="num">Dach-Potenzial, eigene Berechnung (kWh/a)</th>
+          <th data-type="num" data-decimals="1" class="sorted-desc">Ausschöpfung Dach (%)</th>
+          <th data-type="num">Dachfläche-Potenzial (m²)</th>
           <th data-type="num">Dach-Potenzial, amtlich (kWp)</th>
           <th data-type="num">Freifläche-Potenzial (m²)</th>
           <th data-type="num">Bestand Dach (Anzahl)</th>
           <th data-type="num">Bestand Dach (kWp)</th>
           <th data-type="num">Bestand Freifläche (kWp)</th>
-          <th data-type="num">Bestand Balkonkraftwerke (Anzahl)</th>
-          <th data-type="num">Bestand Balkonkraftwerke (kWp)</th>
-          <th data-type="num" class="sorted-desc">Ausschöpfung Dach (%)</th>
+          <th data-type="num">Bestand Balkonsolar (Anzahl)</th>
+          <th data-type="num">Bestand Balkonsolar (kWp)</th>
         </tr>
       </thead>
       <tbody>
@@ -120,9 +118,8 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
         <tr>
           <td>{{ g.gemeinde_name }}</td>
           <td>{{ g.gemeinde_typ }}</td>
+          <td data-sort="{{ g.ausschoepfung_dach_prozent }}">{{ g.ausschoepfung_dach_prozent }}</td>
           <td data-sort="{{ g.dach_flaeche_qm }}">{{ g.dach_flaeche_qm | plus: 0 | round }}</td>
-          <td data-sort="{{ g.dach_leistung_eigen_kwp }}">{{ g.dach_leistung_eigen_kwp | plus: 0 | round }}</td>
-          <td data-sort="{{ g.dach_menge_eigen_mwh }}">{{ g.dach_menge_eigen_mwh | times: 1000 | round }}</td>
           <td data-sort="{{ g.dach_leistung_amtlich_kwp }}">{{ g.dach_leistung_amtlich_kwp | plus: 0 | round }}</td>
           <td data-sort="{{ g.frei_flaeche_qm }}">{{ g.frei_flaeche_qm | plus: 0 | round }}</td>
           <td data-sort="{{ g.bestand_csv_dach_anzahl }}">{{ g.bestand_csv_dach_anzahl }}</td>
@@ -130,7 +127,6 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
           <td data-sort="{{ g.bestand_csv_frei_kwp }}">{{ g.bestand_csv_frei_kwp | plus: 0 | round }}</td>
           <td data-sort="{{ g.bestand_csv_balkon_anzahl }}">{{ g.bestand_csv_balkon_anzahl }}</td>
           <td data-sort="{{ g.bestand_csv_balkon_kwp }}">{{ g.bestand_csv_balkon_kwp }}</td>
-          <td data-sort="{{ g.ausschoepfung_dach_prozent }}">{{ g.ausschoepfung_dach_prozent }}</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -140,12 +136,12 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
   <p class="note">
     Fläche und Potenzial umfassen nur Dachflächen der Eignungsklassen „gut“
     und „mittel“ – schlecht geeignete Flächen sind hier bewusst nicht
-    eingerechnet (Aufschlüsselung je Gemeinde im Karten-Popup). „Eigene
-    Berechnung“ nutzt die vom Nutzer vorgegebene Panel-Kenngröße
-    (500&nbsp;Wp, 1993&nbsp;×&nbsp;1134&nbsp;mm ⇒ 221,2&nbsp;Wp/m²) auf dieser
-    Dachflächenkulisse; „amtlich“ ist die vom Land Brandenburg modellierte
-    Leistung zum Vergleich. Zahlen werden clientseitig formatiert und nach
-    Spalte sortiert – ein Klick auf den Spaltenkopf kehrt die Reihenfolge um.
+    eingerechnet (Aufschlüsselung je Gemeinde im Karten-Popup). „Ausschöpfung
+    Dach“ setzt den Bestand ins Verhältnis zum eigenen, panelbasierten
+    Dachpotenzial (Berechnungsweg siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>);
+    „amtlich“ ist die vom Land Brandenburg modellierte Vergleichsleistung.
+    Zahlen werden clientseitig formatiert und nach Spalte sortiert – ein
+    Klick auf den Spaltenkopf kehrt die Reihenfolge um.
   </p>
   <p class="note caveat">
     Balkonkraftwerke (steckerfertige Solaranlagen) werden als eigene Spalte
@@ -247,10 +243,10 @@ eigene kWh/a (Klasse) = eigene kWp (Klasse) × spezifischer Ertrag (Klasse)
 
 Diese Rechnung läuft weiterhin je Eignungsklasse einzeln, damit jede Klasse
 ihren eigenen spezifischen Ertrag erhält; in die ausgewiesenen Summen
-(„eigene Berechnung“ auf Karte, Gemeindetabelle und Landeskennzahlen)
-gehen davon nur **gut** und **mittel** ein – der Wert für „schlecht“ wird
-je Gemeinde berechnet, aber nicht mitaddiert und nur im Karten-Popup
-gezeigt.
+(Landeskennzahlen, Karten-Popup und die Ausschöpfungsgrad-Berechnung der
+Gemeindetabelle) gehen davon nur **gut** und **mittel** ein – der Wert für
+„schlecht“ wird je Gemeinde berechnet, aber nicht mitaddiert und nur im
+Karten-Popup gezeigt.
 
 ### Freiflächen-Potenzial
 

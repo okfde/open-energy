@@ -200,17 +200,18 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 .table-toolbar input[type="search"] {
   font-family: $font-body;
-  font-size: $size-ui-medium;
+  font-size: $size-ui-small;
   padding: 0.5rem 0.625rem;
   border: 1px solid $color-stroke-dimmed-invert;
   border-radius: $radius-button;
   background: transparent;
   color: inherit;
-  min-width: 14rem;
+  min-width: 16rem;
 
   &::placeholder { color: $color-text-secondary-invert; }
 }

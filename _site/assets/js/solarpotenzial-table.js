@@ -20,7 +20,7 @@
             var text = td.textContent.trim();
             var num = parseFloat(text.replace(",", "."));
             if (!isNaN(num)) {
-              var digits = /\./.test(text) === false && Math.abs(num) < 1000 && td.cellIndex === headers.length - 1 ? 1 : 0;
+              var digits = parseInt(headers[td.cellIndex].getAttribute("data-decimals"), 10) || 0;
               td.textContent = num.toLocaleString("de-DE", { minimumFractionDigits: digits, maximumFractionDigits: digits });
             }
           }
@@ -44,7 +44,14 @@
 
     searchEl.addEventListener("input", applyFilter);
 
-    var currentSort = { index: headers.length - 1, dir: "desc" };
+    // Initiale Sortierspalte/-richtung aus der im Markup vorgegebenen
+    // sorted-asc/sorted-desc-Klasse ablesen, statt eine feste Spaltenposition
+    // anzunehmen (die Spaltenreihenfolge im Markup kann sich ändern).
+    var currentSort = { index: 0, dir: "desc" };
+    headers.forEach(function (h, i) {
+      if (h.classList.contains("sorted-asc")) currentSort = { index: i, dir: "asc" };
+      if (h.classList.contains("sorted-desc")) currentSort = { index: i, dir: "desc" };
+    });
 
     function sortBy(index, type, dir) {
       var mult = dir === "asc" ? 1 : -1;
