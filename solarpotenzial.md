@@ -50,8 +50,8 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </div>
     <div class="stat-tile">
       <div class="stat-tile__label">Bestand Balkonkraftwerke (MaStR)</div>
-      <div class="stat-tile__value">{{ f.bestand_balkon_kwp }} <small>kWp</small></div>
-      <div class="stat-tile__sub">{{ f.bestand_balkon_anzahl }} Steckersolaranlagen – separat ausgewiesen, nicht in der Ausschöpfung enthalten</div>
+      <div class="stat-tile__value">{{ f.bestand_balkon_anzahl }} <small>Steckersolaranlagen</small></div>
+      <div class="stat-tile__sub">{{ f.bestand_balkon_kwp }} kWp installierte Leistung – separat ausgewiesen, nicht in der Ausschöpfung enthalten</div>
     </div>
   </div>
 
@@ -62,7 +62,6 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       <div class="group" role="group" aria-label="Kennzahl auf der Karte">
         <button type="button" data-metric="ausschoepfung" class="is-active">Ausschöpfung Dach (%)</button>
         <button type="button" data-metric="flaeche">Dach-Fläche (m²)</button>
-        <button type="button" data-metric="kwh">Dach-Potenzial (kWh/a)</button>
         <button type="button" data-metric="bestand">Bestand Dach (kWp)</button>
         <button type="button" data-metric="frei_flaeche">Freifläche-Potenzial (m²)</button>
         <button type="button" data-metric="frei_bestand">Bestand Freifläche (kWp)</button>

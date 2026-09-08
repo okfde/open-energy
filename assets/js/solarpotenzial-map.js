@@ -27,15 +27,6 @@
       legendFmt: function (v) { return fmtCompact(v) + " m²"; },
       capPercentile: 0.95
     },
-    kwh: {
-      label: "Potenzial in kWh/Jahr",
-      field: "dach_menge_eigen_mwh",
-      unit: "kWh",
-      transform: function (v) { return v * 1000; }, // gespeichert in MWh -> kWh
-      fmt: function (v) { return fmtCompact(v) + " kWh/a"; },
-      legendFmt: function (v) { return fmtCompact(v) + " kWh"; },
-      capPercentile: 0.95
-    },
     bestand: {
       label: "Bestand Dachanlagen",
       field: "bestand_dach_kwp_gesamt",
