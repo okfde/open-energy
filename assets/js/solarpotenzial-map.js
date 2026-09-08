@@ -75,8 +75,25 @@
     geojson: null,
     map: null,
     layer: null,
-    legendEl: null
+    legendEl: null,
+    mapBaseHeight: null
   };
+
+  // Below this width the map container's CSS height (see #map in
+  // _solarpotenzial.scss) is too short for a fully expanded popup – its
+  // content would get clipped by the map's overflow:hidden. On these
+  // viewports we grow #map to fit the open popup instead of letting Leaflet
+  // clip or scroll it.
+  var MOBILE_QUERY = "(max-width: 640px)";
+
+  function isMobileViewport() {
+    return typeof window.matchMedia === "function" && window.matchMedia(MOBILE_QUERY).matches;
+  }
+
+  function remToPx(rem) {
+    var rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+    return rem * rootFontSize;
+  }
 
   function fmtNum(v, digits) {
     if (v === null || v === undefined || isNaN(v)) return "–";
@@ -241,6 +258,43 @@
     renderLegend();
   }
 
+  // Grows the map container to fit the open popup on mobile, so the full
+  // "Detailansicht" (Eignungsklassen-Tabelle + Kennzahlen) is visible
+  // instead of being cut off at the container edge.
+  function growMapForPopup(mapEl, popupEl) {
+    if (state.mapBaseHeight === null) {
+      state.mapBaseHeight = remToPx(28); // matches #map's mobile CSS height
+    }
+    var popupHeight = popupEl.getBoundingClientRect().height;
+    var buffer = 64; // room for popup tip, marker offset and a little margin
+    var target = Math.max(state.mapBaseHeight, Math.ceil(popupHeight + buffer));
+    mapEl.style.height = target + "px";
+    state.map.invalidateSize({ pan: false });
+  }
+
+  function resetMapHeight(mapEl) {
+    mapEl.style.height = "";
+    state.map.invalidateSize({ pan: false });
+  }
+
+  function initPopupResize(mapEl) {
+    state.map.on("popupopen", function (e) {
+      if (!isMobileViewport()) return;
+      var popupEl = e.popup.getElement ? e.popup.getElement() : e.popup._container;
+      if (!popupEl) return;
+      growMapForPopup(mapEl, popupEl);
+      // Re-run Leaflet's own positioning once the container has its new,
+      // larger size so the popup isn't left offset from its anchor.
+      window.requestAnimationFrame(function () {
+        e.popup.update();
+      });
+    });
+    state.map.on("popupclose", function () {
+      if (!isMobileViewport()) return;
+      resetMapHeight(mapEl);
+    });
+  }
+
   function initControls() {
     var buttons = document.querySelectorAll("[data-metric]");
     buttons.forEach(function (btn) {
@@ -265,6 +319,7 @@
     }).addTo(state.map);
 
     state.legendEl = document.getElementById("map-legend");
+    initPopupResize(mapEl);
 
     fetch(dataUrl).then(function (r) { return r.json(); }).then(function (geojson) {
       state.geojson = geojson;
