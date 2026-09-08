@@ -49,7 +49,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       <div class="stat-tile__sub">landesweiter Durchschnitt, je Gemeinde stark unterschiedlich</div>
     </div>
     <div class="stat-tile">
-      <div class="stat-tile__label">Bestand Balkonkraftwerke (MaStR)</div>
+      <div class="stat-tile__label">Bestand Balkonsolar (MaStR)</div>
       <div class="stat-tile__value">{{ f.bestand_balkon_anzahl }} <small>Steckersolaranlagen</small></div>
       <div class="stat-tile__sub">{{ f.bestand_balkon_kwp }} kWp installierte Leistung – separat ausgewiesen, nicht in der Ausschöpfung enthalten</div>
     </div>
