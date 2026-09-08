@@ -31,7 +31,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     <div class="stat-tile">
       <div class="stat-tile__label">Dach-Potenzialfläche gesamt</div>
       <div class="stat-tile__value">{{ f.dach_flaeche_qm }} <small>m²</small></div>
-      <div class="stat-tile__sub">Flächen mit guter bis schlechter Sonnenausrichtung</div>
+      <div class="stat-tile__sub">Flächen mit guter und mittlerer Sonnenausrichtung – schlecht geeignete Flächen ausgenommen</div>
     </div>
     <div class="stat-tile">
       <div class="stat-tile__label">Dachpotenzial, eigene Berechnung</div>
@@ -55,7 +55,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </div>
   </div>
 
-  <div class="map-section">
+  <div class="map-section" id="karte">
     <h2>Karte je Gemeinde</h2>
 
     <div class="map-controls">
@@ -76,7 +76,8 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </div>
 
     <p class="note">
-      Kartendaten: 413 Gemeinden. Klicken Sie auf eine Gemeinde für Detailwerte.
+      Kartendaten: 413 Gemeinden. Klicken Sie auf eine Gemeinde für Detailwerte
+      inklusive der Aufschlüsselung nach Eignungsklasse (gut/mittel/schlecht).
       Die Farbskala staucht die obersten Ausreißer (95./98. Perzentil) in die
       dunkelste Stufe, damit Unterschiede zwischen den übrigen Gemeinden
       sichtbar bleiben – die vollständigen Zahlen stehen in der
@@ -140,8 +141,11 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
   </div>
 
   <p class="note">
-    „Eigene Berechnung“ nutzt die vom Nutzer vorgegebene Panel-Kenngröße
-    (500&nbsp;Wp, 1993&nbsp;×&nbsp;1134&nbsp;mm ⇒ 221,2&nbsp;Wp/m²) auf der amtlichen
+    Fläche und Potenzial umfassen nur Dachflächen der Eignungsklassen „gut“
+    und „mittel“ – schlecht geeignete Flächen sind hier bewusst nicht
+    eingerechnet (Aufschlüsselung je Gemeinde im Karten-Popup). „Eigene
+    Berechnung“ nutzt die vom Nutzer vorgegebene Panel-Kenngröße
+    (500&nbsp;Wp, 1993&nbsp;×&nbsp;1134&nbsp;mm ⇒ 221,2&nbsp;Wp/m²) auf dieser
     Dachflächenkulisse; „amtlich“ ist die vom Land Brandenburg modellierte
     Leistung zum Vergleich. Zahlen werden clientseitig formatiert und nach
     Spalte sortiert – ein Klick auf den Spaltenkopf kehrt die Reihenfolge um.
@@ -195,6 +199,19 @@ Gemeinden überlappt oder eine Gemeinde mehrere PLZ umfasst, liefert der
 Gemeindeschlüssel eine eindeutige, verzerrungsfreie Zuordnung und wurde
 deshalb für die Kartenverknüpfung verwendet.
 
+### Nur gut und mittel geeignete Dachflächen
+
+Die amtliche Statistik teilt jede Dachfläche in eine Eignungsklasse ein –
+**gut**, **mittel** oder **schlecht** – abhängig von Dachausrichtung,
+-neigung und Verschattung. Alle auf dieser Seite ausgewiesenen
+Dachpotenzial-Kennzahlen (Gesamtfläche, eigene Berechnung **und** amtlicher
+Vergleichswert) summieren bewusst nur die Klassen **gut** und **mittel**.
+Schlecht geeignete Flächen fließen **nicht** in diese Summen ein, da eine
+Belegung dort technisch zwar möglich, aber wirtschaftlich in der Regel nicht
+sinnvoll ist. Die Flächen-, Leistungs- und Ertragswerte je Eignungsklasse
+(einschließlich „schlecht“) stehen für jede Gemeinde vollständig im
+Karten-Popup („Detailwerte“, siehe [Karte je Gemeinde](#karte)).
+
 ### Panel-Annahme
 
 Alle „eigene Berechnung“ genannten Kennzahlen basieren auf einem aktuellen
@@ -207,11 +224,11 @@ Alle „eigene Berechnung“ genannten Kennzahlen basieren auf einem aktuellen
 | Nennleistung | 500 Wp |
 | Leistungsdichte | **221,2 Wp/m²** (0,2212 kWp/m²) |
 
-Die amtliche Dach-Potenzialfläche je Eignungsklasse (gut/mittel/schlecht,
-in m²) wird mit dieser Dichte in eine installierbare Leistung (kWp)
-umgerechnet – **ohne** Abzug für Abstände, Verschattung durch Dachaufbauten
-oder Statik; es handelt sich also um ein technisches Maximum bei
-lückenloser Verlegung, nicht um eine realistische Ausbauprognose.
+Die amtliche Dach-Potenzialfläche der Klassen „gut“ und „mittel“ (in m²)
+wird mit dieser Dichte in eine installierbare Leistung (kWp) umgerechnet –
+**ohne** Abzug für Abstände, Verschattung durch Dachaufbauten oder Statik;
+es handelt sich also um ein technisches Maximum bei lückenloser Verlegung,
+nicht um eine realistische Ausbauprognose.
 
 ### Von kWp zu kWh
 
@@ -237,8 +254,12 @@ eigene kWp (Klasse)  = Fläche (m²) × 0,2212 kWp/m²
 eigene kWh/a (Klasse) = eigene kWp (Klasse) × spezifischer Ertrag (Klasse)
 ```
 
-Die eigene Berechnung wird auf der Karte und in der Gemeindetabelle stets
-neben dem amtlichen Vergleichswert ausgewiesen.
+Diese Rechnung läuft weiterhin je Eignungsklasse einzeln, damit jede Klasse
+ihren eigenen spezifischen Ertrag erhält; in die ausgewiesenen Summen
+(„eigene Berechnung“ auf Karte, Gemeindetabelle und Landeskennzahlen)
+gehen davon nur **gut** und **mittel** ein – der Wert für „schlecht“ wird
+je Gemeinde berechnet, aber nicht mitaddiert und nur im Karten-Popup
+gezeigt.
 
 ### Freiflächen-Potenzial
 
