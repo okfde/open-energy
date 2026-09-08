@@ -60,11 +60,11 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
 
     <div class="map-controls" role="group" aria-label="Kennzahl auf der Karte">
       <button type="button" data-metric="ausschoepfung" class="label label--midnight category-filter__item" aria-pressed="true">Ausschöpfung Dach (%)</button>
-      <button type="button" data-metric="flaeche" class="label label--midnight category-filter__item" aria-pressed="false">Dach-Fläche (m²)</button>
+      <button type="button" data-metric="flaeche" class="label label--midnight category-filter__item" aria-pressed="false">Dachfläche-Potenzial (m²)</button>
       <button type="button" data-metric="bestand" class="label label--midnight category-filter__item" aria-pressed="false">Bestand Dach (kWp)</button>
       <button type="button" data-metric="frei_flaeche" class="label label--midnight category-filter__item" aria-pressed="false">Freifläche-Potenzial (m²)</button>
       <button type="button" data-metric="frei_bestand" class="label label--midnight category-filter__item" aria-pressed="false">Bestand Freifläche (kWp)</button>
-      <button type="button" data-metric="balkon_bestand" class="label label--midnight category-filter__item" aria-pressed="false">Bestand Balkonkraftwerke (kWp)</button>
+      <button type="button" data-metric="balkon_bestand" class="label label--midnight category-filter__item" aria-pressed="false">Bestand Balkonsolar (kWp)</button>
     </div>
 
     <div style="display:grid; grid-template-columns: 1fr; gap:10px;">

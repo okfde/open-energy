@@ -4,9 +4,13 @@
 (function () {
   "use strict";
 
+  // Sequential ramp in the site's own sunshine-yellow family (ColorBrewer
+  // YlOrBr) instead of a generic blue scale — pale near-white for low
+  // values, deepening through the brand yellow into amber/brown for the
+  // highest ones, so the palette stays legible at the dark end too.
   var SEQ_RAMP = [
-    "#f4f8fe", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5",
-    "#256abf", "#184f95", "#0d366b"
+    "#ffffe5", "#fff7bc", "#fee391", "#fec44f",
+    "#fe9929", "#ec7014", "#cc4c02", "#8c2d04"
   ];
   var NO_DATA_COLOR = "#e1e0d9";
 
@@ -155,7 +159,7 @@
     var domainMax = state.domainMax;
     return {
       fillColor: colorFor(v, domainMax),
-      fillOpacity: 0.88,
+      fillOpacity: 0.55,
       color: "#ffffff",
       weight: 0.6,
       opacity: 1
