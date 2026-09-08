@@ -183,12 +183,6 @@ Grundlage ist ein Auszug aus dem **Marktstammdatenregister (MaStR)** der
 Bundesnetzagentur für das Bundesland Brandenburg. Verarbeitet werden
 ausschließlich die Zeilen mit Energieträger „Solare Strahlungsenergie“ und
 Betriebs-Status „In Betrieb“.
-*Hinweis:* Alternativ hätte die [MaStR-API](https://marktstammdaten.api.bund.dev/)
-abgefragt werden können. Da die Bestandsdaten für Brandenburg als CSV-Exporte
-bereits vollständig vorlagen, war das direkte Einlesen dieser Dateien einfacher
-und schneller als eine paginierte API-Abfrage über vermutlich mehrere
-hunderttausend bundesweite Datensätze – das Ergebnis ist inhaltlich identisch,
-da beide Wege auf demselben Register beruhen.
 
 ### Verknüpfung Potenzial ↔ Bestand
 
@@ -232,7 +226,7 @@ nicht um eine realistische Ausbauprognose.
 
 ### Von kWp zu kWh
 
-Watt-Peak beschreibt Leistung, keine Energie. Um einen **potenziellen
+Watt-Peak beschreibt maximale Leistung einer Anlage. Um einen **potenziellen
 Jahresertrag in kWh** anzugeben, wird je Eignungsklasse ein spezifischer
 Ertrag (kWh pro kWp und Jahr) benötigt. Anstatt einen pauschalen Wert zu
 schätzen, wird er aus der amtlichen Statistik selbst abgeleitet:
