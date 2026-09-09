@@ -65,13 +65,31 @@
     }
   };
 
+  // Einziger bundesweiter Filter: eigener, schlanker Datensatz
+  // (assets/data/gemeinden_de_balkon.geojson, siehe scripts/build_data_de.py)
+  // mit nur Balkonkraftwerke-Kennzahlen je Gemeinde in ganz Deutschland,
+  // normalisiert auf 1.000 Einwohner. Läuft bewusst nicht über das normale
+  // METRICS/state.geojson (Brandenburg) – wird per Lazy-Load als eigener
+  // Layer ein-/ausgeblendet, alle anderen Filter bleiben unangetastet.
+  var DE_METRIC_KEY = "balkon_de_pro1000";
+  var DE_METRIC = {
+    label: "Balkonkraftwerke je 1.000 Einwohner",
+    field: "balkon_pro_1000_einwohner",
+    fmt: function (v) { return fmtNum(v, 2) + " je 1.000 EW"; },
+    legendFmt: function (v) { return fmtNum(v, 1); },
+    capPercentile: 0.95
+  };
+
   var state = {
     metric: "ausschoepfung",
     geojson: null,
     map: null,
     layer: null,
     legendEl: null,
-    mapBaseHeight: null
+    mapBaseHeight: null,
+    deLayer: null,
+    deGeojson: null,
+    activeMode: "bb"
   };
 
   // Below this width the map container's CSS height (see #map in
@@ -136,22 +154,28 @@
     };
   }
 
-  function computeDomainMax(features, metricKey) {
-    var m = METRICS[metricKey];
+  function computeDomainMaxGeneric(features, valueFn, capPercentile) {
     var values = [];
     features.forEach(function (f) {
-      var v = metricValue(f.properties, metricKey);
-      if (v !== null && !isNaN(v)) values.push(v);
+      var v = valueFn(f);
+      if (v !== null && v !== undefined && !isNaN(v)) values.push(v);
     });
     values.sort(function (a, b) { return a - b; });
-    if (!values.length) return 1;
+    if (!values.length) return { domainMax: 1, trueMax: 1 };
     var trueMax = values[values.length - 1];
-    if (m.capPercentile) {
-      var idx = Math.min(values.length - 1, Math.floor(values.length * m.capPercentile));
+    if (capPercentile) {
+      var idx = Math.min(values.length - 1, Math.floor(values.length * capPercentile));
       var capped = values[idx];
       return { domainMax: capped || trueMax || 1, trueMax: trueMax };
     }
     return { domainMax: trueMax || 1, trueMax: trueMax };
+  }
+
+  function computeDomainMax(features, metricKey) {
+    var m = METRICS[metricKey];
+    return computeDomainMaxGeneric(features, function (f) {
+      return metricValue(f.properties, metricKey);
+    }, m.capPercentile);
   }
 
   function styleFor(feature) {
@@ -214,6 +238,53 @@
     });
     html += "</table><div class=\"popup-foot\">Fläche &amp; amtliches Potenzial: Energieportal Brandenburg (WFBB). Bestand: Marktstammdatenregister.</div></div>";
     return html;
+  }
+
+  function styleForDe(feature) {
+    var v = feature.properties[DE_METRIC.field];
+    return {
+      fillColor: colorFor(v, state.deDomainMax),
+      fillOpacity: 0.55,
+      color: "#ffffff",
+      weight: 0.3,
+      opacity: 1
+    };
+  }
+
+  // Bewusst ein eigenes, schlankes Popup statt popupHtml(): der bundesweite
+  // Datensatz enthält nur Balkonkraftwerke-Kennzahlen – für Gemeinden
+  // außerhalb Brandenburgs fehlen Dachpotenzial/Bestand-Dach/Freifläche
+  // etc. schlicht, sie werden hier also nie referenziert statt als "keine
+  // Daten" angezeigt zu werden.
+  function popupHtmlDe(props) {
+    var name = props.gemeinde_name || "Unbekannt";
+    var typ = props.gemeinde_typ || "";
+    var rows = [
+      ["Einwohner", fmtNum(props.einwohner, 0)],
+      ["Balkonkraftwerke (Bestand)", fmtNum(props.balkon_anzahl, 0) + " Anlagen, " + fmtNum(props.balkon_kwp, 1) + " kWp"],
+      ["Je 1.000 Einwohner", fmtNum(props.balkon_pro_1000_einwohner, 2)]
+    ];
+    var html = '<div class="popup"><h4>' + escapeHtml(name) + '</h4>' +
+      '<div style="color:var(--text-muted);font-size:.72rem;margin-bottom:6px;">' + escapeHtml(typ) + " · AGS " + escapeHtml(props.ags) + "</div><table>";
+    rows.forEach(function (r) {
+      html += "<tr><td>" + r[0] + "</td><td class=\"num\">" + r[1] + "</td></tr>";
+    });
+    html += "</table><div class=\"popup-foot\">Bestand: Marktstammdatenregister. Einwohnerzahl: BKG (VG250-EW).</div></div>";
+    return html;
+  }
+
+  function renderLegendDe() {
+    var stops = SEQ_RAMP;
+    var gradientCss = "linear-gradient(90deg, " + stops.join(",") + ")";
+    var maxLabel = DE_METRIC.legendFmt(state.deDomainMax);
+    var capNote = state.deDomainTrueMax > state.deDomainMax ? " +" : "";
+    state.legendEl.innerHTML =
+      '<div class="legend-title">' + DE_METRIC.label + "</div>" +
+      '<div class="ramp" style="background:' + gradientCss + '"></div>' +
+      '<div class="scale-labels"><span>0</span><span>' + maxLabel + capNote + "</span></div>" +
+      '<div style="margin-top:6px;"><span class="no-data-swatch"></span>keine Daten' +
+      (capNote ? ' &nbsp;·&nbsp; höchste Werte werden ab dem 95.-Perzentil in der dunkelsten Stufe zusammengefasst' : '') +
+      "</div>";
   }
 
   function escapeHtml(s) {
@@ -286,14 +357,91 @@
     });
   }
 
-  function initControls() {
+  function fitToBounds(bounds) {
+    if (!bounds || !bounds.isValid()) return;
+    state.map.fitBounds(bounds, { padding: [10, 10] });
+  }
+
+  // Wechselt auf den bundesweiten Balkonkraftwerke-Layer (eigene Datei,
+  // eigene Popups) – lädt sie beim ersten Aufruf nach (~13 MB, daher nicht
+  // beim Seitenaufruf, sondern nur falls dieser eine Filter angeklickt wird).
+  //
+  // Der Fetch + Aufbau von 11.000 Leaflet-Features braucht spürbar Zeit;
+  // klickt die Nutzerin währenddessen zurück auf einen Brandenburg-Filter,
+  // darf das verspätete Ergebnis die Karte nicht wieder auf Deutschland
+  // zurückreißen. state.activeMode hält daher fest, welcher Modus zuletzt
+  // angefordert wurde – der then()-Handler wendet sein Ergebnis nur an,
+  // wenn "de" währenddessen aktiv geblieben ist (die Daten werden trotzdem
+  // gecacht, damit ein erneuter Klick nicht erneut laden muss).
+  function switchToDeLayer(mapEl) {
+    state.activeMode = "de";
+    if (state.layer) state.map.removeLayer(state.layer);
+
+    if (state.deLayer) {
+      state.deLayer.addTo(state.map);
+      fitToBounds(state.deLayer.getBounds());
+      renderLegendDe();
+      return;
+    }
+
+    var deUrl = mapEl.getAttribute("data-src-de");
+    state.legendEl.innerHTML = '<div class="legend-title">Lade bundesweite Daten …</div>';
+
+    fetch(deUrl).then(function (r) { return r.json(); }).then(function (geojson) {
+      state.deGeojson = geojson;
+      var d = computeDomainMaxGeneric(geojson.features, function (f) {
+        return f.properties[DE_METRIC.field];
+      }, DE_METRIC.capPercentile);
+      state.deDomainMax = d.domainMax;
+      state.deDomainTrueMax = d.trueMax;
+
+      state.deLayer = L.geoJSON(geojson, {
+        style: styleForDe,
+        onEachFeature: function (feature, layer) {
+          layer.bindPopup(popupHtmlDe(feature.properties), { maxWidth: 300 });
+          layer.on("mouseover", function () { layer.setStyle({ weight: 1.2, color: "#0b0b0b" }); });
+          layer.on("mouseout", function () { layer.setStyle(styleForDe(feature)); });
+        }
+      });
+
+      if (state.activeMode !== "de") return; // Nutzerin hat inzwischen zurückgewechselt
+
+      state.deLayer.addTo(state.map);
+      fitToBounds(state.deLayer.getBounds());
+      renderLegendDe();
+    }).catch(function (err) {
+      if (state.activeMode === "de") {
+        state.legendEl.innerHTML = '<div class="legend-title">Bundesweite Daten konnten nicht geladen werden.</div>';
+      }
+      console.error(err);
+    });
+  }
+
+  // Wechselt zurück auf den normalen Brandenburg-Layer/eine der bisherigen
+  // Kennzahlen.
+  function switchToBrandenburgLayer(metricKey) {
+    state.activeMode = "bb";
+    if (state.deLayer) state.map.removeLayer(state.deLayer);
+    state.metric = metricKey;
+    if (state.layer) {
+      state.layer.addTo(state.map);
+      fitToBounds(state.layer.getBounds());
+    }
+    updateStyles();
+  }
+
+  function initControls(mapEl) {
     var buttons = document.querySelectorAll("[data-metric]");
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         buttons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
         btn.setAttribute("aria-pressed", "true");
-        state.metric = btn.getAttribute("data-metric");
-        updateStyles();
+        var metricKey = btn.getAttribute("data-metric");
+        if (metricKey === DE_METRIC_KEY) {
+          switchToDeLayer(mapEl);
+        } else {
+          switchToBrandenburgLayer(metricKey);
+        }
       });
     });
   }
@@ -303,7 +451,9 @@
     if (!mapEl) return;
     var dataUrl = mapEl.getAttribute("data-src");
 
-    state.map = L.map("map", { scrollWheelZoom: false, minZoom: 7 }).setView([52.4, 13.1], 8);
+    // minZoom 5 statt 7: der bundesweite Balkonkraftwerke-Filter muss ganz
+    // Deutschland einpassen können, nicht nur Brandenburg.
+    state.map = L.map("map", { scrollWheelZoom: false, minZoom: 5 }).setView([52.4, 13.1], 8);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende'
@@ -327,12 +477,10 @@
         }
       }).addTo(state.map);
 
-      try {
-        state.map.fitBounds(state.layer.getBounds(), { padding: [10, 10] });
-      } catch (e) { /* no-op */ }
+      fitToBounds(state.layer.getBounds());
 
       renderLegend();
-      initControls();
+      initControls(mapEl);
     }).catch(function (err) {
       mapEl.innerHTML = '<p style="padding:20px;color:var(--text-secondary);">Kartendaten konnten nicht geladen werden (' + escapeHtml(err.message) + ").</p>";
       console.error(err);

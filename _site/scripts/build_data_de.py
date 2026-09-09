@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+"""Verschmilzt die bundesweite Gemeindeliste (scripts/_cache/gemeinden_de_raw.geojson,
+von fetch_gemeinden_de.py) mit dem bundesweiten Balkonkraftwerke-Bestand
+(scripts/_cache/balkon_de.json, von fetch_balkon_de.py) zum Kartenlayer für den
+zusätzlichen "Balkonkraftwerke je 1.000 Einwohner (Deutschland)"-Filter:
+
+    assets/data/gemeinden_de_balkon.geojson
+
+Bewusst eine eigene, schlanke Datei getrennt von assets/data/gemeinden.geojson
+(Brandenburg) – dieser Filter ist die einzige Stelle auf der Seite, die
+Gemeinden außerhalb Brandenburgs zeigt; alle anderen Filter, die
+Gemeindetabelle und die Landeskennzahlen bleiben unverändert Brandenburg-only.
+
+Aufruf: python3 build_data_de.py  (setzt voraus, dass fetch_gemeinden_de.py
+und fetch_balkon_de.py vorher gelaufen sind).
+"""
+import json
+import sys
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent
+CACHE_DIR = SCRIPT_DIR / "_cache"
+GEMEINDEN_DE_CACHE = CACHE_DIR / "gemeinden_de_raw.geojson"
+BALKON_DE_CACHE = CACHE_DIR / "balkon_de.json"
+
+REPO_ROOT = SCRIPT_DIR.parent
+OUT_FILE = REPO_ROOT / "assets" / "data" / "gemeinden_de_balkon.geojson"
+
+
+def load_cache(path, hint):
+    if not path.exists():
+        sys.exit(f"Fehlt: {path}\n{hint}")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def main():
+    gemeinden = load_cache(
+        GEMEINDEN_DE_CACHE,
+        "Bitte zuerst 'python3 fetch_gemeinden_de.py' ausführen.",
+    )
+    balkon = load_cache(
+        BALKON_DE_CACHE,
+        "Bitte zuerst 'python3 fetch_balkon_de.py' ausführen (benötigt MaStR-Zugangsdaten, "
+        "siehe README.md; läuft für alle ~11.000 Gemeinden mehrere Stunden).",
+    )
+
+    fehlend = 0
+    features = []
+    for f in gemeinden["features"]:
+        p = f["properties"]
+        ags = p["ags"]
+        b = balkon.get(ags)
+        if b is None:
+            fehlend += 1
+            b = {"anzahl": 0, "kwp": 0.0}
+
+        einwohner = p["einwohner"] or 0
+        pro_1000 = round(b["anzahl"] / einwohner * 1000, 3) if einwohner else 0.0
+
+        features.append({
+            "type": "Feature",
+            "properties": {
+                "ags": ags,
+                "gemeinde_name": p["gemeinde_name"],
+                "gemeinde_typ": p["gemeinde_typ"],
+                "einwohner": einwohner,
+                "balkon_anzahl": b["anzahl"],
+                "balkon_kwp": b["kwp"],
+                "balkon_pro_1000_einwohner": pro_1000,
+            },
+            "geometry": f["geometry"],
+        })
+
+    if fehlend:
+        print(f"Hinweis: {fehlend} Gemeinden ohne Balkon-Datensatz "
+              f"(fetch_balkon_de.py vermutlich noch nicht vollständig durchgelaufen) – als 0 gewertet.")
+
+    print(f"{len(features)} Gemeinden verarbeitet.")
+    OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    out = {"type": "FeatureCollection", "features": features}
+    OUT_FILE.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+    print(f"Geschrieben: {OUT_FILE} ({OUT_FILE.stat().st_size / 1024 / 1024:.1f} MB)")
+
+
+if __name__ == "__main__":
+    main()

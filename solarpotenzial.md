@@ -59,10 +59,11 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       <button type="button" data-metric="frei_flaeche" class="label label--midnight category-filter__item" aria-pressed="false">Freifläche-Potenzial (m²)</button>
       <button type="button" data-metric="frei_bestand" class="label label--midnight category-filter__item" aria-pressed="false">Bestand Freifläche (kWp)</button>
       <button type="button" data-metric="balkon_bestand" class="label label--midnight category-filter__item" aria-pressed="false">Bestand Balkonsolar (kWp)</button>
+      <button type="button" data-metric="balkon_de_pro1000" class="label label--midnight category-filter__item" aria-pressed="false">Balkonkraftwerke je 1.000 EW (Deutschland)</button>
     </div>
 
     <div style="display:grid; grid-template-columns: 1fr; gap:10px;">
-      <div id="map" data-src="{{ '/assets/data/gemeinden.geojson' | relative_url }}" role="img" aria-label="Choroplethenkarte Brandenburgs nach Gemeinde"></div>
+      <div id="map" data-src="{{ '/assets/data/gemeinden.geojson' | relative_url }}" data-src-de="{{ '/assets/data/gemeinden_de_balkon.geojson' | relative_url }}" role="img" aria-label="Choroplethenkarte Brandenburgs nach Gemeinde"></div>
       <div id="map-legend" class="map-legend"></div>
     </div>
 
@@ -73,6 +74,10 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       dunkelste Stufe, damit Unterschiede zwischen den übrigen Gemeinden
       sichtbar bleiben – die vollständigen Zahlen stehen in der
       <a href="#gemeinden" class="link-underline">Gemeindetabelle</a>.
+      Einzige Ausnahme: „Balkonkraftwerke je 1.000 EW (Deutschland)“ zeigt
+      zum Vergleich alle rund 11.000 Gemeinden bundesweit statt nur
+      Brandenburg – die Gemeindetabelle darunter bleibt in jedem Fall auf
+      Brandenburg beschränkt.
     </p>
   </div>
 </section>

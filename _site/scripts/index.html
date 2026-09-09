@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fae62a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inclusive+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Open Energy" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Solarpotenzial-Datenpipeline | Open Energy</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Solarpotenzial-Datenpipeline" />
+<meta property="og:locale" content="de" />
+<meta name="description" content="Open Energy macht Wissen und Werkzeuge für die Stromerzeugung frei zugänglich – Anleitungen, Events und Hintergrundwissen zum Selbermachen." />
+<meta property="og:description" content="Open Energy macht Wissen und Werkzeuge für die Stromerzeugung frei zugänglich – Anleitungen, Events und Hintergrundwissen zum Selbermachen." />
+<link rel="canonical" href="http://localhost:4000/scripts/" />
+<meta property="og:url" content="http://localhost:4000/scripts/" />
+<meta property="og:site_name" content="Open Energy" />
+<meta property="og:image" content="http://localhost:4000/assets/images/logos/opengraph-image-2.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/logos/opengraph-image-2.jpg" />
+<meta property="twitter:title" content="Solarpotenzial-Datenpipeline" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Open Energy macht Wissen und Werkzeuge für die Stromerzeugung frei zugänglich – Anleitungen, Events und Hintergrundwissen zum Selbermachen.","headline":"Solarpotenzial-Datenpipeline","image":"http://localhost:4000/assets/images/logos/opengraph-image-2.jpg","url":"http://localhost:4000/scripts/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Open Energy",
+  "url": "http://localhost:4000/",
+  "logo": "http://localhost:4000/assets/images/logos/oe-logo-dark.svg"
+}
+</script>
+
+</head>
+<body class="pattern-main">
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <div class="container">
+    <header class="site-header">
+  <div class="nav-bar">
+    <a href="/" class="nav-bar__logo" aria-label="Open Energy — Startseite">
+      <img src="/assets/images/logos/oe-logo-dark.svg" alt="Open Energy">
+    </a>
+
+    <button type="button" class="nav-bar__toggle" data-nav-toggle aria-controls="mobile-nav" aria-expanded="false">
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Menü öffnen</span>
+    </button>
+
+    <nav class="nav-list" aria-label="Hauptnavigation">
+      
+        <div class="nav-list__item">
+          <a href="/" class="nav-list__link">Start</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/do-it-yourself/" class="nav-list__link">Do it yourself</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/blog/" class="nav-list__link">Blog</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/termine/" class="nav-list__link">Termine</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/about/" class="nav-list__link">About</a>
+        </div>
+        
+      
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav__inner">
+    <nav class="mobile-nav__list" aria-label="Mobile Hauptnavigation">
+      
+        <a href="/" class="mobile-nav__link">Start</a>
+      
+        <a href="/do-it-yourself/" class="mobile-nav__link">Do it yourself</a>
+      
+        <a href="/blog/" class="mobile-nav__link">Blog</a>
+      
+        <a href="/termine/" class="mobile-nav__link">Termine</a>
+      
+        <a href="/about/" class="mobile-nav__link">About</a>
+      
+    </nav>
+  </div>
+</div>
+
+    <main id="main">
+      <h1 id="solarpotenzial-datenpipeline">Solarpotenzial-Datenpipeline</h1>
+
+<p>Aktualisiert die Daten hinter <code class="language-plaintext highlighter-rouge">/solarpotenzial</code> (Karte, Gemeindetabelle,
+Landeskennzahlen) mit den jeweils aktuellsten Werten aus zwei öffentlichen
+Quellen:</p>
+
+<ol>
+  <li><strong>Amtliche Solarpotenzial-Statistik</strong> je Gemeinde (Dach- und
+Freiflächen-Eignung) vom WFS-Dienst des
+<a href="https://energieportal-brandenburg.de/">Energieportals Brandenburg</a> –
+keine Zugangsdaten nötig.</li>
+  <li><strong>Bestand an Solaranlagen “in Betrieb”</strong> je Gemeinde, aufgeschlüsselt nach
+Gebäude-, Freiflächen- und Balkon-/Steckersolaranlagen, direkt aus dem
+<a href="https://www.marktstammdatenregister.de/">Marktstammdatenregister</a> (MaStR)
+der Bundesnetzagentur – dafür sind eigene, kostenlose Zugangsdaten nötig
+(siehe unten).</li>
+</ol>
+
+<h2 id="einmalige-einrichtung">Einmalige Einrichtung</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>scripts
+python3 <span class="nt">-m</span> venv .venv <span class="o">&amp;&amp;</span> <span class="nb">source</span> .venv/bin/activate   <span class="c"># optional, empfohlen</span>
+pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div></div>
+
+<h3 id="mastr-zugangsdaten-besorgen">MaStR-Zugangsdaten besorgen</h3>
+
+<ol>
+  <li>Auf <a href="https://www.marktstammdatenregister.de/">marktstammdatenregister.de</a>
+registrieren (falls noch nicht geschehen) und einloggen.</li>
+  <li>Unter <strong>Meine Benutzerdaten → Webdienste</strong> einen neuen API-Schlüssel für
+den Web-Dienst (SOAP-API) anlegen. Das liefert:
+    <ul>
+      <li>einen <strong>API-Schlüssel</strong> (<code class="language-plaintext highlighter-rouge">apiKey</code>)</li>
+      <li>die <strong>MaStR-Nummer</strong> des eigenen Marktakteurs (<code class="language-plaintext highlighter-rouge">marktakteurMastrNummer</code>,
+Format z. B. <code class="language-plaintext highlighter-rouge">ABR912345678901</code>)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Beide Werte als Umgebungsvariablen setzen (z. B. in <code class="language-plaintext highlighter-rouge">~/.zshrc</code> oder direkt
+vor dem Aufruf) – niemals im Repo speichern:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">MASTR_API_KEY</span><span class="o">=</span><span class="s2">"…"</span>
+<span class="nb">export </span><span class="nv">MASTR_MARKTAKTEUR_MASTR_NUMMER</span><span class="o">=</span><span class="s2">"…"</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Details zum Webdienst: <a href="https://marktstammdaten.api.bund.dev/">https://marktstammdaten.api.bund.dev/</a>.</p>
+
+<h2 id="ausführen">Ausführen</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>scripts
+./update_data.sh
+</code></pre></div></div>
+
+<p>Das Skript läuft in drei Schritten (auch einzeln aufrufbar, siehe unten) und
+schreibt am Ende direkt in die vom Jekyll-Build gelesenen Dateien:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">assets/data/gemeinden.geojson</code> (Karte + Popup-Detailwerte)</li>
+  <li><code class="language-plaintext highlighter-rouge">_data/gemeinden_tabelle.csv</code> (Gemeindetabelle)</li>
+  <li><code class="language-plaintext highlighter-rouge">_data/land_summary.json</code> / <code class="language-plaintext highlighter-rouge">_data/land_summary_fmt.json</code> (Landeskennzahlen)</li>
+</ul>
+
+<p>Anschließend wie gewohnt <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> (oder <code class="language-plaintext highlighter-rouge">serve</code>) ausführen,
+um die aktualisierten Daten auf der Seite zu sehen, und die geänderten
+Dateien committen.</p>
+
+<h3 id="laufzeit">Laufzeit</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">fetch_potenzial.py</code>: ein einzelner Abruf, wenige Sekunden.</li>
+  <li><code class="language-plaintext highlighter-rouge">fetch_bestand.py</code>: <strong>der langsame Teil.</strong> Für jede der 413 Gemeinden
+werden 4 Solaranlagen-Arten einzeln abgefragt (413 × 4 = 1.652 Anfragen,
+plus Pagination bei sehr großen Gemeinden) – mit eingebauter Pause
+zwischen den Aufrufen, um den Dienst nicht zu überlasten. Rechnet mit
+15–30 Minuten. Der Zwischenstand wird nach jeder Gemeinde gespeichert
+(<code class="language-plaintext highlighter-rouge">scripts/_cache/bestand.json</code>) – ein Abbruch (Ctrl-C, Netzwerkfehler)
+verliert also höchstens die gerade laufende Gemeinde; ein erneuter Aufruf
+setzt automatisch dort fort. <code class="language-plaintext highlighter-rouge">--force</code> erzwingt einen kompletten Neulauf,
+<code class="language-plaintext highlighter-rouge">--limit N</code> fragt nur die ersten N Gemeinden ab (zum Testen).</li>
+  <li><code class="language-plaintext highlighter-rouge">build_data.py</code>: wenige Sekunden.</li>
+</ul>
+
+<h3 id="einzelne-schritte">Einzelne Schritte</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 fetch_potenzial.py           <span class="c"># -&gt; scripts/_cache/potenzial_raw.geojson</span>
+python3 fetch_bestand.py             <span class="c"># -&gt; scripts/_cache/bestand.json</span>
+python3 fetch_bestand.py <span class="nt">--limit</span> 5   <span class="c"># nur 5 Gemeinden, zum Testen</span>
+python3 build_data.py                <span class="c"># verschmilzt beide Caches, schreibt die Seiten-Dateien</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">scripts/_cache/</code> wird nicht versioniert (siehe <code class="language-plaintext highlighter-rouge">.gitignore</code>) – die beiden
+Rohdaten-Caches sind reine Zwischenstände für <code class="language-plaintext highlighter-rouge">build_data.py</code> und können
+jederzeit gelöscht/neu erzeugt werden.</p>
+
+<h2 id="methodik-hinweise">Methodik-Hinweise</h2>
+
+<ul>
+  <li>Nur Dachflächen der Eignungsklassen <strong>gut</strong> und <strong>mittel</strong> fließen in die
+Dachpotenzial-Summen (Fläche, amtliche Leistung, Ausschöpfung) ein; die
+Werte je Eignungsklasse (inkl. „schlecht”) bleiben als Detailfelder für
+das Karten-Popup erhalten. Siehe <code class="language-plaintext highlighter-rouge">frei_flaeche_und_leistung()</code> bzw. die
+Eignungsklassen-Logik in <code class="language-plaintext highlighter-rouge">build_data.py</code>.</li>
+  <li>Beim Freiflächen-Potenzial geht je Kategorie (Grünland, Ackerland,
+Randstreifen, Parkplätze, Konversionsflächen, Halden, Seen u. a.) nur die
+horizontale (bzw. die einzige verfügbare) Montage-Variante in die Summe
+ein, damit Flächen mit zwei alternativen Technologien (horizontal/
+bifazial) auf derselben Fläche nicht doppelt gezählt werden.</li>
+  <li>Ausschöpfung wird ausschließlich gegen das <strong>amtliche</strong> Potenzial
+berechnet (<code class="language-plaintext highlighter-rouge">Bestand Gebäudesolaranlagen ÷ amtliches Dachpotenzial × 100</code>)
+– es gibt keine eigene, panelbasierte Berechnung.</li>
+  <li>Kartengeometrien werden nach dem Laden mit Douglas-Peucker vereinfacht
+(Toleranz ≈ 0,0006°, ca. 40–60 m), passend zur bisherigen Darstellung.</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<ul>
+  <li><strong>“Zugriff verweigert” / “Zugriff temporär verweigert”</strong>: falscher oder
+abgelaufener API-Schlüssel, oder der Dienst hat den Zugriff wegen zu
+vieler Fehlversuche kurzzeitig gesperrt (wenige Minuten warten und erneut
+versuchen).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">fetch_bestand.py</code> bricht mit einem Netzwerkfehler ab</strong>: einfach erneut
+starten – der Zwischenstand wird automatisch fortgesetzt.</li>
+  <li><strong>Die 413-Gemeinden-Prüfung in <code class="language-plaintext highlighter-rouge">fetch_potenzial.py</code> schlägt fehl /
+warnt</strong>: das Energieportal-Schema hat sich ggf. geändert – Feldnamen in
+<code class="language-plaintext highlighter-rouge">build_data.py</code> (<code class="language-plaintext highlighter-rouge">potenzial_pvdach_*</code>, <code class="language-plaintext highlighter-rouge">potenzial_pvfrei_*</code>) gegen die
+aktuelle Antwort prüfen.</li>
+</ul>
+
+    </main>
+    <footer class="site-footer">
+  <div class="site-footer__row">
+    <nav class="site-footer__nav" aria-label="Fußzeilennavigation">
+      
+        <a href="/" class="site-footer__nav-link">Start</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/do-it-yourself/" class="site-footer__nav-link">Do it yourself</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/blog/" class="site-footer__nav-link">Blog</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/termine/" class="site-footer__nav-link">Termine</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/about/" class="site-footer__nav-link">About</a>
+        
+      
+    </nav>
+    <div class="site-footer__legal">
+      
+        <a href="/impressum/" class="site-footer__nav-link">Impressum</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/datenschutz/" class="site-footer__nav-link">Datenschutz</a>
+        
+      
+    </div>
+  </div>
+
+  <div class="site-footer__social">
+    <div class="site-footer__social-links">
+      
+        <a href="https://www.instagram.com/energieselbermachen/" class="site-footer__social-link">
+          <img src="/assets/images/icons/social-instagram.svg" alt="">
+          Instagram
+        </a>
+      
+        <a href="https://www.facebook.com/people/Energie-ZumSelbermachen/61590392108832/" class="site-footer__social-link">
+          <img src="/assets/images/icons/social-facebook.svg" alt="">
+          Facebook
+        </a>
+      
+    </div>
+    <div class="site-footer__partners">
+      <a href="https://okfn.de/" target="_blank"><img src="/assets/images/logos/okf-logo.svg" alt="Open Knowledge Foundation Deutschland"></a>
+      <a href="https://hardware.prototypefund.de/" target="_blank"><img src="/assets/images/logos/prototypefund-logo.svg" alt="Prototype Fund Hardware"></a>
+    </div>
+  </div>
+
+  <div class="site-footer__wordmark" aria-hidden="true">
+
+        <img class="svg-cutout pattern-main" src="/assets/images/logos/oe-wordmark-cutout.svg" alt="">
+
+
+  </div>
+</footer>
+
+  </div>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
