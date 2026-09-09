@@ -71,13 +71,29 @@
 // those same classes so the two filter UIs share one visual language.
 .map-controls {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.625rem;
   margin-bottom: 0.75rem;
 
   button {
     cursor: pointer;
   }
+}
+
+.map-controls__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.map-controls__heading {
+  color: $color-text-secondary;
+}
+
+.map-controls__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 #map {
