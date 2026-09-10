@@ -102,6 +102,12 @@
   border-radius: $radius-button;
   border: 1px solid $color-stroke-dimmed;
   background: $color-bg-level-1;
+  // Leaflet gibt seinen internen Panes/Controls z-index-Werte bis 1000 – ohne
+  // eigene Stacking-Context-Grenze hier "entkommen" diese Werte nach außen
+  // und überdecken den sticky Site-Header (z-index: 50). position+z-index
+  // spannt einen eigenen Kontext auf, in dem Leaflets Werte gefangen bleiben.
+  position: relative;
+  z-index: 0;
 
   @media (max-width: 640px) {
     height: 28rem;
