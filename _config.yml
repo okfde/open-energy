@@ -77,3 +77,4 @@ exclude:
   - node_modules
   - README.md
   - site_solapotenzial
+  - scripts

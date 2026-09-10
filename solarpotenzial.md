@@ -93,11 +93,13 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
 </section>
 
 <section class="section section--dark" id="gemeinden">
-  <h2>Alle 413 Gemeinden im Vergleich</h2>
-  <p class="body-text">
-    Potenzial- und Bestandskennzahlen je Gemeinde. Spalten sind sortierbar,
-    die Suche filtert nach Gemeinde- oder Landkreisname. Erläuterungen zu
-    den Spalten: siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>.
+  <h2 id="gemeinden-heading">Top 10 Gemeinden im Vergleich</h2>
+  <p class="body-text" id="gemeinden-intro">
+    Standardmäßig die zehn Gemeinden mit der höchsten Ausschöpfung des
+    Dachpotenzials. Spalten sind sortierbar – das Top&nbsp;10 folgt dabei der
+    jeweils gewählten Spalte. Über die Suche lässt sich unabhängig davon jede
+    der 413 Brandenburger Gemeinden finden. Erläuterungen zu den Spalten:
+    siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>.
   </p>
 
   <div class="table-toolbar">
@@ -142,22 +144,35 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </table>
   </div>
 
-  <p class="note">
-    Fläche und Potenzial umfassen nur Dachflächen der Eignungsklassen „gut“
-    und „mittel“ – schlecht geeignete Flächen sind hier bewusst nicht
-    eingerechnet (Aufschlüsselung je Gemeinde im Karten-Popup). „Ausschöpfung
-    Dach“ setzt den Bestand ins Verhältnis zum amtlichen Dachpotenzial
-    (Berechnungsweg siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>).
-    Zahlen werden clientseitig formatiert und nach Spalte sortiert – ein
-    Klick auf den Spaltenkopf kehrt die Reihenfolge um.
-  </p>
-  <p class="note caveat">
-    Balkonkraftwerke (steckerfertige Solaranlagen) werden als eigene Spalte
-    ausgewiesen und fließen bewusst <strong>nicht</strong> in „Bestand Dach“
-    oder die „Ausschöpfung Dach“-Berechnung ein: Die amtliche
-    Dachflächen-Eignungskulisse modelliert ganze Dachflächen, keine
-    Balkon-/Geländermontage. Details siehe
-    <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>.
+  <div id="gemeinden-notes-bb">
+    <p class="note">
+      Fläche und Potenzial umfassen nur Dachflächen der Eignungsklassen „gut“
+      und „mittel“ – schlecht geeignete Flächen sind hier bewusst nicht
+      eingerechnet (Aufschlüsselung je Gemeinde im Karten-Popup). „Ausschöpfung
+      Dach“ setzt den Bestand ins Verhältnis zum amtlichen Dachpotenzial
+      (Berechnungsweg siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>).
+      Zahlen werden clientseitig formatiert und nach Spalte sortiert – ein
+      Klick auf den Spaltenkopf kehrt die Reihenfolge um.
+    </p>
+    <p class="note caveat">
+      Balkonkraftwerke (steckerfertige Solaranlagen) werden als eigene Spalte
+      ausgewiesen und fließen bewusst <strong>nicht</strong> in „Bestand Dach“
+      oder die „Ausschöpfung Dach“-Berechnung ein: Die amtliche
+      Dachflächen-Eignungskulisse modelliert ganze Dachflächen, keine
+      Balkon-/Geländermontage. Details siehe
+      <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>.
+    </p>
+  </div>
+  <p class="note" id="gemeinden-notes-de" hidden>
+    Angezeigt werden standardmäßig die zehn Gemeinden ab 1.000 Einwohnern mit
+    der höchsten Balkonkraftwerke-Dichte je 1.000 Einwohner – bundesweit, aus
+    rund 11.000 Gemeinden. Kleinere Orte sind hier bewusst ausgeklammert: bei
+    sehr wenigen Einwohnern verzerren schon einzelne Anlagen die Quote stark
+    (z.&nbsp;B. 1 Anlage bei 10 Einwohnern ergibt rechnerisch 100 je 1.000).
+    Über die Suche lässt sich unabhängig von dieser Grenze jede einzelne
+    deutsche Gemeinde finden. Datenquellen: Bestand aus dem
+    Marktstammdatenregister, Einwohnerzahl vom Bundesamt für Kartographie und
+    Geodäsie (VG250-EW).
   </p>
 </section>
 

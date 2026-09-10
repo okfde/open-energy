@@ -28,6 +28,7 @@ import sys
 import time
 from pathlib import Path
 
+import requests
 import zeep
 from zeep.exceptions import Fault, TransportError
 
@@ -76,7 +77,12 @@ def call_with_retry(fn, *args, **kwargs):
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             return fn(*args, **kwargs)
-        except (Fault, TransportError, ConnectionError, TimeoutError) as exc:
+        # requests.exceptions.ConnectionError/Timeout do NOT inherit from the
+        # builtin ConnectionError/TimeoutError despite the similar names —
+        # catching only the builtins let real network errors (e.g. "No route
+        # to host") crash the whole run uncaught. requests.RequestException
+        # covers those; OSError covers lower-level socket errors.
+        except (Fault, TransportError, requests.exceptions.RequestException, OSError) as exc:
             last_error = exc
             print(f"    Versuch {attempt}/{MAX_RETRIES} fehlgeschlagen: {exc}", file=sys.stderr)
             if attempt < MAX_RETRIES:
@@ -144,7 +150,12 @@ def main():
         print(f"Setze fort: {len(ergebnis)}/{len(ags_list)} Gemeinden bereits im Zwischenstand.")
 
     print("Verbinde mit dem MaStR-Webdienst …")
-    client = zeep.Client(WSDL_URL)
+    # Ohne explizites Transport-Timeout hängt zeep bei einer toten/hängenden
+    # TCP-Verbindung unbegrenzt in transport.post() fest — es wird nie eine
+    # Exception geworfen, die call_with_retry() abfangen könnte. operation_timeout
+    # sorgt dafür, dass ein hängender Request nach spätestens 30s abbricht.
+    transport = zeep.Transport(timeout=30, operation_timeout=30)
+    client = zeep.Client(WSDL_URL, transport=transport)
     service = client.bind("Marktstammdatenregister", "Anlage")
 
     offene = [a for a in ags_list if a not in ergebnis]

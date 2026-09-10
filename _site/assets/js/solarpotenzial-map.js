@@ -373,6 +373,14 @@
   // angefordert wurde – der then()-Handler wendet sein Ergebnis nur an,
   // wenn "de" währenddessen aktiv geblieben ist (die Daten werden trotzdem
   // gecacht, damit ein erneuter Klick nicht erneut laden muss).
+  // Die Gemeindeliste unter der Karte hat ein eigenes, kleines Modul
+  // (solarpotenzial-table.js); window.SolarpotenzialTable ist ihr einziger
+  // Berührungspunkt mit der Karte, damit beide Skripte unabhängig bleiben.
+  function updateDeTable(geojson) {
+    if (!window.SolarpotenzialTable) return;
+    window.SolarpotenzialTable.showDe(geojson.features.map(function (f) { return f.properties; }));
+  }
+
   function switchToDeLayer(mapEl) {
     state.activeMode = "de";
     if (state.layer) state.map.removeLayer(state.layer);
@@ -381,6 +389,7 @@
       state.deLayer.addTo(state.map);
       fitToBounds(state.deLayer.getBounds());
       renderLegendDe();
+      updateDeTable(state.deGeojson);
       return;
     }
 
@@ -409,6 +418,7 @@
       state.deLayer.addTo(state.map);
       fitToBounds(state.deLayer.getBounds());
       renderLegendDe();
+      updateDeTable(geojson);
     }).catch(function (err) {
       if (state.activeMode === "de") {
         state.legendEl.innerHTML = '<div class="legend-title">Bundesweite Daten konnten nicht geladen werden.</div>';
@@ -422,6 +432,7 @@
   function switchToBrandenburgLayer(metricKey) {
     state.activeMode = "bb";
     if (state.deLayer) state.map.removeLayer(state.deLayer);
+    if (window.SolarpotenzialTable) window.SolarpotenzialTable.restoreBrandenburg();
     state.metric = metricKey;
     if (state.layer) {
       state.layer.addTo(state.map);
