@@ -34,6 +34,53 @@
     { field: "balkon_kwp", label: "Balkonkraftwerke (kWp)", type: "num", decimals: 1 }
   ];
 
+  // AGS-Länderkennziffer (erste zwei Ziffern des 8-stelligen Gemeindeschlüssels)
+  // -> Bundesland. Für die Länder-Aggregation der Deutschland-Tabelle.
+  var LAND_NAMES = {
+    "01": "Schleswig-Holstein",
+    "02": "Hamburg",
+    "03": "Niedersachsen",
+    "04": "Bremen",
+    "05": "Nordrhein-Westfalen",
+    "06": "Hessen",
+    "07": "Rheinland-Pfalz",
+    "08": "Baden-Württemberg",
+    "09": "Bayern",
+    "10": "Saarland",
+    "11": "Berlin",
+    "12": "Brandenburg",
+    "13": "Mecklenburg-Vorpommern",
+    "14": "Sachsen",
+    "15": "Sachsen-Anhalt",
+    "16": "Thüringen"
+  };
+
+  var LAND_COLUMNS = [
+    { field: "land_name", label: "Bundesland", type: "text" },
+    { field: "balkon_pro_1000_einwohner", label: "Balkonkraftwerke je 1.000 EW", type: "num", decimals: 2 },
+    { field: "einwohner", label: "Einwohner", type: "num", decimals: 0 },
+    { field: "balkon_anzahl", label: "Balkonkraftwerke (Anzahl)", type: "num", decimals: 0 },
+    { field: "balkon_kwp", label: "Balkonkraftwerke (kWp)", type: "num", decimals: 1 }
+  ];
+
+  function computeLandRows(rows) {
+    var byLand = {};
+    rows.forEach(function (p) {
+      var code = (p.ags || "").substring(0, 2);
+      var name = LAND_NAMES[code];
+      if (!name) return; // unbekannte/fehlende Kennziffer robust ignorieren
+      if (!byLand[code]) byLand[code] = { land_name: name, einwohner: 0, balkon_anzahl: 0, balkon_kwp: 0 };
+      byLand[code].einwohner += p.einwohner || 0;
+      byLand[code].balkon_anzahl += p.balkon_anzahl || 0;
+      byLand[code].balkon_kwp += p.balkon_kwp || 0;
+    });
+    return Object.keys(byLand).map(function (code) {
+      var l = byLand[code];
+      l.balkon_pro_1000_einwohner = l.einwohner > 0 ? (l.balkon_anzahl / l.einwohner) * 1000 : 0;
+      return l;
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var table = document.getElementById("gemeinden-table");
     if (!table) return;
@@ -45,6 +92,9 @@
     var introEl = document.getElementById("gemeinden-intro");
     var bbNotesEl = document.getElementById("gemeinden-notes-bb");
     var deNotesEl = document.getElementById("gemeinden-notes-de");
+    var landerSectionEl = document.getElementById("laender-section");
+    var landThead = document.querySelector("#laender-table thead tr");
+    var landTbody = document.querySelector("#laender-table tbody");
 
     var bbSearchPlaceholder = searchEl.placeholder;
     var bbHeading = headingEl ? headingEl.textContent : "";
@@ -55,6 +105,8 @@
     var mode = "bb";
     var deRows = null; // deduplizierte Properties-Arrays aller Gemeinden (von map.js geliefert)
     var deSort = { field: "balkon_pro_1000_einwohner", dir: "desc" };
+    var landRows = null; // aus deRows aggregiert, siehe computeLandRows()
+    var landSort = { field: "balkon_pro_1000_einwohner", dir: "desc" };
 
     function fmtDe(v, digits) {
       if (v === null || v === undefined || isNaN(v)) return "–";
@@ -159,6 +211,7 @@
       if (introEl) introEl.innerHTML = bbIntro;
       if (bbNotesEl) bbNotesEl.hidden = false;
       if (deNotesEl) deNotesEl.hidden = true;
+      if (landerSectionEl) landerSectionEl.hidden = true;
       initBrandenburg();
     }
 
@@ -237,6 +290,54 @@
       }
     }
 
+    // ---------------------------------------------------------------
+    // Länder-Tabelle (nur im Deutschland-Modus sichtbar) – 16 Zeilen, immer
+    // vollständig angezeigt, nur sortierbar (kein Top N, keine Suche nötig).
+    // ---------------------------------------------------------------
+    function landRowHtml(l) {
+      return "<tr>" + LAND_COLUMNS.map(function (c) {
+        var v = l[c.field];
+        if (c.type === "num") {
+          return "<td data-sort=\"" + (v == null ? "" : v) + "\">" + fmtDe(v, c.decimals) + "</td>";
+        }
+        return "<td>" + (v == null ? "" : v) + "</td>";
+      }).join("") + "</tr>";
+    }
+
+    function renderLandHead() {
+      if (!landThead) return;
+      landThead.innerHTML = LAND_COLUMNS.map(function (c) {
+        var cls = c.field === landSort.field ? (landSort.dir === "asc" ? " class=\"sorted-asc\"" : " class=\"sorted-desc\"") : "";
+        return "<th data-type=\"" + c.type + "\" data-field=\"" + c.field + "\"" + cls + ">" + c.label + "</th>";
+      }).join("");
+      Array.prototype.forEach.call(landThead.querySelectorAll("th"), function (th) {
+        th.onclick = function () {
+          var field = th.getAttribute("data-field");
+          landSort.dir = landSort.field === field && landSort.dir === "desc" ? "asc" : "desc";
+          landSort.field = field;
+          renderLandHead();
+          renderLandBody();
+        };
+      });
+    }
+
+    function renderLandBody() {
+      if (!landTbody || !landRows) return;
+      var field = landSort.field, dir = landSort.dir, mult = dir === "asc" ? 1 : -1;
+      var col = LAND_COLUMNS.filter(function (c) { return c.field === field; })[0];
+      var list = landRows.slice();
+      list.sort(function (a, b) {
+        var va = a[field], vb = b[field];
+        if (col && col.type === "text") {
+          return (va || "").localeCompare(vb || "", "de") * mult;
+        }
+        va = va == null ? -Infinity : va;
+        vb = vb == null ? -Infinity : vb;
+        return (va - vb) * mult;
+      });
+      landTbody.innerHTML = list.map(landRowHtml).join("");
+    }
+
     function activateDeMode(rows) {
       mode = "de";
       // Pro AGS kann die Rohliste doppelte Einträge enthalten (mehrteilige
@@ -265,6 +366,12 @@
       renderDeHead();
       renderDeBody("");
       searchEl.oninput = function () { renderDeBody(searchEl.value.trim()); };
+
+      landRows = computeLandRows(deRows);
+      landSort = { field: "balkon_pro_1000_einwohner", dir: "desc" };
+      renderLandHead();
+      renderLandBody();
+      if (landerSectionEl) landerSectionEl.hidden = false;
     }
 
     // ---------------------------------------------------------------

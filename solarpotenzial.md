@@ -173,6 +173,28 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     Marktstammdatenregister, Einwohnerzahl vom Bundesamt für Kartographie und
     Geodäsie (VG250-EW).
   </p>
+
+  <div id="laender-section" hidden>
+    <h3 id="laender-heading">Balkonkraftwerke je Bundesland</h3>
+    <p class="body-text" id="laender-intro">
+      Je Bundesland aus allen zugehörigen Gemeinden aggregiert: Summe der
+      Balkonkraftwerke und Einwohner, daraus die Dichte je 1.000 Einwohner.
+      Alle 16 Bundesländer, Spalten sind sortierbar.
+    </p>
+    <div class="table-wrap">
+      <table class="data-table" id="laender-table">
+        <thead>
+          <tr></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note">
+      Berechnet aus den bundesweiten Gemeindedaten (Marktstammdatenregister,
+      Einwohnerzahl: Bundesamt für Kartographie und Geodäsie, VG250-EW) –
+      keine amtlich je Bundesland ausgewiesene Statistik.
+    </p>
+  </div>
 </section>
 
 <section class="section section--sand" id="methodik">
