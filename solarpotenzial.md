@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Solarpotenzial Brandenburg
+title: Statistiken zum Solarausbau
 permalink: /solarpotenzial/
-description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktive Karte, Gemeindetabelle und Methodik zu Dach- und Freiflächen-Photovoltaik in allen 413 Gemeinden."
+description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Welche Gemeinde hat die meisten Balkonkraftwerke je Haushalt in Deutschland? Daten aufbereitet in interaktiver Karte, Gemeinde- sowie Bundesweiter Tabelle."
 ---
 
 <header class="subpage-header">
   <div class="subpage-header__intro">
-    <h1>Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft?</h1>
+    <h1>Wie läuft der Ausbau von Dach- und Balkonsolar?</h1>
     <p class="body-text">
-      Die Karte kombiniert die amtliche Potenzialanalyse für Dachflächen mit
+      Du findest hier aufbereitete Daten zum Solarausbau. Die Karte kombiniert eine Potenzialanalyse für Dachflächen in Brandenburg mit
       günstiger Sonnenausrichtung (Energieportal Brandenburg) mit allen im
-      Marktstammdatenregister gemeldeten, bereits errichteten Solaranlagen –
-      je Gemeinde. Verglichen wird die bereits installierte Leistung (kWp)
-      mit dem amtlich modellierten Potenzial (kWp, kWh/a). Details siehe
+      Marktstammdatenregister gemeldeten, bereits errichteten Solaranlagen
+      je Gemeinde in Brandenburg. Verglichen wird die bereits installierte Leistung (kWp)
+      mit dem modellierten Potenzial (kWp, kWh/a). Außerdem werden alle in Deutschland aktiven Balkonkraftwerke je gemeinde dargestellt. Details siehe
       <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>.
     </p>
   </div>
@@ -78,7 +78,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </div>
 
     <p class="note">
-      Kartendaten: 413 Gemeinden. Klicken Sie auf eine Gemeinde für Detailwerte
+      Kartendaten: 413 Brandenburger Gemeinden. Klicken Sie auf eine Gemeinde für Detailwerte
       inklusive der Aufschlüsselung nach Eignungsklasse (gut/mittel/schlecht).
       Die Farbskala staucht die obersten Ausreißer (95./98. Perzentil) in die
       dunkelste Stufe, damit Unterschiede zwischen den übrigen Gemeinden
@@ -146,7 +146,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
   <div id="gemeinden-notes-bb">
     <p class="note">
       Fläche und Potenzial umfassen nur Dachflächen der Eignungsklassen „gut“
-      und „mittel“ – schlecht geeignete Flächen sind hier bewusst nicht
+      und „mittel“ – schlecht geeignete Flächen sind nicht
       eingerechnet (Aufschlüsselung je Gemeinde im Karten-Popup). „Ausschöpfung
       Dach“ setzt den Bestand ins Verhältnis zum amtlichen Dachpotenzial
       (Berechnungsweg siehe <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>).
@@ -155,7 +155,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </p>
     <p class="note caveat">
       Balkonkraftwerke (steckerfertige Solaranlagen) werden als eigene Spalte
-      ausgewiesen und fließen bewusst <strong>nicht</strong> in „Bestand Dach“
+      ausgewiesen und fließen <strong>nicht</strong> in „Bestand Dach“
       oder die „Ausschöpfung Dach“-Berechnung ein: Die amtliche
       Dachflächen-Eignungskulisse modelliert ganze Dachflächen, keine
       Balkon-/Geländermontage. Details siehe
@@ -165,7 +165,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
   <p class="note" id="gemeinden-notes-de" hidden>
     Angezeigt werden standardmäßig die zehn Gemeinden ab 500 Haushalten mit
     der höchsten Balkonkraftwerke-Dichte je 100 Haushalte – bundesweit, aus
-    rund 11.000 Gemeinden. Normalisiert wird bewusst auf Haushalte statt
+    rund 11.000 Gemeinden. Normalisiert wird auf Haushalte statt
     Einwohner: ein Balkonkraftwerk wird je Wohnung installiert, nicht je
     Kopf. Kleinere Orte sind hier zudem ausgeklammert: bei sehr wenigen
     Haushalten verzerren schon einzelne Anlagen die Quote stark. Über die
@@ -177,7 +177,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
   </p>
 
   <div id="laender-section" hidden>
-    <h3 id="laender-heading">Balkonkraftwerke je Bundesland</h3>
+    <h2 id="laender-heading">Balkonkraftwerke je Bundesland</h2>
     <p class="body-text" id="laender-intro">
       Je Bundesland aus allen zugehörigen Gemeinden aggregiert: Summe der
       Balkonkraftwerke und Haushalte, daraus die Dichte je 100 Haushalte.
@@ -223,7 +223,7 @@ Bundesnetzagentur für das Bundesland Brandenburg. Verarbeitet werden
 ausschließlich die Zeilen mit Energieträger „Solare Strahlungsenergie“ und
 Betriebs-Status „In Betrieb“.
 
-### Verknüpfung Potenzial ↔ Bestand
+### Verknüpfung von Potenzial und Bestand
 
 Die CSV-Exporte enthalten den amtlichen **Gemeindeschlüssel** (AGS,
 8-stellig) – exakt dasselbe Schlüsselfeld, das auch die Potenzialstatistik
@@ -232,13 +232,12 @@ Gemeinden überlappt oder eine Gemeinde mehrere PLZ umfasst, liefert der
 Gemeindeschlüssel eine eindeutige, verzerrungsfreie Zuordnung und wurde
 deshalb für die Kartenverknüpfung verwendet.
 
-### Nur gut und mittel geeignete Dachflächen
+### Nur gut und mittel geeignete Dachflächen einbezogen
 
 Die amtliche Statistik teilt jede Dachfläche in eine Eignungsklasse ein –
 **gut**, **mittel** oder **schlecht** – abhängig von Dachausrichtung,
 -neigung und Verschattung. Alle auf dieser Seite ausgewiesenen
-Dachpotenzial-Kennzahlen (Gesamtfläche und amtliches Potenzial) summieren
-bewusst nur die Klassen **gut** und **mittel**. Schlecht geeignete Flächen
+Dachpotenzial-Kennzahlen (Gesamtfläche und amtliches Potenzial) summieren nur die Klassen **gut** und **mittel**. Schlecht geeignete Flächen
 fließen **nicht** in diese Summen ein, da eine Belegung dort technisch zwar
 möglich, aber wirtschaftlich in der Regel nicht sinnvoll ist. Die Flächen-
 und Leistungswerte je Eignungsklasse (einschließlich „schlecht“) stehen für
@@ -306,7 +305,7 @@ mit Quellenangabe gestattet (© Statistische Ämter des Bundes und der Länder).
 
 ### Ausschöpfungsgrad
 
-Für jede Gemeinde wird der Ausschöpfungsgrad des **Dach**potenzials
+Für jede Gemeinde wird der Ausschöpfungsgrad des Dachpotenzials
 berechnet – auf Basis von Gebäudesolaranlagen (ohne Balkonkraftwerke,
 s. o.):
 
