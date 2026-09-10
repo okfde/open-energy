@@ -18,7 +18,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Welche Gem
     </p>
   </div>
   <div class="subpage-header__media" aria-hidden="true">
-    <img src="{{ '/assets/images/illustrations/illu-solarzelle.png' | relative_url }}" alt="">
+    <img src="{{ '/assets/images/illustrations/illu-solarpotenzial-de.png' | relative_url }}" alt="">
   </div>
 </header>
 

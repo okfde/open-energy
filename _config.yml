@@ -41,6 +41,8 @@ nav_items:
     url: /
   - title: Do it yourself
     url: /do-it-yourself/
+  - title: Datenanalyse
+    url: /solarpotenzial/
   - title: Blog
     url: /blog/
   - title: Termine
