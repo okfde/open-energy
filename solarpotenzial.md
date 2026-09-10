@@ -86,8 +86,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       <a href="#gemeinden" class="link-underline">Gemeindetabelle</a>.
       Einzige Ausnahme: „Balkonkraftwerke je 1.000 EW (Deutschland)“ zeigt
       zum Vergleich alle rund 11.000 Gemeinden bundesweit statt nur
-      Brandenburg – die Gemeindetabelle darunter bleibt in jedem Fall auf
-      Brandenburg beschränkt.
+      Brandenburg.
     </p>
   </div>
 </section>
