@@ -24,28 +24,29 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Welche Gem
 
 {% assign s = site.data.land_summary %}
 {% assign f = site.data.land_summary_fmt %}
+{% assign fd = site.data.land_summary_de_fmt %}
 
 <section class="section solarpotenzial-intro">
   <div class="stat-row" aria-label="Landesweite Kennzahlen">
     <div class="stat-tile">
-      <div class="stat-tile__label">Dach-Potenzialfläche gesamt</div>
-      <div class="stat-tile__value">{{ f.dach_flaeche_qm }} <small>m²</small></div>
-      <div class="stat-tile__sub">Flächen mit guter und mittlerer Sonnenausrichtung – schlecht geeignete Flächen ausgenommen</div>
-    </div>
-    <div class="stat-tile">
-      <div class="stat-tile__label">Bestand Dachanlagen (MaStR)</div>
-      <div class="stat-tile__value">{{ f.bestand_dach_kwp }} <small>kWp</small></div>
-      <div class="stat-tile__sub">{{ f.bestand_dach_anzahl }} Gebäudesolaranlagen in Betrieb</div>
-    </div>
-    <div class="stat-tile">
-      <div class="stat-tile__label">Ausschöpfung Dachpotenzial</div>
+      <div class="stat-tile__label">Ausschöpfung Dach&shy;potenzial (Brandenburg)</div>
       <div class="stat-tile__value">{{ f.ausschoepfung_dach_prozent }} <small>%</small></div>
       <div class="stat-tile__sub">landesweiter Durchschnitt, je Gemeinde stark unterschiedlich</div>
     </div>
     <div class="stat-tile">
-      <div class="stat-tile__label">Bestand Balkonsolar (MaStR)</div>
-      <div class="stat-tile__value">{{ f.bestand_balkon_anzahl }} <small>Steckersolaranlagen</small></div>
-      <div class="stat-tile__sub">{{ f.bestand_balkon_kwp }} kWp installierte Leistung – separat ausgewiesen, nicht in der Ausschöpfung enthalten</div>
+      <div class="stat-tile__label">Großstadt mit höchster Balkonsolardichte</div>
+      <div class="stat-tile__value">{{ fd.top_stadt_name }}</div>
+      <div class="stat-tile__sub">{{ fd.top_stadt_pro_100_haushalte }} Balkonkraftwerke je 100 Haushalte – unter den 10 größten deutschen Städten</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-tile__label">Bundesland mit höchster Balkonsolardichte</div>
+      <div class="stat-tile__value">{{ fd.top_land_name }}</div>
+      <div class="stat-tile__sub">{{ fd.top_land_pro_100_haushalte }} Balkonkraftwerke je 100 Haushalte – höchste Dichte aller 16 Bundesländer</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-tile__label">Balkonkraftwerke je 100 Haushalte in Deutschland</div>
+      <div class="stat-tile__value">{{ fd.bundesweit_pro_100_haushalte }}</div>
+      <div class="stat-tile__sub">bundesweiter Durchschnitt über rund 11.000 Gemeinden</div>
     </div>
   </div>
 
