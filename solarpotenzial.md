@@ -67,7 +67,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       <div class="map-controls__group">
         <div class="ui-upper-small map-controls__heading">Deutschlandweit</div>
         <div class="map-controls__buttons">
-          <button type="button" data-metric="balkon_de_pro1000" class="label label--midnight category-filter__item" aria-pressed="false">Balkonkraftwerke je 1.000 EW</button>
+          <button type="button" data-metric="balkon_de_pro100hh" class="label label--midnight category-filter__item" aria-pressed="false">Balkonkraftwerke je 100 Haushalte</button>
         </div>
       </div>
     </div>
@@ -84,8 +84,8 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
       dunkelste Stufe, damit Unterschiede zwischen den übrigen Gemeinden
       sichtbar bleiben – die vollständigen Zahlen stehen in der
       <a href="#gemeinden" class="link-underline">Gemeindetabelle</a>.
-      Einzige Ausnahme: „Balkonkraftwerke je 1.000 EW (Deutschland)“ zeigt
-      zum Vergleich alle rund 11.000 Gemeinden bundesweit statt nur
+      Einzige Ausnahme: „Balkonkraftwerke je 100 Haushalte (Deutschland)“
+      zeigt zum Vergleich alle rund 11.000 Gemeinden bundesweit statt nur
       Brandenburg.
     </p>
   </div>
@@ -163,22 +163,24 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </p>
   </div>
   <p class="note" id="gemeinden-notes-de" hidden>
-    Angezeigt werden standardmäßig die zehn Gemeinden ab 1.000 Einwohnern mit
-    der höchsten Balkonkraftwerke-Dichte je 1.000 Einwohner – bundesweit, aus
-    rund 11.000 Gemeinden. Kleinere Orte sind hier bewusst ausgeklammert: bei
-    sehr wenigen Einwohnern verzerren schon einzelne Anlagen die Quote stark
-    (z.&nbsp;B. 1 Anlage bei 10 Einwohnern ergibt rechnerisch 100 je 1.000).
-    Über die Suche lässt sich unabhängig von dieser Grenze jede einzelne
-    deutsche Gemeinde finden. Datenquellen: Bestand aus dem
-    Marktstammdatenregister, Einwohnerzahl vom Bundesamt für Kartographie und
-    Geodäsie (VG250-EW).
+    Angezeigt werden standardmäßig die zehn Gemeinden ab 500 Haushalten mit
+    der höchsten Balkonkraftwerke-Dichte je 100 Haushalte – bundesweit, aus
+    rund 11.000 Gemeinden. Normalisiert wird bewusst auf Haushalte statt
+    Einwohner: ein Balkonkraftwerk wird je Wohnung installiert, nicht je
+    Kopf. Kleinere Orte sind hier zudem ausgeklammert: bei sehr wenigen
+    Haushalten verzerren schon einzelne Anlagen die Quote stark. Über die
+    Suche lässt sich unabhängig von dieser Grenze jede einzelne deutsche
+    Gemeinde finden. Datenquellen: Bestand aus dem Marktstammdatenregister,
+    Haushaltszahl aus dem Zensus 2022 (Statistische Ämter des Bundes und der
+    Länder), Gemeindegrenzen vom Bundesamt für Kartographie und Geodäsie
+    (VG250-EW).
   </p>
 
   <div id="laender-section" hidden>
     <h3 id="laender-heading">Balkonkraftwerke je Bundesland</h3>
     <p class="body-text" id="laender-intro">
       Je Bundesland aus allen zugehörigen Gemeinden aggregiert: Summe der
-      Balkonkraftwerke und Einwohner, daraus die Dichte je 1.000 Einwohner.
+      Balkonkraftwerke und Haushalte, daraus die Dichte je 100 Haushalte.
       Alle 16 Bundesländer, Spalten sind sortierbar.
     </p>
     <div class="table-wrap">
@@ -191,8 +193,8 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Interaktiv
     </div>
     <p class="note">
       Berechnet aus den bundesweiten Gemeindedaten (Marktstammdatenregister,
-      Einwohnerzahl: Bundesamt für Kartographie und Geodäsie, VG250-EW) –
-      keine amtlich je Bundesland ausgewiesene Statistik.
+      Haushaltszahl: Zensus 2022) – keine amtlich je Bundesland ausgewiesene
+      Statistik.
     </p>
   </div>
 </section>
@@ -276,6 +278,31 @@ eigene Spalten in der [Gemeindetabelle](#gemeinden) und als eigener
 Karten-Layer „Bestand Balkonkraftwerke“ zur Verfügung; sie fließen **nicht**
 in „Bestand Dach“, „Bestand gesamt“ oder die Ausschöpfungsgrad-Berechnung
 ein.
+
+### Bundesweiter Vergleich: Balkonkraftwerke je 100 Haushalte
+
+Der einzige deutschlandweite Filter (Karte, [Gemeindetabelle](#gemeinden) und
+[Bundesländer-Tabelle](#gemeinden)) normalisiert den Balkonkraftwerke-Bestand
+auf **Haushalte statt Einwohner**: Ein Balkonkraftwerk wird je Wohnung bzw.
+Haushalt installiert, nicht je Kopf – bei unterschiedlicher durchschnittlicher
+Haushaltsgröße (Großstadt vs. Land) ist die Haushaltszahl daher der
+methodisch passendere Nenner für einen fairen Vergleich.
+
+Die Haushaltszahl je Gemeinde stammt aus dem **Zensus 2022** (Stichtag
+15.05.2022, Statistische Ämter des Bundes und der Länder), Tabelle „Haushalte
+und Familien“, Feld „Haushalte insgesamt“. Der Zensus weist Gemeinden über
+den 12-stelligen Amtlichen Regionalschlüssel (ARS) statt des 8-stelligen
+Amtlichen Gemeindeschlüssels (AGS) aus; beide sind deckungsgleich aufgebaut,
+sodass sich der AGS durch Weglassen der 4-stelligen
+Gemeindeverband-Kennziffer ableiten lässt (`AGS = ARS[0:5] + ARS[9:12]`).
+Von den rund 11.000 Gemeinden im Datensatz (Gemeindegrenzen: BKG VG250-EW)
+lassen sich so gut 98 % einer Zensus-Haushaltszahl zuordnen; die
+verbleibenden gut 200 sind ganz überwiegend gemeindefreie Gebiete (Wälder
+u. Ä.) ohne Einwohner und Haushalte. Für Gemeinden ohne zugeordnete
+Haushaltszahl bleibt die Quote ohne Wert, sie tauchen in Karte und Tabellen
+aber weiterhin mit ihrem Balkonkraftwerke-Bestand auf.
+Lizenz der Zensus-Daten: Vervielfältigung und Verbreitung, auch auszugsweise,
+mit Quellenangabe gestattet (© Statistische Ämter des Bundes und der Länder).
 
 ### Ausschöpfungsgrad
 

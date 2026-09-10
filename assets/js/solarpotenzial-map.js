@@ -68,14 +68,17 @@
   // Einziger bundesweiter Filter: eigener, schlanker Datensatz
   // (assets/data/gemeinden_de_balkon.geojson, siehe scripts/build_data_de.py)
   // mit nur Balkonkraftwerke-Kennzahlen je Gemeinde in ganz Deutschland,
-  // normalisiert auf 1.000 Einwohner. Läuft bewusst nicht über das normale
-  // METRICS/state.geojson (Brandenburg) – wird per Lazy-Load als eigener
-  // Layer ein-/ausgeblendet, alle anderen Filter bleiben unangetastet.
-  var DE_METRIC_KEY = "balkon_de_pro1000";
+  // normalisiert auf 100 Haushalte (nicht Einwohner): ein Balkonkraftwerk
+  // wird je Wohnung/Haushalt installiert, nicht je Kopf – die Haushaltszahl
+  // (Zensus 2022) ist daher der methodisch passendere Nenner. Läuft bewusst
+  // nicht über das normale METRICS/state.geojson (Brandenburg) – wird per
+  // Lazy-Load als eigener Layer ein-/ausgeblendet, alle anderen Filter
+  // bleiben unangetastet.
+  var DE_METRIC_KEY = "balkon_de_pro100hh";
   var DE_METRIC = {
-    label: "Balkonkraftwerke je 1.000 Einwohner",
-    field: "balkon_pro_1000_einwohner",
-    fmt: function (v) { return fmtNum(v, 2) + " je 1.000 EW"; },
+    label: "Balkonkraftwerke je 100 Haushalte",
+    field: "balkon_pro_100_haushalte",
+    fmt: function (v) { return fmtNum(v, 2) + " je 100 Haushalte"; },
     legendFmt: function (v) { return fmtNum(v, 1); },
     capPercentile: 0.95
   };
@@ -260,16 +263,17 @@
     var name = props.gemeinde_name || "Unbekannt";
     var typ = props.gemeinde_typ || "";
     var rows = [
+      ["Haushalte", fmtNum(props.haushalte, 0)],
       ["Einwohner", fmtNum(props.einwohner, 0)],
       ["Balkonkraftwerke (Bestand)", fmtNum(props.balkon_anzahl, 0) + " Anlagen, " + fmtNum(props.balkon_kwp, 1) + " kWp"],
-      ["Je 1.000 Einwohner", fmtNum(props.balkon_pro_1000_einwohner, 2)]
+      ["Je 100 Haushalte", fmtNum(props.balkon_pro_100_haushalte, 2)]
     ];
     var html = '<div class="popup"><h4>' + escapeHtml(name) + '</h4>' +
       '<div style="color:var(--text-muted);font-size:.72rem;margin-bottom:6px;">' + escapeHtml(typ) + " · AGS " + escapeHtml(props.ags) + "</div><table>";
     rows.forEach(function (r) {
       html += "<tr><td>" + r[0] + "</td><td class=\"num\">" + r[1] + "</td></tr>";
     });
-    html += "</table><div class=\"popup-foot\">Bestand: Marktstammdatenregister. Einwohnerzahl: BKG (VG250-EW).</div></div>";
+    html += "</table><div class=\"popup-foot\">Bestand: Marktstammdatenregister. Haushalte: Zensus 2022. Einwohnerzahl/Gemeindegrenzen: BKG (VG250-EW).</div></div>";
     return html;
   }
 

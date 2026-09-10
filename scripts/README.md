@@ -86,6 +86,23 @@ python3 build_data.py                # verschmilzt beide Caches, schreibt die Se
 Rohdaten-Caches sind reine Zwischenstände für `build_data.py` und können
 jederzeit gelöscht/neu erzeugt werden.
 
+### Bundesweiter Vergleich (optional, eigener Datensatz)
+
+Der zusätzliche „Balkonkraftwerke je 100 Haushalte (Deutschland)“-Filter auf
+der Karte/Gemeindetabelle nutzt einen eigenen, separaten Datensatz
+(`assets/data/gemeinden_de_balkon.geojson`) und läuft unabhängig vom
+Brandenburg-Flow oben:
+
+```bash
+python3 fetch_gemeinden_de.py   # -> scripts/_cache/gemeinden_de_raw.geojson (BKG VG250-EW, Gemeindegrenzen)
+python3 fetch_balkon_de.py      # -> scripts/_cache/balkon_de.json (MaStR, dauert mehrere Stunden, ~11.000 Gemeinden)
+python3 fetch_haushalte_de.py   # -> scripts/_cache/haushalte_de.json (Zensus 2022, Haushalte je Gemeinde)
+python3 build_data_de.py        # verschmilzt alle drei Caches -> assets/data/gemeinden_de_balkon.geojson
+```
+
+`fetch_haushalte_de.py` benötigt zusätzlich `openpyxl` (in `requirements.txt`
+enthalten).
+
 ## Methodik-Hinweise
 
 - Nur Dachflächen der Eignungsklassen **gut** und **mittel** fließen in die

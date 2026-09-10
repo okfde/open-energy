@@ -5,8 +5,10 @@ VG250-EW ("Verwaltungsgebiete mit Einwohnerzahlen"), öffentlich und ohne
 Zugangsdaten abrufbar.
 
 Nur für den deutschlandweiten Balkonkraftwerke-Filter benötigt (Kartenlayer
-+ Normalisierung auf Anlagen je 1.000 Einwohner) – nicht für die
-Brandenburg-Daten, die weiterhin aus dem Energieportal-WFS kommen.
++ Gemeindegrenzen; die Einwohnerzahl (EWZ) dient nur als Kontextinfo im
+Popup – normalisiert wird auf Haushalte, siehe fetch_haushalte_de.py) –
+nicht für die Brandenburg-Daten, die weiterhin aus dem Energieportal-WFS
+kommen.
 
 Schreibt scripts/_cache/gemeinden_de_raw.json (GeoJSON, WGS84, vereinfacht).
 """

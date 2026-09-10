@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch den Bestand an Balkonkraftwerken (steckerfertige Solaranlagen)
 "in Betrieb" je Gemeinde – deutschlandweit – aus dem Marktstammdatenregister
-(MaStR). Nur für den zusätzlichen "Balkonkraftwerke je 1.000 Einwohner
+(MaStR). Nur für den zusätzlichen "Balkonkraftwerke je 100 Haushalte
 (Deutschland)"-Kartenfilter; alle übrigen Filter bleiben Brandenburg-only
 und unverändert.
 

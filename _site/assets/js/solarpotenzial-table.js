@@ -5,7 +5,7 @@
  *    site.data.gemeinden_tabelle, wie bisher.
  *  - Deutschland: wird von solarpotenzial-map.js aktiviert, sobald der
  *    "Deutschlandweit"-Kartenfilter angeklickt wird (window.SolarpotenzialTable.showDe).
- *    Zeigt standardmäßig die Top 10 nach Balkonkraftwerken je 1.000 Einwohner;
+ *    Zeigt standardmäßig die Top 10 nach Balkonkraftwerken je 100 Haushalte;
  *    die Suche filtert dagegen über alle ~11.000 Gemeinden. Ein Wechsel zurück
  *    auf einen Brandenburg-Filter stellt die ursprüngliche Liste wieder her
  *    (window.SolarpotenzialTable.restoreBrandenburg).
@@ -16,20 +16,21 @@
   var BB_TOP_N = 10;
   var DE_TOP_N = 10;
   var DE_SEARCH_MAX_RESULTS = 200;
-  // Balkonkraftwerke je 1.000 Einwohner ist als Verhältniszahl bei sehr
-  // kleinen Gemeinden extrem volatil: ein Weiler mit 10 Einwohnern und
-  // einer einzigen Anlage kommt rechnerisch auf 100 je 1.000 Einwohner.
-  // Beide Zahlen sind für sich genommen richtig, aber ein Top 10 aus
-  // solchen Ausreißern wäre nicht aussagekräftig. Für die Standardansicht
-  // werden daher nur Gemeinden ab dieser Einwohnerzahl berücksichtigt; die
-  // Suche ist davon unabhängig und findet weiterhin jede Gemeinde.
-  var DE_TOP_MIN_EINWOHNER = 1000;
+  // Balkonkraftwerke je 100 Haushalte ist als Verhältniszahl bei sehr
+  // kleinen Gemeinden extrem volatil: ein Weiler mit wenigen Haushalten und
+  // einer einzigen Anlage kommt rechnerisch auf eine sehr hohe Quote. Beide
+  // Zahlen sind für sich genommen richtig, aber ein Top 10 aus solchen
+  // Ausreißern wäre nicht aussagekräftig. Für die Standardansicht werden
+  // daher nur Gemeinden ab dieser Haushaltszahl berücksichtigt (~1.000
+  // Einwohner bei durchschnittlicher Haushaltsgröße); die Suche ist davon
+  // unabhängig und findet weiterhin jede Gemeinde.
+  var DE_TOP_MIN_HAUSHALTE = 500;
 
   var DE_COLUMNS = [
     { field: "gemeinde_name", label: "Gemeinde", type: "text" },
     { field: "gemeinde_typ", label: "Typ", type: "text" },
-    { field: "balkon_pro_1000_einwohner", label: "Balkonkraftwerke je 1.000 EW", type: "num", decimals: 2 },
-    { field: "einwohner", label: "Einwohner", type: "num", decimals: 0 },
+    { field: "balkon_pro_100_haushalte", label: "Balkonkraftwerke je 100 Haushalte", type: "num", decimals: 2 },
+    { field: "haushalte", label: "Haushalte", type: "num", decimals: 0 },
     { field: "balkon_anzahl", label: "Balkonkraftwerke (Anzahl)", type: "num", decimals: 0 },
     { field: "balkon_kwp", label: "Balkonkraftwerke (kWp)", type: "num", decimals: 1 }
   ];
@@ -57,8 +58,8 @@
 
   var LAND_COLUMNS = [
     { field: "land_name", label: "Bundesland", type: "text" },
-    { field: "balkon_pro_1000_einwohner", label: "Balkonkraftwerke je 1.000 EW", type: "num", decimals: 2 },
-    { field: "einwohner", label: "Einwohner", type: "num", decimals: 0 },
+    { field: "balkon_pro_100_haushalte", label: "Balkonkraftwerke je 100 Haushalte", type: "num", decimals: 2 },
+    { field: "haushalte", label: "Haushalte", type: "num", decimals: 0 },
     { field: "balkon_anzahl", label: "Balkonkraftwerke (Anzahl)", type: "num", decimals: 0 },
     { field: "balkon_kwp", label: "Balkonkraftwerke (kWp)", type: "num", decimals: 1 }
   ];
@@ -69,14 +70,14 @@
       var code = (p.ags || "").substring(0, 2);
       var name = LAND_NAMES[code];
       if (!name) return; // unbekannte/fehlende Kennziffer robust ignorieren
-      if (!byLand[code]) byLand[code] = { land_name: name, einwohner: 0, balkon_anzahl: 0, balkon_kwp: 0 };
-      byLand[code].einwohner += p.einwohner || 0;
+      if (!byLand[code]) byLand[code] = { land_name: name, haushalte: 0, balkon_anzahl: 0, balkon_kwp: 0 };
+      byLand[code].haushalte += p.haushalte || 0;
       byLand[code].balkon_anzahl += p.balkon_anzahl || 0;
       byLand[code].balkon_kwp += p.balkon_kwp || 0;
     });
     return Object.keys(byLand).map(function (code) {
       var l = byLand[code];
-      l.balkon_pro_1000_einwohner = l.einwohner > 0 ? (l.balkon_anzahl / l.einwohner) * 1000 : 0;
+      l.balkon_pro_100_haushalte = l.haushalte > 0 ? (l.balkon_anzahl / l.haushalte) * 100 : 0;
       return l;
     });
   }
@@ -104,9 +105,9 @@
 
     var mode = "bb";
     var deRows = null; // deduplizierte Properties-Arrays aller Gemeinden (von map.js geliefert)
-    var deSort = { field: "balkon_pro_1000_einwohner", dir: "desc" };
+    var deSort = { field: "balkon_pro_100_haushalte", dir: "desc" };
     var landRows = null; // aus deRows aggregiert, siehe computeLandRows()
-    var landSort = { field: "balkon_pro_1000_einwohner", dir: "desc" };
+    var landSort = { field: "balkon_pro_100_haushalte", dir: "desc" };
 
     function fmtDe(v, digits) {
       if (v === null || v === undefined || isNaN(v)) return "–";
@@ -272,7 +273,7 @@
                  (p.gemeinde_typ && p.gemeinde_typ.toLowerCase().indexOf(q) !== -1);
         });
       } else {
-        list = deRows.filter(function (p) { return p.einwohner >= DE_TOP_MIN_EINWOHNER; });
+        list = deRows.filter(function (p) { return p.haushalte >= DE_TOP_MIN_HAUSHALTE; });
       }
       sortDeRows(list);
 
@@ -282,7 +283,7 @@
 
       if (!isSearch) {
         countEl.textContent = "Top " + DE_TOP_N + " von " + total + " Gemeinden ab " +
-          DE_TOP_MIN_EINWOHNER.toLocaleString("de-DE") + " Einwohnern (bundesweit " + deRows.length + " Gemeinden)";
+          DE_TOP_MIN_HAUSHALTE.toLocaleString("de-DE") + " Haushalten (bundesweit " + deRows.length + " Gemeinden)";
       } else if (total > DE_SEARCH_MAX_RESULTS) {
         countEl.textContent = "Zeige die ersten " + DE_SEARCH_MAX_RESULTS + " von " + total + " Treffern – Suche weiter eingrenzen";
       } else {
@@ -349,13 +350,13 @@
         seen[p.ags] = true;
         return true;
       });
-      deSort = { field: "balkon_pro_1000_einwohner", dir: "desc" };
+      deSort = { field: "balkon_pro_100_haushalte", dir: "desc" };
       searchEl.value = "";
       searchEl.placeholder = "Gemeinde deutschlandweit suchen…";
       if (headingEl) headingEl.textContent = "Balkonkraftwerke: Top 10 bundesweit";
       if (introEl) {
-        introEl.innerHTML = "Die zehn Gemeinden ab " + DE_TOP_MIN_EINWOHNER.toLocaleString("de-DE") +
-          " Einwohnern mit der höchsten Balkonkraftwerke-Dichte je 1.000 Einwohner, " +
+        introEl.innerHTML = "Die zehn Gemeinden ab " + DE_TOP_MIN_HAUSHALTE.toLocaleString("de-DE") +
+          " Haushalten mit der höchsten Balkonkraftwerke-Dichte je 100 Haushalte, " +
           "bundesweit (kleinere Orte ausgeklammert, da einzelne Anlagen dort die Quote " +
           "stark verzerren). Über die Suche lässt sich jede der rund 11.000 deutschen " +
           "Gemeinden finden, unabhängig von dieser Grenze.";
@@ -368,7 +369,7 @@
       searchEl.oninput = function () { renderDeBody(searchEl.value.trim()); };
 
       landRows = computeLandRows(deRows);
-      landSort = { field: "balkon_pro_1000_einwohner", dir: "desc" };
+      landSort = { field: "balkon_pro_100_haushalte", dir: "desc" };
       renderLandHead();
       renderLandBody();
       if (landerSectionEl) landerSectionEl.hidden = false;
