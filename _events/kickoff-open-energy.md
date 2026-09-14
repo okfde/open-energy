@@ -2,7 +2,7 @@
 title: "Auftakt Open Energy"
 date: 2026-09-19
 time: "14:00"
-location: "Nano Science Center Potsdam"
+location: "Nano Science Center, Am Kanal 57, 14467 Potsdam"
 excerpt: "Erneuerbare Energien sind dort entstanden, wo Menschen selbst losgelegt haben – als Pionier:innen mit eigenen Ideen. Heute scheint Energie oft weit weg vom eigenen Alltag. Warum ist das so? Und wie können wir selbst aktiv werden? Anlässlich des Projektstarts von Open Energy diskutieren wir diese Fragen mit praxisnahen Referent:innen. Außerdem bieten wir kostenlos eine Balkonsolarberatung an."
 signup_url: "https://cloud.okfn.de/apps/forms/s/KPaRAPtetDmGWK4y2aaNDbR4"
 ---
