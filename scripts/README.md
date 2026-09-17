@@ -48,7 +48,7 @@ cd scripts
 ./update_data.sh
 ```
 
-Das Skript läuft in drei Schritten (auch einzeln aufrufbar, siehe unten) und
+Das Skript läuft in vier Schritten (auch einzeln aufrufbar, siehe unten) und
 schreibt am Ende direkt in die vom Jekyll-Build gelesenen Dateien:
 
 - `assets/data/gemeinden.geojson` (Karte + Popup-Detailwerte)
@@ -70,19 +70,29 @@ Dateien committen.
   (`scripts/_cache/bestand.json`) – ein Abbruch (Ctrl-C, Netzwerkfehler)
   verliert also höchstens die gerade laufende Gemeinde; ein erneuter Aufruf
   setzt automatisch dort fort. `--force` erzwingt einen kompletten Neulauf,
-  `--limit N` fragt nur die ersten N Gemeinden ab (zum Testen).
+  `--limit N` fragt nur die ersten N Gemeinden ab (zum Testen). Erfasst dabei
+  je Dachsolaranlage zusätzlich den Anlagenbetreiber (kostet keine
+  zusätzlichen Requests, das Feld ist in derselben Antwort schon enthalten).
+- `fetch_marktakteure_personenart.py`: **kein** Einzelabruf je Betreiber
+  (das wären bei ~135.000 Brandenburger Dachsolaranlagen potenziell
+  >100.000 Requests und ein Vielfaches der Laufzeit von `fetch_bestand.py`).
+  Stattdessen eine paginierte Sammel-Listenabfrage aller in Brandenburg
+  gemeldeten Marktakteure – wenige Dutzend Requests, ca. 1–3 Minuten.
+  Betreiber mit Sitz außerhalb Brandenburgs werden dabei nicht erfasst und
+  fallen später unter "unbekannt" (siehe Docstring im Skript).
 - `build_data.py`: wenige Sekunden.
 
 ### Einzelne Schritte
 
 ```bash
-python3 fetch_potenzial.py           # -> scripts/_cache/potenzial_raw.geojson
-python3 fetch_bestand.py             # -> scripts/_cache/bestand.json
-python3 fetch_bestand.py --limit 5   # nur 5 Gemeinden, zum Testen
-python3 build_data.py                # verschmilzt beide Caches, schreibt die Seiten-Dateien
+python3 fetch_potenzial.py                  # -> scripts/_cache/potenzial_raw.geojson
+python3 fetch_bestand.py                    # -> scripts/_cache/bestand.json
+python3 fetch_bestand.py --limit 5          # nur 5 Gemeinden, zum Testen
+python3 fetch_marktakteure_personenart.py   # -> scripts/_cache/marktakteure_personenart.json
+python3 build_data.py                       # verschmilzt alle Caches, schreibt die Seiten-Dateien
 ```
 
-`scripts/_cache/` wird nicht versioniert (siehe `.gitignore`) – die beiden
+`scripts/_cache/` wird nicht versioniert (siehe `.gitignore`) – die
 Rohdaten-Caches sind reine Zwischenstände für `build_data.py` und können
 jederzeit gelöscht/neu erzeugt werden.
 

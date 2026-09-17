@@ -15,8 +15,9 @@ Nur gut/mittel geeignete Dachflächen fließen in die Dachpotenzial-Summen ein
 Ausschöpfung wird ausschließlich gegen das amtliche Potenzial berechnet –
 es gibt keine eigene, panelbasierte Berechnung mehr.
 
-Aufruf: python3 build_data.py  (setzt voraus, dass fetch_potenzial.py und
-fetch_bestand.py vorher gelaufen sind und ihre Caches geschrieben haben).
+Aufruf: python3 build_data.py  (setzt voraus, dass fetch_potenzial.py,
+fetch_bestand.py und fetch_marktakteure_personenart.py vorher gelaufen sind
+und ihre Caches geschrieben haben).
 """
 import csv
 import json
@@ -30,6 +31,7 @@ SCRIPT_DIR = Path(__file__).parent
 CACHE_DIR = SCRIPT_DIR / "_cache"
 POTENZIAL_CACHE = CACHE_DIR / "potenzial_raw.geojson"
 BESTAND_CACHE = CACHE_DIR / "bestand.json"
+PERSONENART_CACHE = CACHE_DIR / "marktakteure_personenart.json"
 
 REPO_ROOT = SCRIPT_DIR.parent
 GEOJSON_OUT = REPO_ROOT / "assets" / "data" / "gemeinden.geojson"
@@ -76,7 +78,26 @@ def frei_flaeche_und_leistung(props):
     return flaeche_qm, leistung_kwp, menge_mwh
 
 
-def build_properties(feature_props, bestand):
+def bestand_dach_nach_personenart(betreiber_liste, personenart):
+    """Teilt Anzahl + kWp des Bestands Dach einer Gemeinde nach der
+    Personenart der jeweiligen Anlagenbetreiber auf. Betreiber ohne Eintrag
+    in personenart (z. B. mit Sitz außerhalb Brandenburgs, siehe
+    fetch_marktakteure_personenart.py) fallen unter "unbekannt" – deren kWp
+    fehlt in Organisation+Privatperson, ist aber weiterhin in
+    bestand_dach_kwp_gesamt enthalten."""
+    eimer = {
+        "organisation": {"anzahl": 0, "kwp": 0.0},
+        "privatperson": {"anzahl": 0, "kwp": 0.0},
+        "unbekannt": {"anzahl": 0, "kwp": 0.0},
+    }
+    for eintrag in betreiber_liste or []:
+        kategorie = personenart.get(eintrag["betreiber"], "unbekannt")
+        eimer[kategorie]["anzahl"] += 1
+        eimer[kategorie]["kwp"] += eintrag["kwp"]
+    return eimer
+
+
+def build_properties(feature_props, bestand, personenart):
     p = feature_props
     ags = p["gemeinde_schluessel"]
 
@@ -99,6 +120,8 @@ def build_properties(feature_props, bestand):
     bestand_frei = b.get("frei", {"anzahl": 0, "kwp": 0})
     bestand_balkon = b.get("balkon", {"anzahl": 0, "kwp": 0})
     bestand_sonst = b.get("sonst", {"anzahl": 0, "kwp": 0})
+
+    dach_split = bestand_dach_nach_personenart(bestand_dach.get("betreiber"), personenart)
 
     bestand_gesamt_kwp = (
         bestand_dach["kwp"] + bestand_frei["kwp"] + bestand_balkon["kwp"] + bestand_sonst["kwp"]
@@ -142,6 +165,16 @@ def build_properties(feature_props, bestand):
         "bestand_csv_sonst_kwp": bestand_sonst["kwp"],
         "bestand_dach_kwp_gesamt": bestand_dach["kwp"],
         "bestand_gesamt_kwp": round(bestand_gesamt_kwp, 2),
+
+        # Aufschlüsselung Bestand Dach nach Anlagenbetreiber-Personenart
+        # (siehe fetch_marktakteure_personenart.py) – für den
+        # Gesamt/Organisation/Privatperson-Umschalter auf der Karte.
+        "bestand_dach_kwp_organisation": round(dach_split["organisation"]["kwp"], 2),
+        "bestand_dach_anzahl_organisation": dach_split["organisation"]["anzahl"],
+        "bestand_dach_kwp_privatperson": round(dach_split["privatperson"]["kwp"], 2),
+        "bestand_dach_anzahl_privatperson": dach_split["privatperson"]["anzahl"],
+        "bestand_dach_kwp_unbekannt": round(dach_split["unbekannt"]["kwp"], 2),
+        "bestand_dach_anzahl_unbekannt": dach_split["unbekannt"]["anzahl"],
 
         "ausschoepfung_dach_prozent": ausschoepfung,
     }
@@ -254,11 +287,15 @@ def main():
         BESTAND_CACHE,
         "Bitte zuerst 'python3 fetch_bestand.py' ausführen (benötigt MaStR-Zugangsdaten, siehe README.md).",
     )
+    personenart = load_cache(
+        PERSONENART_CACHE,
+        "Bitte zuerst 'python3 fetch_marktakteure_personenart.py' ausführen (benötigt MaStR-Zugangsdaten, siehe README.md).",
+    )
 
     features_out = []
     rows_out = []
     for feature in potenzial["features"]:
-        props = build_properties(feature["properties"], bestand)
+        props = build_properties(feature["properties"], bestand, personenart)
         rows_out.append(props)
         features_out.append({
             "type": "Feature",

@@ -2,7 +2,8 @@
 # Aktualisiert alle Daten der /solarpotenzial-Seite in einem Rutsch:
 #   1. amtliche Solarpotenzial-Statistik (Energieportal Brandenburg, WFS)
 #   2. Bestand an Solaranlagen "in Betrieb" (Marktstammdatenregister)
-#   3. Verschmilzt beides zu den vier Dateien, die die Seite einliest
+#   3. Personenart der Brandenburger Anlagenbetreiber (Marktstammdatenregister)
+#   4. Verschmilzt alles zu den vier Dateien, die die Seite einliest
 #
 # Nutzung:
 #   cd scripts
@@ -20,11 +21,15 @@ echo "== 1/3: Amtliche Solarpotenzial-Statistik (WFS) =="
 python3 fetch_potenzial.py
 
 echo
-echo "== 2/3: Bestand aus dem Marktstammdatenregister =="
+echo "== 2/4: Bestand aus dem Marktstammdatenregister =="
 python3 fetch_bestand.py
 
 echo
-echo "== 3/3: Daten zusammenführen und Seiten-Dateien schreiben =="
+echo "== 3/4: Personenart der Brandenburger Anlagenbetreiber =="
+python3 fetch_marktakteure_personenart.py
+
+echo
+echo "== 4/4: Daten zusammenführen und Seiten-Dateien schreiben =="
 python3 build_data.py
 
 echo

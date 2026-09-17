@@ -75,6 +75,16 @@
   gap: 0.625rem;
   margin-bottom: 0.75rem;
 
+  // Gleiche Spezifität wie die bloße .map-controls-Regel oben, aber als
+  // Attribut-Selektor kombiniert – ohne das würde unser eigenes
+  // "display: flex" die eingebaute [hidden]-Regel des Browsers
+  // überschreiben und Elemente mit dem hidden-Attribut blieben sichtbar
+  // (z. B. der Gesamt/Organisation/Privatperson-Umschalter im
+  // Deutschlandweit-Modus).
+  &[hidden] {
+    display: none;
+  }
+
   button {
     cursor: pointer;
   }

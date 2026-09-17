@@ -78,6 +78,24 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Welche Gem
       <div id="map-legend" class="map-legend"></div>
     </div>
 
+    <div class="map-controls" id="bestand-split-controls" role="group" aria-label="Bestand Dach nach Anlagenbetreiber" style="margin-top:10px;">
+      <div class="ui-upper-small map-controls__heading">Bestand Dach nach Anlagenbetreiber</div>
+      <div class="map-controls__buttons">
+        <button type="button" data-bestand-split="gesamt" class="label label--midnight category-filter__item" aria-pressed="true">Gesamt</button>
+        <button type="button" data-bestand-split="organisation" class="label label--midnight category-filter__item" aria-pressed="false">Organisation</button>
+        <button type="button" data-bestand-split="privatperson" class="label label--midnight category-filter__item" aria-pressed="false">Privatperson</button>
+      </div>
+      <p class="note caveat">
+      „Gesamt/Organisation/Privatperson“ teilt „Bestand Dach (kWp)“ nach der
+      Personenart des jeweiligen Anlagenbetreibers auf (Details siehe
+      <a href="#methodik" class="link-underline">Methodik&nbsp;&amp;&nbsp;Quellen</a>).
+      Nicht jeder Betreiber lässt sich zuordnen (u. a. Sitz außerhalb
+      Brandenburgs, gelöschte/deaktivierte Marktakteure) – aktuell rund
+      39&nbsp;% von „Gesamt“. Organisation und Privatperson summieren sich
+      daher nicht exakt auf „Gesamt“.
+    </p>
+    </div>
+
     <p class="note">
       Kartendaten: 413 Brandenburger Gemeinden. Klicken Sie auf eine Gemeinde für Detailwerte
       inklusive der Aufschlüsselung nach Eignungsklasse (gut/mittel/schlecht).
@@ -278,6 +296,34 @@ eigene Spalten in der [Gemeindetabelle](#gemeinden) und als eigener
 Karten-Layer „Bestand Balkonkraftwerke“ zur Verfügung; sie fließen **nicht**
 in „Bestand Dach“, „Bestand gesamt“ oder die Ausschöpfungsgrad-Berechnung
 ein.
+
+### Bestand Dach nach Anlagenbetreiber (Organisation / Privatperson)
+
+Der Umschalter unter der Karte teilt „Bestand Dach (kWp)“ danach auf, wer
+die jeweilige Anlage laut MaStR betreibt. Grundlage ist das Feld
+„Personenart“ des verknüpften Marktakteurs (Anlagenbetreiber), das der
+öffentliche MaStR-Webdienst in genau zwei Kategorien unterscheidet:
+
+- **Organisation** – Unternehmen, Personengesellschaft, juristische Person,
+  Behörde, Verband.
+- **Privatperson** – in den MaStR-Rohdaten
+  „NatuerlichePersonOderOrganisationMitPersonenbezug“: aus Datenschutzgründen
+  fasst diese Kategorie echte Privatpersonen und personenbezogene
+  Kleinunternehmen (z. B. Einzelunternehmen) zusammen. Eine feinere
+  Trennung ist über die öffentlichen MaStR-Daten nicht möglich.
+
+Die Personenart wird **nicht** je Anlage einzeln abgefragt (das wären bei
+rund 135.000 Brandenburger Dachsolaranlagen potenziell über 100.000
+Einzelabrufe), sondern über eine paginierte Sammelabfrage aller aktiven, in
+Brandenburg gemeldeten Marktakteure ermittelt und über die
+Anlagenbetreiber-MaStR-Nummer verknüpft (siehe
+`scripts/fetch_marktakteure_personenart.py`). Das erfasst nur Betreiber, die
+selbst mit Adresse in Brandenburg registriert sind – ein Betreiber mit Sitz
+außerhalb Brandenburgs, ein gelöschter/deaktivierter Marktakteur oder ein
+Datensatz ohne gepflegtes Bundesland-Feld bleibt daher unter „Gesamt“, ohne
+Organisation oder Privatperson zugeordnet zu sein. In der Praxis sind das
+keine Ausnahmefälle: rund 39&nbsp;% von „Bestand Dach (kWp)“ landen unter
+„unbekannt“, bei rund 22&nbsp;% Organisation und rund 39&nbsp;% Privatperson.
 
 ### Bundesweiter Vergleich: Balkonkraftwerke je 100 Haushalte
 

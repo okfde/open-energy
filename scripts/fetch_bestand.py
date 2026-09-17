@@ -90,11 +90,19 @@ def call_with_retry(fn, *args, **kwargs):
     raise RuntimeError(f"MaStR-Aufruf endgültig fehlgeschlagen: {last_error}")
 
 
-def fetch_category(service, api_key, marktakteur_nr, ags, art_der_solaranlage):
+def fetch_category(service, api_key, marktakteur_nr, ags, art_der_solaranlage, collect_betreiber=False):
     """Summiert Anzahl + Bruttoleistung (kWp) aller Einheiten einer Gemeinde
-    und Solaranlagen-Art, mit Pagination über startAb."""
+    und Solaranlagen-Art, mit Pagination über startAb.
+
+    Bei collect_betreiber=True wird zusätzlich je Einheit die
+    Anlagenbetreiber-MaStR-Nummer mitgeschrieben (Feld "Anlagenbetreiber" ist
+    in derselben Listenantwort bereits enthalten – kostet also keine
+    zusätzlichen Requests). Nur für "dach" genutzt, um Bestand Dach später
+    nach Anlagenbetreiber-Personenart (Organisation/Privatperson) aufteilen
+    zu können, siehe fetch_marktakteure_personenart.py."""
     anzahl = 0
     kwp = 0.0
+    betreiber = [] if collect_betreiber else None
     start_ab = 1
     while True:
         response = call_with_retry(
@@ -114,12 +122,19 @@ def fetch_category(service, api_key, marktakteur_nr, ags, art_der_solaranlage):
         einheiten = response.Einheiten or []
         anzahl += len(einheiten)
         kwp += sum(float(e.Bruttoleistung or 0) for e in einheiten)
+        if collect_betreiber:
+            for e in einheiten:
+                if e.Anlagenbetreiber:
+                    betreiber.append({"betreiber": e.Anlagenbetreiber, "kwp": round(float(e.Bruttoleistung or 0), 3)})
 
         if response.Ergebniscode != "OkWeitereDatenVorhanden":
             break
         start_ab += len(einheiten)
 
-    return {"anzahl": anzahl, "kwp": round(kwp, 2)}
+    result = {"anzahl": anzahl, "kwp": round(kwp, 2)}
+    if collect_betreiber:
+        result["betreiber"] = betreiber
+    return result
 
 
 def main():
@@ -158,14 +173,24 @@ def main():
     client = zeep.Client(WSDL_URL, transport=transport)
     service = client.bind("Marktstammdatenregister", "Anlage")
 
-    offene = [a for a in ags_list if a not in ergebnis]
+    # Ein alter Zwischenstand (vor Einführung von collect_betreiber) hat noch
+    # kein "betreiber"-Feld unter "dach" – solche Gemeinden gelten als offen
+    # und werden automatisch nachgefetcht, statt sie als "bereits fertig" zu
+    # überspringen.
+    def ist_vollstaendig(ags):
+        return ags in ergebnis and "betreiber" in ergebnis[ags].get("dach", {})
+
+    offene = [a for a in ags_list if not ist_vollstaendig(a)]
     print(f"{len(offene)} von {len(ags_list)} Gemeinden abzufragen "
           f"(je {len(KATEGORIEN)} Solaranlagen-Arten).")
 
     for i, ags in enumerate(offene, start=1):
         pro_kategorie = {}
         for kuerzel, solar_art in KATEGORIEN.items():
-            pro_kategorie[kuerzel] = fetch_category(service, api_key, marktakteur_nr, ags, solar_art)
+            pro_kategorie[kuerzel] = fetch_category(
+                service, api_key, marktakteur_nr, ags, solar_art,
+                collect_betreiber=(kuerzel == "dach"),
+            )
         ergebnis[ags] = pro_kategorie
 
         # Nach jeder Gemeinde speichern – ein Abbruch verliert so höchstens

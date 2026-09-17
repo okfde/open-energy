@@ -65,6 +65,17 @@
     }
   };
 
+  // Teilt "Bestand Dach (kWp)" (METRICS.bestand) nach der Personenart des
+  // Anlagenbetreibers auf (siehe scripts/fetch_marktakteure_personenart.py
+  // und Methodik & Quellen). Nur relevant, solange state.metric === "bestand"
+  // ist – der Umschalter unter der Karte setzt state.bestandSplit und
+  // wechselt bei Bedarf automatisch auf die Bestand-Dach-Ansicht.
+  var BESTAND_SPLIT = {
+    gesamt: { label: "Gesamt", field: "bestand_dach_kwp_gesamt" },
+    organisation: { label: "Organisation", field: "bestand_dach_kwp_organisation" },
+    privatperson: { label: "Privatperson", field: "bestand_dach_kwp_privatperson" }
+  };
+
   // Einziger bundesweiter Filter: eigener, schlanker Datensatz
   // (assets/data/gemeinden_de_balkon.geojson, siehe scripts/build_data_de.py)
   // mit nur Balkonkraftwerke-Kennzahlen je Gemeinde in ganz Deutschland,
@@ -85,6 +96,7 @@
 
   var state = {
     metric: "ausschoepfung",
+    bestandSplit: "gesamt",
     geojson: null,
     map: null,
     layer: null,
@@ -126,7 +138,8 @@
 
   function metricValue(props, metricKey) {
     var m = METRICS[metricKey];
-    var raw = props[m.field];
+    var field = metricKey === "bestand" ? BESTAND_SPLIT[state.bestandSplit].field : m.field;
+    var raw = props[field];
     if (raw === null || raw === undefined) return null;
     return m.transform ? m.transform(raw) : raw;
   }
@@ -226,6 +239,8 @@
       ["Dach-Potenzialfläche (gut + mittel)", fmtNum(props.dach_flaeche_qm, 0) + " m²"],
       ["Amtliches Potenzial (gut + mittel)", fmtNum(props.dach_leistung_amtlich_kwp, 0) + " kWp / " + fmtCompact(props.dach_menge_amtlich_mwh * 1000) + " kWh/a"],
       ["Bestand Dachanlagen (MaStR)", fmtNum(props.bestand_csv_dach_anzahl, 0) + " Anlagen, " + fmtNum(props.bestand_dach_kwp_gesamt, 0) + " kWp"],
+      ["– davon Organisation", fmtNum(props.bestand_dach_anzahl_organisation, 0) + " Anlagen, " + fmtNum(props.bestand_dach_kwp_organisation, 0) + " kWp"],
+      ["– davon Privatperson", fmtNum(props.bestand_dach_anzahl_privatperson, 0) + " Anlagen, " + fmtNum(props.bestand_dach_kwp_privatperson, 0) + " kWp"],
       ["Ausschöpfung Dachpotenzial", fmtNum(props.ausschoepfung_dach_prozent, 1) + " %"],
       ["Freiflächen-Potenzial (amtlich, EEG-Kulisse)", fmtNum(props.frei_flaeche_qm, 0) + " m²"],
       ["Freiflächenanlagen (Bestand)", fmtNum(props.bestand_csv_frei_anzahl, 0) + " Anlagen, " + fmtNum(props.bestand_csv_frei_kwp, 0) + " kWp"],
@@ -299,12 +314,16 @@
 
   function renderLegend() {
     var m = METRICS[state.metric];
+    var title = m.label;
+    if (state.metric === "bestand" && state.bestandSplit !== "gesamt") {
+      title += " – " + BESTAND_SPLIT[state.bestandSplit].label;
+    }
     var stops = SEQ_RAMP;
     var gradientCss = "linear-gradient(90deg, " + stops.join(",") + ")";
     var maxLabel = m.legendFmt(state.domainMax);
     var capNote = state.domainTrueMax > state.domainMax ? " +" : "";
     state.legendEl.innerHTML =
-      '<div class="legend-title">' + m.label + "</div>" +
+      '<div class="legend-title">' + title + "</div>" +
       '<div class="ramp" style="background:' + gradientCss + '"></div>' +
       '<div class="scale-labels"><span>0</span><span>' + maxLabel + capNote + "</span></div>" +
       '<div style="margin-top:6px;"><span class="no-data-swatch"></span>keine Daten' +
@@ -387,6 +406,7 @@
 
   function switchToDeLayer(mapEl) {
     state.activeMode = "de";
+    setBestandSplitControlsVisible(false);
     if (state.layer) state.map.removeLayer(state.layer);
 
     if (state.deLayer) {
@@ -432,31 +452,70 @@
   }
 
   // Wechselt zurück auf den normalen Brandenburg-Layer/eine der bisherigen
-  // Kennzahlen.
+  // Kennzahlen. Ein Wechsel weg von "bestand" setzt den
+  // Organisation/Privatperson-Umschalter auf "Gesamt" zurück, damit er beim
+  // nächsten Aufruf von "Bestand Dach (kWp)" nicht unbemerkt noch gefiltert
+  // ist.
   function switchToBrandenburgLayer(metricKey) {
     state.activeMode = "bb";
+    setBestandSplitControlsVisible(true);
     if (state.deLayer) state.map.removeLayer(state.deLayer);
     if (window.SolarpotenzialTable) window.SolarpotenzialTable.restoreBrandenburg();
     state.metric = metricKey;
+    if (metricKey !== "bestand") state.bestandSplit = "gesamt";
     if (state.layer) {
       state.layer.addTo(state.map);
       fitToBounds(state.layer.getBounds());
     }
     updateStyles();
+    setActiveMetricButton(metricKey);
+    setActiveSplitButton(state.bestandSplit);
+  }
+
+  function setActiveMetricButton(metricKey) {
+    document.querySelectorAll("[data-metric]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-metric") === metricKey ? "true" : "false");
+    });
+  }
+
+  function setActiveSplitButton(splitKey) {
+    document.querySelectorAll("[data-bestand-split]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-bestand-split") === splitKey ? "true" : "false");
+    });
+  }
+
+  // Gesamt/Organisation/Privatperson ist eine Aufschlüsselung von "Bestand
+  // Dach", die es nur für Brandenburg gibt – im Deutschlandweit-Modus
+  // (Balkonkraftwerke je 100 Haushalte) blenden wir die Buttons daher aus.
+  function setBestandSplitControlsVisible(visible) {
+    var el = document.getElementById("bestand-split-controls");
+    if (el) el.hidden = !visible;
   }
 
   function initControls(mapEl) {
-    var buttons = document.querySelectorAll("[data-metric]");
-    buttons.forEach(function (btn) {
+    document.querySelectorAll("[data-metric]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        buttons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
-        btn.setAttribute("aria-pressed", "true");
         var metricKey = btn.getAttribute("data-metric");
         if (metricKey === DE_METRIC_KEY) {
+          setActiveMetricButton(metricKey);
           switchToDeLayer(mapEl);
         } else {
           switchToBrandenburgLayer(metricKey);
         }
+      });
+    });
+
+    // Gesamt/Organisation/Privatperson unter der Karte: wählt immer
+    // "Bestand Dach (kWp)" als Kennzahl an (macht den Umschalter auch
+    // nutzbar, wenn gerade eine andere Kennzahl oder der Deutschland-Layer
+    // aktiv ist) und setzt zusätzlich die gewünschte Aufschlüsselung.
+    document.querySelectorAll("[data-bestand-split]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var splitKey = btn.getAttribute("data-bestand-split");
+        switchToBrandenburgLayer("bestand");
+        state.bestandSplit = splitKey;
+        updateStyles();
+        setActiveSplitButton(splitKey);
       });
     });
   }
