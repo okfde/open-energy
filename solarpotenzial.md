@@ -51,7 +51,7 @@ description: "Wie weit ist Brandenburgs Solarpotenzial ausgeschöpft? Welche Gem
   </div>
 
   <div class="map-section" id="karte">
-    <h2>Karte je Gemeinde</h2>
+    <h2>Gemeindekarte</h2>
 
     <div class="map-controls" role="group" aria-label="Kennzahl auf der Karte">
       <div class="map-controls__group">
