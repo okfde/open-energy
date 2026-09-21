@@ -6,3 +6,4 @@ location: "Walnusshof in Steinhöfel"
 excerpt: "Wir besichtigen die DIY-Windanlage des Walnusshofs in Steinhöfel und bauen anschließend gemeinsam Teile einer Windturbine des Kollektivs erni auf. Dabei gibt es praktisches Wissen, 
 gemeinsames Tüfteln und Austausch darüber, wie Windenergie selbst in die Hand genommen werden kann."
 ---
+![](/assets/images/photos/blog/savethedate-4.jpg)
