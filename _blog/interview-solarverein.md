@@ -73,7 +73,7 @@ So wird der Verein gewissermaßen zum Übersetzer zwischen Technik, Alltag und d
 
 Die Leute begreifen, dass sie selbst Energie erzeugen können und praktisch nicht mehr abhängig von irgendwelchen großen Energiekonzernen sind. Sie können selbst eingreifen und bekommen dadurch auch ein viel besseres Verständnis für die Notwendigkeit und die Möglichkeiten der Energiewende.
 
-Dieses Self-Empowerment und das größere Verständnis dafür, wie die ganzen Dinge zusammenhängen, finde ich wirklich wichtig. Neben den reinen Elektronen, die da hin und her schwuppeln.
+Dieses Self-Empowerment und das größere Verständnis dafür, wie die ganzen Dinge zusammenhängen, finde ich wirklich wichtig.
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
