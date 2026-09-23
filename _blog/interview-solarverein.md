@@ -27,17 +27,12 @@ Es ist praktisch fast wie ein Elektrogerät, wie eine Waschmaschine oder ein Ele
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Es ist diese Einfachheit, diese Simplizität, die mich wirklich daran interessiert. Und vor allem die Möglichkeit, dass die Leute direkt selbst aktiv werden können.“</p>
+  <p>Es ist diese Einfachheit, diese Simplizität, die mich wirklich daran interessiert. Und vor allem die Möglichkeit, dass die Leute direkt selbst aktiv werden können.“</p>
 </div>
 
 ***Stephanie: Du sagst fast wie ein Elektrogerät – auf welche Hürden stoßen die Menschen dennoch im Vergleich zum Kauf einer Waschmaschine?***
 
 **Georg**: Zunächst ist natürlich wichtig, dass die Ausrichtung meines Balkons und die Sonneneinstrahlung passend ist. Auch die Größenordnung oder die Frage nach einem Speicher kommt immer wieder auf.
-
-<div class="pull-quote">
-  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Es ist praktisch fast wie ein Elektrogerät, wie eine Waschmaschine oder ein Elektrogrill. Ein Gerät, das einen Stecker hat.</p>
-</div>
 
 Die Vermietersituation ist natürlich auch noch ein Punkt. Vermieter dürfen Steckersolaranlagen nicht pauschal verbieten. Aber gerade in Potsdam kann beispielsweise Denkmalschutz ein triftiger Grund für ein Verbot sein. 
 
@@ -51,15 +46,12 @@ Die Herausforderung liegt also häufig gar nicht in einer einzelnen großen Hür
 
 Für eine individuelle Einschätzung kann man den **[Stecker-Solar-Simulator der HTW Berlin](https://solar.htw-berlin.de/rechner/stecker-solar-simulator/)** benutzen.
 
-<div class="pull-quote">
-  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Die Herausforderung liegt also häufig gar nicht in einer einzelnen großen Hürde. Es sind die vielen kleinen Fragen:  Wer hilft mir, wenn ich nicht weiter weiß?“</p>
-</div>
+> **„Die Herausforderung liegt also häufig gar nicht in einer einzelnen großen Hürde. Es sind die vielen kleinen Fragen:  Wer hilft mir, wenn ich nicht weiter weiß?“**
 
 
 ### Schritt 2: Vom gebündelten Erfahrungswissen lokaler Akteure – wie einem Solarverein vor Ort – profitieren.
 
-***Stephanie: Was würdest du jemandem raten, die schon seit Monaten über eine Anlage nachdenkt, aber nicht weiß, wie sie anfangen soll – und wo kann ein Verein dabei helfen?***
+***Stephanie: Was würdest du einer Person raten, die schon seit Monaten über eine Anlage nachdenkt, aber nicht weiß, wie sie anfangen soll – und wo kann ein Verein dabei helfen?***
 
 **Georg:** Ich würde versuchen, einfach die Dinge herauszufinden, an denen es klemmt, um sie dann an die Hand zu nehmen. Einen Kauf zu machen, ist nicht schwierig. Auch die Sache mit dem Vermieter kann man klären – und man findet Menschen, die einem dabei helfen.
 
@@ -70,8 +62,7 @@ So wird der Verein gewissermaßen zum Übersetzer zwischen Technik, Alltag und d
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/solarverein-2.jpg' | relative_url }}" alt="">
-  <figcaption>
-    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> Ein Balkonkraftwerk besteht klassischerweise auf einem Solarpanel und einem Wechselrichter.
+  <figcaption> Ein klassisches Balkonkraftwerk besteht normalerweise aus einem Solarpanel und einem Wechselrichter, der in die Steckdose gesteckt wird.
   </figcaption>
 </figure>
 
@@ -85,51 +76,200 @@ Die Leute begreifen, dass sie selbst Energie erzeugen können und praktisch nich
 
 Dieses Self-Empowerment und das größere Verständnis dafür, wie die ganzen Dinge zusammenhängen, finde ich wirklich wichtig. Neben den reinen Elektronen, die da hin und her schwuppeln.
 
-
-***Stephanie: Was müsste sich verändern, damit noch viel mehr Menschen Balkonsolar nutzen?**
-
-**Christoph**: Ich denke, dass die Wege auf Vermieterseite noch einfacher sein müssen. Die Vermieter sollten nicht denken: „Huch, da kommt schon wieder jemand vorbei, und was will der denn Besonderes?“, sondern es sollte für die Vermieter eigentlich ganz normal sein.
-
-Worüber ich mich wirklich freuen würde, wäre, wenn die Hersteller von Balkongeländern das irgendwann direkt bei der Herstellung mitberücksichtigen würden. Und dass der Bauherr bei der Bauplanung, wenn er sich überlegt, welches Balkongeländer er kauft, dieses praktisch schon entsprechend vorbereitet bekommt.
-
-Dann wäre die Solaranlage nicht mehr etwas, das nachträglich an einen Balkon angepasst werden muss. Sie wäre von Anfang an Teil des Balkons.
-
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
   <p>„Die Vermieter sollten nicht denken: „Huch, da kommt schon wieder jemand vorbei, und was will der denn Besonderes?“, sondern es sollte für die Vermieter eigentlich ganz normal sein.“</p>
 </div>
 
+***Stephanie: Was müsste sich verändern, damit noch viel mehr Menschen Balkonsolar nutzen?***
+
+**Georg**: Ich denke, dass die Wege auf Vermieterseite noch einfacher sein müssen. Die Vermieter sollten nicht denken: „Huch, da kommt schon wieder jemand vorbei, und was will der denn Besonderes?“, sondern es sollte für die Vermieter eigentlich ganz normal sein.
+
+Worüber ich mich wirklich freuen würde, wäre, wenn die Hersteller von Balkongeländern das irgendwann direkt bei der Herstellung mitberücksichtigen würden. Und dass der Bauherr bei der Bauplanung, wenn er sich überlegt, welches Balkongeländer er kauft, dieses praktisch schon entsprechend vorbereitet bekommt.
+
+Dann wäre die Solaranlage nicht mehr etwas, das nachträglich an einen Balkon angepasst werden muss. Sie wäre von Anfang an Teil des Balkons.
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/solarverein-3.jpg' | relative_url }}" alt="">
-  <figcaption> Das **[Libre Solar](https://hardware.prototypefund.de/project/libre-solar/)** ist ein Open-Source-Balkonkraftwerk, das heißt, es hat einen frei zugänglichen Laderegler sowie ein offenes Akku-Management-System. </figcaption>
-</figure>
+ <figcaption> Das <strong><a href="https://hardware.prototypefund.de/project/libre-solar/" target="_blank" rel="noopener noreferrer">Libre Solar</a></strong>
+  ist ein Open-Source-Balkonkraftwerk, das heißt, es hat einen frei zugänglichen Laderegler sowie ein offenes Akku-Management-System. </figcaption>
 
-<div class="pull-quote checklist">
-  <img src="{{ '/assets/images/icons/icon-check.svg' | relative_url }}" alt="">
-  
-  <div>
-    <h3>☀️ Checkliste für die Installation eines Balkonkraftwerks</h3>
+<style>
+  .solar-checklist {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0;
+    padding: 35px 40px;
+    background: #ffe91f;
+    overflow: hidden;
+  }
 
-    <ul>
-      <li>☐ <strong>Himmelsrichtung prüfen:</strong> Wie ist mein Balkon ausgerichtet und wie viel direkte Sonneneinstrahlung bekommt er?</li>
+  .solar-checklist * {
+    box-sizing: border-box;
+  }
 
-      <li>☐ <strong>Vermieter / Hausverwaltung abklären:</strong> Bei einer Mietwohnung vorher die Erlaubnis klären. Vermieter dürfen Balkonkraftwerke in Deutschland nicht pauschal verbieten.</li>
+  .solar-checklist h2 {
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-size: 2.5rem;
+    line-height: 1.15;
+  }
 
-      <li>☐ <strong>Befestigung anschauen:</strong> Passt die Traglast? Wie lassen sich die Module sicher an den Balkonstäben befestigen?</li>
+  .solar-checklist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-      <li>☐ <strong>Balkonkraftwerk kaufen:</strong> Üblich sind 1–2 Solarmodule und ein Wechselrichter, der Gleichstrom in Wechselstrom umwandelt.</li>
+  .solar-checklist li {
+    display: grid;
+    grid-template-columns: minmax(240px, 35%) minmax(0, 1fr);
+    column-gap: 35px;
+    align-items: start;
+    margin: 0 0 22px 0;
+    padding: 0;
+    line-height: 1.45;
+  }
 
-      <li>☐ <strong>Leistung beachten:</strong> Aktuell sind bis zu <strong>800 Watt Wechselrichterleistung</strong> und bis zu <strong>2.000 Watt Modulleistung</strong> möglich.</li>
+  .solar-checklist .check-title {
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    min-width: 0;
+  }
 
-      <li>☐ <strong>Speicher überlegen:</strong> Ein Speicher ist nicht zwingend notwendig. <a href="https://balkon.solar/faq/" target="_blank" rel="noopener noreferrer">Balkon.Solar</a> schätzt, dass sich ein Speicher aktuell nicht lohnt.</li>
+  .solar-checklist .check-title::before {
+    content: "☐";
+    flex-shrink: 0;
+    font-weight: 400;
+  }
 
-      <li>☐ <strong>Anschließen und installieren:</strong> Das Balkonkraftwerk sicher befestigen und nach Herstellerangaben anschließen. Bei Unsicherheit kann beispielsweise ein lokaler Solarverein unterstützen.</li>
+  .solar-checklist .check-text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
 
-      <li>☐ <strong>Im Marktstammdatenregister anmelden:</strong> Das Balkonkraftwerk muss kostenlos im <a href="https://www.marktstammdatenregister.de/MaStR" target="_blank" rel="noopener noreferrer">Marktstammdatenregister</a> registriert werden.</li>
+  .solar-checklist a {
+    color: inherit;
+    font-weight: 600;
+  }
 
-      <li>☐ <strong>Datenschutz und App:</strong> Viele Balkonkraftwerke lassen sich per App überwachen. Welche Daten die Apps sammeln und welche datenschutzfreundlichen Möglichkeiten es gibt, zeigen wir in einem unserer nächsten Blogartikel.</li>
-    </ul>
-  </div>
+  /* Verhindert, dass andere Styles ein zusätzliches Icon einblenden */
+  .solar-checklist img {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    .solar-checklist {
+      padding: 25px 20px;
+    }
+
+    .solar-checklist h2 {
+      font-size: 1.8rem;
+    }
+
+    .solar-checklist li {
+      grid-template-columns: 1fr;
+      row-gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .solar-checklist .check-text {
+      padding-left: 28px;
+    }
+  }
+</style>
+
+<div class="solar-checklist">
+
+  <h2>☀️ Checkliste für die Installation eines Balkonkraftwerks</h2>
+
+  <ul>
+
+    <li>
+      <div class="check-title">
+        Himmelsrichtung prüfen
+      </div>
+      <div class="check-text">
+        Wie ist mein Balkon ausgerichtet und wie viel direkte Sonneneinstrahlung bekommt er?
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Vermieter / Hausverwaltung abklären
+      </div>
+      <div class="check-text">
+        Bei einer Mietwohnung vorher die Erlaubnis klären. Vermieter dürfen Balkonkraftwerke in Deutschland nicht pauschal verbieten.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Befestigung anschauen
+      </div>
+      <div class="check-text">
+        Passt die Traglast? Wie lassen sich die Module sicher an den Balkonstäben befestigen?
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Balkonkraftwerk kaufen
+      </div>
+      <div class="check-text">
+        Üblich sind 1–2 Solarmodule und ein Wechselrichter, der Gleichstrom in Wechselstrom umwandelt.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Leistung beachten
+      </div>
+      <div class="check-text">
+        Aktuell sind bis zu <strong>800 Watt Wechselrichterleistung</strong> und bis zu <strong>2.000 Watt Modulleistung</strong> möglich.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Speicher überlegen
+      </div>
+      <div class="check-text">
+        Ein Speicher ist nicht zwingend notwendig. <a href="https://balkon.solar/faq/" target="_blank" rel="noopener noreferrer">Balkon.Solar</a> schätzt, dass sich ein Speicher aktuell nicht lohnt.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Anschließen und installieren
+      </div>
+      <div class="check-text">
+        Das Balkonkraftwerk sicher befestigen und nach Herstellerangaben anschließen. Bei Unsicherheit kann beispielsweise ein lokaler Solarverein unterstützen.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Im Marktstammdatenregister anmelden
+      </div>
+      <div class="check-text">
+        Das Balkonkraftwerk muss kostenlos im <a href="https://www.marktstammdatenregister.de/MaStR" target="_blank" rel="noopener noreferrer">Marktstammdatenregister</a> registriert werden.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">
+        Datenschutz und App beachten
+      </div>
+      <div class="check-text">
+        Viele Balkonkraftwerke lassen sich per App überwachen. Welche Daten die Apps sammeln und welche datenschutzfreundlichen Möglichkeiten es gibt, zeigen wir in einem unserer nächsten Blogartikel.
+      </div>
+    </li>
+
+  </ul>
 </div>
 
