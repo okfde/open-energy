@@ -17,11 +17,11 @@ image: "/assets/images/photos/blog/solarverein-1.jpg"
 
 ***Stephanie: Hi Georg, du bist promovierter Informatiker und Geowissenschaftler, kommst also aus einem ganz anderen Bereich. Wie bist du zum Balkonsolar gekommen und was fasziniert dich daran?***
 
-**Georg**: Als der Solarverein vor ungefähr vier Jahren ein bisschen in eine Situation kam, in der es nicht mehr richtig weiterging, bin ich einfach eingestiegen. Ich habe gedacht, dass Solar ein so wichtiges Thema in der heutigen Zeit ist, dass man da dranbleiben muss. Es ist diese Einfachheit, diese Simplizität, die mich wirklich daran interessiert. Und vor allem die Möglichkeit, dass die Leute direkt selbst aktiv werden können.
+**Georg**: Als der Potsdamer Solarverein vor ungefähr vier Jahren ein bisschen in eine Situation kam, in der es nicht mehr richtig weiterging, bin ich einfach eingestiegen. Ich habe gedacht, dass Solar ein so wichtiges Thema in der heutigen Zeit ist, dass man da dranbleiben muss. Es ist diese Einfachheit, diese Simplizität, die mich wirklich daran interessiert. Und vor allem die Möglichkeit, dass die Leute direkt selbst aktiv werden können.
 
 ***Stephanie: Was kann eine kleine Solaranlage am Balkon, was eine große Solaranlage auf dem Dach nicht kann?***
 
-**Georg**: Sie ist sofort einsatzbereit. Ich gehe in den Laden und bin praktisch in der Lage, mir das Ding direkt zu kaufen. Dann gehe ich an den Balkon, schraube sie mir an, stecke den Stecker in die Steckdose und fertig ist die Laube. Ich brauche keinen Elektriker.
+**Georg**: Sie ist sofort einsatzbereit. Ich gehe in den Laden und bin praktisch in der Lage, mir das Ding direkt zu kaufen. Dann gehe ich an den Balkon, schraube sie mir an, stecke den Stecker in die Steckdose und fertig ist die Laube. 
 
 Es ist praktisch fast wie ein Elektrogerät, wie eine Waschmaschine oder ein Elektrogrill. Ein Gerät, das einen Stecker hat.
 
@@ -34,19 +34,19 @@ Es ist praktisch fast wie ein Elektrogerät, wie eine Waschmaschine oder ein Ele
 
 **Georg**: Zunächst ist natürlich wichtig, dass die Ausrichtung meines Balkons und die Sonneneinstrahlung passend ist. Auch die Größenordnung oder die Frage nach einem Speicher kommt immer wieder auf.
 
-Die Vermietersituation ist natürlich auch noch ein Punkt. Vermieter dürfen Steckersolaranlagen nicht pauschal verbieten. Aber gerade in Potsdam kann beispielsweise Denkmalschutz ein triftiger Grund für ein Verbot sein. 
+Die Vermietersituation ist natürlich auch noch ein Punkt. Vermieter dürfen in Deutschland Steckersolaranlagen nicht pauschal verbieten. Aber gerade in Potsdam kann beispielsweise Denkmalschutz ein triftiger Grund für ein Verbot sein. 
 
 Ansonsten braucht es oft Hilfe beim Aufbau. Da braucht man jemanden, der das vielleicht schon einmal gemacht hat oder der sich zumindest traut, sich mit der Technik auseinanderzusetzen.
 
-Die Herausforderung liegt also häufig gar nicht in einer einzelnen großen Hürde. Es sind die vielen kleinen Fragen: Darf ich das an meinem Balkon anbringen? Welches Modul brauche ich? Wie befestige ich das Ganze? Und wer hilft mir, wenn ich nicht weiterweiß?
+Die Herausforderung liegt also häufig gar nicht in einer einzelnen großen Hürde. Es sind die vielen kleinen Fragen: Darf ich das an meinem Balkon anbringen? Welches Modul brauche ich? Wie befestige ich das Ganze? Und wer hilft mir, wenn ich nicht weiter weiß?
 
-***Stephanie: Stephanie: Welche Kosten kommen beim Kauf auf mich zu und ab wann lohnt es sich finanziell?***
+***Stephanie: Welche Kosten kommen beim Kauf auf mich zu und ab wann lohnt es sich finanziell?***
 
-**Georg**: Ganz grob gerechnet kann man sagen: Mit einem guten Set, das man für etwa 300 Euro kaufen kann, kann man innerhalb eines Jahres schon rund 100 Euro sparen. Nach ungefähr drei Jahren hat man die Kosten also wieder drin.
+**Georg**: Ganz grob gerechnet kann man sagen: Mit einem guten Set, das man für etwa 300 Euro kaufen kann, kann man innerhalb eines Jahres schon rund 100 Euro sparen. Nach ungefähr drei Jahren hat man die Kosten also wieder drin, aber das hängt auch stark von den jeweiligen Bedingungen ab.
 
 Für eine individuelle Einschätzung kann man den **[Stecker-Solar-Simulator der HTW Berlin](https://solar.htw-berlin.de/rechner/stecker-solar-simulator/)** benutzen.
 
-> **„Die Herausforderung liegt also häufig gar nicht in einer einzelnen großen Hürde. Es sind die vielen kleinen Fragen:  Wer hilft mir, wenn ich nicht weiter weiß?“**
+> **"Die Herausforderung liegt also häufig gar nicht in einer einzelnen großen Hürde. Es sind die vielen kleinen Fragen:  Wer hilft mir, wenn ich nicht weiter weiß?“**
 
 
 ### Schritt 2: Vom gebündelten Erfahrungswissen lokaler Akteure – wie einem Solarverein vor Ort – profitieren.
@@ -58,7 +58,6 @@ Für eine individuelle Einschätzung kann man den **[Stecker-Solar-Simulator der
 Genau diese Kleinteiligkeit prägt auch die Arbeit des Potsdamer Solarvereins. Kein Balkon ist gleich und keine Ausgangssituation identisch. Was wir jetzt auf dieser Basis machen, ist, die ganzen Dinge zu sammeln, die an uns herangetragen wurden. So versuchen wir, Strukturen und Gemeinsamkeiten zu erkennen – und Erfahrungen aus einzelnen Projekten für andere nutzbar zu machen.
 
 So wird der Verein gewissermaßen zum Übersetzer zwischen Technik, Alltag und den individuellen Fragen der Menschen
-
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/solarverein-2.jpg' | relative_url }}" alt="">
@@ -78,7 +77,7 @@ Dieses Self-Empowerment und das größere Verständnis dafür, wie die ganzen Di
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Die Vermieter sollten nicht denken: „Huch, da kommt schon wieder jemand vorbei, und was will der denn Besonderes?“, sondern es sollte für die Vermieter eigentlich ganz normal sein.“</p>
+  <p>Die Vermieter sollten nicht denken: „Huch, da kommt schon wieder jemand vorbei, und was will der denn Besonderes?“, sondern es sollte für die Vermieter eigentlich ganz normal sein.“</p>
 </div>
 
 ***Stephanie: Was müsste sich verändern, damit noch viel mehr Menschen Balkonsolar nutzen?***
