@@ -3,19 +3,19 @@ title: "Balkonsolar: Mit Hilfe der Sonne Selbstwirksamkeit erleben"
 date: 2026-09-23
 category: 
 - Solarenergie
-excerpt: "Mit einem Balkonkraftwerk können auch Mieter und Menschen ohne eigenes Haus selbst Solarstrom erzeugen. Doktor Georg Lösel, Informatiker und Geowissenschaftler im Potsdamer Solarverein, erzählt, was ihn am Balkonsolar fasziniert, wie schwierig die Installation wirklich ist und wie ein Verein dabei helfen kann Hürden zu überwinden. Am Schluss findet ihr die ultimative Checkliste zur eigenen Installation."
+excerpt: "Mit einem Balkonkraftwerk können auch Mieter und Menschen ohne eigenes Haus Solarstrom erzeugen. Dr. Georg Lösel, Informatiker und Geowissenschaftler im Potsdamer Solarverein, erzählt, was ihn am Balkonsolar fasziniert, wie schwierig die Installation wirklich ist und wie ein Verein dabei helfen kann Hürden zu überwinden. Am Schluss findet ihr eine Checkliste zur eigenen Installation."
 featured: true
 image: "/assets/images/photos/blog/solarverein-1.jpg"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
-  <figcaption> Dr. Georg Lösel vom Potsdamer Solarverein bei der Balkonsolarberatung – mit Sonne im Gepäck und guten Tipps für den eigenen Balkon. 6</figcaption>
+  <img src="{{ '/assets/images/photos/blog/solarverein-1.jpg' | relative_url }}" alt="">
+  <figcaption> Dr. Georg Lösel vom Potsdamer Solarverein bei der Balkonsolarberatung – mit Sonne im Gepäck und Tipps für den eigenen Balkon. </figcaption>
 </figure>
 
 ### Schritt 1: Prüfen, in welche Himmelsrichtung mein Balkon ausgerichtet ist, Erlaubnis meiner Vermieter einholen, Befestigung meines Balkons beachten und das Balkonkraftwerk kaufen
 
-***Stephanie: Hi Georg. Du bist promovierter Informatiker und Geowissenschaftler, kommst also aus einem ganz anderen Bereich. Wie bist du zum Balkonsolar gekommen und was fasziniert dich daran?***
+***Stephanie: Hi Georg, du bist promovierter Informatiker und Geowissenschaftler, kommst also aus einem ganz anderen Bereich. Wie bist du zum Balkonsolar gekommen und was fasziniert dich daran?***
 
 **Georg**: Als der Solarverein vor ungefähr vier Jahren ein bisschen in eine Situation kam, in der es nicht mehr richtig weiterging, bin ich einfach eingestiegen. Ich habe gedacht, dass Solar ein so wichtiges Thema in der heutigen Zeit ist, dass man da dranbleiben muss. Es ist diese Einfachheit, diese Simplizität, die mich wirklich daran interessiert. Und vor allem die Möglichkeit, dass die Leute direkt selbst aktiv werden können.
 
