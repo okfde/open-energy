@@ -94,92 +94,83 @@ Dann wäre die Solaranlage nicht mehr etwas, das nachträglich an einen Balkon a
   ist ein Open-Source-Balkonkraftwerk, das heißt, es hat einen frei zugänglichen Laderegler sowie ein offenes Akku-Management-System. </figcaption>
 
 <style>
-  .solar-checklist {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: 30px 0;
-    padding: 35px 40px;
-    background: #ffe91f;
-    overflow: hidden;
-  }
+.solar-checklist {
+  width: 100%;
+  margin: 30px 0;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  background: #ffe91f;
+  overflow: hidden;
+}
 
-  .solar-checklist * {
-    box-sizing: border-box;
+.solar-checklist h2 {
+  margin: 0 0 40px !important;
+  font-size: 2.6rem !important;
+  line-height: 1.15 !important;
+}
+
+.solar-checklist ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.solar-checklist li {
+  display: grid !important;
+  grid-template-columns: 330px minmax(0, 1fr);
+  gap: 55px;
+  margin: 0 0 28px !important;
+  padding: 0 !important;
+  line-height: 1.45;
+}
+
+.solar-checklist li::before,
+.solar-checklist li::after {
+  content: none !important;
+}
+
+.check-title {
+  position: relative;
+  padding-left: 50px;
+  font-weight: 700;
+}
+
+.check-title::before {
+  content: "→  ☐";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+}
+
+.check-text {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.solar-checklist a {
+  color: inherit;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .solar-checklist {
+    padding: 30px 25px;
   }
 
   .solar-checklist h2 {
-    margin: 0 0 30px 0;
-    padding: 0;
-    font-size: 2.5rem;
-    line-height: 1.15;
-  }
-
-  .solar-checklist ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    font-size: 2rem !important;
   }
 
   .solar-checklist li {
-    display: grid;
-    grid-template-columns: minmax(240px, 35%) minmax(0, 1fr);
-    column-gap: 35px;
-    align-items: start;
-    margin: 0 0 22px 0;
-    padding: 0;
-    line-height: 1.45;
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
-  .solar-checklist .check-title {
-    font-weight: 700;
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    min-width: 0;
+  .check-text {
+    padding-left: 50px;
   }
-
-  .solar-checklist .check-title::before {
-    content: "☐";
-    flex-shrink: 0;
-    font-weight: 400;
-  }
-
-  .solar-checklist .check-text {
-    min-width: 0;
-    overflow-wrap: anywhere;
-    word-break: normal;
-  }
-
-  .solar-checklist a {
-    color: inherit;
-    font-weight: 600;
-  }
-
-  /* Verhindert, dass andere Styles ein zusätzliches Icon einblenden */
-  .solar-checklist img {
-    display: none;
-  }
-
-  @media (max-width: 700px) {
-    .solar-checklist {
-      padding: 25px 20px;
-    }
-
-    .solar-checklist h2 {
-      font-size: 1.8rem;
-    }
-
-    .solar-checklist li {
-      grid-template-columns: 1fr;
-      row-gap: 5px;
-      margin-bottom: 20px;
-    }
-
-    .solar-checklist .check-text {
-      padding-left: 28px;
-    }
-  }
+}
 </style>
 
 <div class="solar-checklist">
@@ -187,88 +178,51 @@ Dann wäre die Solaranlage nicht mehr etwas, das nachträglich an einen Balkon a
   <h2>☀️ Checkliste für die Installation eines Balkonkraftwerks</h2>
 
   <ul>
-
     <li>
-      <div class="check-title">
-        Himmelsrichtung prüfen
-      </div>
-      <div class="check-text">
-        Wie ist mein Balkon ausgerichtet und wie viel direkte Sonneneinstrahlung bekommt er?
-      </div>
+      <div class="check-title">Himmelsrichtung prüfen</div>
+      <div class="check-text">Wie ist mein Balkon ausgerichtet und wie viel direkte Sonneneinstrahlung bekommt er?</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Vermieter / Hausverwaltung abklären
-      </div>
-      <div class="check-text">
-        Bei einer Mietwohnung vorher die Erlaubnis klären. Vermieter dürfen Balkonkraftwerke in Deutschland nicht pauschal verbieten.
-      </div>
+      <div class="check-title">Vermieter / Hausverwaltung abklären</div>
+      <div class="check-text">Bei einer Mietwohnung vorher die Erlaubnis klären. Vermieter dürfen Balkonkraftwerke in Deutschland nicht pauschal verbieten.</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Befestigung anschauen
-      </div>
-      <div class="check-text">
-        Passt die Traglast? Wie lassen sich die Module sicher an den Balkonstäben befestigen?
-      </div>
+      <div class="check-title">Befestigung anschauen</div>
+      <div class="check-text">Passt die Traglast? Wie lassen sich die Module sicher an den Balkonstäben befestigen?</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Balkonkraftwerk kaufen
-      </div>
-      <div class="check-text">
-        Üblich sind 1–2 Solarmodule und ein Wechselrichter, der Gleichstrom in Wechselstrom umwandelt.
-      </div>
+      <div class="check-title">Balkonkraftwerk kaufen</div>
+      <div class="check-text">Üblich sind 1–2 Solarmodule und ein Wechselrichter, der Gleichstrom in Wechselstrom umwandelt.</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Leistung beachten
-      </div>
-      <div class="check-text">
-        Aktuell sind bis zu <strong>800 Watt Wechselrichterleistung</strong> und bis zu <strong>2.000 Watt Modulleistung</strong> möglich.
-      </div>
+      <div class="check-title">Leistung beachten</div>
+      <div class="check-text">Aktuell sind bis zu <strong>800 Watt Wechselrichterleistung</strong> und bis zu <strong>2.000 Watt Modulleistung</strong> möglich.</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Speicher überlegen
-      </div>
-      <div class="check-text">
-        Ein Speicher ist nicht zwingend notwendig. <a href="https://balkon.solar/faq/" target="_blank" rel="noopener noreferrer">Balkon.Solar</a> schätzt, dass sich ein Speicher aktuell nicht lohnt.
-      </div>
+      <div class="check-title">Speicher überlegen</div>
+      <div class="check-text">Ein Speicher ist nicht zwingend notwendig. <a href="https://balkon.solar/faq/" target="_blank">Balkon.Solar</a> schätzt, dass sich ein Speicher aktuell nicht lohnt.</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Anschließen und installieren
-      </div>
-      <div class="check-text">
-        Das Balkonkraftwerk sicher befestigen und nach Herstellerangaben anschließen. Bei Unsicherheit kann beispielsweise ein lokaler Solarverein unterstützen.
-      </div>
+      <div class="check-title">Anschließen und installieren</div>
+      <div class="check-text">Das Balkonkraftwerk sicher befestigen und nach Herstellerangaben anschließen. Bei Unsicherheit kann beispielsweise ein lokaler Solarverein unterstützen.</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Im Marktstammdatenregister anmelden
-      </div>
-      <div class="check-text">
-        Das Balkonkraftwerk muss kostenlos im <a href="https://www.marktstammdatenregister.de/MaStR" target="_blank" rel="noopener noreferrer">Marktstammdatenregister</a> registriert werden.
-      </div>
+      <div class="check-title">Im Marktstammdatenregister anmelden</div>
+      <div class="check-text">Das Balkonkraftwerk muss kostenlos im <a href="https://www.marktstammdatenregister.de/MaStR" target="_blank">Marktstammdatenregister</a> registriert werden.</div>
     </li>
 
     <li>
-      <div class="check-title">
-        Datenschutz und App beachten
-      </div>
-      <div class="check-text">
-        Viele Balkonkraftwerke lassen sich per App überwachen. Welche Daten die Apps sammeln und welche datenschutzfreundlichen Möglichkeiten es gibt, zeigen wir in einem unserer nächsten Blogartikel.
-      </div>
+      <div class="check-title">Datenschutz und App beachten</div>
+      <div class="check-text">Viele Balkonkraftwerke lassen sich per App überwachen. Welche Daten die Apps sammeln und welche datenschutzfreundlichen Möglichkeiten es gibt, zeigen wir in einem unserer nächsten Blogartikel.</div>
     </li>
-
   </ul>
+
 </div>
 
