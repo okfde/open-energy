@@ -136,7 +136,7 @@ Dann wäre die Solaranlage nicht mehr etwas, das nachträglich an einen Balkon a
 }
 
 .check-title::before {
-  content: "→  ☐";
+  content: "→";
   position: absolute;
   left: 0;
   top: 0;
@@ -175,7 +175,7 @@ Dann wäre die Solaranlage nicht mehr etwas, das nachträglich an einen Balkon a
 
 <div class="solar-checklist">
 
-  <h2>☀️ Checkliste für die Installation eines Balkonkraftwerks</h2>
+  <h2>Checkliste für die Installation eines Balkonkraftwerks</h2>
 
   <ul>
     <li>
