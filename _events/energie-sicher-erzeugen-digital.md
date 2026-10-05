@@ -15,4 +15,6 @@ Das Webinar findet in Kooperation mit dem **[Bundesverband Steckersolar](https:/
 
 Ihr wollt dabei sein? **[Dann meldet euch hier an.](https://cloud.okfn.de/apps/forms/s/3ZDoSBfGw9Jnyot4iHSGzYkG)** So können wir euch im Nachgang die Folien zum Webinar schicken.
 
+![](/assets/images/photos/blog/savethedate-5.jpg)
+
 
