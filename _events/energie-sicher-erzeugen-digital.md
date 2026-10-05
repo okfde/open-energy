@@ -1,5 +1,5 @@
 ---
-title: "Strom sicher erzeugen - Onlinecall"
+title: "Strom Datensicher erzeugen - Onlinecall"
 date: 2026-10-28
 time: "18:30"
 location: "online"
