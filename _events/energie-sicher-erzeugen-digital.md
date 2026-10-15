@@ -9,7 +9,7 @@ call_url: "https://meet.prototypefund.de/user/rooms/hqn-7en-unp-yd9/join"
 
 Balkonkraftwerke und private Dachsolaranlagen sind weit verbreitet. Die Anlagen werden jedoch meistens über herstellereigene Software gesteuert und überwacht, die häufig nicht in Deutschland oder der EU gehostet wird. Zur Fernwartung, Firmware-Aktualisierung und Verbrauchsoptimierung verfügen diese Systeme in der Regel über eine dauerhafte Internetanbindung, die sie technisch fernsteuerbar macht. Daraus ergeben sich Sicherheitsrisiken. Das belegen mehrere in den letzten Jahren öffentlich dokumentierte Fälle.
 
-Im Webinar “Sicher Strom erzeugen” möchten wir auf die Risiken aufmerksam machen und zeigen, wie bestehende Anlagen abgesichert werden können und welche Steuerungstechnik es einem besonders leicht macht, sie sicher zu betreiben. Dazu haben wir **[Jakob Löw](https://jakobloew.me/)** eingeladen, der bereits zahlreiche Wechselrichter technisch analysiert hat und für die Technische Hochschule Ingolstadt im Bereich IT-Sicherheit arbeitet.
+Im Webinar “Sicher Strom erzeugen” möchten wir auf die Risiken aufmerksam machen und zeigen, wie bestehende Anlagen abgesichert werden können und welche Steuerungstechnik es einem besonders leicht macht, sie sicher zu betreiben. Dazu haben wir **[Jakob Löw](https://jakobloew.me/)** eingeladen, der bereits zahlreiche Wechselrichter technisch analysiert hat und für die Technische Hochschule Ingolstadt im Bereich IT-Sicherheit arbeitet. Außerdem zu Gast ist Tim Vogler, der als Betreiber eines Shops für OpenDTU-Komponenten zeigt, wie eine Hoymiles Anlage in der Praxis abgesichert werden kann.
 
 Das Webinar findet in Kooperation mit dem **[Bundesverband Steckersolar](https://bundesverband-steckersolar.de/)** statt.
 
