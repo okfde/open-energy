@@ -18,3 +18,8 @@
   title: "Eine große PV-Anlage gemeinsam aufbauen"
   excerpt: "Im Handbuch „Gemeinschaftlicher Solar-Selbstbau“ findet ihr zahlreiche Antworten und Tipps, wie ihr eine Selbstbau-Community aufbaut, Wissen zu rechtlichen, ökonomischen, unternehmerischen und technischen Aspekten sowie soziales Knowhow, wie eure Gruppe erfolgreich wird."
   image: "/assets/images/photos/diy/pv-selbstbau-handbuch.png"
+- source: github.com
+  url: "https://github.com/Prototype-Fund-Hardware/awesome-inverters#tsun-tsol-ms-series-gen3gen3plus"
+  title: "Welche Wechselrichter können sicher betrieben werden?"
+  excerpt: "Hinter dem Link findet ihr eine Liste von Wechselrichtern für Balkonsolar und größere Solaranlagen. Auf der Liste werden Geräte danach bewertet, ob sie z.B. ohne Cloud-Anbindung funktionieren oder sie in Homeassistant integrierbar sind."
+  image: "/assets/images/photos/diy/Wechselrichter.jpg"
