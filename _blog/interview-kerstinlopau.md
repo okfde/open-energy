@@ -10,7 +10,7 @@ image: "/assets/images/photos/blog/kerstin-1.jpg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/kerstin-1.jpg' | relative_url }}" alt="">
-  <figcaption> Beim FLINTA\* Solarcamp stehen Gemeinschaft, gegenseitige Unterstützung und jede Menge Spaß im Mittelpunkt.</figcaption>
+  <figcaption> Beim FLINTA* Solarcamp stehen Gemeinschaft, gegenseitige Unterstützung und jede Menge Spaß im Mittelpunkt. Quelle: SoLocal Energy e.V.</figcaption>
 </figure>
 
 ### Schritt 1: Neugierig sein, protestieren, eigene Ideen entwickeln und beispielsweise daraus gemeinsam mit anderen ein Kollektiv gründen, um vor Ort konkrete Lösungen für eine nachhaltigere Zukunft umzusetzen
@@ -22,7 +22,7 @@ image: "/assets/images/photos/blog/kerstin-1.jpg"
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Ich werde jetzt nicht Bundeskanzlerin – das ist nicht so mein Ding. Ich sehe mich eher in einer Nische und hoffe, dazu beitragen zu können, dass diese Nische immer größer wird.“</p>
+  <p>Ich werde jetzt nicht Bundeskanzlerin – das ist nicht so mein Ding. Ich sehe mich eher in einer Nische und hoffe, dazu beitragen zu können, dass diese Nische immer größer wird.“</p>
 </div>
 
 ***Stephanie: Hat sich deine Motivation über die Jahre verändert?***
@@ -74,7 +74,7 @@ Dadurch löst sich ein bisschen auf, wer hier eigentlich anleitet und wer teilni
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Man muss sich einen Teil der eigenen Radikalität bewahren und gleichzeitig Kompromisse zulassen.“</p>
+  <p>Man muss sich einen Teil der eigenen Radikalität bewahren und gleichzeitig Kompromisse zulassen.“</p>
 </div>
 
 ***Stephanie: Brauchen die Teilnehmenden dafür technische Vorkenntnisse oder richtet ihr euch auch an Menschen, die bisher wenig mit dem Thema zu tun hatten?***
@@ -87,7 +87,7 @@ Natürlich haben wir dadurch auch unterschiedliche Wissensstände. Menschen, die
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/kerstin-2.jpg' | relative_url }}" alt="">
   <figcaption>
-   Für Kerstin sind Solocal Energy und der Einsatz für den Klimaschutz eine echte Herzensangelegenheit.
+   Für Kerstin sind SoLocal Energy und der Einsatz für den Klimaschutz eine echte Herzensangelegenheit. Quelle: SoLocal Energy e.V.
   </figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ Vieles findet inzwischen online statt, und das ist auch praktisch. Aber ich glau
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/kerstin-3.jpg' | relative_url }}" alt="">
-  <figcaption>Das FLINTA* Solar-Camp ist der richtige Ort zum flexen. </figcaption>
+  <figcaption>Das FLINTA* Solar-Camp ist der richtige Ort zum flexen. Quelle: SoLocal Energy e.V. </figcaption>
 </figure>
 
 > **Oft entstehen Veränderungen durch kleine Handlungen. Früher hatten wir häufig das Bild, dass man erst ein Klimabewusstsein entwickeln muss, um dann klimaschützende Maßnahmen zu ergreifen. In der Realität ist es häufig andersherum.**
@@ -130,7 +130,7 @@ Ich fand es deshalb total gut, als Balkonkraftwerke aus dieser Nische herauskame
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Der niedrigschwelligste Weg ist wahrscheinlich, erst einmal zu schauen: Wer macht schon etwas Gutes, das ich unterstützen möchte, und wo kann ich mich anschließen?“</p>
+  <p>Der niedrigschwelligste Weg ist wahrscheinlich, erst einmal zu schauen: Wer macht schon etwas Gutes, das ich unterstützen möchte, und wo kann ich mich anschließen?“</p>
 </div>
 
 ***Stephanie: Wenn jemandem begegnest, der die Welt genau wie du damals ein Stück weit retten und sich für Klimaschutz einsetzen möchte, aber überhaupt nicht weiß, wo sie anfangen soll – was würdest du dieser Person raten?***
