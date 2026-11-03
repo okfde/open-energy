@@ -9,7 +9,7 @@ image: "/assets/images/photos/blog/kerstin-1.jpg"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
+  <img src="{{ '/assets/images/photos/blog/kerstin-1.jpg' | relative_url }}" alt="">
   <figcaption> Beim FLINTA\* Solarcamp stehen Gemeinschaft, gegenseitige Unterstützung und jede Menge Spaß im Mittelpunkt.</figcaption>
 </figure>
 
