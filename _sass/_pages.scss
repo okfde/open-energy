@@ -1135,6 +1135,11 @@
   }
 }
 
+.events-list-section__more {
+  display: flex;
+  justify-content: flex-end;
+}
+
 // Do it yourself
 .diy-grid {
   display: grid;

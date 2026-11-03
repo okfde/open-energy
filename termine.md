@@ -22,4 +22,7 @@ description: "Workshops und Veranstaltungen von Open Energy: Hier lernst du die 
       {% endif %}
     {% endfor %}
   </div>
+  <div class="events-list-section__more">
+    {% include button.html text="Vergangene Veranstaltungen →" url="/termine/old/" style="secondary" %}
+  </div>
 </section>

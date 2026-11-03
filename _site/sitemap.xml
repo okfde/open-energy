@@ -21,6 +21,10 @@
 <lastmod>2026-09-23T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/interview-kerstinlopau/</loc>
+<lastmod>2026-11-03T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/termine/kickoff-open-energy-digital/</loc>
 <lastmod>2026-09-09T00:00:00+02:00</lastmod>
 </url>
@@ -35,6 +39,10 @@
 <url>
 <loc>http://localhost:4000/termine/solar-workshop-1/</loc>
 <lastmod>2026-09-26T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/termine/energie-sicher-erzeugen-digital/</loc>
+<lastmod>2026-10-28T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/termine/wind-workshop-1/</loc>
@@ -60,6 +68,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/solarpotenzial/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/termine/old/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/termine/</loc>

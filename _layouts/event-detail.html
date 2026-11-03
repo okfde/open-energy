@@ -72,14 +72,27 @@ layout: default
 </section>
 </section>
 
-{% assign upcoming = site.events | where_exp: "event", "event.url != page.url" | sort: "date" | limit: 3 %}
-{% if upcoming.size > 0 %}
+{% assign today_str = site.time | date: "%Y-%m-%d" %}
+{% assign today_ts = today_str | date: "%s" %}
+{% assign other_events = site.events | where_exp: "event", "event.url != page.url" | sort: "date" %}
+{% capture upcoming_teasers %}
+  {% assign shown = 0 %}
+  {% for event in other_events %}
+    {% if shown >= 3 %}{% break %}{% endif %}
+    {% assign event_ts = event.date | date: "%s" %}
+    {% assign diff_days = event_ts | minus: today_ts | divided_by: 86400 %}
+    {% if diff_days >= 0 %}
+      {% if shown == 0 %}{% assign is_first = true %}{% else %}{% assign is_first = false %}{% endif %}
+      {% include event-teaser.html event=event first=is_first %}
+      {% assign shown = shown | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% if shown > 0 %}
   <section class="section section--sand events-section">
     <h2>Weitere Veranstaltungen</h2>
     <div class="events-grid">
-      {% for event in upcoming %}
-        {% include event-teaser.html event=event first=forloop.first %}
-      {% endfor %}
+      {{ upcoming_teasers }}
     </div>
   </section>
 {% endif %}

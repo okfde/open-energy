@@ -19,7 +19,7 @@ layout: default
   </article>
 </section>
 
-{% assign related = site.blog | where_exp: "post", "post.url != page.url" | sort: "date" | reverse | limit: 2 %}
+{% assign related = site.blog | where_exp: "post", "post.url != page.url" | sort: "date" | reverse | slice: 0, 3 %}
 {% if related.size > 0 %}
   <section class="section section--dark related-posts">
     <h2>Weitere Beiträge</h2>

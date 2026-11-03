@@ -1,14 +1,25 @@
 {% comment %}
   Renders the "Veranstaltungen" events teaser section per the Figma "Events" component.
+  Shows only upcoming events (today or later).
   Params: limit (number, default 3)
 {% endcomment %}
 {% assign events_limit = include.limit | default: 3 %}
 <section class="section section--sand events-section">
-  {% assign upcoming_events = site.events | sort: "date" | limit: events_limit %}
+  {% assign today_str = site.time | date: "%Y-%m-%d" %}
+  {% assign today_ts = today_str | date: "%s" %}
+  {% assign sorted_events = site.events | sort: "date" %}
   <h2>Veranstaltungen</h2>
   <div class="events-grid">
-    {% for event in upcoming_events %}
-      {% include event-teaser.html event=event first=forloop.first %}
+    {% assign shown = 0 %}
+    {% for event in sorted_events %}
+      {% if shown >= events_limit %}{% break %}{% endif %}
+      {% assign event_ts = event.date | date: "%s" %}
+      {% assign diff_days = event_ts | minus: today_ts | divided_by: 86400 %}
+      {% if diff_days >= 0 %}
+        {% if shown == 0 %}{% assign is_first = true %}{% else %}{% assign is_first = false %}{% endif %}
+        {% include event-teaser.html event=event first=is_first %}
+        {% assign shown = shown | plus: 1 %}
+      {% endif %}
     {% endfor %}
   </div>
   {% include button.html text="Alle Veranstaltungen →" url="/termine/" style="secondary" %}
