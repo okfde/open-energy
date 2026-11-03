@@ -1,16 +1,16 @@
 ---
-title: "Vom Protest zum Kollektiv: Kerstin Lopau über FLINTA*-Solar-Camps und gemeinschaftlichen Klimaschutz von unten"
+title: "Vom Protest zum Kollektiv: Klimaschutz von unten in FLINTA*-Solar-Camps"
 date: 2026-11-03
 category: 
 - Solarenergie
 excerpt: "Kerstin Lopau ist Umweltingenieurin und Mitgründerin des Solarkollektivs SoLocal Energy. Gemeinsam mit anderen setzt sie sich für eine gemeinschaftliche Nutzung erneuerbarer Energien ein. Mit FLINTA*-Solar-Camps möchte sie insbesondere Frauen, inter-, nicht-binäre, trans- und agender Personen für handwerkliche und technische Themen begeistern. Im Interview erzählt sie, warum sie irgendwann nicht mehr nur protestieren, sondern selbst etwas aufbauen wollte, wie gemeinsames Lernen neue Möglichkeiten schafft und warum es für den Einstieg in den Klimaschutz keine Vorkenntnisse braucht."
 featured: true
-image: "/assets/images/photos/blog/kerstin-1.jpeg"
+image: "/assets/images/photos/blog/kerstin-1.jpg"
 ---
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
-  <figcaption> Ein Bauwerk, zwei Energiequellen: Die Giraffe vereint Sonne und Wind. 6</figcaption>
+  <figcaption> Beim FLINTA\* Solarcamp stehen Gemeinschaft, gegenseitige Unterstützung und jede Menge Spaß im Mittelpunkt.</figcaption>
 </figure>
 
 ### Schritt 1: Neugierig sein, protestieren, eigene Ideen entwickeln und beispielsweise daraus gemeinsam mit anderen ein Kollektiv gründen, um vor Ort konkrete Lösungen für eine nachhaltigere Zukunft umzusetzen
@@ -85,9 +85,9 @@ Natürlich haben wir dadurch auch unterschiedliche Wissensstände. Menschen, die
 
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
+  <img src="{{ '/assets/images/photos/blog/kerstin-2.jpg' | relative_url }}" alt="">
   <figcaption>
-    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich.
+   Für Kerstin sind Solocal Energy und der Einsatz für den Klimaschutz eine echte Herzensangelegenheit.
   </figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ Oft entstehen Veränderungen durch kleine Handlungen. Früher hatten wir häufig
 
 ***Stephanie: Was hindert Menschen deiner Meinung nach daran, selbst aktiv zu werden? Fehlen ihnen Informationen oder eher Erfahrungswerte?***
 
-**Stephanie**:  Ich würde tatsächlich nicht sagen, dass es in erster Linie an fehlenden Informationen liegt, sondern eher an fehlenden Erfahrungen. Es fehlen Orte, an die ich gehen kann, oder Möglichkeiten, das Thema dort kennenzulernen, wo ich mich ohnehin bewege – zum Beispiel auf einem Supermarktparkplatz.
+**Stephanie**: Ich würde tatsächlich nicht sagen, dass es in erster Linie an fehlenden Informationen liegt, sondern eher an fehlenden Erfahrungen. Es fehlen Orte, an die ich gehen kann, oder Möglichkeiten, das Thema dort kennenzulernen, wo ich mich ohnehin bewege – zum Beispiel auf einem Supermarktparkplatz.
 
 Wenn ich weiß, dass es Balkonkraftwerke gibt, kann ich online danach suchen und finde unzählige Angebote. Das ist nicht unbedingt das Problem. Schwieriger ist die Frage: Wo gibt es niedrigschwellige Einstiegsmöglichkeiten?
 
@@ -113,8 +113,8 @@ Vieles findet inzwischen online statt, und das ist auch praktisch. Aber ich glau
 
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/freiland-5.jpg' | relative_url }}" alt="">
-  <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. </figcaption>
+  <img src="{{ '/assets/images/photos/blog/kerstin-3.jpg' | relative_url }}" alt="">
+  <figcaption>Das FLINTA* Solar-Camp ist der richtige Ort zum flexen. </figcaption>
 </figure>
 
 > **Oft entstehen Veränderungen durch kleine Handlungen. Früher hatten wir häufig das Bild, dass man erst ein Klimabewusstsein entwickeln muss, um dann klimaschützende Maßnahmen zu ergreifen. In der Realität ist es häufig andersherum.**
