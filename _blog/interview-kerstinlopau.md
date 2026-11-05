@@ -1,5 +1,5 @@
 ---
-title: "Vom Protest zum Kollektiv: Klimaschutz von unten in FLINTA*-Solar-Camps"
+title: "Vom Protest zum Kollektiv: raus aus der technischen Nische"
 date: 2026-11-03
 category: 
 - Solarenergie
