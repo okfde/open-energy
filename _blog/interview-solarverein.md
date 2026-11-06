@@ -1,5 +1,5 @@
 ---
-title: "Balkonsolar: Mit Hilfe der Sonne Selbstwirksamkeit erleben"
+title: "Balkonsolar: der schnellste Weg zum eigenen Strom"
 date: 2026-09-23
 category: 
 - Solarenergie

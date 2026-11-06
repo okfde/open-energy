@@ -4,7 +4,7 @@ date: 2026-11-03
 category: 
 - Solarenergie
 excerpt: "Kerstin Lopau ist Umweltingenieurin und Mitgründerin des Solarkollektivs SoLocal Energy. Gemeinsam mit anderen setzt sie sich für eine gemeinschaftliche Nutzung erneuerbarer Energien ein. Mit FLINTA*-Solar-Camps möchte sie insbesondere Frauen, inter-, nicht-binäre, trans- und agender Personen für handwerkliche und technische Themen begeistern. Im Interview erzählt sie, warum sie irgendwann nicht mehr nur protestieren, sondern selbst etwas aufbauen wollte, wie gemeinsames Lernen neue Möglichkeiten schafft und warum es für den Einstieg in den Klimaschutz keine Vorkenntnisse braucht."
-featured: true
+featured: false
 image: "/assets/images/photos/blog/kerstin-1.jpg"
 ---
 

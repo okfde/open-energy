@@ -1,5 +1,5 @@
 ---
-title: "Mit der Solargiraffe zur eigenen Energie"
+title: "Mit Open Source Energietechnik zur Anlage, die dir gehört"
 date: 2026-08-12
 category: 
 - Solarenergie
