@@ -133,7 +133,7 @@ Ich fand es deshalb total gut, als Balkonkraftwerke aus dieser Nische herauskame
   <p>Der niedrigschwelligste Weg ist wahrscheinlich, erst einmal zu schauen: Wer macht schon etwas Gutes, das ich unterstützen möchte, und wo kann ich mich anschließen?“</p>
 </div>
 
-***Stephanie: Wenn jemandem begegnest, der die Welt genau wie du damals ein Stück weit retten und sich für Klimaschutz einsetzen möchte, aber überhaupt nicht weiß, wo sie anfangen soll – was würdest du dieser Person raten?***
+***Stephanie: Wenn du einer Person begegnest, die die Welt genau wie du damals ein Stück weit retten und sich für Klimaschutz einsetzen möchte, aber überhaupt nicht weiß, wo sie anfangen soll – was rätst du?***
 
 **Kerstin**: Das kommt natürlich auch ein bisschen auf den Typ an. Die meisten lokalen Klimagruppen freuen sich über Interesse und haben eher zu wenige als zu viele Menschen. 
 
