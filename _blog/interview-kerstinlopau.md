@@ -31,7 +31,7 @@ image: "/assets/images/photos/blog/kerstin-1.jpg"
 
 Gegen Ende meines Studiums kam deshalb der Wunsch auf, auch etwas Positives aufzubauen. Ich wollte Teil davon werden, die Welt, wie ich sie mir vorstelle, mitzugestalten und meinen kleinen Beitrag dazu zu leisten. Ich werde jetzt nicht Bundeskanzlerin – das ist nicht so mein Ding. Ich sehe mich eher in einer Nische und hoffe, dazu beitragen zu können, dass diese Nische immer größer wird.
 
-***Stephanie: Apropos Bundeskanzlerin...Du engagierst dich genau andersherum für eine Energiewende von unten. Was bedeutet das für dich?***
+***Stephanie: Apropos Bundeskanzlerin...Du engagierst dich genau andersherum für eine Energiewende von unten als deine Nische. Was bedeutet das für dich?***
 
 **Kerstin**: Das ist ziemlich viel. Energie ist heute eine Art Grundbedürfnis. Sie gehört zur Grundversorgung, genauso wie Essen, Trinken und ein warmes Zuhause.
 
@@ -56,12 +56,12 @@ Außerdem gibt es tolle Vernetzungsangebote. Viele Kollektive wünschen sich, da
 ***Stephanie: Ein besonderer Teil eurer Arbeit im Kollektiv sind die Solar-Camps speziell für FLINTA\*-Personen. Was macht ihr dort und warum ist euch dieses Angebot so wichtig?***
 
 **Kerstin**: In den Solarcamps lernen wir in solidarischer Gemeinschaft das handwerkliche Einmaleins der Photovoltaik. Dass es diese Camps speziell für FLINTA\*-Personen gibt, war für uns eigentlich von Anfang an ein wichtiges Thema.
-Wir haben schon in unserer eigenen Teamentwicklung versucht, Gender-Parität herzustellen. Das war im Studium, wenn man sich dort umgeschaut hat, nicht unbedingt selbstverständlich. Dass wir selbst ein starkes FLINTA\*-Team haben, schafft natürlich auch Glaubwürdigkeit. 
+
+Wir haben schon in unserer eigenen Teamentwicklung versucht, Gender-Parität herzustellen. Das war im Studium, wenn man sich dort umgeschaut hat, nicht unbedingt selbstverständlich. Dass wir selbst ein starkes FLINTA\*-Team haben, schafft natürlich auch Glaubwürdigkeit.
 
 Wir haben uns dazu auch weitergebildet, weil unser Team lange sehr cisgeschlechtlich geprägt war. Dabei war es uns wichtig, die Unterscheidung zwischen Frauen und FLINTA\* zu verstehen. Es geht eben nicht nur um Frauenförderung. Es gibt noch viele weitere Menschen, die vom Patriarchat diskriminiert werden. Wir wollen Räume schaffen, die nicht einfach nur Alibi-FLINTA\*-Räume sind.
 
 Darin steckt allerdings viel Arbeit. Wir beschäftigen uns mit Awareness-Konzepten und versuchen, über Fundraising auch die Zeit für Weiterbildungen und die Gestaltung dieser Räume zu finanzieren. Die Rückmeldungen aus den Camps der vergangenen Jahre zeigen uns, dass unsere Bemühungen ankommen.
-
 
 ***Stephanie: Gibt es besondere Momente aus den Solar-Camps, die dir in Erinnerung geblieben sind?***
 
