@@ -53,12 +53,12 @@ Außerdem gibt es tolle Vernetzungsangebote. Viele Kollektive wünschen sich, da
 ### Schritt 2: Gemeinsam und voneinander lernen. Bei Workshops oder Solar-Camps mit Gleichgesinnten praktische Erfahrungen sammeln. Dafür sind keine Vorkenntnisse notwendig.
 
 
-***Stephanie: Ein besonderer Teil eurer Arbeit im Kollektiv sind die Solar-Camps speziell für FLINTA*-Personen. Was macht ihr dort und warum ist euch dieses Angebot so wichtig?***
+***Stephanie: Ein besonderer Teil eurer Arbeit im Kollektiv sind die Solar-Camps speziell für FLINTA\*-Personen. Was macht ihr dort und warum ist euch dieses Angebot so wichtig?***
 
-**Kerstin**: In den Solarcamps lernen wir in solidarischer Gemeinschaft das handwerkliche Einmaleins der Photovoltaik. Dass es diese Camps speziell für FLINTA*-Personen gibt, war für uns eigentlich von Anfang an ein wichtiges Thema.
-Wir haben schon in unserer eigenen Teamentwicklung versucht, Gender-Parität herzustellen. Das war im Studium, wenn man sich dort umgeschaut hat, nicht unbedingt selbstverständlich. Dass wir selbst ein starkes FLINTA*-Team haben, schafft natürlich auch Glaubwürdigkeit. 
+**Kerstin**: In den Solarcamps lernen wir in solidarischer Gemeinschaft das handwerkliche Einmaleins der Photovoltaik. Dass es diese Camps speziell für FLINTA\*-Personen gibt, war für uns eigentlich von Anfang an ein wichtiges Thema.
+Wir haben schon in unserer eigenen Teamentwicklung versucht, Gender-Parität herzustellen. Das war im Studium, wenn man sich dort umgeschaut hat, nicht unbedingt selbstverständlich. Dass wir selbst ein starkes FLINTA\*-Team haben, schafft natürlich auch Glaubwürdigkeit. 
 
-Wir haben uns dazu auch weitergebildet, weil unser Team lange sehr cisgeschlechtlich geprägt war. Dabei war es uns wichtig, die Unterscheidung zwischen Frauen und FLINTA* zu verstehen. Es geht eben nicht nur um Frauenförderung. Es gibt noch viele weitere Menschen, die vom Patriarchat diskriminiert werden. Wir wollen Räume schaffen, die nicht einfach nur Alibi-FLINTA*-Räume sind.
+Wir haben uns dazu auch weitergebildet, weil unser Team lange sehr cisgeschlechtlich geprägt war. Dabei war es uns wichtig, die Unterscheidung zwischen Frauen und FLINTA\* zu verstehen. Es geht eben nicht nur um Frauenförderung. Es gibt noch viele weitere Menschen, die vom Patriarchat diskriminiert werden. Wir wollen Räume schaffen, die nicht einfach nur Alibi-FLINTA\*-Räume sind.
 
 Darin steckt allerdings viel Arbeit. Wir beschäftigen uns mit Awareness-Konzepten und versuchen, über Fundraising auch die Zeit für Weiterbildungen und die Gestaltung dieser Räume zu finanzieren. Die Rückmeldungen aus den Camps der vergangenen Jahre zeigen uns, dass unsere Bemühungen ankommen.
 
@@ -79,7 +79,7 @@ Dadurch löst sich ein bisschen auf, wer hier eigentlich anleitet und wer teilni
 
 ***Stephanie: Brauchen die Teilnehmenden dafür technische Vorkenntnisse oder richtet ihr euch auch an Menschen, die bisher wenig mit dem Thema zu tun hatten?***
 
-**Kerstin**: Wir sagen ganz klar, dass keine Vorkenntnisse nötig sind. Wir fangen ziemlich bei null an. Wir hatten zum Beispiel einmal eine Soziologin dabei, die gesagt hat, dass sie bisher überhaupt nichts damit zu tun hatte, aber jetzt Interesse daran hat. Der FLINTA*-Kontext ermöglicht ihr überhaupt erst, diesem Interesse nachzugehen, auch wenn sie noch keine Ahnung hat.
+**Kerstin**: Wir sagen ganz klar, dass keine Vorkenntnisse nötig sind. Wir fangen ziemlich bei null an. Wir hatten zum Beispiel einmal eine Soziologin dabei, die gesagt hat, dass sie bisher überhaupt nichts damit zu tun hatte, aber jetzt Interesse daran hat. Der FLINTA\*-Kontext ermöglicht ihr überhaupt erst, diesem Interesse nachzugehen, auch wenn sie noch keine Ahnung hat.
 
 Natürlich haben wir dadurch auch unterschiedliche Wissensstände. Menschen, die in bestimmten Bereichen schon mehr wissen, müssen manchmal warten, bis etwas Neues für sie kommt. Wir versuchen deshalb, uns didaktisch weiterzuentwickeln und vorhandenes Wissen stärker einzubeziehen. Insgesamt hat es aber gut geklappt.
 
