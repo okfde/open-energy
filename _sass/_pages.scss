@@ -1135,6 +1135,15 @@
   }
 }
 
+.events-empty {
+  max-width: 40rem;
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
 .events-list-section__more {
   display: flex;
   justify-content: flex-end;

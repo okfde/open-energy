@@ -11,6 +11,7 @@ description: "Workshops und Veranstaltungen von Open Energy: Hier lernst du die 
   {% assign today_str = site.time | date: "%Y-%m-%d" %}
   {% assign today_ts = today_str | date: "%s" %}
   {% assign sorted_events = site.events | sort: "date" %}
+  {% assign upcoming_count = 0 %}
   <div class="events-grid">
     {% assign is_first = true %}
     {% for event in sorted_events %}
@@ -19,9 +20,11 @@ description: "Workshops und Veranstaltungen von Open Energy: Hier lernst du die 
       {% if diff_days >= 0 %}
         {% include event-teaser.html event=event first=is_first %}
         {% assign is_first = false %}
+        {% assign upcoming_count = upcoming_count | plus: 1 %}
       {% endif %}
     {% endfor %}
   </div>
+  {% if upcoming_count == 0 %}{% include events-empty.html %}{% endif %}
   <div class="events-list-section__more">
     {% include button.html text="Vergangene Veranstaltungen →" url="/termine/old/" style="secondary" %}
   </div>
