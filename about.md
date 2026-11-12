@@ -14,8 +14,8 @@ description: "Open Energy macht offene Bauanleitungen für Solar- und Windstroma
       <p class="body-text">Du entwickelst OSH-Energietechnik und möchtest, dass deine Lösung in Open Energy integriert wird? Dann melde dich bei uns.</p>
     </div>
     <div class="about-hero__cta">
-      {% include button.html text="E-Mail senden" url="mailto:kontakt@openenergy.de" style="primary" tag="a" %}
-      <span class="body-text--small about-hero__email">kontakt@openenergy.de</span>
+      {% include button.html text="E-Mail senden" url="mailto:kontakt@energie-selbermachen.de" style="primary" tag="a" %}
+      <span class="body-text--small about-hero__email">kontakt@energie-selbermachen.de</span>
     </div>
     <div class="about-hero__partners funders-logos">
       <img class="funders-logos__logo" src="{{ '/assets/images/logos/pfh_black.svg' | relative_url }}" alt="Prototype Fund Hardware">
