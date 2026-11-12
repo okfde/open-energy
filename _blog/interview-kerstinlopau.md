@@ -13,7 +13,7 @@ image: "/assets/images/photos/blog/kerstin-1.jpg"
   <figcaption> Beim FLINTA* Solarcamp stehen Gemeinschaft, gegenseitige Unterstützung und jede Menge Spaß im Mittelpunkt. Quelle: SoLocal Energy e.V.</figcaption>
 </figure>
 
-### Schritt 1: Neugierig sein, protestieren, eigene Ideen entwickeln und beispielsweise daraus gemeinsam mit anderen ein Kollektiv gründen, um vor Ort konkrete Lösungen für eine nachhaltigere Zukunft umzusetzen
+### Schritt 1: Eine Gemeinschaft gründen, die auch schwierige Phasen übersteht
 
 
 ***Stephanie: Kerstin, du engagierst dich schon seit vielen Jahren für Klimaschutz. Kannst du dich noch daran erinnern, wie deine Begeisterung dafür begonnen hat?***
@@ -50,7 +50,7 @@ Außerdem gibt es tolle Vernetzungsangebote. Viele Kollektive wünschen sich, da
 
 
 
-### Schritt 2: Gemeinsam und voneinander lernen. Bei Workshops oder Solar-Camps mit Gleichgesinnten praktische Erfahrungen sammeln. Dafür sind keine Vorkenntnisse notwendig.
+### Schritt 2: Trail & Error: Loslegen und durch Praxiserfahrungen lernen
 
 
 ***Stephanie: Ein besonderer Teil eurer Arbeit im Kollektiv sind die Solar-Camps speziell für FLINTA\*-Personen. Was macht ihr dort und warum ist euch dieses Angebot so wichtig?***
