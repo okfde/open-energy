@@ -10,7 +10,7 @@ image: "/assets/images/photos/blog/libresolar-1.jpg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/libresolar-1.jpg' | relative_url }}" alt="">
-  <figcaption> Michel in Action: Beim Libre Solar Workshop in Brandenburg erklärte er die Geschichte unseres Stromnetzes. </figcaption>
+  <figcaption> Michel in Action: Beim Libre Solar Workshop in Brandenburg erklärt er wie sich das Stromnetz die letzten Jahre verändert hat. </figcaption>
 </figure>
 
 ### Schritt 1: Aufbau von Grundlagenwissen über Stromerzeugung und das Stromnetz, um das Gesamtsystem zu verstehen
