@@ -1,11 +1,11 @@
 ---
-title: "Gemeinsam unter Strom: Wie offene Solartechnik die Energiewende auf den eigenen Balkon bringt"
+title: "Gemeinsam unter Strom: Wie offene Solartechnik die Energiewende in den Alltag integriert"
 date: 2026-11-23
 category: 
 - Solarenergie
 excerpt: "Wie funktioniert eigentlich unser Stromnetz – und was passiert, wenn man seinen eigenen Strom auf dem Balkon „erntet“? Elektroingenieur Michel Langhammer forscht an der Helmut-Schmidt-Universität in Hamburg zu offener Produktion und entwickelt beim Open-Source-Projekt LibreSolar frei zugängliche Solartechnik. Im Interview spricht er über grundlegendes Stromverständnis, welche Erkenntnisse er aus seinen Workshops in Senegal und Ghana gewonnen hat und warum selbsterzeugte Energie achtsamer macht."
 featured: true
-image: "/assets/images/photos/blog/freiland-4.jpeg"
+image: "/assets/images/photos/blog/libresolar-1.jpg"
 ---
 
 <figure class="article-figure">
