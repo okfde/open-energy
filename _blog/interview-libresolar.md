@@ -9,8 +9,8 @@ image: "/assets/images/photos/blog/libresolar-1.jpg"
 ---
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
-  <figcaption> Michel in Action: Beim Libre Solar Workshop in Brandenburg erklärte er die Geschichte unseres Stromnetzes. 6</figcaption>
+  <img src="{{ '/assets/images/photos/blog/libresolar-1.jpg' | relative_url }}" alt="">
+  <figcaption> Michel in Action: Beim Libre Solar Workshop in Brandenburg erklärte er die Geschichte unseres Stromnetzes. </figcaption>
 </figure>
 
 ### Schritt 1: Aufbau von Grundlagenwissen über Stromerzeugung und das Stromnetz, um das Gesamtsystem zu verstehen
@@ -68,7 +68,7 @@ In unseren Workshops haben wir das mit Einsteigern an einem Wochenende geschafft
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/libresolar-2.jpg' | relative_url }}" alt="">
   <figcaption>
-    Die Libre Solar Box im alltäglichen Einsatz: Zusammenklappbare Solarpanes "ernten" die Sonne auf dem Balkon und speichern sie in der Box.
+    Die Libre Solar Box im alltäglichen Einsatz: Zusammenklappbare Solarpanels „ernten“ die Sonne auf dem Balkon und speichern sie in der Box. Quelle: Michel Langhammer
   </figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ Abends hole ich sie rein und lade damit meinen Laptop, mein Handy oder Bluetooth
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/libresolar-3.jpg' | relative_url }}" alt="">
-  <figcaption>Die sonnenbeladene Libre Solar Box wird zum Möbelstück und lädt Laptop, Smartphone & Co. </figcaption>
+  <figcaption>Die sonnenbeladene Libre Solar Box wird zum Möbelstück und lädt Laptop, Smartphone & Co. Quelle: Michel Langhammer </figcaption>
 </figure>
 
 <div class="pull-quote">
