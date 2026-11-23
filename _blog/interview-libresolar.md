@@ -1,1 +1,124 @@
+---
+title: "Gemeinsam unter Strom: Wie offene Solartechnik die Energiewende auf den eigenen Balkon bringt"
+date: 2026-11-23
+category: 
+- Solarenergie
+excerpt: "Wie funktioniert eigentlich unser Stromnetz – und was passiert, wenn man seinen eigenen Strom auf dem Balkon „erntet“? Elektroingenieur Michel Langhammer forscht an der Helmut-Schmidt-Universität in Hamburg zu offener Produktion und entwickelt beim Open-Source-Projekt LibreSolar frei zugängliche Solartechnik. Im Interview spricht er über grundlegendes Stromverständnis, welche Erkenntnisse er aus seinen Workshops in Senegal und Ghana gewonnen hat und warum selbsterzeugte Energie achtsamer macht."
+featured: true
+image: "/assets/images/photos/blog/freiland-4.jpeg"
+---
 
+<figure class="article-figure">
+  <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
+  <figcaption> Ein Bauwerk, zwei Energiequellen: Die Giraffe vereint Sonne und Wind. 6</figcaption>
+</figure>
+
+### Schritt 1: Aufbau von Grundlagenwissen über Stromerzeugung und das Stromnetz, um das Gesamtsystem zu verstehen
+
+***Stephanie: Hallo Michel. Du bist studierter Elektroingenieur. Was fasziniert dich an Strom und Schaltkreisen?***
+
+**Michel**: Als ich das Studium anfing, hatte ich ehrlicherweise noch keine Ahnung von Strom und Spannung. Ich habe mich dazu entschieden, weil ich gut in Mathe war. Die eigentliche Faszination kam erst im Studium. Zu lernen, was man mit elektrischer Energie alles umsetzen kann – von der Ansteuerung winziger LED-Lichter bis hin zu riesigen Elektromotoren. Mein Fokus lag dabei in der Automatisierungstechnik.
+
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein.“</p>
+</div>
+
+***Stephanie: Aktuell promovierst du in Hamburg. Woran forschst du genau und welche Rolle spielt Energie dabei?***
+
+**Michel**: Ich forsche zu „offener Produktion“ –  also wie können frei zugängliche Bauplänen, so genannte Open-Source Hardware und kleine, offene Werkstätten wie Makerspaces oder FabLabs unsere Art der Produktion verändern. Mich interessiert, was passiert, wenn wir z.B. eine große geschlossene Fabrik in viele  kleine, lokale und offene Werkstätten aufteilen. 
+
+Sparen wir durch die kurzen Transportwege wirklich Energie, oder verbrauchen viele kleine Maschinen am Ende mehr Strom als eine große Fabrik?
+
+***Stephanie: Und hast du darauf schon eine Antwort?***
+
+**Michel**: Noch nicht. Wir statten gerade erst verschiedene Makerspaces mit Messgeräten aus, um überhaupt zu sehen, welche Maschine wie viel Strom verbrauchen. Das sensibilisiert die Betreiber schon enorm. Für den großen Vergleich fehlen uns aber die Daten der Großindustrie – Privatunternehmen geben ihre Verbrauchszahlen natürlich ungern heraus.
+
+***Stephanie: Einige unserer Leserinnen und Leser haben bisher vielleicht wenig Berührungspunkte mit Elektrotechnik. Wie erklärst du einem Laien die Grundlagen unseres Stromnetzes?***
+
+**Michel**: Es kann der Vergleich mit Wasser helfen. Überall, wo etwas fließt, entsteht ein Strom. In einem Stromnetz verbinden wir verschiedene Quellen – unsere Kraftwerke – über Kabel und Verteilnetze mit den Verbrauchern, also unserer Steckdose zu Hause. Dabei sucht sich der Strom immer den Weg des geringsten Widerstands. Um das im Detail zu verstehen, braucht es ein paar physikalische Grundlagen zu Spannung, Widerstand, elektrische Ladung und auch Bauteile wie Kondensatoren oder Spulen.
+
+***Stephanie: Wie hat sich unser Stromnetz in den letzten 10 bis 20 Jahren verändert?***
+
+**Michel**: Früher hatten wir nur größere, starre Kratwerke wie Kohle- und Atomkraftwerke, die sich allerdings nur träge steuern lassen. Durch den Ausbau von Wind- und Solarenergie ist das Netz viel intelligenter und flexibler geworden. Da Sonne und Wind nicht immer gleichmäßig liefern, müssen wir auch den Verbrauch anpassen. Sei es durch die Integration von Speichern oder der bedarfsgerechten Ansteuerung von Verbrauchern. In der Industrie gibt den Begriff der „Energieflexibilisierung“, sprich Prozesse laufen dann, wenn gerade viel grüner Strom im Netz ist.
+
+### Schritt 2: Schritt 2: Den Schneeballeffekt starten – Einen Weg finden, das gesammelte Wissen über Strom produktiv an andere weiterzugeben. Eine Möglichkeit sind Workshops.
+
+
+***Stephanie: Du bist Teil des Projekts LibreSolar. Was genau macht ihr dort und für wen ist das gedacht***
+
+**Michel**: LibreSolar wurde von Martin Jäger gegründet und entwickelt Open-Source Hardware speziell für kleine erneuerbare Energiesysteme, vor allem Solarladeregler und Batteriemanagementsysteme inklusive der nötigen Software. Alle Baupläne und Codes liegen frei zugänglich und offen lizenziert auf der Plattform GitHub. Das richtet sich an Tüftler, die eigene Systeme bauen wollen, an Unternehmen, die auf unserer Basis Produkte entwickeln möchten, und an alle, die das Ganze als Lehr- und Lernmaterial nutzen wollen. 
+
+***Stephanie: Ihr habt daraus eine eigene „LibreSolar-Box“ entwickelt. Wie lange dauert der Bau einer solchen Box?***
+
+**Michelh**: Ja die Libre Solar Box vereint die einzelnen Komponten zu einem direkt nutzbaren Solargenerator, also eine große Powerbank an die PV-Module direkt angeschlossen werden können. Wenn man die Platinen selbst mit hunderten winzigen Bauteilen manuell bestückt, sitzt man mit Pinzette und ruhiger Hand schon einen ganzen Tag daran. Baut man aber aus fertig gekauften Einzelteilen – also Batterie, Laderegler, Kabeln, Steckern und Gehäuse – die gesamte Solarbox zusammen, geht es viel schneller.
+
+In unseren Workshops haben wir das mit Einsteigern an einem Wochenende geschafft inklusive Wissensvermittlung. Wenn alle Teile bereitliegen und man etwas Vorwissen mitbringt, ist die Box in maximal zwei bis drei Stunden zusammengebaut.
+
+
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Technisch ist es möglich, dass sich unsere Solarboxen zu sogenannten Mesh-Grids zusammenschalten. So kann man Strom mit den Nachbarn teilen und das Netz wächst organisch mit dem Bedarf.“</p>
+</div>
+
+***Stephanie: Lohnt sich der Aufwand finanziell und energetisch?***
+
+**Michel**:Eine genaue Wirtschaftlichkeitsrechnung  habe ich nicht gemacht. Für mich zählt nicht nur die reine erzeugte Strommenge in Relation zu den Kosten am Ende. Sondern durch das Selberbauen lernt man unglaublich viel über Technik und Energie. Diesen Wissensgewinn sollte man unbedingt mit einrechnen.
+
+<figure class="article-figure">
+  <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
+  <figcaption>
+    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich.
+  </figcaption>
+</figure>
+
+***Stephanie: Dezentrale Stromerzeugung kann schnell nach „Prepper-Szene“ klingen, wo jeder im Keller nur sein eigenes Süppchen kocht. Wie bleibt das Ganze gemeinschaftlich?***
+
+**Michel**: Indem man eben nicht nur allein im Keller sitzt. Ich empfehle jedem, in einen Makerspace oder ein FabLab zu gehen. Dort trifft man andere Menschen, baut gemeinsam und tauscht sich aus. 
+
+Offene Technologien alleine reichen nicht aus, sondern es braucht auch physische Orte und Initiativen, an denen Menschen zusammenkommen. Technisch ist es möglich, dass sich unsere Solarboxen zu sogenannten Mesh-Grids zusammenschalten. So kann man Strom mit den Nachbarn teilen und das Netz wächst organisch mit dem Bedarf.
+
+***Stephanie: Du hast solche Workshops mit Libre Solar auch schon in Senegal und Ghana gegeben. Was hast du dort erlebt?***
+
+**Michel**: Der größte Unterschied war die bestehende Infrastruktur. Bei uns kommt der Strom selbstverständlich aus der Steckdose. Deshalb ist für viele Menschen nicht notwendig zu wissen wie die Erzeugung funktioniert und es ist ihnen gar nicht bewusst, dass sie sich selbst darum kümmern können.
+Eine bestehende Infrastruktur umzubauen, ist meiner Meinung nach oft schwerer, als etwas komplett neu aufzubauen. In vielen Ländern im globalen Süden ist es regulatorisch beispielsweise einfacher, eine Solaranlage zu installieren. Solche Anlagen werden dann meistens  autark betrieben, weil es bis in bestimmte Dörfer oder Städte gar kein Stromnetz gibt.
+
+In diesen Regionen ohne stabiles Stromnetz ist die Akzeptanz für autarke Solaranlagen relativ hoch. Die größte Hürde war dort nicht die Skepsis, sondern die Beschaffung der Bauteile. Autobatterien waren leichter verfügbar als Stecker  undSolarpanels im Kofferraum eines Reisebusses zu transportieren, war auch ein echtes Abenteuer. Wenn man aber richtig sucht, findet man aber auch Händler für Solartechnik, die alles notwendige vertreiben, was die Beschaffung erleichtert.
+
+<figure class="article-figure">
+  <img src="{{ '/assets/images/photos/blog/freiland-5.jpg' | relative_url }}" alt="">
+  <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. </figcaption>
+</figure>
+
+> **„Bei uns kommt der Strom selbstverständlich aus der Steckdose. Deshalb ist für viele Menschen nicht notwendig zu wissen wie die Erzeugung funktioniert und es ist ihnen gar nicht bewusst, dass sie sich selbst darum kümmern können.“**
+
+***Stephanie: Und was hast du aus den Balkonsolar-Workshops mitgenommen, die ihr vor kurzem mit uns zusammen in Brandenburg durchgeführt habt?***
+
+**Michel**: Das Interesse ist groß, aber viele Menschen stoßen irgendwann an eine Grenze. Sie fragen sich: „Kann ich die Verantwortung für die Sicherheit und die Montage wirklich allein übernehmen?“ Selbst wenn alle Infos im Netz stehen, reicht das nicht für jeden. Es braucht persönliche Anlaufstellen und Communities, die Sicherheit geben und Fragen beantworten.
+
+***Stephanie: Können sich Menschen direkt an euch von LibreSolar wenden, wenn sie beim Aufbau nicht mehr weiterkommen?***
+
+**Michel**: Ja, über die Online Plattform GitHub, können sich Menschen an uns wenden. Mein Kollege Martin ist da hauptsächlich der Ansprechpartner. Allerdings vertreiben wir keine Hardware sondern Dienstleistungen im Bereich Platinen- und Softwareentwicklung für z.B. anwendungsspezifische Anpassungen. 
+
+
+### Schritt 3: Schritt 3: Den eigenen Strom in den Alltag integrieren. Das funktioniert zum Beispiel mit der Libre Solar Box, einem faltbaren Solarpanel und einem sonnigen Balkon.
+
+***Stephanie: Du nutzt die Box auch selbst zu Hause. Wie sieht dein Alltag damit aus?***
+
+**Michel**: Meine Solarbox hat 120 Watt Leistung und 360Wh Kapazität und steht mit faltbaren Solarpanels auf meinem Balkon. Wenn die Sonne scheint, stelle ich sie raus und „ernte“ Strom. Über eine App auf meinem Smartphone sehe ich den Ladestand. 
+
+Abends hole ich sie rein und lade damit meinen Laptop, mein Handy oder Bluetooth-Lautsprecher. Inzwischen ist sie wie ein kleines Möbelstück in meiner Wohnung. Als Nächstes möchte ich mir einen Mikro-Wechselrichter holen, um den Strom direkt in mein Hausnetz einzuspeisen.
+
+<div class="pull-quote">
+  <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
+  <p>„Ich glaube, wir werden viele kleine, flexibel vernetzte Stromnetze haben. Wichtig ist mir, dass wir das Thema mehr global denken. Der Klimawandel macht nicht an Ländergrenzen halt, und die Energiewende gelingt nur, wenn wir sie weltweit organisieren.“</p>
+</div>
+
+***Stephanie: Hat das dein Verhältnis zu Strom verändert?***
+
+**Michel**: Definitiv. Ich bin viel achtsamer geworden. Beim Arbeiten schalte ich meinen zweiten Bildschirm aus, wenn ich ihn nicht brauche, und versuche, so viele Geräte wie möglich über die Box statt über die normale Steckdose zu laden. Ich achte auch mehr darauf was die Geräte an Leistung benötigen.
+
+
+***Stephanie: Ein Blick in die Kristallkugel. Wie sieht unser Stromnetz in 30 Jahren aus?***
+
+**Michel**: Die Technologien für eine Energiewende hin zu Eneuerbaren sind alle da – es hängt jetzt davon ab, wie wir sie politisch und wirtschaftlich umsetzen. Ich glaube, wir werden viele kleine, flexibel vernetzte Stromnetze haben. Wichtig ist mir, dass wir das Thema mehr global denken. Der Klimawandel macht nicht an Ländergrenzen halt, und die Energiewende gelingt nur, wenn wir sie weltweit organisieren.
