@@ -10,7 +10,7 @@ image: "/assets/images/photos/blog/libresolar-1.jpg"
 
 <figure class="article-figure">
   <img src="{{ '/assets/images/photos/blog/freiland-4.jpeg' | relative_url }}" alt="">
-  <figcaption> Ein Bauwerk, zwei Energiequellen: Die Giraffe vereint Sonne und Wind. 6</figcaption>
+  <figcaption> Michel in Action: Beim Libre Solar Workshop in Brandenburg erklärte er die Geschichte unseres Stromnetzes. 6</figcaption>
 </figure>
 
 ### Schritt 1: Aufbau von Grundlagenwissen über Stromerzeugung und das Stromnetz, um das Gesamtsystem zu verstehen
@@ -21,7 +21,7 @@ image: "/assets/images/photos/blog/libresolar-1.jpg"
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Wenn jemand aufs Gelände kommt, soll man sofort sehen: Hier passiert etwas mit erneuerbaren Energien. Das sollte wirklich in-your-face sichtbar sein.“</p>
+  <p>„Überall, wo etwas fließt, entsteht ein Strom. In einem Stromnetz verbinden wir verschiedene Quellen – unsere Kraftwerke – über Kabel und Verteilnetze mit den Verbrauchern, also unserer Steckdose zu Hause.“</p>
 </div>
 
 ***Stephanie: Aktuell promovierst du in Hamburg. Woran forschst du genau und welche Rolle spielt Energie dabei?***
@@ -66,9 +66,9 @@ In unseren Workshops haben wir das mit Einsteigern an einem Wochenende geschafft
 **Michel**:Eine genaue Wirtschaftlichkeitsrechnung  habe ich nicht gemacht. Für mich zählt nicht nur die reine erzeugte Strommenge in Relation zu den Kosten am Ende. Sondern durch das Selberbauen lernt man unglaublich viel über Technik und Energie. Diesen Wissensgewinn sollte man unbedingt mit einrechnen.
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/freiland-3.jpg' | relative_url }}" alt="">
+  <img src="{{ '/assets/images/photos/blog/libresolar-2.jpg' | relative_url }}" alt="">
   <figcaption>
-    Unter diesem <a href="https://sensors.ccc-p.org/d/df44808e-2f9c-451d-ac96-438c9bd6d9a8/freiland-solar-uebersicht?orgId=1&from=now-2d&to=now&timezone=browser">Link</a> ist die aktuelle Energiegewinnung im freiLand rund um die Uhr offen zugänglich.
+    Die Libre Solar Box im alltäglichen Einsatz: Zusammenklappbare Solarpanes "ernten" die Sonne auf dem Balkon und speichern sie in der Box.
   </figcaption>
 </figure>
 
@@ -84,11 +84,6 @@ Offene Technologien alleine reichen nicht aus, sondern es braucht auch physische
 Eine bestehende Infrastruktur umzubauen, ist meiner Meinung nach oft schwerer, als etwas komplett neu aufzubauen. In vielen Ländern im globalen Süden ist es regulatorisch beispielsweise einfacher, eine Solaranlage zu installieren. Solche Anlagen werden dann meistens  autark betrieben, weil es bis in bestimmte Dörfer oder Städte gar kein Stromnetz gibt.
 
 In diesen Regionen ohne stabiles Stromnetz ist die Akzeptanz für autarke Solaranlagen relativ hoch. Die größte Hürde war dort nicht die Skepsis, sondern die Beschaffung der Bauteile. Autobatterien waren leichter verfügbar als Stecker  undSolarpanels im Kofferraum eines Reisebusses zu transportieren, war auch ein echtes Abenteuer. Wenn man aber richtig sucht, findet man aber auch Händler für Solartechnik, die alles notwendige vertreiben, was die Beschaffung erleichtert.
-
-<figure class="article-figure">
-  <img src="{{ '/assets/images/photos/blog/freiland-5.jpg' | relative_url }}" alt="">
-  <figcaption>Christoph ist stolz darauf, dass das freiLand trotz erheblicher Herausforderungen mittlerweile dreimal so viel Strom erzeugt, wie es selbst benötigt. </figcaption>
-</figure>
 
 > **„Bei uns kommt der Strom selbstverständlich aus der Steckdose. Deshalb ist für viele Menschen nicht notwendig zu wissen wie die Erzeugung funktioniert und es ist ihnen gar nicht bewusst, dass sie sich selbst darum kümmern können.“**
 
@@ -108,6 +103,11 @@ In diesen Regionen ohne stabiles Stromnetz ist die Akzeptanz für autarke Solara
 **Michel**: Meine Solarbox hat 120 Watt Leistung und 360Wh Kapazität und steht mit faltbaren Solarpanels auf meinem Balkon. Wenn die Sonne scheint, stelle ich sie raus und „ernte“ Strom. Über eine App auf meinem Smartphone sehe ich den Ladestand. 
 
 Abends hole ich sie rein und lade damit meinen Laptop, mein Handy oder Bluetooth-Lautsprecher. Inzwischen ist sie wie ein kleines Möbelstück in meiner Wohnung. Als Nächstes möchte ich mir einen Mikro-Wechselrichter holen, um den Strom direkt in mein Hausnetz einzuspeisen.
+
+<figure class="article-figure">
+  <img src="{{ '/assets/images/photos/blog/libresolar-3.jpg' | relative_url }}" alt="">
+  <figcaption>Die sonnenbeladene Libre Solar Box wird zum Möbelstück und lädt Laptop, Smartphone & Co. </figcaption>
+</figure>
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
