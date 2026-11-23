@@ -21,7 +21,7 @@ image: "/assets/images/photos/blog/libresolar-1.jpg"
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Überall, wo etwas fließt, entsteht ein Strom. In einem Stromnetz verbinden wir verschiedene Quellen – unsere Kraftwerke – über Kabel und Verteilnetze mit den Verbrauchern, also unserer Steckdose zu Hause.“</p>
+  <p> Überall, wo etwas fließt, entsteht ein Strom. In einem Stromnetz verbinden wir verschiedene Quellen – unsere Kraftwerke – über Kabel und Verteilnetze mit den Verbrauchern, also unserer Steckdose zu Hause.“</p>
 </div>
 
 ***Stephanie: Aktuell promovierst du in Hamburg. Woran forschst du genau und welche Rolle spielt Energie dabei?***
@@ -42,7 +42,7 @@ Sparen wir durch die kurzen Transportwege wirklich Energie, oder verbrauchen vie
 
 **Michel**: Früher hatten wir nur größere, starre Kratwerke wie Kohle- und Atomkraftwerke, die sich allerdings nur träge steuern lassen. Durch den Ausbau von Wind- und Solarenergie ist das Netz viel intelligenter und flexibler geworden. Da Sonne und Wind nicht immer gleichmäßig liefern, müssen wir auch den Verbrauch anpassen. Sei es durch die Integration von Speichern oder der bedarfsgerechten Ansteuerung von Verbrauchern. In der Industrie gibt den Begriff der „Energieflexibilisierung“, sprich Prozesse laufen dann, wenn gerade viel grüner Strom im Netz ist.
 
-### Schritt 2: Schritt 2: Den Schneeballeffekt starten – Einen Weg finden, das gesammelte Wissen über Strom produktiv an andere weiterzugeben. Eine Möglichkeit sind Workshops.
+### Schritt 2: Den Schneeballeffekt starten – Einen Weg finden, das gesammelte Wissen über Strom produktiv an andere weiterzugeben. Eine Möglichkeit sind Workshops.
 
 
 ***Stephanie: Du bist Teil des Projekts LibreSolar. Was genau macht ihr dort und für wen ist das gedacht***
@@ -51,14 +51,14 @@ Sparen wir durch die kurzen Transportwege wirklich Energie, oder verbrauchen vie
 
 ***Stephanie: Ihr habt daraus eine eigene „LibreSolar-Box“ entwickelt. Wie lange dauert der Bau einer solchen Box?***
 
-**Michelh**: Ja die Libre Solar Box vereint die einzelnen Komponten zu einem direkt nutzbaren Solargenerator, also eine große Powerbank an die PV-Module direkt angeschlossen werden können. Wenn man die Platinen selbst mit hunderten winzigen Bauteilen manuell bestückt, sitzt man mit Pinzette und ruhiger Hand schon einen ganzen Tag daran. Baut man aber aus fertig gekauften Einzelteilen – also Batterie, Laderegler, Kabeln, Steckern und Gehäuse – die gesamte Solarbox zusammen, geht es viel schneller.
+**Michel**: Die Libre Solar Box vereint die einzelnen Komponten zu einem direkt nutzbaren Solargenerator, also eine große Powerbank an die PV-Module direkt angeschlossen werden können. Wenn man die Platinen selbst mit hunderten winzigen Bauteilen manuell bestückt, sitzt man mit Pinzette und ruhiger Hand schon einen ganzen Tag daran. Baut man aber aus fertig gekauften Einzelteilen – also Batterie, Laderegler, Kabeln, Steckern und Gehäuse – die gesamte Solarbox zusammen, geht es viel schneller.
 
 In unseren Workshops haben wir das mit Einsteigern an einem Wochenende geschafft inklusive Wissensvermittlung. Wenn alle Teile bereitliegen und man etwas Vorwissen mitbringt, ist die Box in maximal zwei bis drei Stunden zusammengebaut.
 
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Technisch ist es möglich, dass sich unsere Solarboxen zu sogenannten Mesh-Grids zusammenschalten. So kann man Strom mit den Nachbarn teilen und das Netz wächst organisch mit dem Bedarf.“</p>
+  <p> Technisch ist es möglich, dass sich unsere Solarboxen zu sogenannten Mesh-Grids zusammenschalten. So kann man Strom mit den Nachbarn teilen und das Netz wächst organisch mit dem Bedarf.“</p>
 </div>
 
 ***Stephanie: Lohnt sich der Aufwand finanziell und energetisch?***
@@ -85,7 +85,7 @@ Eine bestehende Infrastruktur umzubauen, ist meiner Meinung nach oft schwerer, a
 
 In diesen Regionen ohne stabiles Stromnetz ist die Akzeptanz für autarke Solaranlagen relativ hoch. Die größte Hürde war dort nicht die Skepsis, sondern die Beschaffung der Bauteile. Autobatterien waren leichter verfügbar als Stecker  undSolarpanels im Kofferraum eines Reisebusses zu transportieren, war auch ein echtes Abenteuer. Wenn man aber richtig sucht, findet man aber auch Händler für Solartechnik, die alles notwendige vertreiben, was die Beschaffung erleichtert.
 
-> **„Bei uns kommt der Strom selbstverständlich aus der Steckdose. Deshalb ist für viele Menschen nicht notwendig zu wissen wie die Erzeugung funktioniert und es ist ihnen gar nicht bewusst, dass sie sich selbst darum kümmern können.“**
+> **Bei uns kommt der Strom selbstverständlich aus der Steckdose. Deshalb ist für viele Menschen nicht notwendig zu wissen wie die Erzeugung funktioniert und es ist ihnen gar nicht bewusst, dass sie sich selbst darum kümmern können.“**
 
 ***Stephanie: Und was hast du aus den Balkonsolar-Workshops mitgenommen, die ihr vor kurzem mit uns zusammen in Brandenburg durchgeführt habt?***
 
@@ -95,8 +95,7 @@ In diesen Regionen ohne stabiles Stromnetz ist die Akzeptanz für autarke Solara
 
 **Michel**: Ja, über die Online Plattform GitHub, können sich Menschen an uns wenden. Mein Kollege Martin ist da hauptsächlich der Ansprechpartner. Allerdings vertreiben wir keine Hardware sondern Dienstleistungen im Bereich Platinen- und Softwareentwicklung für z.B. anwendungsspezifische Anpassungen. 
 
-
-### Schritt 3: Schritt 3: Den eigenen Strom in den Alltag integrieren. Das funktioniert zum Beispiel mit der Libre Solar Box, einem faltbaren Solarpanel und einem sonnigen Balkon.
+### Schritt 3: Den eigenen Strom in den Alltag integrieren. Das funktioniert zum Beispiel mit der Libre Solar Box, einem faltbaren Solarpanel und einem sonnigen Balkon.
 
 ***Stephanie: Du nutzt die Box auch selbst zu Hause. Wie sieht dein Alltag damit aus?***
 
