@@ -1,5 +1,5 @@
 ---
-title: "Gemeinsam unter Strom: Wie offene Solartechnik die Energiewende in den Alltag integriert"
+title: "Wie offene Solartechnik die Energiewende in den Alltag integriert"
 date: 2026-11-23
 category: 
 - Solarenergie
