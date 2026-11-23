@@ -122,3 +122,134 @@ Abends hole ich sie rein und lade damit meinen Laptop, mein Handy oder Bluetooth
 ***Stephanie: Ein Blick in die Kristallkugel. Wie sieht unser Stromnetz in 30 Jahren aus?***
 
 **Michel**: Die Technologien für eine Energiewende hin zu Eneuerbaren sind alle da – es hängt jetzt davon ab, wie wir sie politisch und wirtschaftlich umsetzen. Ich glaube, wir werden viele kleine, flexibel vernetzte Stromnetze haben. Wichtig ist mir, dass wir das Thema mehr global denken. Der Klimawandel macht nicht an Ländergrenzen halt, und die Energiewende gelingt nur, wenn wir sie weltweit organisieren.
+
+
+<style>
+.solar-checklist {
+  width: 100%;
+  margin: 30px 0;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  background: #ffe91f;
+  overflow: hidden;
+}
+
+.solar-checklist h2 {
+  margin: 0 0 40px !important;
+  font-size: 2.6rem !important;
+  line-height: 1.15 !important;
+}
+
+.solar-checklist ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.solar-checklist li {
+  display: grid !important;
+  grid-template-columns: 330px minmax(0, 1fr);
+  gap: 55px;
+  margin: 0 0 28px !important;
+  padding: 0 !important;
+  line-height: 1.45;
+}
+
+.solar-checklist li::before,
+.solar-checklist li::after {
+  content: none !important;
+}
+
+.check-title {
+  position: relative;
+  padding-left: 50px;
+  font-weight: 700;
+}
+
+.check-title::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+}
+
+.check-text {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.solar-checklist a {
+  color: inherit;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .solar-checklist {
+    padding: 30px 25px;
+  }
+
+  .solar-checklist h2 {
+    font-size: 2rem !important;
+  }
+
+  .solar-checklist li {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .check-text {
+    padding-left: 50px;
+  }
+}
+</style>
+
+<div class="solar-checklist">
+
+  <h2>Checkliste: So startest du mit deiner eigenen Solarbox</h2>
+
+  <ul>
+    <li>
+      <div class="check-title">Grundlagen verstehen & Inspiration holen</div>
+      <div class="check-text">
+        Schau dir die offenen Baupläne und Lernmaterialien von
+        <a href="https://libre.solar/" target="_blank">LibreSolar</a>
+        auf <a href="https://github.com/LibreSolar" target="_blank">GitHub</a>
+        oder über die
+        <a href="https://learn.hoou.de/blocks/course_overview_page/course.php?id=845" target="_blank">Hamburg Open Online University (HOOU)</a>
+        an, um ein Gefühl für die einzelnen Komponenten und deren Zusammenspiel zu bekommen.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Anschluss suchen</div>
+      <div class="check-text">
+        Statt allein zu tüfteln, such dir einen Makerspace, ein FabLab oder ein Reparatur-Café in deiner Nähe. Dort findest du Werkzeug, Unterstützung und Gleichgesinnte. Eine passende Werkstatt findest du über die
+        <a href="https://offene-werkstaetten.org/de/werkstatt-suche" target="_blank">Werkstatt-Suche</a>.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Komponenten besorgen</div>
+      <div class="check-text">
+        Für ein kleines Einsteiger-System mit etwa 120 Watt benötigst du ein (faltbares) Solarpanel, einen Solarladeregler, eine Batterie oder eine erweiterbare Powerbank sowie passende Kabel, Stecker und ein Gehäuse.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Gemeinsam bauen & testen</div>
+      <div class="check-text">
+        Setz dein System idealerweise im Rahmen eines Workshops zusammen. Starte zunächst mit einem Insel-System für Kleingeräte wie Handy oder Laptop, bevor du dich an komplexere Einspeise-Lösungen mit Wechselrichtern wagst.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Verbrauch beobachten</div>
+      <div class="check-text">
+        Nutze den selbst erzeugten Strom im Alltag und beobachte, wie sich dein Bewusstsein für den Energieverbrauch im Haushalt verändert. So erlebst du direkt, wie viel Energie deine Solarbox liefert und wofür du sie einsetzen kannst.
+      </div>
+    </li>
+  </ul>
+
+</div>
+
