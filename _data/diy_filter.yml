@@ -51,7 +51,7 @@ place:
       summary: "Im Kleingarten oder an der Hütte gibt es oft keinen Netzanschluss – eine kleine Inselanlage mit Akku ist hier ideal."
 
 grid:
-  question: "Ich möchte …"
+  question: "Meine Anlage soll … betrieben werden"
   options:
     - id: "on"
       label: "On-the-Grid"
