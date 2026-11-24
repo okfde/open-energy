@@ -14,6 +14,8 @@
 #     bauen (nur Materialkosten). Ist ein Elektriker für den Anschluss nötig,
 #     sind pauschal 1.500 € eingerechnet.
 #   Module immer als Neuware, nie gebraucht.
+#   Kauf- und Selbstbau-Variante haben immer dieselbe Leistung (kWp/kW)
+#     und dieselbe Akkukapazität (kWh), damit sie vergleichbar bleiben.
 #   cost_diy_items: Stückliste zum Selbstbau-Preis, immer inkl.
 #     Leistungselektronik (Wechselrichter/Laderegler) und Absicherung.
 #   Jede Variante enthält einen Akku: Kapazität in kWh = Leistung der
@@ -29,9 +31,9 @@
   title: "Balkonsolar"
   excerpt: "Ein bis vier Solarmodule am Geländer, an der Wand oder im Garten, per Stecker ans Hausnetz. Der schnellste Weg zu eigenem Strom – auch zur Miete."
   cost_buy: "ab 900 €"
-  cost_buy_note: "800-W-Set ab 300 € + Steckerspeicher 1 kWh ab 400 € + Einspeisesteckdose vom Elektriker ab 200 €"
+  cost_buy_note: "800 Wp / 800 W mit 1-kWh-Akku: Set ab 300 € + Steckerspeicher ab 400 € + Einspeisesteckdose vom Elektriker ab 200 €"
   cost_diy: "ab 760 €"
-  cost_diy_note: "neue Module, Akku mit 1 kWh selbst gebaut, Halterung selbst gebaut – Stecker statt Elektriker"
+  cost_diy_note: "800 Wp / 800 W mit 1-kWh-Akku: neue Module, Akku und Halterung selbst gebaut – Stecker statt Elektriker"
   cost_diy_items:
     - ["2 Solarmodule, zusammen ca. 800 Wp, neu", "160 €"]
     - ["Mikrowechselrichter 800 VA, neu", "150 €"]
@@ -51,9 +53,9 @@
   title: "Dachsolar"
   excerpt: "Eine Photovoltaikanlage auf dem eigenen Dach deckt einen großen Teil des Jahresverbrauchs. Die Montage kannst du in Eigenleistung oder in einer Selbstbaugemeinschaft übernehmen."
   cost_buy: "ab 16.500 €"
-  cost_buy_note: "10 kWp mit 10-kWh-Speicher, schlüsselfertig vom Fachbetrieb, inkl. Gerüst"
+  cost_buy_note: "10 kWp mit 10-kWh-Akku, schlüsselfertig vom Fachbetrieb, inkl. Gerüst"
   cost_diy: "ab 8.200 €"
-  cost_diy_note: "10 kWp mit selbst gebautem 10-kWh-Akku, selbst montiert und verkabelt – Anschluss vom Elektriker"
+  cost_diy_note: "10 kWp mit 10-kWh-Akku, selbst gebaut, montiert und verkabelt – Anschluss vom Elektriker"
   cost_diy_items:
     - ["Solarmodule, 10 kWp neu", "1.400 €"]
     - ["Hybrid-Wechselrichter 10 kW (für Solar und Akku)", "1.600 €"]
@@ -73,9 +75,9 @@
   title: "Freiflächensolar"
   excerpt: "Module auf einem Gestell im Garten oder auf der Wiese: gut zugänglich, frei ausrichtbar und ideal für Selbstbau."
   cost_buy: "ab 19.000 €"
-  cost_buy_note: "11 kWp im Garten mit 11-kWh-Speicher, installiert vom Fachbetrieb"
+  cost_buy_note: "11 kWp mit 11-kWh-Akku im Garten, installiert vom Fachbetrieb"
   cost_diy: "ab 8.300 €"
-  cost_diy_note: "11 kWp mit neuen Modulen, selbst gebautem Gestell und 11-kWh-Akku – Anschluss vom Elektriker"
+  cost_diy_note: "11 kWp mit 11-kWh-Akku, neue Module, Gestell und Akku selbst gebaut – Anschluss vom Elektriker"
   cost_diy_items:
     - ["Solarmodule, 11 kWp neu", "1.500 €"]
     - ["Hybrid-Wechselrichter 10 kW (für Solar und Akku)", "1.600 €"]
@@ -96,9 +98,9 @@
   title: "Agri-PV"
   excerpt: "Solarmodule über oder zwischen Acker, Weide und Obstbau: Die Fläche bringt Ernte und Strom zugleich. Senkrechte Modulreihen lassen sich mit Hofmitteln aufbauen."
   cost_buy: "ab 57.500 €"
-  cost_buy_note: "senkrechte Anlage mit ca. 50 kWp und 50-kWh-Speicher, schlüsselfertig"
+  cost_buy_note: "50 kWp mit 50-kWh-Akku, senkrechte Reihen, schlüsselfertig"
   cost_diy: "ab 33.500 €"
-  cost_diy_note: "50 kWp mit selbst gebautem 50-kWh-Akku, Reihen selbst gesetzt und verkabelt – Anschluss vom Elektriker"
+  cost_diy_note: "50 kWp mit 50-kWh-Akku, Reihen und Akku selbst gebaut und verkabelt – Anschluss vom Elektriker"
   cost_diy_items:
     - ["Bifaziale Solarmodule, 50 kWp", "6.500 €"]
     - ["PV-Wechselrichter, zusammen 50 kW", "4.000 €"]
@@ -119,9 +121,9 @@
   title: "Kleinwind"
   excerpt: "Ein kleines Windrad liefert vor allem im Winter und nachts Strom – die ideale Ergänzung zu Solar. Offene Baupläne und Workshops machen den Selbstbau möglich."
   cost_buy: "ab 5.800 €"
-  cost_buy_note: "Anlage mit 1 kW, Mast, 1-kWh-Akku, Wechselrichter und Anschluss, installiert"
+  cost_buy_note: "1 kW mit 1-kWh-Akku: Windrad, Mast und Wechselrichter, installiert"
   cost_diy: "ab 2.800 €"
-  cost_diy_note: "Windrad nach offenem Bauplan selbst gebaut, Inselbetrieb mit 1-kWh-Akku – mit Netzanschluss und Elektriker ab 4.600 €"
+  cost_diy_note: "1 kW mit 1-kWh-Akku: Windrad nach offenem Bauplan selbst gebaut, Inselbetrieb – mit Netzanschluss und Elektriker ab 4.600 €"
   cost_diy_items:
     - ["Windrad nach Piggott-Bauplan: Magnete, Kupfer, Harz, Holz, Stahl", "900 €"]
     - ["Mast 10 m mit Abspannung und Fundament", "700 €"]
@@ -138,21 +140,21 @@
 
 - slug: speicher
   title: "Speicher mit dynamischem Stromtarif"
-  excerpt: "Ein Akku lädt, wenn Strom günstig ist, und liefert, wenn er teuer ist. Das spart Geld – auch ganz ohne eigene Solarmodule. Dafür braucht es einen Netzanschluss."
-  cost_buy: "ab 5.000 €"
-  cost_buy_note: "Heimspeicher mit 10 kWh inkl. Wechselrichter, installiert"
-  cost_diy: "ab 4.100 €"
-  cost_diy_note: "14 kWh aus LiFePO4-Einzelzellen selbst gebaut – Anschluss vom Elektriker"
+  excerpt: "Ein Akku an der Steckdose lädt, wenn Strom günstig ist, und speist bis 800 W ein, wenn er teuer ist. Das spart Geld – auch ganz ohne eigene Solarmodule. Dafür braucht es einen Netzanschluss."
+  cost_buy: "ab 1.000 €"
+  cost_buy_note: "5 kWh mit 800 W: fertiger Steckerspeicher, einstecken – kein Elektriker nötig"
+  cost_diy: "ab 850 €"
+  cost_diy_note: "5 kWh mit 800 W: Akku aus 8 LiFePO4-Zellen selbst gebaut – per Stecker, ohne Elektriker"
   cost_diy_items:
-    - ["16 LiFePO4-Zellen 280 Ah (ca. 14 kWh)", "850 €"]
-    - ["Batteriemanagementsystem (BMS)", "200 €"]
-    - ["Gehäuse, Busbars, Batteriekabel", "200 €"]
-    - ["Batterie-Wechselrichter / Ladegerät", "900 €"]
-    - ["Absicherung: DC-Sicherung mit Trenner, AC-Leitungsschutz", "300 €"]
-    - ["Energiemanagement: Mini-Rechner und Zähler-Lesekopf", "150 €"]
-    - ["Elektriker: Anschluss und Inbetriebnahme", "1.500 €"]
-  legal_fact: "Dynamischer Tarif für alle"
-  legal: "Jeder Stromanbieter muss ihn anbieten. Speicher werden getrennt im Marktstammdatenregister eingetragen."
+    - ["8 LiFePO4-Zellen 200 Ah, 24 V (ca. 5 kWh)", "320 €"]
+    - ["Batteriemanagementsystem (BMS) 8S", "60 €"]
+    - ["Gehäuse, Busbars, Batteriekabel", "60 €"]
+    - ["Mikrowechselrichter 800 VA (speist aus dem Akku ein)", "150 €"]
+    - ["Ladegerät 24 V (lädt den Akku aus dem Netz)", "100 €"]
+    - ["Absicherung: DC-Sicherung mit Trenner", "60 €"]
+    - ["Energiemanagement: Mini-Rechner, OpenDTU-OnBattery, Zähler-Lesekopf", "100 €"]
+  legal_fact: "bis 800 W per Stecker"
+  legal: "Rechtliche Grauzone, aber ohne Elektriker üblich. Jeder Stromanbieter muss einen dynamischen Tarif anbieten."
   match:
     "on": [miete-ohne, miete-balkon, miete-garten, eigenheim-garten, eigenheim-dach, eigenheim-balkon, eigenheim-ohne, bauernhof]
     # Nur On-the-Grid: Ein dynamischer Tarif setzt die Verbindung zum Stromnetz voraus.

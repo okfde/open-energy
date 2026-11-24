@@ -30,7 +30,7 @@
   description: "Kleinwindanlagen brauchen spezielle Laderegler, die bei vollem Akku überschüssigen Strom abfangen, um die Anlage zu schützen."
   image: "/assets/images/photos/diy/laderegler.png"
   werkstatt: true
-  categories: [balkonsolar, speicher]
+  categories: [kleinwind]
   csv_id:
 
 - title: "Akkus selbst bauen, mit offenem Batteriemanagement"

@@ -1,21 +1,21 @@
 ---
 title: "Speicher mit dynamischem Stromtarif"
 category: speicher
-description: "Stromkosten senken mit Akku und dynamischem Stromtarif – auch ohne eigene Solaranlage. DIY-Akkus und Energiemanagement."
-intro: "Mit einem dynamischen Stromtarif ändert sich der Strompreis stündlich – je nachdem, wie viel Wind- und Solarstrom gerade im Netz ist. Ein Speicher lädt, wenn Strom günstig ist, und versorgt dich, wenn er teuer wird. So sparst du Geld und entlastest das Netz, auch ganz ohne Balkon oder Dach."
-schema_note: "Der dynamische Tarif funktioniert nur mit Netzanschluss: Eine Software steuert den Akku nach dem stündlichen Strompreis."
+description: "Stromkosten senken mit Steckerspeicher und dynamischem Stromtarif – bis 800 W per Steckdose, auch ohne eigene Solaranlage. DIY-Akku und Energiemanagement."
+intro: "Mit einem dynamischen Stromtarif ändert sich der Strompreis stündlich – je nachdem, wie viel Wind- und Solarstrom gerade im Netz ist. Ein Akku an der Steckdose lädt, wenn Strom günstig ist, und speist bis 800 Watt ins Hausnetz, wenn er teuer wird. So sparst du Geld und entlastest das Netz, auch ganz ohne Balkon oder Dach."
+schema_note: "Der Speicher hängt wie ein Balkonkraftwerk an der Steckdose und speist höchstens 800 W ein. Eine Software steuert ihn nach dem stündlichen Strompreis und dem aktuellen Verbrauch im Haushalt."
 schema:
   - name: "Stromnetz"
-    text: "mit dynamischem Tarif – oder eigene Solar- und Windanlage"
+    text: "mit dynamischem Tarif"
     flow: "AC"
   - name: "Smart Meter"
     text: "intelligentes Messsystem, nötig für den dynamischen Tarif"
     flow: "Messwerte"
   - name: "Energiemanagement"
-    text: "z. B. evcc: lädt bei niedrigen Preisen, entlädt bei hohen"
+    text: "z. B. OpenDTU-OnBattery oder evcc: lädt bei niedrigen Preisen, speist bei hohen ein"
     flow: "steuert"
-  - name: "Lade- und Wechselrichter"
-    text: "lädt den Akku und speist ins Hausnetz zurück"
+  - name: "Ladegerät & Mikrowechselrichter"
+    text: "lädt aus der Steckdose, speist max. 800 W zurück"
     flow: "DC"
   - name: "Akku mit BMS"
     text: "LiFePO4-Zellen, Batteriemanagement schützt jede Zelle"
@@ -23,17 +23,20 @@ schema:
 
 ## Worum geht es?
 
-Strom ist an der Börse nachts und an sonnigen oder windigen Tagen oft günstig, am frühen Abend dagegen teuer. Mit einem dynamischen Tarif zahlst du diesen stündlichen Preis direkt. Ein Akku verschiebt deinen Verbrauch in die günstigen Stunden. Ohne Speicher kannst du schon sparen, indem du Waschmaschine, Spülmaschine oder Ladestation zeitlich steuerst.
+Strom ist an der Börse nachts und an sonnigen oder windigen Tagen oft günstig, am frühen Abend dagegen teuer. Mit einem dynamischen Tarif zahlst du diesen stündlichen Preis direkt. Ein Steckerspeicher verschiebt deinen Verbrauch in die günstigen Stunden: Er lädt aus der Steckdose, wenn der Preis niedrig ist, und deckt mit bis zu 800 Watt deine Grundlast, wenn er hoch ist. Ohne Speicher kannst du schon sparen, indem du Waschmaschine, Spülmaschine oder Ladestation zeitlich steuerst.
 
-Den Akku selbst zu bauen ist eines der lohnendsten DIY-Projekte: LiFePO4-Einzelzellen, ein Batteriemanagementsystem (BMS), Sicherungen und ein Gehäuse kosten nur einen Bruchteil eines fertigen Heimspeichers. Das verlangt aber Sorgfalt: Große Akkus speichern viel Energie, und Fehler beim Bau können zu Bränden führen. Lies die Sicherheitshinweise in den Ressourcen unten, bevor du startest.
+Mit 800 Watt Einspeisung ist ein Akku mit 5 Kilowattstunden in gut sechs Stunden leer – genug, um die teuren Abend- und Nachtstunden zu überbrücken. Größere Akkus bringen bei dieser Grenze wenig zusätzlichen Nutzen.
+
+Den Akku selbst zu bauen ist ein lohnendes DIY-Projekt: LiFePO4-Einzelzellen, ein Batteriemanagementsystem (BMS), ein Ladegerät und ein Mikrowechselrichter kosten zusammen etwas weniger als ein fertiger Steckerspeicher gleicher Größe. Das verlangt aber Sorgfalt: Akkus speichern viel Energie, und Fehler beim Bau können zu Bränden führen. Lies die Sicherheitshinweise in den Ressourcen unten, bevor du startest.
 
 **Nur mit Netzanschluss:** Ein dynamischer Tarif setzt die Verbindung zum Stromnetz voraus. Für eine Inselanlage ohne Netz brauchst du zwar auch einen Akku – geladen wird er dann aber von eigenen Solarmodulen oder einem Windrad (siehe [Balkonsolar](../balkonsolar/), [Freiflächensolar](../freiflaechensolar/) und [Kleinwind](../kleinwind/)).
 
 ## Rechtliche Rahmenbedingungen
 
+- **Grauzone Steckerspeicher:** Für Akkus, die per Stecker aus dem Netz laden und bis 800 W zurückspeisen, gibt es noch keine eigene Produktnorm. Die Norm für Steckersolargeräte (DIN VDE V 0126-95) gilt laut DKE nur ohne Speicher. Steckerspeicher werden trotzdem verbreitet ohne Elektriker betrieben – rechtlich abschließend geklärt ist das aber nicht.
+- **800 W pro Anschluss:** Die Grenze gilt für alles, was an deinem Anschluss per Stecker einspeist. Hast du zusätzlich ein Balkonkraftwerk, dürfen beide zusammen nicht mehr als 800 W einspeisen.
+- **Zertifizierter Wechselrichter:** Nutze nur einen Mikrowechselrichter mit Netz- und Anlagenschutz nach VDE-AR-N 4105. Er schaltet bei einem Netzausfall sofort ab.
+- **Marktstammdatenregister:** Den Speicher trägst du binnen eines Monats nach Inbetriebnahme ein – getrennt von einem Balkonkraftwerk.
 - **Dynamischer Tarif:** Seit 2025 muss jeder Stromanbieter einen dynamischen Tarif anbieten.
-- **Smart Meter:** Du hast das Recht, ein intelligentes Messsystem beim Messstellenbetreiber zu verlangen. Die jährlichen Kosten sind gesetzlich gedeckelt.
-- **Marktstammdatenregister:** Netzgekoppelte Speicher werden binnen eines Monats eingetragen – getrennt von einer Solaranlage, auch beim Balkonkraftwerk.
-- **Große Speicher (§ 14a EnWG):** Geräte mit mehr als 4,2 kW Bezugsleistung sind steuerbare Verbrauchseinrichtungen und werden beim Netzbetreiber angemeldet. Dafür sinkt das Netzentgelt.
-- **Fest installierte Speicher:** Den Anschluss ans Hausnetz übernimmt ein Elektrofachbetrieb.
-- **Selbstbau:** Einen Akku für dich selbst zu bauen ist erlaubt. Für den Anschluss ans Hausnetz gelten dieselben Regeln wie für fertige Speicher.
+- **Smart Meter:** Für den dynamischen Tarif brauchst du ein intelligentes Messsystem. Du hast das Recht, es beim Messstellenbetreiber zu verlangen; die Kosten sind gesetzlich gedeckelt und nicht in den Preisen oben enthalten.
+- **Größere Speicher:** Wer mehr als 800 W einspeisen will, braucht einen fest installierten Speicher, den ein Elektrofachbetrieb anschließt.
