@@ -1,5 +1,5 @@
 ---
-title: "Wie offene Solartechnik die Energiewende in den Alltag integriert"
+title: "Sonne ernten auf dem Balkon: Wie eine Open-Source-Solarbox zum Möbelstück wird"
 date: 2026-11-23
 category: 
 - Solarenergie
@@ -110,7 +110,7 @@ Abends hole ich sie rein und lade damit meinen Laptop, mein Handy oder Bluetooth
 
 <div class="pull-quote">
   <img src="{{ '/assets/images/icons/icon-quote.svg' | relative_url }}" alt="">
-  <p>„Ich glaube, wir werden viele kleine, flexibel vernetzte Stromnetze haben. Wichtig ist mir, dass wir das Thema mehr global denken. Der Klimawandel macht nicht an Ländergrenzen halt, und die Energiewende gelingt nur, wenn wir sie weltweit organisieren.“</p>
+  <p>Ich glaube, wir werden viele kleine, flexibel vernetzte Stromnetze haben. Wichtig ist mir, dass wir das Thema mehr global denken. Der Klimawandel macht nicht an Ländergrenzen halt, und die Energiewende gelingt nur, wenn wir sie weltweit organisieren.“</p>
 </div>
 
 ***Stephanie: Hat das dein Verhältnis zu Strom verändert?***
