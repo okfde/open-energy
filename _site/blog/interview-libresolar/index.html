@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fae62a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inclusive+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Open Energy" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Wie offene Solartechnik die Energiewende in den Alltag integriert | Open Energy</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Wie offene Solartechnik die Energiewende in den Alltag integriert" />
+<meta property="og:locale" content="de" />
+<meta name="description" content="Wie funktioniert eigentlich unser Stromnetz – und was passiert, wenn man seinen eigenen Strom auf dem Balkon „erntet“? Elektroingenieur Michel Langhammer forscht an der Helmut-Schmidt-Universität in Hamburg zu offener Produktion und entwickelt beim Open-Source-Projekt LibreSolar frei zugängliche Solartechnik. Im Interview spricht er über grundlegendes Stromverständnis, welche Erkenntnisse er aus seinen Workshops in Senegal und Ghana gewonnen hat und warum selbsterzeugte Energie achtsamer macht." />
+<meta property="og:description" content="Wie funktioniert eigentlich unser Stromnetz – und was passiert, wenn man seinen eigenen Strom auf dem Balkon „erntet“? Elektroingenieur Michel Langhammer forscht an der Helmut-Schmidt-Universität in Hamburg zu offener Produktion und entwickelt beim Open-Source-Projekt LibreSolar frei zugängliche Solartechnik. Im Interview spricht er über grundlegendes Stromverständnis, welche Erkenntnisse er aus seinen Workshops in Senegal und Ghana gewonnen hat und warum selbsterzeugte Energie achtsamer macht." />
+<link rel="canonical" href="http://localhost:4000/blog/interview-libresolar/" />
+<meta property="og:url" content="http://localhost:4000/blog/interview-libresolar/" />
+<meta property="og:site_name" content="Open Energy" />
+<meta property="og:image" content="http://localhost:4000/assets/images/photos/blog/libresolar-1.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-11-23T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/photos/blog/libresolar-1.jpg" />
+<meta property="twitter:title" content="Wie offene Solartechnik die Energiewende in den Alltag integriert" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-23T00:00:00+01:00","datePublished":"2026-11-23T00:00:00+01:00","description":"Wie funktioniert eigentlich unser Stromnetz – und was passiert, wenn man seinen eigenen Strom auf dem Balkon „erntet“? Elektroingenieur Michel Langhammer forscht an der Helmut-Schmidt-Universität in Hamburg zu offener Produktion und entwickelt beim Open-Source-Projekt LibreSolar frei zugängliche Solartechnik. Im Interview spricht er über grundlegendes Stromverständnis, welche Erkenntnisse er aus seinen Workshops in Senegal und Ghana gewonnen hat und warum selbsterzeugte Energie achtsamer macht.","headline":"Wie offene Solartechnik die Energiewende in den Alltag integriert","image":"http://localhost:4000/assets/images/photos/blog/libresolar-1.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/interview-libresolar/"},"url":"http://localhost:4000/blog/interview-libresolar/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Open Energy",
+  "url": "http://localhost:4000/",
+  "logo": "http://localhost:4000/assets/images/logos/oe-logo-dark.svg"
+}
+</script>
+
+</head>
+<body class="pattern-main">
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <div class="container">
+    <header class="site-header">
+  <div class="nav-bar">
+    <a href="/" class="nav-bar__logo" aria-label="Open Energy — Startseite">
+      <img src="/assets/images/logos/oe-logo-dark.svg" alt="Open Energy">
+    </a>
+
+    <button type="button" class="nav-bar__toggle" data-nav-toggle aria-controls="mobile-nav" aria-expanded="false">
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Menü öffnen</span>
+    </button>
+
+    <nav class="nav-list" aria-label="Hauptnavigation">
+      
+        <div class="nav-list__item">
+          <a href="/" class="nav-list__link">Start</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/do-it-yourself/" class="nav-list__link">Selbermachen</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/solarpotenzial/" class="nav-list__link">Datenanalyse</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/blog/" class="nav-list__link">Blog</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/termine/" class="nav-list__link">Termine</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/about/" class="nav-list__link">About</a>
+        </div>
+        
+      
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav__inner">
+    <nav class="mobile-nav__list" aria-label="Mobile Hauptnavigation">
+      
+        <a href="/" class="mobile-nav__link">Start</a>
+      
+        <a href="/do-it-yourself/" class="mobile-nav__link">Selbermachen</a>
+      
+        <a href="/solarpotenzial/" class="mobile-nav__link">Datenanalyse</a>
+      
+        <a href="/blog/" class="mobile-nav__link">Blog</a>
+      
+        <a href="/termine/" class="mobile-nav__link">Termine</a>
+      
+        <a href="/about/" class="mobile-nav__link">About</a>
+      
+    </nav>
+  </div>
+</div>
+
+    <main id="main">
+      
+
+
+<section class="section--sand article-wrap">
+  <article class="article">
+    <header class="article-header">
+      <div class="article-header__meta">
+        
+
+
+
+  
+  
+    
+
+<span class="label label--sunshine">Solarenergie</span>
+
+  
+
+
+        <span class="ui-upper-small">23 / November / 2026</span>
+      </div>
+      <h1>Wie offene Solartechnik die Energiewende in den Alltag integriert</h1>
+      <p class="intro-text article-header__excerpt">Wie funktioniert eigentlich unser Stromnetz – und was passiert, wenn man seinen eigenen Strom auf dem Balkon „erntet“? Elektroingenieur Michel Langhammer forscht an der Helmut-Schmidt-Universität in Hamburg zu offener Produktion und entwickelt beim Open-Source-Projekt LibreSolar frei zugängliche Solartechnik. Im Interview spricht er über grundlegendes Stromverständnis, welche Erkenntnisse er aus seinen Workshops in Senegal und Ghana gewonnen hat und warum selbsterzeugte Energie achtsamer macht.</p>
+    </header>
+
+    <div class="article-body body-text">
+      <figure class="article-figure">
+  <img src="/assets/images/photos/blog/libresolar-1.jpg" alt="" />
+  <figcaption> Michel in Action: Beim Libre Solar Workshop in Brandenburg erklärt er wie sich das Stromnetz die letzten Jahre verändert hat. </figcaption>
+</figure>
+
+<h3 id="schritt-1-aufbau-von-grundlagenwissen-über-stromerzeugung-und-das-stromnetz-um-das-gesamtsystem-zu-verstehen">Schritt 1: Aufbau von Grundlagenwissen über Stromerzeugung und das Stromnetz, um das Gesamtsystem zu verstehen</h3>
+
+<p><strong><em>Stephanie: Hallo Michel. Du bist studierter Elektroingenieur. Was fasziniert dich an Strom und Schaltkreisen?</em></strong></p>
+
+<p><strong>Michel</strong>: Als ich das Studium anfing, hatte ich ehrlicherweise noch keine Ahnung von Strom und Spannung. Ich habe mich dazu entschieden, weil ich gut in Mathe war. Die eigentliche Faszination kam erst im Studium. Zu lernen, was man mit elektrischer Energie alles umsetzen kann – von der Ansteuerung winziger LED-Lichter bis hin zu riesigen Elektromotoren. Mein Fokus lag dabei in der Automatisierungstechnik.</p>
+
+<div class="pull-quote">
+  <img src="/assets/images/icons/icon-quote.svg" alt="" />
+  <p> Überall, wo etwas fließt, entsteht ein Strom. In einem Stromnetz verbinden wir verschiedene Quellen – unsere Kraftwerke – über Kabel und Verteilnetze mit den Verbrauchern, also unserer Steckdose zu Hause.“</p>
+</div>
+
+<p><strong><em>Stephanie: Aktuell promovierst du in Hamburg. Woran forschst du genau und welche Rolle spielt Energie dabei?</em></strong></p>
+
+<p><strong>Michel</strong>: Ich forsche zu „offener Produktion“ –  also wie können frei zugängliche Bauplänen, so genannte Open-Source Hardware und kleine, offene Werkstätten wie Makerspaces oder FabLabs unsere Art der Produktion verändern. Mich interessiert, was passiert, wenn wir z.B. eine große geschlossene Fabrik in viele  kleine, lokale und offene Werkstätten aufteilen.</p>
+
+<p>Sparen wir durch die kurzen Transportwege wirklich Energie, oder verbrauchen viele kleine Maschinen am Ende mehr Strom als eine große Fabrik?</p>
+
+<p><strong><em>Stephanie: Und hast du darauf schon eine Antwort?</em></strong></p>
+
+<p><strong>Michel</strong>: Noch nicht. Wir statten gerade erst verschiedene Makerspaces mit Messgeräten aus, um überhaupt zu sehen, welche Maschine wie viel Strom verbrauchen. Das sensibilisiert die Betreiber schon enorm. Für den großen Vergleich fehlen uns aber die Daten der Großindustrie – Privatunternehmen geben ihre Verbrauchszahlen natürlich ungern heraus.</p>
+
+<p><strong><em>Stephanie: Einige unserer Leserinnen und Leser haben bisher vielleicht wenig Berührungspunkte mit Elektrotechnik. Wie erklärst du einem Laien die Grundlagen unseres Stromnetzes?</em></strong></p>
+
+<p><strong>Michel</strong>: Es kann der Vergleich mit Wasser helfen. Überall, wo etwas fließt, entsteht ein Strom. In einem Stromnetz verbinden wir verschiedene Quellen – unsere Kraftwerke – über Kabel und Verteilnetze mit den Verbrauchern, also unserer Steckdose zu Hause. Dabei sucht sich der Strom immer den Weg des geringsten Widerstands. Um das im Detail zu verstehen, braucht es ein paar physikalische Grundlagen zu Spannung, Widerstand, elektrische Ladung und auch Bauteile wie Kondensatoren oder Spulen.</p>
+
+<p><strong><em>Stephanie: Wie hat sich unser Stromnetz in den letzten 10 bis 20 Jahren verändert?</em></strong></p>
+
+<p><strong>Michel</strong>: Früher hatten wir nur größere, starre Kratwerke wie Kohle- und Atomkraftwerke, die sich allerdings nur träge steuern lassen. Durch den Ausbau von Wind- und Solarenergie ist das Netz viel intelligenter und flexibler geworden. Da Sonne und Wind nicht immer gleichmäßig liefern, müssen wir auch den Verbrauch anpassen. Sei es durch die Integration von Speichern oder der bedarfsgerechten Ansteuerung von Verbrauchern. In der Industrie gibt den Begriff der „Energieflexibilisierung“, sprich Prozesse laufen dann, wenn gerade viel grüner Strom im Netz ist.</p>
+
+<h3 id="schritt-2-den-schneeballeffekt-starten--einen-weg-finden-das-gesammelte-wissen-über-strom-produktiv-an-andere-weiterzugeben-eine-möglichkeit-sind-workshops">Schritt 2: Den Schneeballeffekt starten – Einen Weg finden, das gesammelte Wissen über Strom produktiv an andere weiterzugeben. Eine Möglichkeit sind Workshops.</h3>
+
+<p><strong><em>Stephanie: Du bist Teil des Projekts LibreSolar. Was genau macht ihr dort und für wen ist das gedacht</em></strong></p>
+
+<p><strong>Michel</strong>: LibreSolar wurde von Martin Jäger gegründet und entwickelt Open-Source Hardware speziell für kleine erneuerbare Energiesysteme, vor allem Solarladeregler und Batteriemanagementsysteme inklusive der nötigen Software. Alle Baupläne und Codes liegen frei zugänglich und offen lizenziert auf der Plattform GitHub. Das richtet sich an Tüftler, die eigene Systeme bauen wollen, an Unternehmen, die auf unserer Basis Produkte entwickeln möchten, und an alle, die das Ganze als Lehr- und Lernmaterial nutzen wollen.</p>
+
+<p><strong><em>Stephanie: Ihr habt daraus eine eigene „LibreSolar-Box“ entwickelt. Wie lange dauert der Bau einer solchen Box?</em></strong></p>
+
+<p><strong>Michel</strong>: Die Libre Solar Box vereint die einzelnen Komponten zu einem direkt nutzbaren Solargenerator, also eine große Powerbank an die PV-Module direkt angeschlossen werden können. Wenn man die Platinen selbst mit hunderten winzigen Bauteilen manuell bestückt, sitzt man mit Pinzette und ruhiger Hand schon einen ganzen Tag daran. Baut man aber aus fertig gekauften Einzelteilen – also Batterie, Laderegler, Kabeln, Steckern und Gehäuse – die gesamte Solarbox zusammen, geht es viel schneller.</p>
+
+<p>In unseren Workshops haben wir das mit Einsteigern an einem Wochenende geschafft inklusive Wissensvermittlung. Wenn alle Teile bereitliegen und man etwas Vorwissen mitbringt, ist die Box in maximal zwei bis drei Stunden zusammengebaut.</p>
+
+<div class="pull-quote">
+  <img src="/assets/images/icons/icon-quote.svg" alt="" />
+  <p> Technisch ist es möglich, dass sich unsere Solarboxen zu sogenannten Mesh-Grids zusammenschalten. So kann man Strom mit den Nachbarn teilen und das Netz wächst organisch mit dem Bedarf.“</p>
+</div>
+
+<p><strong><em>Stephanie: Lohnt sich der Aufwand finanziell und energetisch?</em></strong></p>
+
+<p><strong>Michel</strong>:Eine genaue Wirtschaftlichkeitsrechnung  habe ich nicht gemacht. Für mich zählt nicht nur die reine erzeugte Strommenge in Relation zu den Kosten am Ende. Sondern durch das Selberbauen lernt man unglaublich viel über Technik und Energie. Diesen Wissensgewinn sollte man unbedingt mit einrechnen.</p>
+
+<figure class="article-figure">
+  <img src="/assets/images/photos/blog/libresolar-2.jpg" alt="" />
+  <figcaption>
+    Die Libre Solar Box im alltäglichen Einsatz: Zusammenklappbare Solarpanels „ernten“ die Sonne auf dem Balkon und speichern sie in der Box. Quelle: Michel Langhammer
+  </figcaption>
+</figure>
+
+<p><strong><em>Stephanie: Dezentrale Stromerzeugung kann schnell nach „Prepper-Szene“ klingen, wo jeder im Keller nur sein eigenes Süppchen kocht. Wie bleibt das Ganze gemeinschaftlich?</em></strong></p>
+
+<p><strong>Michel</strong>: Indem man eben nicht nur allein im Keller sitzt. Ich empfehle jedem, in einen Makerspace oder ein FabLab zu gehen. Dort trifft man andere Menschen, baut gemeinsam und tauscht sich aus.</p>
+
+<p>Offene Technologien alleine reichen nicht aus, sondern es braucht auch physische Orte und Initiativen, an denen Menschen zusammenkommen. Technisch ist es möglich, dass sich unsere Solarboxen zu sogenannten Mesh-Grids zusammenschalten. So kann man Strom mit den Nachbarn teilen und das Netz wächst organisch mit dem Bedarf.</p>
+
+<p><strong><em>Stephanie: Du hast solche Workshops mit Libre Solar auch schon in Senegal und Ghana gegeben. Was hast du dort erlebt?</em></strong></p>
+
+<p><strong>Michel</strong>: Der größte Unterschied war die bestehende Infrastruktur. Bei uns kommt der Strom selbstverständlich aus der Steckdose. Deshalb ist für viele Menschen nicht notwendig zu wissen wie die Erzeugung funktioniert und es ist ihnen gar nicht bewusst, dass sie sich selbst darum kümmern können.
+Eine bestehende Infrastruktur umzubauen, ist meiner Meinung nach oft schwerer, als etwas komplett neu aufzubauen. In vielen Ländern im globalen Süden ist es regulatorisch beispielsweise einfacher, eine Solaranlage zu installieren. Solche Anlagen werden dann meistens  autark betrieben, weil es bis in bestimmte Dörfer oder Städte gar kein Stromnetz gibt.</p>
+
+<p>In diesen Regionen ohne stabiles Stromnetz ist die Akzeptanz für autarke Solaranlagen relativ hoch. Die größte Hürde war dort nicht die Skepsis, sondern die Beschaffung der Bauteile. Autobatterien waren leichter verfügbar als Stecker  undSolarpanels im Kofferraum eines Reisebusses zu transportieren, war auch ein echtes Abenteuer. Wenn man aber richtig sucht, findet man aber auch Händler für Solartechnik, die alles notwendige vertreiben, was die Beschaffung erleichtert.</p>
+
+<blockquote>
+  <p><strong>Bei uns kommt der Strom selbstverständlich aus der Steckdose. Deshalb ist für viele Menschen nicht notwendig zu wissen wie die Erzeugung funktioniert und es ist ihnen gar nicht bewusst, dass sie sich selbst darum kümmern können.“</strong></p>
+</blockquote>
+
+<p><strong><em>Stephanie: Und was hast du aus den Balkonsolar-Workshops mitgenommen, die ihr vor kurzem mit uns zusammen in Brandenburg durchgeführt habt?</em></strong></p>
+
+<p><strong>Michel</strong>: Das Interesse ist groß, aber viele Menschen stoßen irgendwann an eine Grenze. Sie fragen sich: „Kann ich die Verantwortung für die Sicherheit und die Montage wirklich allein übernehmen?“ Selbst wenn alle Infos im Netz stehen, reicht das nicht für jeden. Es braucht persönliche Anlaufstellen und Communities, die Sicherheit geben und Fragen beantworten.</p>
+
+<p><strong><em>Stephanie: Können sich Menschen direkt an euch von LibreSolar wenden, wenn sie beim Aufbau nicht mehr weiterkommen?</em></strong></p>
+
+<p><strong>Michel</strong>: Ja, über die Online Plattform GitHub, können sich Menschen an uns wenden. Mein Kollege Martin ist da hauptsächlich der Ansprechpartner. Allerdings vertreiben wir keine Hardware sondern Dienstleistungen im Bereich Platinen- und Softwareentwicklung für z.B. anwendungsspezifische Anpassungen.</p>
+
+<h3 id="schritt-3-den-eigenen-strom-in-den-alltag-integrieren-das-funktioniert-zum-beispiel-mit-der-libre-solar-box-einem-faltbaren-solarpanel-und-einem-sonnigen-balkon">Schritt 3: Den eigenen Strom in den Alltag integrieren. Das funktioniert zum Beispiel mit der Libre Solar Box, einem faltbaren Solarpanel und einem sonnigen Balkon.</h3>
+
+<p><strong><em>Stephanie: Du nutzt die Box auch selbst zu Hause. Wie sieht dein Alltag damit aus?</em></strong></p>
+
+<p><strong>Michel</strong>: Meine Solarbox hat 120 Watt Leistung und 360Wh Kapazität und steht mit faltbaren Solarpanels auf meinem Balkon. Wenn die Sonne scheint, stelle ich sie raus und „ernte“ Strom. Über eine App auf meinem Smartphone sehe ich den Ladestand.</p>
+
+<p>Abends hole ich sie rein und lade damit meinen Laptop, mein Handy oder Bluetooth-Lautsprecher. Inzwischen ist sie wie ein kleines Möbelstück in meiner Wohnung. Als Nächstes möchte ich mir einen Mikro-Wechselrichter holen, um den Strom direkt in mein Hausnetz einzuspeisen.</p>
+
+<figure class="article-figure">
+  <img src="/assets/images/photos/blog/libresolar-3.jpg" alt="" />
+  <figcaption>Die sonnenbeladene Libre Solar Box wird zum Möbelstück und lädt Laptop, Smartphone &amp; Co. Quelle: Michel Langhammer </figcaption>
+</figure>
+
+<div class="pull-quote">
+  <img src="/assets/images/icons/icon-quote.svg" alt="" />
+  <p>„Ich glaube, wir werden viele kleine, flexibel vernetzte Stromnetze haben. Wichtig ist mir, dass wir das Thema mehr global denken. Der Klimawandel macht nicht an Ländergrenzen halt, und die Energiewende gelingt nur, wenn wir sie weltweit organisieren.“</p>
+</div>
+
+<p><strong><em>Stephanie: Hat das dein Verhältnis zu Strom verändert?</em></strong></p>
+
+<p><strong>Michel</strong>: Definitiv. Ich bin viel achtsamer geworden. Beim Arbeiten schalte ich meinen zweiten Bildschirm aus, wenn ich ihn nicht brauche, und versuche, so viele Geräte wie möglich über die Box statt über die normale Steckdose zu laden. Ich achte auch mehr darauf was die Geräte an Leistung benötigen.</p>
+
+<p><strong><em>Stephanie: Ein Blick in die Kristallkugel. Wie sieht unser Stromnetz in 30 Jahren aus?</em></strong></p>
+
+<p><strong>Michel</strong>: Die Technologien für eine Energiewende hin zu Eneuerbaren sind alle da – es hängt jetzt davon ab, wie wir sie politisch und wirtschaftlich umsetzen. Ich glaube, wir werden viele kleine, flexibel vernetzte Stromnetze haben. Wichtig ist mir, dass wir das Thema mehr global denken. Der Klimawandel macht nicht an Ländergrenzen halt, und die Energiewende gelingt nur, wenn wir sie weltweit organisieren.</p>
+
+<style>
+.solar-checklist {
+  width: 100%;
+  margin: 30px 0;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  background: #ffe91f;
+  overflow: hidden;
+}
+
+.solar-checklist h2 {
+  margin: 0 0 40px !important;
+  font-size: 2.6rem !important;
+  line-height: 1.15 !important;
+}
+
+.solar-checklist ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.solar-checklist li {
+  display: grid !important;
+  grid-template-columns: 330px minmax(0, 1fr);
+  gap: 55px;
+  margin: 0 0 28px !important;
+  padding: 0 !important;
+  line-height: 1.45;
+}
+
+.solar-checklist li::before,
+.solar-checklist li::after {
+  content: none !important;
+}
+
+.check-title {
+  position: relative;
+  padding-left: 50px;
+  font-weight: 700;
+}
+
+.check-title::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+}
+
+.check-text {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.solar-checklist a {
+  color: inherit;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .solar-checklist {
+    padding: 30px 25px;
+  }
+
+  .solar-checklist h2 {
+    font-size: 2rem !important;
+  }
+
+  .solar-checklist li {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .check-text {
+    padding-left: 50px;
+  }
+}
+</style>
+
+<div class="solar-checklist">
+
+  <h2>Checkliste: So startest du mit deiner eigenen Solarbox</h2>
+
+  <ul>
+    <li>
+      <div class="check-title">Grundlagen verstehen &amp; Inspiration holen</div>
+      <div class="check-text">
+        Schau dir die offenen Baupläne und Lernmaterialien von
+        <a href="https://libre.solar/" target="_blank">LibreSolar</a>
+        auf <a href="https://github.com/LibreSolar" target="_blank">GitHub</a>
+        oder über die
+        <a href="https://learn.hoou.de/blocks/course_overview_page/course.php?id=845" target="_blank">Hamburg Open Online University (HOOU)</a>
+        an, um ein Gefühl für die einzelnen Komponenten und deren Zusammenspiel zu bekommen.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Anschluss suchen</div>
+      <div class="check-text">
+        Statt allein zu tüfteln, such dir einen Makerspace, ein FabLab oder ein Reparatur-Café in deiner Nähe. Dort findest du Werkzeug, Unterstützung und Gleichgesinnte. Eine passende Werkstatt findest du über die
+        <a href="https://offene-werkstaetten.org/de/werkstatt-suche" target="_blank">Werkstatt-Suche</a>.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Komponenten besorgen</div>
+      <div class="check-text">
+        Für ein kleines Einsteiger-System mit etwa 120 Watt benötigst du ein (faltbares) Solarpanel, einen Solarladeregler, eine Batterie oder eine erweiterbare Powerbank sowie passende Kabel, Stecker und ein Gehäuse.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Gemeinsam bauen &amp; testen</div>
+      <div class="check-text">
+        Setz dein System idealerweise im Rahmen eines Workshops zusammen. Starte zunächst mit einem Insel-System für Kleingeräte wie Handy oder Laptop, bevor du dich an komplexere Einspeise-Lösungen mit Wechselrichtern wagst.
+      </div>
+    </li>
+
+    <li>
+      <div class="check-title">Verbrauch beobachten</div>
+      <div class="check-text">
+        Nutze den selbst erzeugten Strom im Alltag und beobachte, wie sich dein Bewusstsein für den Energieverbrauch im Haushalt verändert. So erlebst du direkt, wie viel Energie deine Solarbox liefert und wofür du sie einsetzen kannst.
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+
+    </div>
+  </article>
+</section>
+
+
+
+  <section class="section section--dark related-posts">
+    <h2>Weitere Beiträge</h2>
+    <div class="related-posts__list">
+      
+        <a href="/blog/interview-kerstinlopau/" class="related-post">
+          <div class="related-post__image" aria-hidden="true">
+            <img src="/assets/images/photos/blog/kerstin-1.jpg" alt="" loading="lazy">
+          </div>
+          <div class="related-post__body">
+            <div class="related-post__meta">
+              
+
+
+
+  
+  
+    
+
+<span class="label label--sunshine">Solarenergie</span>
+
+  
+
+
+              <span class="ui-upper-small">03 / November / 2026</span>
+            </div>
+            <h3>Vom Protest zum Kollektiv: raus aus der technischen Nische</h3>
+            <p class="body-text--small">Kerstin Lopau ist Umweltingenieurin und Mitgründerin des Solarkollektivs SoLocal Energy. Gemeinsam mit anderen setzt sie sich für eine gemeinschaftliche Nutzung erneuerbarer Energien ein. Mit FLINTA*-Solar-Camps möchte sie insbesondere Frauen, inter-, nicht-binäre, trans- und agender Personen für handwerkliche und technische Themen begeistern. Im Interview erzählt sie, warum sie irgendwann nicht mehr nur protestieren, sondern selbst etwas aufbauen wollte, wie gemeinsames Lernen neue Möglichkeiten schafft und warum es für den Einstieg in den Klimaschutz keine Vorkenntnisse braucht.</p>
+            <span class="cta-textlink cta-textlink--invert">Beitrag lesen →</span>
+          </div>
+        </a>
+      
+        <a href="/blog/interview-solarverein/" class="related-post">
+          <div class="related-post__image" aria-hidden="true">
+            <img src="/assets/images/photos/blog/solarverein-1.jpg" alt="" loading="lazy">
+          </div>
+          <div class="related-post__body">
+            <div class="related-post__meta">
+              
+
+
+
+  
+  
+    
+
+<span class="label label--sunshine">Solarenergie</span>
+
+  
+
+
+              <span class="ui-upper-small">23 / September / 2026</span>
+            </div>
+            <h3>Balkonsolar: Mit Hilfe der Sonne Selbstwirksamkeit erleben</h3>
+            <p class="body-text--small">Mit einem Balkonkraftwerk können auch Mieter und Menschen ohne eigenes Haus Solarstrom erzeugen. Dr. Georg Lösel, Informatiker und Geowissenschaftler im Potsdamer Solarverein, erzählt, was ihn am Balkonsolar fasziniert, wie schwierig die Installation wirklich ist und wie ein Verein dabei helfen kann Hürden zu überwinden. Am Schluss findet ihr eine Checkliste zur eigenen Installation.</p>
+            <span class="cta-textlink cta-textlink--invert">Beitrag lesen →</span>
+          </div>
+        </a>
+      
+        <a href="/blog/interview-freiLand/" class="related-post">
+          <div class="related-post__image" aria-hidden="true">
+            <img src="/assets/images/photos/blog/freiland-4.jpeg" alt="" loading="lazy">
+          </div>
+          <div class="related-post__body">
+            <div class="related-post__meta">
+              
+
+
+
+  
+  
+    
+
+<span class="label label--sunshine">Solarenergie</span>
+
+  
+
+  
+  
+    
+
+<span class="label label--sunshine">Windenergie</span>
+
+  
+
+
+              <span class="ui-upper-small">12 / August / 2026</span>
+            </div>
+            <h3>Mit Open Source Energietechnik zur Anlage, die dir gehört</h3>
+            <p class="body-text--small">Im freiLand Potsdam kommt der Strom vom Dach und aus der Solargiraffe – und manchmal gibt es dreimal mehr Solarstrom, als gerade gebraucht wird. Christoph erzählt, wie daraus eine kleine Energieinsel entstanden ist, warum Open Source dabei eine wichtige Rolle spielt und was andere Orte davon lernen können.</p>
+            <span class="cta-textlink cta-textlink--invert">Beitrag lesen →</span>
+          </div>
+        </a>
+      
+    </div>
+  </section>
+
+
+    </main>
+    <footer class="site-footer">
+  <div class="site-footer__row">
+    <nav class="site-footer__nav" aria-label="Fußzeilennavigation">
+      
+        <a href="/" class="site-footer__nav-link">Start</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/do-it-yourself/" class="site-footer__nav-link">Selbermachen</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/solarpotenzial/" class="site-footer__nav-link">Datenanalyse</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/blog/" class="site-footer__nav-link">Blog</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/termine/" class="site-footer__nav-link">Termine</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/about/" class="site-footer__nav-link">About</a>
+        
+      
+    </nav>
+    <div class="site-footer__legal">
+      
+        <a href="/impressum/" class="site-footer__nav-link">Impressum</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/datenschutz/" class="site-footer__nav-link">Datenschutz</a>
+        
+      
+    </div>
+  </div>
+
+  <div class="site-footer__social">
+    <div class="site-footer__social-links">
+      
+        <a href="https://www.instagram.com/energieselbermachen/" class="site-footer__social-link">
+          <img src="/assets/images/icons/social-instagram.svg" alt="">
+          Instagram
+        </a>
+      
+        <a href="https://www.facebook.com/people/Energie-ZumSelbermachen/61590392108832/" class="site-footer__social-link">
+          <img src="/assets/images/icons/social-facebook.svg" alt="">
+          Facebook
+        </a>
+      
+    </div>
+    <div class="site-footer__partners">
+      <a href="https://okfn.de/" target="_blank"><img src="/assets/images/logos/okf-logo.svg" alt="Open Knowledge Foundation Deutschland"></a>
+      <a href="https://hardware.prototypefund.de/" target="_blank"><img src="/assets/images/logos/prototypefund-logo.svg" alt="Prototype Fund Hardware"></a>
+    </div>
+  </div>
+
+  <div class="site-footer__wordmark" aria-hidden="true">
+
+        <img class="svg-cutout pattern-main" src="/assets/images/logos/oe-wordmark-cutout.svg" alt="">
+
+
+  </div>
+</footer>
+
+  </div>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

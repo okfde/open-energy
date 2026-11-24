@@ -1,5 +1,5 @@
 {% comment %}
-  Renders a "Teaser / DIY Teaser" card. Params: item (from _data/diy_items.yml)
+  Renders a "Teaser / DIY Teaser" card. Params: item (from _data/diy_resources.yml, werkstatt: true)
 {% endcomment %}
 {% assign item = include.item %}
 <div class="diy-teaser">
@@ -10,7 +10,7 @@
   <div class="diy-teaser__body">
     <div class="diy-teaser__heading">
       <h3>{{ item.title }}</h3>
-      <p class="body-text">{{ item.excerpt }}</p>
+      <p class="body-text">{{ item.description }}</p>
     </div>
     <a href="{{ item.url }}" class="btn btn--secondary" target="_blank" rel="noopener">
       <span>Zur Anleitung</span>

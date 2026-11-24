@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fae62a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inclusive+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Open Energy" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Speicher mit dynamischem Stromtarif | Open Energy</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Speicher mit dynamischem Stromtarif" />
+<meta property="og:locale" content="de" />
+<meta name="description" content="Stromkosten senken mit Akku und dynamischem Stromtarif – auch ohne eigene Solaranlage. DIY-Akkus und Energiemanagement." />
+<meta property="og:description" content="Stromkosten senken mit Akku und dynamischem Stromtarif – auch ohne eigene Solaranlage. DIY-Akkus und Energiemanagement." />
+<link rel="canonical" href="http://localhost:4000/do-it-yourself/speicher/" />
+<meta property="og:url" content="http://localhost:4000/do-it-yourself/speicher/" />
+<meta property="og:site_name" content="Open Energy" />
+<meta property="og:image" content="http://localhost:4000/assets/images/logos/opengraph-image-2.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/logos/opengraph-image-2.jpg" />
+<meta property="twitter:title" content="Speicher mit dynamischem Stromtarif" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Stromkosten senken mit Akku und dynamischem Stromtarif – auch ohne eigene Solaranlage. DIY-Akkus und Energiemanagement.","headline":"Speicher mit dynamischem Stromtarif","image":"http://localhost:4000/assets/images/logos/opengraph-image-2.jpg","url":"http://localhost:4000/do-it-yourself/speicher/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Open Energy",
+  "url": "http://localhost:4000/",
+  "logo": "http://localhost:4000/assets/images/logos/oe-logo-dark.svg"
+}
+</script>
+
+</head>
+<body class="pattern-main">
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <div class="container">
+    <header class="site-header">
+  <div class="nav-bar">
+    <a href="/" class="nav-bar__logo" aria-label="Open Energy — Startseite">
+      <img src="/assets/images/logos/oe-logo-dark.svg" alt="Open Energy">
+    </a>
+
+    <button type="button" class="nav-bar__toggle" data-nav-toggle aria-controls="mobile-nav" aria-expanded="false">
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="nav-bar__toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Menü öffnen</span>
+    </button>
+
+    <nav class="nav-list" aria-label="Hauptnavigation">
+      
+        <div class="nav-list__item">
+          <a href="/" class="nav-list__link">Start</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/do-it-yourself/" class="nav-list__link">Selbermachen</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/solarpotenzial/" class="nav-list__link">Datenanalyse</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/blog/" class="nav-list__link">Blog</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/termine/" class="nav-list__link">Termine</a>
+        </div>
+        
+          <span class="nav-list__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider-dark.svg" alt="">
+          </span>
+        
+      
+        <div class="nav-list__item">
+          <a href="/about/" class="nav-list__link">About</a>
+        </div>
+        
+      
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav__inner">
+    <nav class="mobile-nav__list" aria-label="Mobile Hauptnavigation">
+      
+        <a href="/" class="mobile-nav__link">Start</a>
+      
+        <a href="/do-it-yourself/" class="mobile-nav__link">Selbermachen</a>
+      
+        <a href="/solarpotenzial/" class="mobile-nav__link">Datenanalyse</a>
+      
+        <a href="/blog/" class="mobile-nav__link">Blog</a>
+      
+        <a href="/termine/" class="mobile-nav__link">Termine</a>
+      
+        <a href="/about/" class="mobile-nav__link">About</a>
+      
+    </nav>
+  </div>
+</div>
+
+    <main id="main">
+      
+
+
+
+<header class="subpage-header">
+  <div class="subpage-header__intro">
+    <a href="/do-it-yourself/" class="cta-textlink diy-back" onclick="if (document.referrer.indexOf('/do-it-yourself/') !== -1 && history.length > 1) { history.back(); return false; }">← Alle Varianten</a>
+    <h1>Speicher mit dynamischem Stromtarif</h1>
+    <p class="body-text">Mit einem dynamischen Stromtarif ändert sich der Strompreis stündlich – je nachdem, wie viel Wind- und Solarstrom gerade im Netz ist. Ein Speicher lädt, wenn Strom günstig ist, und versorgt dich, wenn er teuer wird. So sparst du Geld und entlastest das Netz, auch ganz ohne Balkon oder Dach.</p>
+  </div>
+  
+</header>
+
+<section class="section diy-topic-facts" aria-label="Auf einen Blick">
+  <div class="stat-row">
+    <div class="stat-tile">
+      <div class="stat-tile__label">Kaufen &amp; Beauftragen</div>
+      <div class="stat-tile__value">ab 5.000 €</div>
+      <div class="stat-tile__sub">Heimspeicher mit 10 kWh inkl. Wechselrichter, installiert</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-tile__label">Selbst bauen &amp; sparen</div>
+      <div class="stat-tile__value">ab 4.100 €</div>
+      <div class="stat-tile__sub">14 kWh aus LiFePO4-Einzelzellen selbst gebaut – Anschluss vom Elektriker</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-tile__label">Rechtlicher Rahmen</div>
+      <div class="stat-tile__value">Dynamischer Tarif für alle</div>
+      <div class="stat-tile__sub">Jeder Stromanbieter muss ihn anbieten. Speicher werden getrennt im Marktstammdatenregister eingetragen.</div>
+    </div>
+  </div>
+  
+  <details class="diy-costs">
+    <summary class="ui-upper-small">So setzt sich „Selbst bauen &amp; sparen“ zusammen</summary>
+    <table class="diy-costs__table">
+      <tbody>
+        
+        <tr><td>16 LiFePO4-Zellen 280 Ah (ca. 14 kWh)</td><td class="diy-costs__amount">850 €</td></tr>
+        
+        <tr><td>Batteriemanagementsystem (BMS)</td><td class="diy-costs__amount">200 €</td></tr>
+        
+        <tr><td>Gehäuse, Busbars, Batteriekabel</td><td class="diy-costs__amount">200 €</td></tr>
+        
+        <tr><td>Batterie-Wechselrichter / Ladegerät</td><td class="diy-costs__amount">900 €</td></tr>
+        
+        <tr><td>Absicherung: DC-Sicherung mit Trenner, AC-Leitungsschutz</td><td class="diy-costs__amount">300 €</td></tr>
+        
+        <tr><td>Energiemanagement: Mini-Rechner und Zähler-Lesekopf</td><td class="diy-costs__amount">150 €</td></tr>
+        
+        <tr><td>Elektriker: Anschluss und Inbetriebnahme</td><td class="diy-costs__amount">1.500 €</td></tr>
+        
+      </tbody>
+      <tfoot>
+        <tr><td>Summe</td><td class="diy-costs__amount">ab 4.100 €</td></tr>
+      </tfoot>
+    </table>
+  </details>
+  
+  <p class="note ui-small diy-topic-facts__note">Kosten sind Mindestbeträge im günstigsten Fall (Stand 2026). „Selbst bauen &amp; sparen“ geht von größtmöglicher Eigenleistung aus; ist ein Elektriker für den Anschluss nötig, sind 1.500 € eingerechnet.</p>
+</section>
+
+<section class="section diy-topic-body">
+  <div class="article-body">
+    <h2 id="worum-geht-es">Worum geht es?</h2>
+
+<p>Strom ist an der Börse nachts und an sonnigen oder windigen Tagen oft günstig, am frühen Abend dagegen teuer. Mit einem dynamischen Tarif zahlst du diesen stündlichen Preis direkt. Ein Akku verschiebt deinen Verbrauch in die günstigen Stunden. Ohne Speicher kannst du schon sparen, indem du Waschmaschine, Spülmaschine oder Ladestation zeitlich steuerst.</p>
+
+<p>Den Akku selbst zu bauen ist eines der lohnendsten DIY-Projekte: LiFePO4-Einzelzellen, ein Batteriemanagementsystem (BMS), Sicherungen und ein Gehäuse kosten nur einen Bruchteil eines fertigen Heimspeichers. Das verlangt aber Sorgfalt: Große Akkus speichern viel Energie, und Fehler beim Bau können zu Bränden führen. Lies die Sicherheitshinweise in den Ressourcen unten, bevor du startest.</p>
+
+<p><strong>Nur mit Netzanschluss:</strong> Ein dynamischer Tarif setzt die Verbindung zum Stromnetz voraus. Für eine Inselanlage ohne Netz brauchst du zwar auch einen Akku – geladen wird er dann aber von eigenen Solarmodulen oder einem Windrad (siehe <a href="../balkonsolar/">Balkonsolar</a>, <a href="../freiflaechensolar/">Freiflächensolar</a> und <a href="../kleinwind/">Kleinwind</a>).</p>
+
+<h2 id="rechtliche-rahmenbedingungen">Rechtliche Rahmenbedingungen</h2>
+
+<ul>
+  <li><strong>Dynamischer Tarif:</strong> Seit 2025 muss jeder Stromanbieter einen dynamischen Tarif anbieten.</li>
+  <li><strong>Smart Meter:</strong> Du hast das Recht, ein intelligentes Messsystem beim Messstellenbetreiber zu verlangen. Die jährlichen Kosten sind gesetzlich gedeckelt.</li>
+  <li><strong>Marktstammdatenregister:</strong> Netzgekoppelte Speicher werden binnen eines Monats eingetragen – getrennt von einer Solaranlage, auch beim Balkonkraftwerk.</li>
+  <li><strong>Große Speicher (§ 14a EnWG):</strong> Geräte mit mehr als 4,2 kW Bezugsleistung sind steuerbare Verbrauchseinrichtungen und werden beim Netzbetreiber angemeldet. Dafür sinkt das Netzentgelt.</li>
+  <li><strong>Fest installierte Speicher:</strong> Den Anschluss ans Hausnetz übernimmt ein Elektrofachbetrieb.</li>
+  <li><strong>Selbstbau:</strong> Einen Akku für dich selbst zu bauen ist erlaubt. Für den Anschluss ans Hausnetz gelten dieselben Regeln wie für fertige Speicher.</li>
+</ul>
+
+    
+  </div>
+</section>
+
+
+<section class="section section--sand" aria-labelledby="schema-heading">
+  <div class="diy-section-intro">
+    <h2 id="schema-heading">So hängt alles zusammen</h2>
+    <p class="body-text">Der dynamische Tarif funktioniert nur mit Netzanschluss: Eine Software steuert den Akku nach dem stündlichen Strompreis.</p>
+  </div>
+  
+<ol class="diy-schema">
+  
+    <li class="diy-schema__item">
+      <div class="diy-schema__box">
+        <span class="ui-upper-small diy-schema__num">1</span>
+        <strong class="diy-schema__name">Stromnetz</strong>
+        <span class="ui-small diy-schema__text">mit dynamischem Tarif – oder eigene Solar- und Windanlage</span>
+      </div>
+      
+        <span class="diy-schema__link" aria-hidden="true"><span class="ui-small">AC</span></span>
+      
+    </li>
+  
+    <li class="diy-schema__item">
+      <div class="diy-schema__box">
+        <span class="ui-upper-small diy-schema__num">2</span>
+        <strong class="diy-schema__name">Smart Meter</strong>
+        <span class="ui-small diy-schema__text">intelligentes Messsystem, nötig für den dynamischen Tarif</span>
+      </div>
+      
+        <span class="diy-schema__link" aria-hidden="true"><span class="ui-small">Messwerte</span></span>
+      
+    </li>
+  
+    <li class="diy-schema__item">
+      <div class="diy-schema__box">
+        <span class="ui-upper-small diy-schema__num">3</span>
+        <strong class="diy-schema__name">Energiemanagement</strong>
+        <span class="ui-small diy-schema__text">z. B. evcc: lädt bei niedrigen Preisen, entlädt bei hohen</span>
+      </div>
+      
+        <span class="diy-schema__link" aria-hidden="true"><span class="ui-small">steuert</span></span>
+      
+    </li>
+  
+    <li class="diy-schema__item">
+      <div class="diy-schema__box">
+        <span class="ui-upper-small diy-schema__num">4</span>
+        <strong class="diy-schema__name">Lade- und Wechselrichter</strong>
+        <span class="ui-small diy-schema__text">lädt den Akku und speist ins Hausnetz zurück</span>
+      </div>
+      
+        <span class="diy-schema__link" aria-hidden="true"><span class="ui-small">DC</span></span>
+      
+    </li>
+  
+    <li class="diy-schema__item">
+      <div class="diy-schema__box">
+        <span class="ui-upper-small diy-schema__num">5</span>
+        <strong class="diy-schema__name">Akku mit BMS</strong>
+        <span class="ui-small diy-schema__text">LiFePO4-Zellen, Batteriemanagement schützt jede Zelle</span>
+      </div>
+      
+    </li>
+  
+</ol>
+
+</section>
+
+
+
+
+<section class="section diy-resources" aria-labelledby="resources-heading">
+  <div class="diy-section-intro">
+    <h2 id="resources-heading">Anleitungen &amp; Ressourcen</h2>
+    <p class="body-text">Hier findest du Wissen aus dem Netz, mit dem du die Komponenten selbst auswählst, baust und anschließt. Alle Links führen auf externe Seiten.</p>
+  </div>
+  
+  
+    
+    
+    
+    
+      <div class="diy-resources__group">
+        <h3 class="h4">Selber bauen: Anleitungen und Praxisberichte</h3>
+        <div class="diy-resources__list">
+          
+
+<a href="https://balkon.solar/hausautomatisierung/" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">balkon.solar</span>
+  <span class="diy-resource__title">Hausautomatisierung mit Home Assistant und Shelly <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Artikel und Links zu Home Assistant (Messung, Ersparnis, Stromampel, Dashboard), Shelly-Lastschaltung, lokale Einbindung von Speichern und Mikrowechselrichtern.</span>
+</a>
+
+
+<a href="https://akkudoktor.net/wp-content/uploads/2024/07/BalkonSolarKurzbuch_ohnecover.pdf" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Akkudoktor / Balkon.Solar</span>
+  <span class="diy-resource__title">BalkonSolar-Kurzbuch (PDF) <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Kompaktes Handbuch: Solarmodule verstehen, Upcycling, Wechselrichter, Speicher, Planung, Montage nach Modultyp, Selbst zusammenstellen, IT-Sicherheit, Brandschutz, Anmeldung, Beispielrechnungen 800 W.</span>
+</a>
+
+
+<a href="https://akkudoktor.net/t/diy-akkus-aufbau-mechanisch-u-elektrisch-inbetriebnahme-fehlerbeseitigung-linkliste/13592" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Akkudoktor</span>
+  <span class="diy-resource__title">DIY-Akkus: Aufbau, Inbetriebnahme, Fehlerbeseitigung (Linkliste) <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Kuratierte Sammlung der Forums-Anleitungen zum Bau von LiFePO4-Speichern: Zellprüfung, Verpressen, Busbars, Temperatursensoren, serielles Balancieren, BMS, Betriebskonzepte.</span>
+</a>
+
+
+<a href="https://akkudoktor.net/t/sicherheit-beim-akku-bau-und-betrieb/9957" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Akkudoktor</span>
+  <span class="diy-resource__title">Sicherheit beim Akku-Bau und -Betrieb <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Sammelthread zu Sicherheitsaspekten beim Bau großer Akkus (Schutzausrüstung, Absicherung, Brandrisiken).</span>
+</a>
+
+
+<a href="https://akkudoktor.net/t/baubericht-victron-multiplus-ii-48-5000-16-eve-lf280k-und-123-electric-bms-speicher/11649" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Akkudoktor</span>
+  <span class="diy-resource__title">Baubericht Victron Multiplus-II + 16× EVE LF280K + BMS <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Ausführlicher Erfahrungsbericht zum Bau eines 48-V-Heimspeichers mit Komponentenliste, Zellinitialisierung und Verdrahtung.</span>
+</a>
+
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+      <div class="diy-resources__group">
+        <h3 class="h4">Planen und steuern: Rechner und offene Software</h3>
+        <div class="diy-resources__list">
+          
+
+<a href="https://github.com/Prototype-Fund-Hardware/awesome-inverters" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">github.com</span>
+  <span class="diy-resource__title">Welche Wechselrichter können sicher betrieben werden? <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Hinter dem Link findet ihr eine Liste von Wechselrichtern für Balkonsolar und größere Solaranlagen. Auf der Liste werden Geräte danach bewertet, ob sie z.B. ohne Cloud-Anbindung funktionieren oder sie in Homeassistant integrierbar sind.</span>
+</a>
+
+
+<a href="https://github.com/helgeerbe/OpenDTU-OnBattery/wiki" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">OpenDTU-OnBattery</span>
+  <span class="diy-resource__title">Wiki: Speicher und Nulleinspeisung steuern <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Fork von OpenDTU mit Unterstützung für Batterieladegeräte, BMS und Leistungsmesser (DIY-Speicher, Nulleinspeisung).</span>
+</a>
+
+
+<a href="https://solar.htw-berlin.de/rechner/unabhaengigkeitsrechner/" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">HTW Berlin</span>
+  <span class="diy-resource__title">Unabhängigkeitsrechner <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Rechner für Autarkiegrad und Eigenverbrauch von PV mit Batteriespeicher; HTW hat zusätzlich Qualitätsstandards für Solarrechner veröffentlicht.</span>
+</a>
+
+
+<a href="https://docs.evcc.io/de/" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">evcc</span>
+  <span class="diy-resource__title">Dokumentation: Energiemanagement mit dynamischen Tarifen <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Open-Source-Energiemanagement: PV-Überschussladen für E-Autos, Speicher- und Wärmepumpensteuerung, dynamische Tarife; ausführliche deutschsprachige Doku, Einstiegshilfen, Video-/Vortragssammlung.</span>
+</a>
+
+
+<a href="https://wiki.volkszaehler.org/" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Volkszähler</span>
+  <span class="diy-resource__title">Wiki: Stromzähler selbst auslesen <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Open-Source-Projekt zum Auslesen digitaler Stromzähler: Bauanleitungen für IR-Schreib-/Leseköpfe, vzlogger, Zählerdatenbank.</span>
+</a>
+
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+      <div class="diy-resources__group">
+        <h3 class="h4">Recht und Normen</h3>
+        <div class="diy-resources__list">
+          
+
+<a href="https://www.dke.de/resource/blob/2436274/07dc6cb4ece672a6aa1391bc3784fd04/normauslegung-zur-din-vde-v-0126-95---download-data.pdf" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">DKE</span>
+  <span class="diy-resource__title">Normauslegung DIN VDE V 0126-95 (PDF) <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Offizielle Auslegung/FAQ zur Produktnorm; u. a.: Konformität nur ohne Speicher, Anschluss eines Speichers hebt Konformität auf.</span>
+</a>
+
+
+<a href="https://www.marktstammdatenregister.de/MaStRHilfe/subpages/registrierungVerpflichtendAnlagen.html" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Bundesnetzagentur</span>
+  <span class="diy-resource__title">Marktstammdatenregister: Wer muss registrieren? <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Hilfeseite der Bundesnetzagentur zur Registrierungspflicht von Anlagen inkl. Steckersolar.</span>
+</a>
+
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+      <div class="diy-resources__group">
+        <h3 class="h4">Hintergrund und Leitfäden</h3>
+        <div class="diy-resources__list">
+          
+
+<a href="https://www.verbraucherzentrale.de/wissen/energie/faq-zu-steckersolargeraeten-das-sind-die-haeufigsten-fragen-86652" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Verbraucherzentrale</span>
+  <span class="diy-resource__title">FAQ Steckersolar-Geräte <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Antworten zu Inselanlagen, Mieterprivileg seit 10/2024, Speicher, Kombination mit Dach-PV, 2 kWp Modulgrenze.</span>
+</a>
+
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+      <div class="diy-resources__group">
+        <h3 class="h4">Austausch und Initiativen</h3>
+        <div class="diy-resources__list">
+          
+
+<a href="https://akkudoktor.net/c/balkonsolar/111" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Akkudoktor-Forum</span>
+  <span class="diy-resource__title">Kategorie Balkonkraftwerk <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Sehr aktives Forum mit Unterkategorien (Anlage, Akku, Wechselrichter, Nulleinspeisung); tausende Praxisthreads, Projektvorstellungen, Erfahrungsberichte zu Speichern.</span>
+</a>
+
+
+<a href="https://www.photovoltaikforum.com/" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">Photovoltaikforum</span>
+  <span class="diy-resource__title">Das große deutschsprachige PV-Forum <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  <span class="body-text--small diy-resource__text">Langjähriges deutschsprachiges PV-Forum zu Dach-, Balkon- und Inselanlagen; von balkon.solar empfohlen.</span>
+</a>
+
+        </div>
+      </div>
+    
+  
+</section>
+
+
+
+
+<section class="section section--sand diy-grid-section" aria-labelledby="products-heading">
+  <div class="diy-section-intro">
+    <h2 id="products-heading">Open Source Alternativen</h2>
+    <p class="body-text">Diese Komponenten aus unserer Open Source Werkstatt kannst du für die Umsetzung nutzen, damit dir deine Anlage vollständig gehört. Sie stellen dir alle Baupläne zur Verfügung, die Reparatur und Nachbau erlauben.</p>
+  </div>
+  <div class="diy-grid">
+    
+
+<div class="diy-teaser">
+  <div class="diy-teaser__image">
+    <img src="https://hardware.prototypefund.de/wp-content/uploads/2021/12/libresolar-1024x683.jpg" alt="" loading="lazy">
+    <span class="label label--sunshine diy-teaser__source">libre.solar <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  </div>
+  <div class="diy-teaser__body">
+    <div class="diy-teaser__heading">
+      <h3>Ein Laderegler für kleine Anlagen</h3>
+      <p class="body-text">Dieser Laderegler eignet sich für verschiedene Batterien im 12V und 24V-Bereich. Mit seiner Maximum Power Point Tracking Funktion holt er alles aus euren Solarpanels raus.</p>
+    </div>
+    <a href="https://libre.solar/hardware/mppt-2420-hc.html" class="btn btn--secondary" target="_blank" rel="noopener">
+      <span>Zur Anleitung</span>
+      <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+    </a>
+  </div>
+</div>
+
+
+<div class="diy-teaser">
+  <div class="diy-teaser__image">
+    <img src="/assets/images/photos/diy/laderegler.png" alt="" loading="lazy">
+    <span class="label label--sunshine diy-teaser__source">OSWACC <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  </div>
+  <div class="diy-teaser__body">
+    <div class="diy-teaser__heading">
+      <h3>Kleinwindanlagen sicher betreiben</h3>
+      <p class="body-text">Kleinwindanlagen brauchen spezielle Laderegler, die bei vollem Akku überschüssigen Strom abfangen, um die Anlage zu schützen.</p>
+    </div>
+    <a href="https://gitlab.com/TiEoLibre/Analog_Battery_Regulator" class="btn btn--secondary" target="_blank" rel="noopener">
+      <span>Zur Anleitung</span>
+      <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+    </a>
+  </div>
+</div>
+
+
+<div class="diy-teaser">
+  <div class="diy-teaser__image">
+    <img src="https://libre.solar/assets/bms-c1_v0-3.GRZdhIEX.jpg" alt="" loading="lazy">
+    <span class="label label--sunshine diy-teaser__source">libre.solar <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+  </div>
+  <div class="diy-teaser__body">
+    <div class="diy-teaser__heading">
+      <h3>Akkus selbst bauen, mit offenem Batteriemanagement</h3>
+      <p class="body-text">Dieses Batteriemanagement-System eignet sich für verschiedene Batterien mit bis zu 100A. In Kombination mit einzelnen Zellen lassen sich so verschiedene Akkugrößen bauen.</p>
+    </div>
+    <a href="https://libre.solar/hardware/bms-c1.html" class="btn btn--secondary" target="_blank" rel="noopener">
+      <span>Zur Anleitung</span>
+      <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+  <path d="M5 11L11 5M11 5H6M11 5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+    </a>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+    </main>
+    <footer class="site-footer">
+  <div class="site-footer__row">
+    <nav class="site-footer__nav" aria-label="Fußzeilennavigation">
+      
+        <a href="/" class="site-footer__nav-link">Start</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/do-it-yourself/" class="site-footer__nav-link">Selbermachen</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/solarpotenzial/" class="site-footer__nav-link">Datenanalyse</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/blog/" class="site-footer__nav-link">Blog</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/termine/" class="site-footer__nav-link">Termine</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/about/" class="site-footer__nav-link">About</a>
+        
+      
+    </nav>
+    <div class="site-footer__legal">
+      
+        <a href="/impressum/" class="site-footer__nav-link">Impressum</a>
+        
+          <span class="site-footer__divider" aria-hidden="true">
+            <img src="/assets/images/icons/divider.svg" alt="">
+          </span>
+        
+      
+        <a href="/datenschutz/" class="site-footer__nav-link">Datenschutz</a>
+        
+      
+    </div>
+  </div>
+
+  <div class="site-footer__social">
+    <div class="site-footer__social-links">
+      
+        <a href="https://www.instagram.com/energieselbermachen/" class="site-footer__social-link">
+          <img src="/assets/images/icons/social-instagram.svg" alt="">
+          Instagram
+        </a>
+      
+        <a href="https://www.facebook.com/people/Energie-ZumSelbermachen/61590392108832/" class="site-footer__social-link">
+          <img src="/assets/images/icons/social-facebook.svg" alt="">
+          Facebook
+        </a>
+      
+    </div>
+    <div class="site-footer__partners">
+      <a href="https://okfn.de/" target="_blank"><img src="/assets/images/logos/okf-logo.svg" alt="Open Knowledge Foundation Deutschland"></a>
+      <a href="https://hardware.prototypefund.de/" target="_blank"><img src="/assets/images/logos/prototypefund-logo.svg" alt="Prototype Fund Hardware"></a>
+    </div>
+  </div>
+
+  <div class="site-footer__wordmark" aria-hidden="true">
+
+        <img class="svg-cutout pattern-main" src="/assets/images/logos/oe-wordmark-cutout.svg" alt="">
+
+
+  </div>
+</footer>
+
+  </div>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

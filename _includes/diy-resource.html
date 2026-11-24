@@ -1,0 +1,10 @@
+{% comment %}
+  Verlinkte Ressource auf einer DIY-Unterseite.
+  Params: item (Eintrag aus _data/diy_resources.yml)
+{% endcomment %}
+{% assign item = include.item %}
+<a href="{{ item.url }}" class="diy-resource" target="_blank" rel="noopener">
+  <span class="ui-upper-small diy-resource__source">{{ item.source }}</span>
+  <span class="diy-resource__title">{{ item.title }} {% include icon-arrow.html %}</span>
+  <span class="body-text--small diy-resource__text">{{ item.description }}</span>
+</a>

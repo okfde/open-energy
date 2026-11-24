@@ -18,6 +18,9 @@ collections:
   events:
     output: true
     permalink: /termine/:path/
+  diy:
+    output: true
+    permalink: /do-it-yourself/:name/
 
 defaults:
   - scope:
@@ -32,6 +35,11 @@ defaults:
       layout: event-detail
   - scope:
       path: ""
+      type: "diy"
+    values:
+      layout: diy-topic
+  - scope:
+      path: ""
     values:
       layout: default
       image: /assets/images/logos/opengraph-image-2.jpg
@@ -39,7 +47,7 @@ defaults:
 nav_items:
   - title: Start
     url: /
-  - title: Do it yourself
+  - title: Selbermachen
     url: /do-it-yourself/
   - title: Datenanalyse
     url: /solarpotenzial/
@@ -80,3 +88,7 @@ exclude:
   - README.md
   - site_solapotenzial
   - scripts
+  # Arbeitsdateien im DIY-Ordner, die nicht ausgeliefert werden sollen
+  - _diy/auftrag-diy-seite.md
+  - _diy/ressourcen_energie_selbermachen.csv
+  - _diy/Solar_Kleinwind_genehmigungsfrei_Kurzuebersicht.md

@@ -1,0 +1,116 @@
+---
+layout: default
+---
+{% comment %}
+  Unterseite einer DIY-Variante (_diy/topics/*.md).
+  Front Matter: category (= slug in _data/diy_topics.yml), intro, schema, schema_note.
+  Ressourcen: alle Einträge aus _data/diy_resources.yml, deren `categories`
+  die category enthalten – gruppiert nach `type`.
+{% endcomment %}
+{% assign topic = site.data.diy_topics | where: "slug", page.category | first %}
+{% assign resources = site.data.diy_resources | where_exp: "r", "r.categories contains page.category" %}
+
+<header class="subpage-header">
+  <div class="subpage-header__intro">
+    <a href="{{ '/do-it-yourself/' | relative_url }}" class="cta-textlink diy-back" onclick="if (document.referrer.indexOf('/do-it-yourself/') !== -1 && history.length > 1) { history.back(); return false; }">← Alle Varianten</a>
+    <h1>{{ page.title }}</h1>
+    <p class="body-text">{{ page.intro | default: topic.excerpt }}</p>
+  </div>
+  {% if topic.image %}
+    <div class="subpage-header__media" aria-hidden="true">
+      <img src="{{ topic.image | relative_url }}" alt="">
+    </div>
+  {% endif %}
+</header>
+
+<section class="section diy-topic-facts" aria-label="Auf einen Blick">
+  <div class="stat-row">
+    <div class="stat-tile">
+      <div class="stat-tile__label">Kaufen &amp; Beauftragen</div>
+      <div class="stat-tile__value">{{ topic.cost_buy }}</div>
+      <div class="stat-tile__sub">{{ topic.cost_buy_note }}</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-tile__label">Selbst bauen &amp; sparen</div>
+      <div class="stat-tile__value">{{ topic.cost_diy }}</div>
+      <div class="stat-tile__sub">{{ topic.cost_diy_note }}</div>
+    </div>
+    <div class="stat-tile">
+      <div class="stat-tile__label">Rechtlicher Rahmen</div>
+      <div class="stat-tile__value">{{ topic.legal_fact }}</div>
+      <div class="stat-tile__sub">{{ topic.legal }}</div>
+    </div>
+  </div>
+  {% if topic.cost_diy_items %}
+  <details class="diy-costs">
+    <summary class="ui-upper-small">So setzt sich „Selbst bauen &amp; sparen“ zusammen</summary>
+    <table class="diy-costs__table">
+      <tbody>
+        {% for row in topic.cost_diy_items %}
+        <tr><td>{{ row[0] }}</td><td class="diy-costs__amount">{{ row[1] }}</td></tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr><td>Summe</td><td class="diy-costs__amount">{{ topic.cost_diy }}</td></tr>
+      </tfoot>
+    </table>
+  </details>
+  {% endif %}
+  <p class="note ui-small diy-topic-facts__note">Kosten sind Mindestbeträge im günstigsten Fall (Stand 2026). „Selbst bauen &amp; sparen“ geht von größtmöglicher Eigenleistung aus; ist ein Elektriker für den Anschluss nötig, sind 1.500 € eingerechnet.</p>
+</section>
+
+<section class="section diy-topic-body">
+  <div class="article-body">
+    {{ content }}
+    {% if page.baurecht %}
+    <p class="note caveat ui-small">„Genehmigungsfrei“ heißt nicht „regelfrei“: Denkmalschutz, Bebauungsplan und Gestaltungssatzung der Gemeinde, Brandschutz, Abstände zum Nachbargrundstück, Standsicherheit und Naturschutz gelten immer. Im Zweifel vorher beim Bauamt nachfragen.</p>
+    {% endif %}
+  </div>
+</section>
+
+{% if page.schema %}
+<section class="section section--sand" aria-labelledby="schema-heading">
+  <div class="diy-section-intro">
+    <h2 id="schema-heading">So hängt alles zusammen</h2>
+    {% if page.schema_note %}<p class="body-text">{{ page.schema_note }}</p>{% endif %}
+  </div>
+  {% include diy-schema.html steps=page.schema %}
+</section>
+{% endif %}
+
+{% assign guides = resources | where_exp: "r", "r.werkstatt != true" %}
+{% if guides.size > 0 %}
+<section class="section diy-resources" aria-labelledby="resources-heading">
+  <div class="diy-section-intro">
+    <h2 id="resources-heading">Anleitungen &amp; Ressourcen</h2>
+    <p class="body-text">Hier findest du Wissen aus dem Netz, mit dem du die Komponenten selbst auswählst, baust und anschließt. Alle Links führen auf externe Seiten.</p>
+  </div>
+  {% assign groups = "Selber bauen: Anleitungen und Praxisberichte|How-to,Praxisbericht;Planen und steuern: Rechner und offene Software|Tool/Rechner,Open-Source-Software,Open-Source-Hardware;Recht und Normen|Norm & Recht;Hintergrund und Leitfäden|Allgemeine Informationen,Studie/Leitfaden;Austausch und Initiativen|Community/Forum,Linksammlung" | split: ";" %}
+  {% for group in groups %}
+    {% assign g = group | split: "|" %}
+    {% assign types = g[1] | split: "," %}
+    {% assign items = guides | where_exp: "r", "types contains r.type" %}
+    {% if items.size > 0 %}
+      <div class="diy-resources__group">
+        <h3 class="h4">{{ g[0] }}</h3>
+        <div class="diy-resources__list">
+          {% for item in items %}{% include diy-resource.html item=item %}{% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+{% endif %}
+
+{% assign products = resources | where: "werkstatt", true %}
+{% if products.size > 0 %}
+<section class="section section--sand diy-grid-section" aria-labelledby="products-heading">
+  <div class="diy-section-intro">
+    <h2 id="products-heading">Open Source Alternativen</h2>
+    <p class="body-text">Diese Komponenten aus unserer Open Source Werkstatt kannst du für die Umsetzung nutzen, damit dir deine Anlage vollständig gehört. Sie stellen dir alle Baupläne zur Verfügung, die Reparatur und Nachbau erlauben.</p>
+  </div>
+  <div class="diy-grid">
+    {% for item in products %}{% include diy-teaser.html item=item %}{% endfor %}
+  </div>
+</section>
+{% endif %}

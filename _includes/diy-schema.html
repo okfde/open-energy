@@ -1,0 +1,22 @@
+{% comment %}
+  Schematische Übersicht der Anlagenkomponenten als Kette verbundener Kästen.
+  Params: steps (Liste aus dem Front Matter `schema` einer DIY-Unterseite)
+    - name: "Solarmodule"          # Komponente
+      text: "…"                    # kurze Erklärung (optional)
+      flow: "Gleichstrom"          # Beschriftung der Verbindung zum nächsten Kasten (optional)
+      optional: true               # gestrichelter Rahmen (optional)
+{% endcomment %}
+<ol class="diy-schema">
+  {% for step in include.steps %}
+    <li class="diy-schema__item{% if step.optional %} diy-schema__item--optional{% endif %}">
+      <div class="diy-schema__box">
+        <span class="ui-upper-small diy-schema__num">{{ forloop.index }}{% if step.optional %} · optional{% endif %}</span>
+        <strong class="diy-schema__name">{{ step.name }}</strong>
+        {% if step.text %}<span class="ui-small diy-schema__text">{{ step.text }}</span>{% endif %}
+      </div>
+      {% unless forloop.last %}
+        <span class="diy-schema__link" aria-hidden="true"><span class="ui-small">{{ step.flow }}</span></span>
+      {% endunless %}
+    </li>
+  {% endfor %}
+</ol>

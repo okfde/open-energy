@@ -1,0 +1,70 @@
+{% comment %}
+  Formular-Filter für /do-it-yourself/. Fragen und Texte: _data/diy_filter.yml.
+  Ohne JavaScript bleibt das Formular verborgen und alle Karten sind sichtbar;
+  assets/js/diy-filter.js blendet es ein und filtert die Karten.
+{% endcomment %}
+{% assign f = site.data.diy_filter %}
+<form class="diy-filter" data-diy-filter hidden>
+  <fieldset class="diy-filter__step">
+    <legend class="ui-upper-small diy-filter__question"><span class="diy-filter__num">1</span>{{ f.place.question }}</legend>
+    <div class="diy-filter__options">
+      {% for o in f.place.options %}
+        <button type="button" class="label label--midnight category-filter__item" data-group="place" data-value="{{ o.id }}" aria-pressed="false">{{ o.label }}</button>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  {% for o in f.place.options %}{% if o.options %}
+  <fieldset class="diy-filter__step diy-filter__step--sub" data-sub-for="{{ o.id }}" hidden>
+    <legend class="ui-upper-small diy-filter__question">{{ o.question }} <span class="diy-filter__hint">Mehrfachauswahl möglich</span></legend>
+    <div class="diy-filter__options">
+      {% for s in o.options %}
+        <button type="button" class="label label--midnight category-filter__item" data-group="sub" data-value="{{ s.id }}"{% if s.exclusive %} data-exclusive{% endif %} aria-pressed="false">{{ s.label }}</button>
+      {% endfor %}
+    </div>
+  </fieldset>
+  {% endif %}{% endfor %}
+
+  <fieldset class="diy-filter__step">
+    <legend class="ui-upper-small diy-filter__question"><span class="diy-filter__num">2</span>{{ f.grid.question }}</legend>
+    <div class="diy-filter__options diy-filter__options--described">
+      {% for o in f.grid.options %}
+        <div class="diy-filter__option">
+          <button type="button" class="label label--midnight category-filter__item" data-group="grid" data-value="{{ o.id }}" aria-pressed="false" aria-describedby="diy-grid-{{ o.id }}">{{ o.label }}</button>
+          <p class="ui-small diy-filter__description" id="diy-grid-{{ o.id }}">{{ o.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <div class="diy-filter__actions">
+    <button type="submit" class="btn btn--primary" disabled>Passende Varianten zeigen</button>
+    <button type="reset" class="cta-textlink diy-filter__reset" hidden>Alle Varianten zeigen</button>
+  </div>
+</form>
+
+<div class="diy-result" data-diy-result aria-live="polite" hidden>
+  <p class="ui-upper-small diy-result__kicker">Kurz zusammengefasst</p>
+  <div class="body-text diy-result__text" data-diy-result-text></div>
+</div>
+
+{%- comment -%} Texte für das JS – einmal aus den YAML-Daten erzeugt. {%- endcomment -%}
+{% assign leaves = "" | split: "" %}
+{% for o in f.place.options %}
+  {% if o.options %}{% for s in o.options %}{% assign leaves = leaves | push: s %}{% endfor %}
+  {% else %}{% assign leaves = leaves | push: o %}{% endif %}
+{% endfor %}
+<script type="application/json" id="diy-filter-data">
+{
+  "place": {
+    {% for l in leaves %}{{ l.id | jsonify }}: {{ l.summary | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+  },
+  "grid": {
+    {% for o in f.grid.options %}{{ o.id | jsonify }}: {{ o.summary | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+  },
+  "titles": {
+    {% for t in site.data.diy_topics %}{{ t.slug | jsonify }}: {{ t.title | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+  },
+  "empty": {{ f.empty | jsonify }}
+}
+</script>

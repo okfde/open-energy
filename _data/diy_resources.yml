@@ -1,0 +1,571 @@
+# Ressourcen für die DIY-Unterseiten (_diy/topics/*.md).
+#
+# Eine Ressource erscheint auf jeder Unterseite, deren Front-Matter-Feld
+# `category` in ihren `categories` vorkommt
+# (balkonsolar, dachsolar, freiflaechensolar, agri-pv, kleinwind, speicher).
+#
+# werkstatt: true  → Open-Source-Produkt. Erscheint in der „Open Source
+#                    Werkstatt“ auf /do-it-yourself/ und auf den Unterseiten
+#                    im Abschnitt „Open-Source-Produkte“ (mit Bild).
+# Alle anderen     → verlinkte Ressourcen, auf den Unterseiten nach `type`
+#                    gruppiert. Quelle: _diy/ressourcen_energie_selbermachen.csv
+#                    (`csv_id` = Spalte „ID“, `checked` = „Geprüft am“).
+
+# --- Open Source Werkstatt ---------------------------------------------------
+
+- title: "Ein Laderegler für kleine Anlagen"
+  source: "libre.solar"
+  url: "https://libre.solar/hardware/mppt-2420-hc.html"
+  type: "Open-Source-Hardware"
+  description: "Dieser Laderegler eignet sich für verschiedene Batterien im 12V und 24V-Bereich. Mit seiner Maximum Power Point Tracking Funktion holt er alles aus euren Solarpanels raus."
+  image: "https://hardware.prototypefund.de/wp-content/uploads/2021/12/libresolar-1024x683.jpg"
+  werkstatt: true
+  categories: [balkonsolar, speicher]
+  csv_id: 32
+  
+- title: "Kleinwindanlagen sicher betreiben"
+  source: "OSWACC"
+  url: "https://gitlab.com/TiEoLibre/Analog_Battery_Regulator"
+  type: "Open-Source-Hardware"
+  description: "Kleinwindanlagen brauchen spezielle Laderegler, die bei vollem Akku überschüssigen Strom abfangen, um die Anlage zu schützen."
+  image: "/assets/images/photos/diy/laderegler.png"
+  werkstatt: true
+  categories: [balkonsolar, speicher]
+  csv_id:
+
+- title: "Akkus selbst bauen, mit offenem Batteriemanagement"
+  source: "libre.solar"
+  url: "https://libre.solar/hardware/bms-c1.html"
+  type: "Open-Source-Hardware"
+  description: "Dieses Batteriemanagement-System eignet sich für verschiedene Batterien mit bis zu 100A. In Kombination mit einzelnen Zellen lassen sich so verschiedene Akkugrößen bauen."
+  image: "https://libre.solar/assets/bms-c1_v0-3.GRZdhIEX.jpg"
+  werkstatt: true
+  categories: [balkonsolar, speicher]
+  csv_id:
+
+- title: "Mit dem Windkit bekommt ihr eine leicht reparierbare Kleinwindanlage"
+  source: "git.erni-kollektiv.org"
+  url: "https://git.erni-kollektiv.org/erni/windkit"
+  type: "Open-Source-Hardware"
+  description: "Das Windrad ist leicht nachbaubar und hat eine Leistung von ca. 400W."
+  image: "/assets/images/photos/diy/photo-2.jpg"
+  werkstatt: true
+  categories: [kleinwind]
+  csv_id: 34
+
+- title: "Mit dem Micro Inverter Strom einspeisen"
+  source: "owntech.org"
+  url: "https://github.com/owntech-foundation/micro-inverter"
+  type: "Open-Source-Hardware"
+  description: "Der Inverter orientiert sich am Arduino-Design und soll mittels Software sehr leicht anpassbar sein."
+  image: "https://github.com/owntech-foundation/micro-inverter/blob/main/KiCAD_Files/renderings/3D.png?raw=true"
+  werkstatt: true
+  categories: [balkonsolar]
+  csv_id: 33
+
+# --- Ressourcen aus der CSV ----------------------------------------------------
+
+- title: "Welche Wechselrichter können sicher betrieben werden?"
+  source: "github.com"
+  url: "https://github.com/Prototype-Fund-Hardware/awesome-inverters"
+  type: "Open-Source-Hardware"
+  description: "Hinter dem Link findet ihr eine Liste von Wechselrichtern für Balkonsolar und größere Solaranlagen. Auf der Liste werden Geräte danach bewertet, ob sie z.B. ohne Cloud-Anbindung funktionieren oder sie in Homeassistant integrierbar sind."
+  # Auf allen Seiten, deren Anlage einen Wechselrichter nutzt.
+  categories: [balkonsolar, dachsolar, freiflaechensolar, agri-pv, kleinwind, speicher]
+  csv_id: 31
+
+- title: "Das Wissensportal zu Steckersolar"
+  source: "Balkon.Solar e.V."
+  url: "https://balkon.solar/"
+  type: "Allgemeine Informationen"
+  description: "Größtes zivilgesellschaftliches Wissensportal zu Steckersolar im DACH-Raum: Grundlagen, Montage, Schritt-für-Schritt-Anleitungen, Recht auf Solar, Lieferanten, Ortsgruppen."
+  license: "Urheberrecht; Kopien/Downloads nur privat und nicht-kommerziell; keine offene Lizenz"
+  categories: [balkonsolar]
+  csv_id: 1
+  checked: "2026-11-23"
+
+- title: "Montagearten im Überblick"
+  source: "balkon.solar"
+  url: "https://balkon.solar/montage/"
+  type: "How-to"
+  description: "Montagearten (Geländer, Boden, Flachdach, Ziegeldach, Vordach, Garten, Zaun, Sonderbauten) mit Hinweisen zu Windlast, Statik, Absturzsicherung, Modultypen und DIBt-Klarstellung 10/2023."
+  categories: [balkonsolar, freiflaechensolar]
+  csv_id: 2
+  checked: "2026-11-23"
+
+- title: "Balkonkraftwerk aus alten Solarpanels selbst bauen"
+  source: "balkon.solar"
+  url: "https://balkon.solar/balkonkraftwerk-selbst-bauen/"
+  type: "How-to"
+  description: "Upcycling-Anleitung: Module sortieren und durchmessen (Leerlaufspannung, Kurzschlussstrom, Rahmenisolation), Abgleich mit MPP-Fenster des Wechselrichters, MC4-Crimpen, Werkzeug- und Preisliste, Bezugsquellen für Gebrauchtmodule."
+  categories: [balkonsolar, freiflaechensolar]
+  csv_id: 3
+  checked: "2026-11-23"
+
+- title: "Balkon Solar selbst zusammenstellen"
+  source: "balkon.solar"
+  url: "https://balkon.solar/balkon-solar-selbst-zusammenstellen/"
+  type: "How-to"
+  description: "Komponentenauswahl und Kompatibilitätsprüfung: Datenblatt lesen (STC/NMOT), Leerlaufspannung und Kurzschlussstrom vs. Wechselrichter-Grenzwerte, MPPT-Bereich, Rechenbeispiel HM-300, Kauftipps."
+  categories: [balkonsolar]
+  csv_id: 4
+  checked: "2026-11-23"
+
+- title: "Schritt-für-Schritt-Anleitung"
+  source: "balkon.solar"
+  url: "https://balkon.solar/schritt-fur-schritt-anleitung/"
+  type: "How-to"
+  description: "Vergleich normkonformer Anschluss vs. „Guerilla-PV“ inkl. Aufwand, Absicherung, Förderung; Unterseiten für Mieter, Eigentumswohnung, Einfamilienhaus."
+  categories: [balkonsolar]
+  csv_id: 5
+  checked: "2026-11-23"
+
+- title: "Balkonsolar für Mieterinnen und Mieter"
+  source: "balkon.solar"
+  url: "https://balkon.solar/mieter/"
+  type: "How-to"
+  description: "Linksammlung für Mietende: Musterschreiben an Vermieter (05/2024), Entwurf Mustervereinbarung (03/2025), FAQ Recht auf Solar, unzulässige Auflagen, Haftung."
+  categories: [balkonsolar]
+  csv_id: 6
+  checked: "2026-11-23"
+
+- title: "Hausautomatisierung mit Home Assistant und Shelly"
+  source: "balkon.solar"
+  url: "https://balkon.solar/hausautomatisierung/"
+  type: "How-to"
+  description: "Artikel und Links zu Home Assistant (Messung, Ersparnis, Stromampel, Dashboard), Shelly-Lastschaltung, lokale Einbindung von Speichern und Mikrowechselrichtern."
+  categories: [balkonsolar, speicher]
+  csv_id: 7
+  checked: "2026-11-23"
+
+- title: "Häufige Fragen zu Steckersolar"
+  source: "balkon.solar"
+  url: "https://balkon.solar/faq/"
+  type: "Allgemeine Informationen"
+  description: "Breite FAQ: Begriffe, Leistungsgrenzen, MaStR, Zählertausch, Montage/Windlast, Mieter/WEG, Denkmalschutz, Versicherung, Brandschutz, Speicher, Entsorgung."
+  categories: [balkonsolar]
+  csv_id: 8
+  checked: "2026-11-23"
+
+- title: "Linksammlung: Selbstbau-Initiativen und Foren"
+  source: "Balkon.Solar e.V."
+  url: "https://balkon.solar/links/"
+  type: "Linksammlung"
+  description: "Kuratierte Liste regionaler Solar- und Selbstbauinitiativen (Bremen, Hamburg, Kassel, München, Darmstadt u. a.), Foren, Blogs und Verbände."
+  categories: [balkonsolar, dachsolar]
+  csv_id: 9
+  checked: "2026-11-23"
+
+- title: "BalkonSolar-Kurzbuch (PDF)"
+  source: "Akkudoktor / Balkon.Solar"
+  url: "https://akkudoktor.net/wp-content/uploads/2024/07/BalkonSolarKurzbuch_ohnecover.pdf"
+  type: "How-to"
+  description: "Kompaktes Handbuch: Solarmodule verstehen, Upcycling, Wechselrichter, Speicher, Planung, Montage nach Modultyp, Selbst zusammenstellen, IT-Sicherheit, Brandschutz, Anmeldung, Beispielrechnungen 800 W."
+  license: "CC BY-NC-SA 4.0"
+  categories: [balkonsolar, speicher]
+  csv_id: 10
+  checked: "2026-11-23"
+
+- title: "Steckersolar: Solarstrom vom Balkon"
+  source: "Verbraucherzentrale"
+  url: "https://www.verbraucherzentrale.de/wissen/energie/erneuerbare-energien/steckersolar-solarstrom-vom-balkon-direkt-in-die-steckdose-8189"
+  type: "Allgemeine Informationen"
+  description: "Neutraler Ratgeber zu Funktion, Installationsorten, Gesetzen und Normen, Wirtschaftlichkeit; Hinweis auf DIN VDE V 0126-95."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 11
+  checked: "2026-11-23"
+
+- title: "FAQ Steckersolar-Geräte"
+  source: "Verbraucherzentrale"
+  url: "https://www.verbraucherzentrale.de/wissen/energie/faq-zu-steckersolargeraeten-das-sind-die-haeufigsten-fragen-86652"
+  type: "Allgemeine Informationen"
+  description: "Antworten zu Inselanlagen, Mieterprivileg seit 10/2024, Speicher, Kombination mit Dach-PV, 2 kWp Modulgrenze."
+  license: "Urheberrecht"
+  categories: [balkonsolar, speicher]
+  csv_id: 12
+  checked: "2026-11-23"
+
+- title: "Lerneinheit 4 Steckersolar"
+  source: "Verbraucherzentrale NRW"
+  url: "https://www.verbraucherzentrale.nrw/lerneinheit-4-steckersolargeraete-mein-eigener-strom-vom-balkon-88503"
+  type: "How-to"
+  description: "Lernmodul mit Übungen, u. a. Wirtschaftlichkeitsrechnung mit dem HTW-Stecker-Solar-Simulator."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 14
+  checked: "2026-11-23"
+
+- title: "FAQ Steckersolargeräte"
+  source: "VDE FNN"
+  url: "https://www.vde.com/fnn-pv-stecker"
+  type: "Norm & Recht"
+  description: "Offizielle FAQ des Forums Netztechnik/Netzbetrieb: Anschluss an Schuko-Steckdose, geltende Installations- und Produktnormen."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 15
+  checked: "2026-11-23"
+
+- title: "Normauslegung DIN VDE V 0126-95 (PDF)"
+  source: "DKE"
+  url: "https://www.dke.de/resource/blob/2436274/07dc6cb4ece672a6aa1391bc3784fd04/normauslegung-zur-din-vde-v-0126-95---download-data.pdf"
+  type: "Norm & Recht"
+  description: "Offizielle Auslegung/FAQ zur Produktnorm; u. a.: Konformität nur ohne Speicher, Anschluss eines Speichers hebt Konformität auf."
+  license: "Urheberrecht"
+  categories: [balkonsolar, speicher]
+  csv_id: 16
+  checked: "2026-11-23"
+
+- title: "VDE-Pressemitteilung: Erste Produktnorm für Steckersolargeräte"
+  source: "VDE/DKE"
+  url: "https://www.vde.com/de/presse/pressemitteilungen/weltweit-erste-produktnorm-fuer-steckersolargeraete"
+  type: "Norm & Recht"
+  description: "Eckpunkte der DIN VDE V 0126-95:2025-12 (Gesamtsystem-Anforderungen, höhere Leistungsgrenzen, neue Anschlussmöglichkeiten)."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 17
+  checked: "2026-11-23"
+
+- title: "Marktstammdatenregister: Wer muss registrieren?"
+  source: "Bundesnetzagentur"
+  url: "https://www.marktstammdatenregister.de/MaStRHilfe/subpages/registrierungVerpflichtendAnlagen.html"
+  type: "Norm & Recht"
+  description: "Hilfeseite der Bundesnetzagentur zur Registrierungspflicht von Anlagen inkl. Steckersolar."
+  license: "Amtliche Information"
+  categories: [balkonsolar, dachsolar, freiflaechensolar, agri-pv, kleinwind, speicher]
+  csv_id: 18
+  checked: "2026-11-23"
+
+- title: "Stecker-Solar-Simulator"
+  source: "HTW Berlin"
+  url: "https://solar.htw-berlin.de/rechner/stecker-solar-simulator/"
+  type: "Tool/Rechner"
+  description: "Wissenschaftlicher Online-Rechner für Ertrag, Eigenverbrauch und Ersparnis von Steckersolargeräten (Balkon, Wand, Dach), mit dokumentierten Berechnungsgrundlagen."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 19
+  checked: "2026-11-23"
+
+- title: "PV-Lotse: Steckersolar"
+  source: "DGS PV-Lotse"
+  url: "https://www.dgs.de/service/pvlotse/steckersolar/"
+  type: "Allgemeine Informationen"
+  description: "Infoseite der Deutschen Gesellschaft für Sonnenenergie (Initiator der Produktnorm, Projekt „SolarRebell“)."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 23
+  checked: "2026-11-23"
+
+- title: "Kategorie Balkonkraftwerk"
+  source: "Akkudoktor-Forum"
+  url: "https://akkudoktor.net/c/balkonsolar/111"
+  type: "Community/Forum"
+  description: "Sehr aktives Forum mit Unterkategorien (Anlage, Akku, Wechselrichter, Nulleinspeisung); tausende Praxisthreads, Projektvorstellungen, Erfahrungsberichte zu Speichern."
+  license: "Nutzerbeiträge, keine offene Lizenz"
+  categories: [balkonsolar, speicher]
+  csv_id: 24
+  checked: "2026-11-23"
+
+- title: "Kategorie Inselanlagen"
+  source: "Akkudoktor-Forum"
+  url: "https://akkudoktor.net/c/batterien-powerwall-pv/insel/89"
+  type: "Community/Forum"
+  description: "Praxisthreads zu netzunabhängigen PV-Anlagen, Komponenten, Winterbetrieb und Erdung."
+  license: "Nutzerbeiträge"
+  categories: [balkonsolar, freiflaechensolar, kleinwind]
+  csv_id: 25
+  checked: "2026-11-23"
+
+- title: "Insel-Diskussion (Wiki-Thread)"
+  source: "Akkudoktor"
+  url: "https://akkudoktor.net/t/insel-diskussion-technisch-nicht-rechtlich-wiki/32580"
+  type: "How-to"
+  description: "Gemeinschaftlich gepflegter Wiki-Beitrag: Gründe für/gegen Insel, Hardwarekomponenten, Systemauslegung."
+  license: "Nutzerbeiträge"
+  categories: [balkonsolar, freiflaechensolar, kleinwind]
+  csv_id: 26
+  checked: "2026-11-23"
+
+- title: "Das große deutschsprachige PV-Forum"
+  source: "Photovoltaikforum"
+  url: "https://www.photovoltaikforum.com/"
+  type: "Community/Forum"
+  description: "Langjähriges deutschsprachiges PV-Forum zu Dach-, Balkon- und Inselanlagen; von balkon.solar empfohlen."
+  license: "Nutzerbeiträge"
+  categories: [balkonsolar, dachsolar, freiflaechensolar, speicher]
+  csv_id: 27
+  checked: "2026-11-23"
+
+- title: "Dokumentation: Mikrowechselrichter ohne Cloud auslesen"
+  source: "OpenDTU"
+  url: "https://tbnobody.github.io/OpenDTU-docs/"
+  type: "Open-Source-Software"
+  description: "Open-Source-Firmware (ESP32) zur lokalen Auslese/Steuerung von Hoymiles-, TSUN- und Solenso-Mikrowechselrichtern ohne Hersteller-Cloud; Bauanleitung, Hardware, Troubleshooting."
+  license: "GPL-2.0 (Code)"
+  categories: [balkonsolar]
+  csv_id: 29
+  checked: "2026-11-23"
+
+- title: "Wiki: Speicher und Nulleinspeisung steuern"
+  source: "OpenDTU-OnBattery"
+  url: "https://github.com/helgeerbe/OpenDTU-OnBattery/wiki"
+  type: "Open-Source-Software"
+  description: "Fork von OpenDTU mit Unterstützung für Batterieladegeräte, BMS und Leistungsmesser (DIY-Speicher, Nulleinspeisung)."
+  categories: [speicher, balkonsolar]
+  csv_id: 30
+  checked: "2026-11-23"
+
+- title: "Handbuch Gemeinschaftlicher Solar-Selbstbau"
+  source: "selbstbau.solar"
+  url: "https://selbstbau.solar/handbuch/"
+  type: "How-to"
+  description: "Leitfaden für Selbstbaugemeinschaften: Recht (inkl. Rechtsgutachten), Wirtschaft, Technik, Gruppenorganisation; Aufzeichnung der Vorstellung."
+  license: "CC BY-NC-SA 3.0 DE"
+  categories: [dachsolar, freiflaechensolar]
+  csv_id: 35
+  checked: "2026-11-23"
+
+- title: "Initiativen und Karte der Selbstbaugruppen"
+  source: "selbstbau.solar"
+  url: "https://selbstbau.solar/"
+  type: "Community/Forum"
+  description: "Verzeichnis aktiver Selbstbaugruppen (z. B. SoLocal Energy Kassel, Bremer SolidarStrom, SoliSolar Hamburg), Newsletter, Coaching für neue Gruppen."
+  categories: [dachsolar]
+  csv_id: 36
+  checked: "2026-11-23"
+
+- title: "Photovoltaik-Selbstbau in Genossenschaften"
+  source: "selbstbau.ch"
+  url: "https://selbstbau.ch/"
+  type: "How-to"
+  description: "Schweizer Selbstbau-Genossenschaften: Laien montieren unter Anleitung, Fachbetriebe übernehmen Gerüst und Elektroinstallation; Leitfaden aus über 800 Anlagen."
+  categories: [dachsolar]
+  csv_id: 37
+  checked: "2026-11-23"
+
+- title: "Photovoltaik: Planung einer Solaranlage"
+  source: "Verbraucherzentrale"
+  url: "https://www.verbraucherzentrale.de/wissen/energie/erneuerbare-energien/photovoltaik-was-bei-der-planung-einer-solaranlage-wichtig-ist-5574"
+  type: "Allgemeine Informationen"
+  description: "Neutraler Planungsratgeber: Eignung, Ausrichtung, Eigenverbrauch, Einspeisevergütung, Solarspitzengesetz; Hinweis zur Selbstmontage und Garantien."
+  license: "Urheberrecht"
+  categories: [dachsolar]
+  csv_id: 38
+  checked: "2026-11-23"
+
+- title: "Unabhängigkeitsrechner"
+  source: "HTW Berlin"
+  url: "https://solar.htw-berlin.de/rechner/unabhaengigkeitsrechner/"
+  type: "Tool/Rechner"
+  description: "Rechner für Autarkiegrad und Eigenverbrauch von PV mit Batteriespeicher; HTW hat zusätzlich Qualitätsstandards für Solarrechner veröffentlicht."
+  license: "Urheberrecht"
+  categories: [dachsolar, speicher]
+  csv_id: 39
+  checked: "2026-11-23"
+
+- title: "Faktenblätter und Erstberatung"
+  source: "Photovoltaik-Netzwerk BW"
+  url: "https://www.photovoltaik-bw.de/"
+  type: "Allgemeine Informationen"
+  description: "Landesnetzwerk mit 12 Regionalnetzwerken: Faktenblätter (Dach, Fassade, Freifläche, Balkon-PV, Repowering, Steuerrecht), Erstberatung, Veranstaltungen."
+  license: "Urheberrecht"
+  categories: [dachsolar, freiflaechensolar]
+  csv_id: 40
+  checked: "2026-11-23"
+
+- title: "Solarpotenzial auf Dachflächen"
+  source: "Energieatlas BW"
+  url: "https://www.energieatlas-bw.de/sonne/dachflachen/solarpotenzial-auf-dachflachen"
+  type: "Tool/Rechner"
+  description: "Interaktive Karte zur Eignung einzelner Dachflächen."
+  categories: [dachsolar]
+  csv_id: 41
+  checked: "2026-11-23"
+
+- title: "Agri-Photovoltaik: Leitfaden für Deutschland"
+  source: "Fraunhofer ISE"
+  url: "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/agri-photovoltaik-chance-fuer-landwirtschaft-und-energiewende.html"
+  type: "Studie/Leitfaden"
+  description: "Technik, Potenzial, Rechtsrahmen und Praxisbeispiele für Agri-PV; praktische Hinweise für Landwirtschaft, Kommunen, Unternehmen."
+  license: "Urheberrecht"
+  categories: [agri-pv, freiflaechensolar]
+  csv_id: 42
+  checked: "2026-11-23"
+
+- title: "Kriterien für naturverträgliche Standortwahl und Gestaltung von Solar-Freiflächenanlagen"
+  source: "KNE"
+  url: "https://www.naturschutz-energiewende.de/fachwissen/veroeffentlichungen/kriterien-fuer-eine-naturvertraegliche-standortwahl-von-solar-freiflaechenanlagen/"
+  type: "Studie/Leitfaden"
+  description: "Übersichten zu geeigneten/ungeeigneten Flächentypen und Gestaltungskriterien; weitere Fachgutachten zu Biodiversität in Solarparks."
+  license: "Urheberrecht"
+  categories: [freiflaechensolar, agri-pv]
+  csv_id: 43
+  checked: "2026-11-23"
+
+- title: "Empfehlungen zum Einsatz kleiner Windenergieanlagen im urbanen Raum"
+  source: "HTW Berlin"
+  url: "https://reiner-lemoine-institut.de/wp-content/uploads/2024/09/kleinwind_handlungsempfehlungen_htw-berlin.pdf"
+  type: "Studie/Leitfaden"
+  description: "Leitfaden zu Anlagenwahl, Qualität/Zertifizierung, Bauformen, Dachanlagen und Genehmigung (BauGB, BImSchG)."
+  license: "Urheberrecht"
+  categories: [kleinwind]
+  csv_id: 44
+  checked: "2026-11-23"
+
+- title: "Wirtschaftlichkeit und Vergütung von Kleinwindenergieanlagen"
+  source: "BWE"
+  url: "https://www.wind-energie.de/fileadmin/redaktion/dokumente/publikationen-oeffentlich/themen/02-technik-und-netze/07-kleinwind/bwe_kwea_studie_liersch_final_2.pdf"
+  type: "Studie/Leitfaden"
+  description: "Studie des Bundesverbands WindEnergie zu Kosten, Erträgen und Marktpotenzial von KWEA."
+  license: "Urheberrecht"
+  categories: [kleinwind]
+  csv_id: 45
+  checked: "2026-11-23"
+
+- title: "Das Kleinwindkraft-Portal"
+  source: "klein-windkraftanlagen.com"
+  url: "https://www.klein-windkraftanlagen.com/"
+  type: "Allgemeine Informationen"
+  description: "Fachportal zu Standortprüfung, Windmessung, Herstellern; jährlicher Kleinwind-Marktreport, Fachbuch (überarbeitet 04/2026)."
+  license: "Urheberrecht"
+  categories: [kleinwind]
+  csv_id: 48
+  checked: "2026-11-23"
+
+- title: "Technik und Rechtslage je Bundesland"
+  source: "Bundesverband Kleinwindanlagen"
+  url: "https://www.bundesverband-kleinwindanlagen.de/"
+  type: "Norm & Recht"
+  description: "Verbandsseite mit Informationen zu Technik und zur Rechtslage in den Bundesländern."
+  license: "Urheberrecht"
+  categories: [kleinwind]
+  csv_id: 49
+  checked: "2026-11-23"
+
+- title: "Bau eines mobilen 200-Watt-Balkonkraftwerks (PDF)"
+  source: "Umwelt-Campus Birkenfeld"
+  url: "https://www.umwelt-campus.de/fileadmin/Umwelt-Campus/IoT-Werkstatt/octopus/Fachprojekt_Anleitung_CC-1.pdf"
+  type: "How-to"
+  description: "Vollständige Bauanleitung mit Materialliste: klappbares 2×100-W-System mit Ständern aus Stahl-U-Profil, 3D-gedruckten Scharnieren, integriertem Wechselrichter und Schuko-/Betteri-Kabel; Schritt für Schritt mit Abbildungen."
+  license: "CC BY 4.0"
+  categories: [balkonsolar]
+  csv_id: 50
+  checked: "2026-11-23"
+
+- title: "Workshop „Balkonkraftwerk und Smart Grid“ (Folien)"
+  source: "Umwelt-Campus Birkenfeld"
+  url: "https://www.umwelt-campus.de/fileadmin/Umwelt-Campus/User/JBrinkmann/2024_BalkonKraftWorkshop_V15.pdf"
+  type: "How-to"
+  description: "Workshopmaterial: Grundlagen, Grundlastanalyse mit Shelly-Messsteckdose, Live-Zusammenbau, IoT-Auswertung."
+  categories: [balkonsolar]
+  csv_id: 51
+  checked: "2026-11-23"
+
+- title: "Steckersolar- und Upcycling-Workshops in Freiburg"
+  source: "Solare Zukunft e.V."
+  url: "https://www.solarezukunft.org/"
+  type: "Community/Forum"
+  description: "Bildungsverein für erneuerbare Energien (seit 1995); regelmäßige Steckersolar- und Upcycling-Workshops gemeinsam mit Balkon.Solar e.V., u. a. Weltrekordversuch Upcycling 07/2024."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 53
+  checked: "2026-11-23"
+
+- title: "Sammelbestellungen und Upcycling-Aktionen"
+  source: "SoLocal Energy Kassel"
+  url: "https://www.solocal-energy.de/balkonkraftwerke/"
+  type: "Community/Forum"
+  description: "Nachbarschaftsinitiative: Sammelbestellungen, Upcycling-Aktionen gebrauchter Module (z. B. „Balkonien“ 09/2026), Solar-Selbstbaugemeinschaft."
+  license: "Urheberrecht"
+  categories: [balkonsolar]
+  csv_id: 54
+  checked: "2026-11-23"
+
+- title: "DIY-Akkus: Aufbau, Inbetriebnahme, Fehlerbeseitigung (Linkliste)"
+  source: "Akkudoktor"
+  url: "https://akkudoktor.net/t/diy-akkus-aufbau-mechanisch-u-elektrisch-inbetriebnahme-fehlerbeseitigung-linkliste/13592"
+  type: "How-to"
+  description: "Kuratierte Sammlung der Forums-Anleitungen zum Bau von LiFePO4-Speichern: Zellprüfung, Verpressen, Busbars, Temperatursensoren, serielles Balancieren, BMS, Betriebskonzepte."
+  license: "Nutzerbeiträge"
+  categories: [speicher]
+  csv_id: 56
+  checked: "2026-11-23"
+
+- title: "Sicherheit beim Akku-Bau und -Betrieb"
+  source: "Akkudoktor"
+  url: "https://akkudoktor.net/t/sicherheit-beim-akku-bau-und-betrieb/9957"
+  type: "How-to"
+  description: "Sammelthread zu Sicherheitsaspekten beim Bau großer Akkus (Schutzausrüstung, Absicherung, Brandrisiken)."
+  license: "Nutzerbeiträge"
+  categories: [speicher]
+  csv_id: 57
+  checked: "2026-11-23"
+
+- title: "Baubericht Victron Multiplus-II + 16× EVE LF280K + BMS"
+  source: "Akkudoktor"
+  url: "https://akkudoktor.net/t/baubericht-victron-multiplus-ii-48-5000-16-eve-lf280k-und-123-electric-bms-speicher/11649"
+  type: "Praxisbericht"
+  description: "Ausführlicher Erfahrungsbericht zum Bau eines 48-V-Heimspeichers mit Komponentenliste, Zellinitialisierung und Verdrahtung."
+  license: "Nutzerbeiträge"
+  categories: [speicher]
+  csv_id: 58
+  checked: "2026-11-23"
+
+- title: "Dokumentation: Energiemanagement mit dynamischen Tarifen"
+  source: "evcc"
+  url: "https://docs.evcc.io/de/"
+  type: "Open-Source-Software"
+  description: "Open-Source-Energiemanagement: PV-Überschussladen für E-Autos, Speicher- und Wärmepumpensteuerung, dynamische Tarife; ausführliche deutschsprachige Doku, Einstiegshilfen, Video-/Vortragssammlung."
+  license: "MIT (Software)"
+  categories: [speicher, balkonsolar, dachsolar]
+  csv_id: 59
+  checked: "2026-11-23"
+
+- title: "Wiki: Stromzähler selbst auslesen"
+  source: "Volkszähler"
+  url: "https://wiki.volkszaehler.org/"
+  type: "Open-Source-Hardware"
+  description: "Open-Source-Projekt zum Auslesen digitaler Stromzähler: Bauanleitungen für IR-Schreib-/Leseköpfe, vzlogger, Zählerdatenbank."
+  categories: [speicher, balkonsolar, dachsolar]
+  csv_id: 60
+  checked: "2026-11-23"
+
+- title: "Windrad-Selbstbau-Workshops"
+  source: "ERNI e. V."
+  url: "https://www.erni-kollektiv.org/"
+  type: "How-to"
+  description: "Workshops zum Bau von Kleinstwindanlagen nach der Bauanleitung von Hugh Piggott (Rotor 2–4 m, Mast bis 10 m), inkl. Elektrik; Weiterentwicklung und Dokumentation des Designs."
+  license: "Urheberrecht (Windkit-Repo siehe ID 34)"
+  categories: [kleinwind]
+  csv_id: 61
+  checked: "2026-11-23"
+
+- title: "Piggott-Workshops in Österreich und Thüringen"
+  source: "Scoraig Wind"
+  url: "https://scoraigwind.co.uk/2017/07/grid-tied-2f-windmill-self-construction-project-with-jonathan-in-austria/"
+  type: "How-to"
+  description: "Mehrtägige Workshops zum Bau eines netzgekoppelten Piggott-Windrads (2F, 2 m Rotor), u. a. in Österreich und Thüringen; Bericht auf Hugh Piggotts Blog."
+  license: "Urheberrecht"
+  categories: [kleinwind]
+  csv_id: 62
+  checked: "2026-11-23"
+
+- title: "Wind Power Workshop (Buch)"
+  source: "Hugh Piggott"
+  url: "https://www.schweitzer-online.de/en/buch/Piggott/Wind-Power-Workshop/9781902175621/A16659614/"
+  type: "How-to"
+  description: "Internationales Standardwerk zum Windrad-Selbstbau (Rotorblätter, Axialfluss-Generator, Mast, Netzanbindung); Basis der deutschen Workshop-Szene."
+  license: "Urheberrecht (Buch)"
+  categories: [kleinwind]
+  csv_id: 63
+  checked: "2026-11-23"
+
+- title: "Rechtsgutachten zum gemeinschaftlichen Solar-Selbstbau"
+  source: "Bremer SolidarStrom"
+  url: "https://bremer-solidarstrom.de/"
+  type: "Norm & Recht"
+  description: "Gutachten zu Fragen wie: Dürfen Laien PV bauen, Gewährleistung, Unfallversicherung, Haftpflicht, Steuern, Wettbewerbsrecht; Grundlage des Selbstbau-Handbuchs."
+  categories: [dachsolar]
+  csv_id: 65
+  checked: "2026-11-23"
+

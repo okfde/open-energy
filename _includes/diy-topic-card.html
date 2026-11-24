@@ -1,0 +1,35 @@
+{% comment %}
+  Content-Karte einer DIY-Variante (Balkonsolar, Dachsolar …).
+  Params: topic (Eintrag aus _data/diy_topics.yml)
+  Die data-match-*-Attribute liest assets/js/diy-filter.js.
+{% endcomment %}
+{% assign topic = include.topic %}
+<a href="{{ '/do-it-yourself/' | append: topic.slug | append: '/' | relative_url }}"
+   class="diy-card"
+   data-diy-card="{{ topic.slug }}"
+   data-match-on="{{ topic.match['on'] | join: ' ' }}"
+   data-match-off="{{ topic.match['off'] | join: ' ' }}">
+  <div class="diy-card__body">
+    <div class="diy-card__heading">
+      <h3>{{ topic.title }}</h3>
+      <p class="body-text--small">{{ topic.excerpt }}</p>
+    </div>
+    <dl class="diy-card__facts">
+      <div class="diy-card__costs">
+        <div>
+          <dt class="ui-upper-small">Kaufen &amp; Beauftragen</dt>
+          <dd><strong>{{ topic.cost_buy }}</strong> <span>{{ topic.cost_buy_note }}</span></dd>
+        </div>
+        <div>
+          <dt class="ui-upper-small">Selbst&nbsp;bauen &amp; sparen</dt>
+          <dd><strong>{{ topic.cost_diy }}</strong> <span>{{ topic.cost_diy_note }}</span></dd>
+        </div>
+      </div>
+      <div>
+        <dt class="ui-upper-small">Rechtlicher Rahmen</dt>
+        <dd><strong>{{ topic.legal_fact }}</strong> <span>{{ topic.legal }}</span></dd>
+      </div>
+    </dl>
+  </div>
+  <span class="diy-card__cta">Mehr erfahren {% include icon-arrow.html %}</span>
+</a>

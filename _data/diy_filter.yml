@@ -1,0 +1,67 @@
+# Fragen des Formular-Filters auf /do-it-yourself/.
+#
+# - `label` steht im Button, `description` (optional) als Beschreibung darunter.
+# - Optionen mit Unteroptionen (`options`) öffnen nach dem Klick eine
+#   Folgefrage (`question`). Mehrfachauswahl ist dort möglich, außer bei
+#   `exclusive: true`.
+# - Die IDs der Blätter (Optionen ohne Unteroptionen) werden in
+#   _data/diy_topics.yml unter `match.on` / `match.off` referenziert.
+# - `summary` ist der Satz, der nach dem Abschicken in der Kurzbeschreibung
+#   erscheint.
+
+place:
+  question: "An folgendem Ort möchte ich meinen Strom selbst erzeugen"
+  options:
+    - id: miete
+      label: "Mietshaus oder -wohnung"
+      question: "Meine Wohnung hat …"
+      options:
+        - id: miete-balkon
+          label: "mit Balkon Richtung Süden, Osten, Westen"
+          summary: "Ein Balkon reicht für ein Steckersolargerät. Seit Oktober 2024 dürfen Vermieter es nur noch aus triftigen Gründen ablehnen."
+        - id: miete-garten
+          label: "mit Garten"
+          summary: "Im Garten lassen sich Module als Steckersolargerät aufstellen – mit Absprache der Vermieterin oder des Vermieters."
+        - id: miete-ohne
+          label: "weder Balkon noch Garten"
+          exclusive: true
+          summary: "Ohne eigene Fläche kannst du trotzdem sparen: Ein Speicher lädt, wenn Strom mit einem dynamischen Tarif günstig ist, und liefert, wenn er teuer ist."
+    - id: eigenheim
+      label: "Eigenheim"
+      question: "Mein Eigenheim hat …"
+      options:
+        - id: eigenheim-garten
+          label: "mit Garten > 100 qm"
+          summary: "Ein großer Garten eignet sich für eine bodenmontierte Solaranlage und – bei gutem Wind – für ein Kleinwindrad."
+        - id: eigenheim-dach
+          label: "mit Dach in südlicher, östlicher oder westlicher Ausrichtung"
+          summary: "Das Dach ist die klassische Fläche: Viel Leistung, und die Montage kannst du in Eigenleistung übernehmen."
+        - id: eigenheim-balkon
+          label: "mit Balkon Richtung Süden, Osten, Westen"
+          summary: "Am Balkon ist ein Steckersolargerät der schnellste Einstieg – ohne Elektrikerin oder Elektriker."
+        - id: eigenheim-ohne
+          label: "nichts davon"
+          exclusive: true
+          summary: "Ohne passende Fläche kannst du trotzdem sparen: Ein Speicher lädt, wenn Strom mit einem dynamischen Tarif günstig ist, und liefert, wenn er teuer ist."
+    - id: bauernhof
+      label: "Bauernhof / landwirtschaftliche Flächen"
+      summary: "Auf Hof und Acker ist Platz für große Anlagen: Dächer, Freiflächen, Agri-PV über der Kultur und Kleinwind."
+    - id: kleingarten
+      label: "Kleingarten / eine abgelegene Hütte"
+      summary: "Im Kleingarten oder an der Hütte gibt es oft keinen Netzanschluss – eine kleine Inselanlage mit Akku ist hier ideal."
+
+grid:
+  question: "Ich möchte …"
+  options:
+    - id: "on"
+      label: "On-the-Grid"
+      description: "Meine Anlage mit dem Stromnetz verbinden, um die Stromrechnung zu verringern oder zur Energiewende beizutragen"
+      summary: "On-the-Grid heißt: Du nutzt deinen Strom zuerst selbst, den Rest übernimmt das Netz."
+    - id: "off"
+      label: "Off-the-Grid"
+      description: "Unabhängig vom Stromnetz meinen Strom nutzen"
+      summary: "Off-the-Grid heißt: Ein Akku speichert deinen Strom, ein Laderegler schützt ihn – rechtlich die einfachste Variante, technisch die anspruchsvollste."
+
+# Wird statt der Karten angezeigt, wenn keine Karte zu den Antworten passt
+# (z. B. keine eigene Fläche und Off-the-Grid).
+empty: "Ohne eigene Fläche lässt sich kein Strom unabhängig vom Netz erzeugen. Mit Netzanschluss kannst du trotzdem sparen: Wähle On-the-Grid und erfahre, wie ein Speicher mit dynamischem Stromtarif deine Stromkosten senkt."
