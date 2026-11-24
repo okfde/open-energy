@@ -1,5 +1,5 @@
 ---
-title: "Wie offene Solartechnik die Energiewende in den Alltag integriert"
+title: "Sonne ernten auf dem Balkon: Wie eine Solarbox zum smarten Möbelstück wird"
 date: 2026-11-23
 category: 
 - Solarenergie
