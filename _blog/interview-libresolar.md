@@ -1,5 +1,5 @@
 ---
-title: "Sonne ernten auf dem Balkon: Wie eine Solarbox zum smarten Möbelstück wird"
+title: "Sonne ernten auf dem Balkon: Wie eine Open-Source-Solarbox zum Möbelstück wird"
 date: 2026-11-23
 category: 
 - Solarenergie
