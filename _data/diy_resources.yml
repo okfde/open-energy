@@ -158,7 +158,7 @@
 
 - title: "BalkonSolar-Kurzbuch (PDF)"
   source: "Akkudoktor / Balkon.Solar"
-  url: "https://akkudoktor.net/wp-content/uploads/2024/07/BalkonSolarKurzbuch_ohnecover.pdf"
+  url: "https://de.scribd.com/document/873237384/BalkonSolarKurzbuch-ohnecover"
   type: "How-to"
   description: "Kompaktes Handbuch: Solarmodule verstehen, Upcycling, Wechselrichter, Speicher, Planung, Montage nach Modultyp, Selbst zusammenstellen, IT-Sicherheit, Brandschutz, Anmeldung, Beispielrechnungen 800 W."
   license: "CC BY-NC-SA 4.0"
@@ -274,16 +274,6 @@
   license: "Nutzerbeiträge"
   categories: [balkonsolar, freiflaechensolar, kleinwind]
   csv_id: 25
-  checked: "2026-11-23"
-
-- title: "Das große deutschsprachige PV-Forum"
-  source: "Photovoltaikforum"
-  url: "https://www.photovoltaikforum.com/"
-  type: "Community/Forum"
-  description: "Langjähriges deutschsprachiges PV-Forum zu Dach-, Balkon- und Inselanlagen; von balkon.solar empfohlen."
-  license: "Nutzerbeiträge"
-  categories: [balkonsolar, dachsolar, freiflaechensolar, speicher]
-  csv_id: 27
   checked: "2026-11-23"
 
 - title: "Dokumentation: Mikrowechselrichter ohne Cloud auslesen"
@@ -449,16 +439,6 @@
   description: "Workshopmaterial: Grundlagen, Grundlastanalyse mit Shelly-Messsteckdose, Live-Zusammenbau, IoT-Auswertung."
   categories: [balkonsolar]
   csv_id: 51
-  checked: "2026-11-23"
-
-- title: "Steckersolar- und Upcycling-Workshops in Freiburg"
-  source: "Solare Zukunft e.V."
-  url: "https://www.solarezukunft.org/"
-  type: "Community/Forum"
-  description: "Bildungsverein für erneuerbare Energien (seit 1995); regelmäßige Steckersolar- und Upcycling-Workshops gemeinsam mit Balkon.Solar e.V., u. a. Weltrekordversuch Upcycling 07/2024."
-  license: "Urheberrecht"
-  categories: [balkonsolar]
-  csv_id: 53
   checked: "2026-11-23"
 
 - title: "Sammelbestellungen und Upcycling-Aktionen"
