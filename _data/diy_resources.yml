@@ -314,15 +314,6 @@
   csv_id: 36
   checked: "2026-11-23"
 
-- title: "Photovoltaik-Selbstbau in Genossenschaften"
-  source: "selbstbau.ch"
-  url: "https://selbstbau.ch/"
-  type: "How-to"
-  description: "Schweizer Selbstbau-Genossenschaften: Laien montieren unter Anleitung, Fachbetriebe übernehmen Gerüst und Elektroinstallation; Leitfaden aus über 800 Anlagen."
-  categories: [dachsolar]
-  csv_id: 37
-  checked: "2026-11-23"
-
 - title: "Photovoltaik: Planung einer Solaranlage"
   source: "Verbraucherzentrale"
   url: "https://www.verbraucherzentrale.de/wissen/energie/erneuerbare-energien/photovoltaik-was-bei-der-planung-einer-solaranlage-wichtig-ist-5574"
@@ -343,23 +334,13 @@
   csv_id: 39
   checked: "2026-11-23"
 
-- title: "Faktenblätter und Erstberatung"
-  source: "Photovoltaik-Netzwerk BW"
-  url: "https://www.photovoltaik-bw.de/"
-  type: "Allgemeine Informationen"
-  description: "Landesnetzwerk mit 12 Regionalnetzwerken: Faktenblätter (Dach, Fassade, Freifläche, Balkon-PV, Repowering, Steuerrecht), Erstberatung, Veranstaltungen."
-  license: "Urheberrecht"
-  categories: [dachsolar, freiflaechensolar]
-  csv_id: 40
-  checked: "2026-11-23"
-
-- title: "Solarpotenzial auf Dachflächen"
-  source: "Energieatlas BW"
-  url: "https://www.energieatlas-bw.de/sonne/dachflachen/solarpotenzial-auf-dachflachen"
+- title: "Solarpotenzial und passenden Akku berechnen"
+  source: "Akkudoktor Tools"
+  url: "https://akkudoktor.net/pub/pvtool-rechner"
   type: "Tool/Rechner"
-  description: "Interaktive Karte zur Eignung einzelner Dachflächen."
+  description: "Webtool zur Berechnung von Solarertrag und passendem Akku zur Optimierung des Eigenverbrauchs."
   categories: [dachsolar]
-  csv_id: 41
+  csv_id:
   checked: "2026-11-23"
 
 - title: "Agri-Photovoltaik: Leitfaden für Deutschland"
@@ -368,7 +349,7 @@
   type: "Studie/Leitfaden"
   description: "Technik, Potenzial, Rechtsrahmen und Praxisbeispiele für Agri-PV; praktische Hinweise für Landwirtschaft, Kommunen, Unternehmen."
   license: "Urheberrecht"
-  categories: [agri-pv, freiflaechensolar]
+  categories: [agri-pv]
   csv_id: 42
   checked: "2026-11-23"
 
