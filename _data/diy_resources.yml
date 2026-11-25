@@ -276,16 +276,6 @@
   csv_id: 25
   checked: "2026-11-23"
 
-- title: "Insel-Diskussion (Wiki-Thread)"
-  source: "Akkudoktor"
-  url: "https://akkudoktor.net/t/insel-diskussion-technisch-nicht-rechtlich-wiki/32580"
-  type: "How-to"
-  description: "Gemeinschaftlich gepflegter Wiki-Beitrag: Gründe für/gegen Insel, Hardwarekomponenten, Systemauslegung."
-  license: "Nutzerbeiträge"
-  categories: [balkonsolar, freiflaechensolar, kleinwind]
-  csv_id: 26
-  checked: "2026-11-23"
-
 - title: "Das große deutschsprachige PV-Forum"
   source: "Photovoltaikforum"
   url: "https://www.photovoltaikforum.com/"
@@ -534,7 +524,7 @@
   source: "ERNI e. V."
   url: "https://git.erni-kollektiv.org/erni/windkit"
   type: "How-to"
-  description: "Workshops zum Bau von Kleinstwindanlagen nach der Bauanleitung von Hugh Piggott (Rotor 2–4 m, Mast bis 10 m), inkl. Elektrik; Weiterentwicklung und Dokumentation des Designs."
+  description: "Eine umfangreiche Anleitung zum Bau der Kleinstwindanlage windkit (Rotor 2 m, Mast bis 9 m)."
   license: "CERN OHL"
   categories: [kleinwind]
   csv_id: 61
