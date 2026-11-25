@@ -32,10 +32,10 @@
   excerpt: "Ein bis vier Solarmodule am Geländer, an der Wand oder im Garten, per Stecker ans Hausnetz. Der schnellste Weg zu eigenem Strom – auch zur Miete."
   cost_buy: "ab 900 €"
   cost_buy_note: "800 Wp / 800 W mit 1-kWh-Akku: Set ab 300 € + Steckerspeicher ab 400 € + Einspeisesteckdose vom Elektriker ab 200 €"
-  cost_diy: "ab 760 €"
+  cost_diy: "ab 740 €"
   cost_diy_note: "800 Wp / 800 W mit 1-kWh-Akku: neue Module, Akku und Halterung selbst gebaut – Stecker statt Elektriker"
   cost_diy_items:
-    - ["2 Solarmodule, zusammen ca. 800 Wp, neu", "160 €"]
+    - ["2 Solarmodule, zusammen ca. 800 Wp, neu", "140 €"]
     - ["Mikrowechselrichter 800 VA, neu", "150 €"]
     - ["Akku 1 kWh, selbst gebaut (4 LiFePO4-Zellen, BMS)", "200 €"]
     - ["MPPT-Laderegler für den Akku", "100 €"]
@@ -122,15 +122,15 @@
   excerpt: "Ein kleines Windrad liefert vor allem im Winter und nachts Strom – die ideale Ergänzung zu Solar. Offene Baupläne und Workshops machen den Selbstbau möglich."
   cost_buy: "ab 5.800 €"
   cost_buy_note: "1 kW mit 1-kWh-Akku: Windrad, Mast und Wechselrichter, installiert"
-  cost_diy: "ab 2.800 €"
+  cost_diy: "ab 1.900 €"
   cost_diy_note: "1 kW mit 1-kWh-Akku: Windrad nach offenem Bauplan selbst gebaut, Inselbetrieb – mit Netzanschluss und Elektriker ab 4.600 €"
   cost_diy_items:
-    - ["Windrad nach Piggott-Bauplan: Magnete, Kupfer, Harz, Holz, Stahl", "900 €"]
-    - ["Mast 10 m mit Abspannung und Fundament", "700 €"]
-    - ["Gleichrichter, Laderegler mit Dump-Load, Bremsschalter", "350 €"]
+    - ["Windrad nach Piggott-Bauplan: Magnete, Kupfer, Harz, Holz, Stahl", "500 €"]
+    - ["Mast 10 m mit Abspannung und Fundament", "500 €"]
+    - ["Gleichrichter, Laderegler mit Dump-Load, Bremsschalter", "150 €"]
     - ["Akku 1 kWh, selbst gebaut (4 LiFePO4-Zellen, BMS)", "200 €"]
     - ["Inselwechselrichter 230 V", "400 €"]
-    - ["Kabel und Absicherung", "250 €"]
+    - ["Kabel und Absicherung", "150 €"]
   legal_fact: "bis 10 m Höhe, 3 m Rotor"
   legal: "Bundesweit nur in Gewerbe- und Industriegebieten ohne Baugenehmigung, im Wohngebiet je nach Bundesland."
   image: "/assets/images/illustrations/illu-windrad-1.png"
