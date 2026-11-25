@@ -123,7 +123,7 @@
   cost_buy: "ab 5.800 €"
   cost_buy_note: "1 kW mit 1-kWh-Akku: Windrad, Mast und Wechselrichter, installiert"
   cost_diy: "ab 1.900 €"
-  cost_diy_note: "1 kW mit 1-kWh-Akku: Windrad nach offenem Bauplan selbst gebaut, Inselbetrieb – mit Netzanschluss und Elektriker ab 4.600 €"
+  cost_diy_note: "1 kW mit 1-kWh-Akku: Windrad nach offenem Bauplan selbst gebaut, Inselbetrieb – mit Netzanschluss und Elektriker ab 3.400 €"
   cost_diy_items:
     - ["Windrad nach Piggott-Bauplan: Magnete, Kupfer, Harz, Holz, Stahl", "500 €"]
     - ["Mast 10 m mit Abspannung und Fundament", "500 €"]
