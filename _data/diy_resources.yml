@@ -66,7 +66,7 @@
 # --- Ressourcen aus der CSV ----------------------------------------------------
 
 - title: "Welche Wechselrichter können sicher betrieben werden?"
-  source: "github.com"
+  source: "OpenEnergy"
   url: "https://github.com/Prototype-Fund-Hardware/awesome-inverters"
   type: "Open-Source-Hardware"
   description: "Hinter dem Link findet ihr eine Liste von Wechselrichtern für Balkonsolar und größere Solaranlagen. Auf der Liste werden Geräte danach bewertet, ob sie z.B. ohne Cloud-Anbindung funktionieren oder sie in Homeassistant integrierbar sind."
@@ -444,7 +444,7 @@
 
 - title: "Bau eines mobilen 200-Watt-Balkonkraftwerks (PDF)"
   source: "Umwelt-Campus Birkenfeld"
-  url: "https://www.umwelt-campus.de/fileadmin/Umwelt-Campus/IoT-Werkstatt/octopus/Fachprojekt_Anleitung_CC-1.pdf"
+  url: "https://www.hochschule-trier.de/fileadmin/Umwelt-Campus/IoT-Werkstatt/Tutorials_Oktopus/QuickStart_Anleitungen/Fachprojekt_Anleitung_CC-1.pdf"
   type: "How-to"
   description: "Vollständige Bauanleitung mit Materialliste: klappbares 2×100-W-System mit Ständern aus Stahl-U-Profil, 3D-gedruckten Scharnieren, integriertem Wechselrichter und Schuko-/Betteri-Kabel; Schritt für Schritt mit Abbildungen."
   license: "CC BY 4.0"
@@ -530,31 +530,21 @@
   csv_id: 60
   checked: "2026-11-23"
 
-- title: "Windrad-Selbstbau-Workshops"
+- title: "Das Kleinwindrad windkit selbst bauen"
   source: "ERNI e. V."
-  url: "https://www.erni-kollektiv.org/"
+  url: "https://git.erni-kollektiv.org/erni/windkit"
   type: "How-to"
   description: "Workshops zum Bau von Kleinstwindanlagen nach der Bauanleitung von Hugh Piggott (Rotor 2–4 m, Mast bis 10 m), inkl. Elektrik; Weiterentwicklung und Dokumentation des Designs."
-  license: "Urheberrecht (Windkit-Repo siehe ID 34)"
+  license: "CERN OHL"
   categories: [kleinwind]
   csv_id: 61
   checked: "2026-11-23"
 
-- title: "Piggott-Workshops in Österreich und Thüringen"
-  source: "Scoraig Wind"
-  url: "https://scoraigwind.co.uk/2017/07/grid-tied-2f-windmill-self-construction-project-with-jonathan-in-austria/"
-  type: "How-to"
-  description: "Mehrtägige Workshops zum Bau eines netzgekoppelten Piggott-Windrads (2F, 2 m Rotor), u. a. in Österreich und Thüringen; Bericht auf Hugh Piggotts Blog."
-  license: "Urheberrecht"
-  categories: [kleinwind]
-  csv_id: 62
-  checked: "2026-11-23"
-
-- title: "Wind Power Workshop (Buch)"
+- title: "Verschiedene Bauanleitungen zu Low-Tech Kleinwindrädern"
   source: "Hugh Piggott"
-  url: "https://www.schweitzer-online.de/en/buch/Piggott/Wind-Power-Workshop/9781902175621/A16659614/"
+  url: "https://scoraigwind.co.uk/all-of-the-books-by-hugh-how-to-get-them/"
   type: "How-to"
-  description: "Internationales Standardwerk zum Windrad-Selbstbau (Rotorblätter, Axialfluss-Generator, Mast, Netzanbindung); Basis der deutschen Workshop-Szene."
+  description: "Internationale Standardwerke zum Windrad-Selbstbau (Rotorblätter, Axialfluss-Generator, Mast, Netzanbindung)."
   license: "Urheberrecht (Buch)"
   categories: [kleinwind]
   csv_id: 63
@@ -562,7 +552,7 @@
 
 - title: "Rechtsgutachten zum gemeinschaftlichen Solar-Selbstbau"
   source: "Bremer SolidarStrom"
-  url: "https://bremer-solidarstrom.de/"
+  url: "https://bremer-solidarstrom.de/wp-content/uploads/Rechtsgutachten_Solar-Selbstbau_final.pdf"
   type: "Norm & Recht"
   description: "Gutachten zu Fragen wie: Dürfen Laien PV bauen, Gewährleistung, Unfallversicherung, Haftpflicht, Steuern, Wettbewerbsrecht; Grundlage des Selbstbau-Handbuchs."
   categories: [dachsolar]
