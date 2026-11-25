@@ -21,7 +21,7 @@ description: "Wie kann ich selbst Strom erzeugen? Balkonsolar, Dachsolar und Kle
 <section class="section section--sand diy-grid-section" aria-labelledby="werkstatt-heading">
   <div class="diy-section-intro">
     <h2 id="werkstatt-heading">Open Source Werkstatt</h2>
-    <p class="body-text">Komponenten, deren Entwickler alle Baupläne offenlegen – damit du oder eine Werkstatt deines Vertrauens sie reparieren und sogar nachbauen könnt. Wir nennen das Open Source Energietechnik.</p>
+    <p class="body-text">Du möchtest, dass deine Anlage wirklich dir gehört? Dann nutze Komponenten, deren Entwickler und Entwicklerinnen alle Baupläne offenlegen, damit du oder eine Werkstatt deines Vertrauens sie reparieren und sogar nachbauen können. Wir nennen das Open Source Energietechnik.</p>
   </div>
   <div class="diy-grid">
     {% assign werkstatt = site.data.diy_resources | where: "werkstatt", true %}
