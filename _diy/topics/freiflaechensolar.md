@@ -27,7 +27,7 @@ schema:
 
 Eine Freiflächenanlage im Kleinen ist ein Gestell mit Modulen – im Garten, auf der Streuobstwiese oder neben der Scheune. Du kannst die Module steil nach Süden stellen, für den Winter optimieren oder senkrecht in Ost-West-Richtung als Zaun aufbauen. Gebrauchte Module aus abgebauten Dachanlagen sind hier ideal: Sie kosten wenig, und Platz ist meist genug da.
 
-Zwischen Garten und Haus braucht es ein Erdkabel. Plane den Kabelweg früh, denn längere Strecken brauchen größere Querschnitte.
+Zwischen Garten und Haus braucht es ein Erdkabel. Plane den Kabelweg früh, denn längere Strecken brauchen größere Querschnitte und beeinflussen dadurch die Kosten.
 
 ## Rechtliche Rahmenbedingungen
 

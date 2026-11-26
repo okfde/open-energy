@@ -164,11 +164,11 @@
 
 - slug: inselanlage
   title: "Inselanlage"
-  excerpt: "Strom ganz ohne Netzanschluss: Solarmodule oder ein Windrad laden einen Akku, ein Wechselrichter macht daraus 230 V. Ideal für Hütte, Kleingarten oder Werkstatt – Balkon-, Dach- und Freiflächensolar sowie Kleinwind lassen sich so umsetzen."
+  excerpt: "Strom ganz ohne Netzanschluss: Solarmodule oder ein Windrad laden einen Akku, ein Wechselrichter macht daraus 230 V. Ideal für Hütte, Kleingarten oder Werkstatt. Balkon-, Dach- und Freiflächensolar sowie Kleinwind lassen sich so umsetzen."
   cost_buy: "ab 2.500 €"
   cost_buy_note: "2 kWp mit 2-kWh-Akku: Komplettset ab 1.800 € + Aufbau und Verkabelung vom Fachbetrieb ab 700 €"
   cost_diy: "ab 1.300 €"
-  cost_diy_note: "2 kWp mit 2-kWh-Akku: neue Module, Akku und Gestell selbst gebaut – ohne Netzanschluss kein Elektriker nötig"
+  cost_diy_note: "2 kWp mit 2-kWh-Akku: neue Module, Akku und Gestell selbst gebaut, ohne Netzanschluss kein Elektriker nötig"
   cost_diy_items:
     - ["4 Solarmodule, zusammen ca. 2 kWp, neu", "360 €"]
     - ["Inselwechselrichter 24 V, 2 kVA mit integriertem MPPT-Laderegler", "300 €"]

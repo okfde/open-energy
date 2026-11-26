@@ -30,14 +30,14 @@ schema:
 
 Über Erfolg und Misserfolg entscheidet der Standort. Wind wird von Häusern, Bäumen und Hügeln stark gebremst. Ein Windrad braucht freie Anströmung, am besten deutlich über allen Hindernissen in der Umgebung. In dicht bebauten Wohngebieten lohnt sich Kleinwind selten, auf dem Land, an der Küste und auf freien Flächen dagegen schon. Miss den Wind vor dem Bau einige Monate lang oder nutze Windkarten.
 
-Selbstgebaute Windräder nach den Bauplänen von Hugh Piggott haben eine lange Tradition. Der ERNI e. V. bietet Workshops an, in denen du ohne Vorkenntnisse ein eigenes Windrad baust – und versteht, wie du es selbst reparierst.
+Selbstgebaute Windräder nach den Bauplänen von Hugh Piggott haben eine lange Tradition und senken die Kosten, weil du sie langfristig selbst reparieren kannst. Kleinwind lohnt sich insbesondere dann, wenn die Kosten gering sind. 
 
 ## Rechtliche Rahmenbedingungen
 
 - **Bundesweit gemeinsame Grenze:** Bis 10 m Gesamthöhe (bis zur Rotorspitze) und 3 m Rotordurchmesser ist ein Kleinwindrad ohne Baugenehmigung erlaubt – in allen Ländern aber nur in Gewerbe- und Industriegebieten.
 - **Wohngebiet:** Ohne Genehmigung möglich in Berlin, Brandenburg, Hamburg, Hessen, Sachsen und Thüringen; Baden-Württemberg, Bayern und das Saarland nennen keine Gebietsbeschränkung. In den übrigen Ländern und in reinen Wohngebieten brauchst du eine Genehmigung.
 - **Außenbereich:** In den meisten Ländern verfahrensfrei, nicht in Sachsen-Anhalt und nie in Schutzgebieten. Am Hof kann ein Windrad als „dem Betrieb dienend“ privilegiert sein.
-- **Auf dem Dach:** Nur in wenigen Ländern geregelt (bis 2 m). Sonst brauchst du meist eine Baugenehmigung und einen Statiknachweis.
-- **Großzügigere Länder:** Bayern, Niedersachsen und Schleswig-Holstein erlauben teils bis 15 m.
+- **Auf dem Dach:** Das macht meistens keinen Sinn, weil die Winde dort zu unruhig sind und sich Vibrationen auf das Haus auswirken. 
+- **Großzügigere Länder:** Bayern, Niedersachsen und Schleswig-Holstein erlauben teils bis 15 m Standhöhe.
 - **Immer beachten:** Lärmschutz (TA Lärm), Standsicherheit und Abstand zum Nachbarn – frag vorher beim Bauamt nach.
 - **Netz:** Netzgekoppelte Anlagen brauchen einen Elektrofachbetrieb und den Eintrag ins Marktstammdatenregister. Inselanlagen ohne Netzanschluss nicht.

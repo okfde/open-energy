@@ -32,7 +32,7 @@ Viele Arbeiten schaffst du selbst: Unterkonstruktion setzen, Module montieren, G
 ## Rechtliche Rahmenbedingungen
 
 - **Keine Baugenehmigung:** Solaranlagen auf Dach und Außenwänden sind in allen Bundesländern verfahrensfrei – bundesweit sicher für Ein- und Zweifamilienhäuser, Reihen- und Doppelhäuser, Garagen, Carports und Nebengebäude.
-- **Selbstmontage:** Unterkonstruktion und Module darfst du selbst montieren. Anschluss und Inbetriebnahme übernimmt ein eingetragener Elektrofachbetrieb.
+- **Selbstmontage:** Unterkonstruktion und Module darfst du selbst montieren und an den Wechselrichter anschließen. Die Inbetriebnahme und der Anschluss zum Stromnetz übernimmt ein eingetragener Elektrofachbetrieb.
 - **Netzbetreiber:** Der Netzanschluss wird beantragt. Bis 30 kW gilt ein vereinfachtes Verfahren: Antwortet der Netzbetreiber nicht binnen eines Monats, darf angeschlossen werden.
 - **Marktstammdatenregister:** Pflicht binnen eines Monats nach Inbetriebnahme – Anlage und Speicher getrennt eintragen. Ohne Eintrag gibt es keine Vergütung.
 - **30 kWp – die wichtigste Grenze:** Bis hier 0 % Umsatzsteuer auf Kauf und Montage und ein einkommensteuerfreier Ertrag. Darüber werden Steuern und Netzanschluss deutlich aufwendiger.
