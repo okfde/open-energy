@@ -60,7 +60,7 @@ grid:
     - id: "off"
       label: "Off-the-Grid"
       description: "Unabhängig vom Stromnetz meinen Strom nutzen"
-      summary: "Off-the-Grid heißt: Ein Akku speichert deinen Strom, ein Laderegler schützt ihn – rechtlich die einfachste Variante, technisch die anspruchsvollste."
+      summary: "Off-the-Grid heißt: Ein Akku speichert deinen Strom, ein Laderegler schützt ihn – rechtlich die einfachste Variante, technisch die anspruchsvollste. Balkon-, Dach- und Freiflächensolar sowie Kleinwind lassen sich alle als Inselanlage bauen."
 
 # Wird statt der Karten angezeigt, wenn keine Karte zu den Antworten passt
 # (z. B. keine eigene Fläche und Off-the-Grid).

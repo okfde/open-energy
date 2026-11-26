@@ -20,7 +20,7 @@
   description: "Dieser Laderegler eignet sich für verschiedene Batterien im 12V und 24V-Bereich. Mit seiner Maximum Power Point Tracking Funktion holt er alles aus euren Solarpanels raus."
   image: "https://hardware.prototypefund.de/wp-content/uploads/2021/12/libresolar-1024x683.jpg"
   werkstatt: true
-  categories: [balkonsolar, speicher]
+  categories: [balkonsolar, speicher, inselanlage]
   csv_id: 32
   
 - title: "Kleinwindanlagen sicher betreiben"
@@ -30,7 +30,7 @@
   description: "Kleinwindanlagen brauchen spezielle Laderegler, die bei vollem Akku überschüssigen Strom abfangen, um die Anlage zu schützen."
   image: "/assets/images/photos/diy/laderegler.png"
   werkstatt: true
-  categories: [kleinwind]
+  categories: [kleinwind, inselanlage]
   csv_id:
 
 - title: "Akkus selbst bauen, mit offenem Batteriemanagement"
@@ -40,7 +40,7 @@
   description: "Dieses Batteriemanagement-System eignet sich für verschiedene Batterien mit bis zu 100A. In Kombination mit einzelnen Zellen lassen sich so verschiedene Akkugrößen bauen."
   image: "https://libre.solar/assets/bms-c1_v0-3.GRZdhIEX.jpg"
   werkstatt: true
-  categories: [balkonsolar, speicher]
+  categories: [balkonsolar, speicher, inselanlage]
   csv_id:
 
 - title: "Mit dem Windkit bekommt ihr eine leicht reparierbare Kleinwindanlage"
@@ -50,7 +50,7 @@
   description: "Das Windrad ist leicht nachbaubar und hat eine Leistung von ca. 400W."
   image: "/assets/images/photos/diy/photo-2.jpg"
   werkstatt: true
-  categories: [kleinwind]
+  categories: [kleinwind, inselanlage]
   csv_id: 34
 
 - title: "Mit dem Micro Inverter Strom einspeisen"
@@ -89,7 +89,7 @@
   url: "https://balkon.solar/montage/"
   type: "How-to"
   description: "Montagearten (Geländer, Boden, Flachdach, Ziegeldach, Vordach, Garten, Zaun, Sonderbauten) mit Hinweisen zu Windlast, Statik, Absturzsicherung, Modultypen und DIBt-Klarstellung 10/2023."
-  categories: [balkonsolar, freiflaechensolar]
+  categories: [balkonsolar, freiflaechensolar, inselanlage]
   csv_id: 2
   checked: "2026-11-23"
 
@@ -182,7 +182,7 @@
   type: "Allgemeine Informationen"
   description: "Antworten zu Inselanlagen, Mieterprivileg seit 10/2024, Speicher, Kombination mit Dach-PV, 2 kWp Modulgrenze."
   license: "Urheberrecht"
-  categories: [balkonsolar, speicher]
+  categories: [balkonsolar, speicher, inselanlage]
   csv_id: 12
   checked: "2026-11-23"
 
@@ -232,7 +232,7 @@
   type: "Norm & Recht"
   description: "Hilfeseite der Bundesnetzagentur zur Registrierungspflicht von Anlagen inkl. Steckersolar."
   license: "Amtliche Information"
-  categories: [balkonsolar, dachsolar, freiflaechensolar, agri-pv, kleinwind, speicher]
+  categories: [balkonsolar, dachsolar, freiflaechensolar, agri-pv, kleinwind, speicher, inselanlage]
   csv_id: 18
   checked: "2026-11-23"
 
@@ -272,7 +272,7 @@
   type: "Community/Forum"
   description: "Praxisthreads zu netzunabhängigen PV-Anlagen, Komponenten, Winterbetrieb und Erdung."
   license: "Nutzerbeiträge"
-  categories: [balkonsolar, freiflaechensolar, kleinwind]
+  categories: [balkonsolar, freiflaechensolar, kleinwind, inselanlage]
   csv_id: 25
   checked: "2026-11-23"
 
@@ -438,7 +438,7 @@
   type: "How-to"
   description: "Kuratierte Sammlung der Forums-Anleitungen zum Bau von LiFePO4-Speichern: Zellprüfung, Verpressen, Busbars, Temperatursensoren, serielles Balancieren, BMS, Betriebskonzepte."
   license: "Nutzerbeiträge"
-  categories: [speicher]
+  categories: [speicher, inselanlage]
   csv_id: 56
   checked: "2026-11-23"
 
@@ -448,7 +448,7 @@
   type: "How-to"
   description: "Sammelthread zu Sicherheitsaspekten beim Bau großer Akkus (Schutzausrüstung, Absicherung, Brandrisiken)."
   license: "Nutzerbeiträge"
-  categories: [speicher]
+  categories: [speicher, inselanlage]
   csv_id: 57
   checked: "2026-11-23"
 
@@ -458,7 +458,7 @@
   type: "Praxisbericht"
   description: "Ausführlicher Erfahrungsbericht zum Bau eines 48-V-Heimspeichers mit Komponentenliste, Zellinitialisierung und Verdrahtung."
   license: "Nutzerbeiträge"
-  categories: [speicher]
+  categories: [speicher, inselanlage]
   csv_id: 58
   checked: "2026-11-23"
 
@@ -487,7 +487,7 @@
   type: "How-to"
   description: "Eine umfangreiche Anleitung zum Bau der Kleinstwindanlage windkit (Rotor 2 m, Mast bis 9 m)."
   license: "CERN OHL"
-  categories: [kleinwind]
+  categories: [kleinwind, inselanlage]
   csv_id: 61
   checked: "2026-11-23"
 
@@ -497,7 +497,7 @@
   type: "How-to"
   description: "Internationale Standardwerke zum Windrad-Selbstbau (Rotorblätter, Axialfluss-Generator, Mast, Netzanbindung)."
   license: "Urheberrecht (Buch)"
-  categories: [kleinwind]
+  categories: [kleinwind, inselanlage]
   csv_id: 63
   checked: "2026-11-23"
 

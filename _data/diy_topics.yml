@@ -26,6 +26,8 @@
 #   _diy/Solar_Kleinwind_genehmigungsfrei_Kurzuebersicht.md
 # match: Für welche Antworten des Formular-Filters (_data/diy_filter.yml)
 #   die Karte angezeigt wird – getrennt nach On-the-Grid und Off-the-Grid.
+#   Off-the-Grid zeigt immer nur die Karte „Inselanlage“; sie verweist auf
+#   die Varianten, die sich auch als Inselanlage bauen lassen.
 
 - slug: balkonsolar
   title: "Balkonsolar"
@@ -47,7 +49,7 @@
   image: "/assets/images/illustrations/illu-balkonkraftwerk.png"
   match:
     "on": [miete-balkon, miete-garten, eigenheim-balkon, eigenheim-garten, kleingarten]
-    "off": [miete-balkon, miete-garten, eigenheim-balkon, eigenheim-garten, kleingarten]
+    "off": []
 
 - slug: dachsolar
   title: "Dachsolar"
@@ -69,7 +71,7 @@
   legal: "Auf Ein- und Zweifamilienhaus, Reihenhaus, Garage oder Carport ohne Baugenehmigung. Bis 30 kWp steuerfrei."
   match:
     "on": [eigenheim-dach, bauernhof]
-    "off": [eigenheim-dach, bauernhof]
+    "off": []
 
 - slug: freiflaechensolar
   title: "Freiflächensolar"
@@ -92,7 +94,7 @@
   image: "/assets/images/illustrations/illu-solarzelle.png"
   match:
     "on": [eigenheim-garten, bauernhof]
-    "off": [eigenheim-garten, bauernhof, kleingarten]
+    "off": []
 
 - slug: agri-pv
   title: "Agri-PV"
@@ -136,7 +138,7 @@
   image: "/assets/images/illustrations/illu-windrad-1.png"
   match:
     "on": [eigenheim-garten, bauernhof]
-    "off": [eigenheim-garten, bauernhof, kleingarten]
+    "off": []
 
 - slug: speicher
   title: "Speicher mit dynamischem Stromtarif"
@@ -159,3 +161,24 @@
     "on": [miete-ohne, miete-balkon, miete-garten, eigenheim-garten, eigenheim-dach, eigenheim-balkon, eigenheim-ohne, bauernhof]
     # Nur On-the-Grid: Ein dynamischer Tarif setzt die Verbindung zum Stromnetz voraus.
     "off": []
+
+- slug: inselanlage
+  title: "Inselanlage"
+  excerpt: "Strom ganz ohne Netzanschluss: Solarmodule oder ein Windrad laden einen Akku, ein Wechselrichter macht daraus 230 V. Ideal für Hütte, Kleingarten oder Werkstatt – Balkon-, Dach- und Freiflächensolar sowie Kleinwind lassen sich so umsetzen."
+  cost_buy: "ab 1.500 €"
+  cost_buy_note: "1 kWp mit 1-kWh-Akku: Komplettset ab 1.000 € + Aufbau und Verkabelung vom Fachbetrieb ab 500 €"
+  cost_diy: "ab 750 €"
+  cost_diy_note: "1 kWp mit 1-kWh-Akku: neue Module, Akku und Gestell selbst gebaut – ohne Netzanschluss kein Elektriker nötig"
+  cost_diy_items:
+    - ["2 Solarmodule, zusammen ca. 1 kWp, neu", "180 €"]
+    - ["Inselwechselrichter 1 kVA mit integriertem MPPT-Laderegler", "200 €"]
+    - ["Akku 1 kWh, selbst gebaut (4 LiFePO4-Zellen, BMS)", "200 €"]
+    - ["Absicherung: DC-Sicherung, Batterietrenner, FI-Schalter für die Verbraucher", "60 €"]
+    - ["Solarkabel, MC4-Stecker, Batteriekabel, Steckdosenleiste", "50 €"]
+    - ["Gestell aus Holz oder Alu, selbst gebaut", "60 €"]
+  legal_fact: "Keine Anmeldung"
+  legal: "Ohne Verbindung zum Stromnetz entfallen Netzbetreiber und Marktstammdatenregister. Für Gestell, Dach oder Mast gilt das Baurecht der jeweiligen Variante."
+  match:
+    # Nur Off-the-Grid – mit Netzanschluss passen die anderen Karten.
+    "on": []
+    "off": [miete-balkon, miete-garten, eigenheim-garten, eigenheim-dach, eigenheim-balkon, bauernhof, kleingarten]

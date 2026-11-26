@@ -29,7 +29,7 @@ Mit 800 Watt Einspeisung ist ein Akku mit 5 Kilowattstunden in gut sechs Stunden
 
 Den Akku selbst zu bauen ist ein lohnendes DIY-Projekt: LiFePO4-Einzelzellen, ein Batteriemanagementsystem (BMS), ein Ladegerät und ein Mikrowechselrichter kosten zusammen etwas weniger als ein fertiger Steckerspeicher gleicher Größe. Das verlangt aber Sorgfalt: Akkus speichern viel Energie, und Fehler beim Bau können zu Bränden führen. Lies die Sicherheitshinweise in den Ressourcen unten, bevor du startest.
 
-**Nur mit Netzanschluss:** Ein dynamischer Tarif setzt die Verbindung zum Stromnetz voraus. Für eine Inselanlage ohne Netz brauchst du zwar auch einen Akku – geladen wird er dann aber von eigenen Solarmodulen oder einem Windrad (siehe [Balkonsolar](../balkonsolar/), [Freiflächensolar](../freiflaechensolar/) und [Kleinwind](../kleinwind/)).
+**Nur mit Netzanschluss:** Ein dynamischer Tarif setzt die Verbindung zum Stromnetz voraus. Für eine Inselanlage ohne Netz brauchst du zwar auch einen Akku – geladen wird er dann aber von eigenen Solarmodulen oder einem Windrad (siehe [Inselanlage](../inselanlage/)).
 
 ## Rechtliche Rahmenbedingungen
 
