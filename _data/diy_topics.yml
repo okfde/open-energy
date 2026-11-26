@@ -165,17 +165,17 @@
 - slug: inselanlage
   title: "Inselanlage"
   excerpt: "Strom ganz ohne Netzanschluss: Solarmodule oder ein Windrad laden einen Akku, ein Wechselrichter macht daraus 230 V. Ideal für Hütte, Kleingarten oder Werkstatt – Balkon-, Dach- und Freiflächensolar sowie Kleinwind lassen sich so umsetzen."
-  cost_buy: "ab 1.500 €"
-  cost_buy_note: "1 kWp mit 1-kWh-Akku: Komplettset ab 1.000 € + Aufbau und Verkabelung vom Fachbetrieb ab 500 €"
-  cost_diy: "ab 750 €"
-  cost_diy_note: "1 kWp mit 1-kWh-Akku: neue Module, Akku und Gestell selbst gebaut – ohne Netzanschluss kein Elektriker nötig"
+  cost_buy: "ab 2.500 €"
+  cost_buy_note: "2 kWp mit 2-kWh-Akku: Komplettset ab 1.800 € + Aufbau und Verkabelung vom Fachbetrieb ab 700 €"
+  cost_diy: "ab 1.300 €"
+  cost_diy_note: "2 kWp mit 2-kWh-Akku: neue Module, Akku und Gestell selbst gebaut – ohne Netzanschluss kein Elektriker nötig"
   cost_diy_items:
-    - ["2 Solarmodule, zusammen ca. 1 kWp, neu", "180 €"]
-    - ["Inselwechselrichter 1 kVA mit integriertem MPPT-Laderegler", "200 €"]
-    - ["Akku 1 kWh, selbst gebaut (4 LiFePO4-Zellen, BMS)", "200 €"]
-    - ["Absicherung: DC-Sicherung, Batterietrenner, FI-Schalter für die Verbraucher", "60 €"]
-    - ["Solarkabel, MC4-Stecker, Batteriekabel, Steckdosenleiste", "50 €"]
-    - ["Gestell aus Holz oder Alu, selbst gebaut", "60 €"]
+    - ["4 Solarmodule, zusammen ca. 2 kWp, neu", "360 €"]
+    - ["Inselwechselrichter 24 V, 2 kVA mit integriertem MPPT-Laderegler", "300 €"]
+    - ["Akku 2 kWh, selbst gebaut (8 LiFePO4-Zellen, BMS, Gehäuse)", "350 €"]
+    - ["Absicherung: DC-Sicherung, Batterietrenner, FI-Schalter für die Verbraucher", "80 €"]
+    - ["Solarkabel, MC4-Stecker, Batteriekabel, Steckdosenleiste", "80 €"]
+    - ["Gestell für 4 Module aus Holz oder Alu, selbst gebaut", "130 €"]
   legal_fact: "Keine Anmeldung"
   legal: "Ohne Verbindung zum Stromnetz entfallen Netzbetreiber und Marktstammdatenregister. Für Gestell, Dach oder Mast gilt das Baurecht der jeweiligen Variante."
   match:

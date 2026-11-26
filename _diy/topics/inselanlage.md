@@ -7,13 +7,13 @@ intro: "Eine Inselanlage versorgt dich ganz ohne Stromnetz: Solarmodule oder ein
 schema_note: "Ohne Netz gibt es keinen Puffer: Der Akku ist hier kein Zusatz, sondern das Herz der Anlage. Er liefert, wenn die Sonne nicht scheint, und der Laderegler schützt ihn vor Überladung und Tiefentladung."
 schema:
   - name: "Solarmodule oder Windrad"
-    text: "z. B. 1 kWp an Gestell, Dach oder Balkon – oder ein Kleinwindrad für den Winter"
+    text: "z. B. 2 kWp an Gestell, Dach oder Balkon – oder ein Kleinwindrad für den Winter"
     flow: "Gleichstrom (DC)"
   - name: "Laderegler"
     text: "MPPT-Regler für Solar, Laderegler mit Dump-Load für Wind"
     flow: "Gleichstrom (DC)"
   - name: "Akku mit BMS"
-    text: "ca. 1 kWh – so viel wie die Anlage Leistung hat"
+    text: "ca. 2 kWh – so viel wie die Anlage Leistung hat"
     flow: "Gleichstrom (DC)"
   - name: "Inselwechselrichter"
     text: "wandelt Gleich- in Wechselstrom, oft mit Laderegler in einem Gerät"
@@ -30,12 +30,12 @@ Eine On-the-Grid-Anlage ist mit dem Stromnetz verbunden: Du nutzt deinen Strom z
 
 - **Unabhängig:** Strom auch dort, wo es keinen Netzanschluss gibt, und auch bei einem Stromausfall.
 - **Rechtlich einfach:** Keine Anmeldung beim Netzbetreiber, kein Eintrag ins Marktstammdatenregister, keine Einspeisegrenze.
-- **Sicher selbst zu bauen:** Ein kleines System mit 12 oder 24 Volt kannst du ohne Elektriker aufbauen, solange es nicht mit dem Hausnetz verbunden ist.
+- **Sicher selbst zu bauen:** Ein kleines System mit 12, 24 oder 48 Volt kannst du ohne Elektriker aufbauen, solange es nicht mit dem Hausnetz verbunden ist.
 - **Lernprojekt:** Du verstehst jede Komponente und kannst sie selbst reparieren oder tauschen.
 
 ### Nachteile
 
-- **Kein Ausgleich:** Was der Akku nicht speichert, geht verloren; ist er leer, gibt es keinen Strom.
+- **Kein Ausgleich:** Was der Akku nicht speichert, geht verloren. Ist er leer, gibt es keinen Strom.
 - **Winterlücke:** Solarmodule liefern im Winter nur einen Bruchteil. Ein Windrad oder ein größerer Akku helfen, kosten aber mehr.
 - **Akku ist Pflicht:** Er macht einen großen Teil der Kosten aus und braucht Sorgfalt beim Bau und Betrieb.
 - **Begrenzte Leistung:** Geräte mit hohem Anlaufstrom wie Kreissäge oder Wasserkocher brauchen einen kräftigen Wechselrichter.
@@ -49,7 +49,7 @@ Jede Variante auf dieser Seite lässt sich auch als Inselanlage umsetzen. Statt 
 - **[Dachsolar](../dachsolar/):** Viel Leistung auf Hütte, Scheune oder Gartenhaus – für größere Verbraucher und mehrere Tage Vorrat.
 - **[Kleinwind](../kleinwind/):** Liefert vor allem im Winter und nachts und schließt so die Lücke, die Solar offenlässt.
 
-Für eine kleine Off-Grid-Anlage mit 1 kWp und 1 kWh Akku, wie sie oben berechnet ist, kombinierst du am besten Balkon- oder Freiflächensolar mit einem selbst gebauten Akku.
+Für eine kleine Off-Grid-Anlage mit 2 kWp und 2 kWh Akku, wie sie oben berechnet ist, kombinierst du am besten Balkon- oder Freiflächensolar mit einem selbst gebauten Akku.
 
 ## Rechtliche Rahmenbedingungen
 
