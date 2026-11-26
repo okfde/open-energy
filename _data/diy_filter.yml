@@ -17,10 +17,10 @@ place:
       question: "Meine Wohnung hat …"
       options:
         - id: miete-balkon
-          label: "mit Balkon Richtung Süden, Osten, Westen"
+          label: "einen Balkon Richtung Süden, Osten, Westen"
           summary: "Ein Balkon reicht für ein Steckersolargerät. Seit Oktober 2024 dürfen Vermieter es nur noch aus triftigen Gründen ablehnen."
         - id: miete-garten
-          label: "mit Garten"
+          label: "einen Garten"
           summary: "Im Garten lassen sich Module als Steckersolargerät aufstellen – mit Absprache der Vermieterin oder des Vermieters."
         - id: miete-ohne
           label: "weder Balkon noch Garten"
@@ -31,13 +31,13 @@ place:
       question: "Mein Eigenheim hat …"
       options:
         - id: eigenheim-garten
-          label: "mit Garten > 100 qm"
+          label: "einen Garten > 100 qm"
           summary: "Ein großer Garten eignet sich für eine bodenmontierte Solaranlage und – bei gutem Wind – für ein Kleinwindrad."
         - id: eigenheim-dach
-          label: "mit Dach in südlicher, östlicher oder westlicher Ausrichtung"
+          label: "ein Dach in südlicher, östlicher oder westlicher Ausrichtung"
           summary: "Das Dach ist die klassische Fläche: Viel Leistung, und die Montage kannst du in Eigenleistung übernehmen."
         - id: eigenheim-balkon
-          label: "mit Balkon Richtung Süden, Osten, Westen"
+          label: "einen Balkon Richtung Süden, Osten, Westen"
           summary: "Am Balkon ist ein Steckersolargerät der schnellste Einstieg – ohne Elektrikerin oder Elektriker."
         - id: eigenheim-ohne
           label: "nichts davon"
